@@ -1,5 +1,7 @@
 # Multi-Asset Quant Research
 
+[![Public contract tests](https://github.com/cjhzr6/multiasset-quant-research/actions/workflows/tests.yml/badge.svg)](https://github.com/cjhzr6/multiasset-quant-research/actions/workflows/tests.yml)
+
 **量价选股与跨资产风险预算：从预测排名到可执行组合。**
 
 [English](README.en.md) · [正式研报 PDF](docs/strategy-report/report.pdf) · [运行与数据契约](docs/运行与数据契约.md) · [MIT](LICENSE)

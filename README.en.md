@@ -1,5 +1,7 @@
 # Multi-Asset Quant Research
 
+[![Public contract tests](https://github.com/cjhzr6/multiasset-quant-research/actions/workflows/tests.yml/badge.svg)](https://github.com/cjhzr6/multiasset-quant-research/actions/workflows/tests.yml)
+
 **Price-volume stock ranking, cross-asset risk budgets, and executable shared-cash portfolios.**
 
 [中文](README.md) · [Research report, Chinese PDF](docs/strategy-report/report.pdf) · [Data contract](docs/运行与数据契约.md) · [MIT](LICENSE)

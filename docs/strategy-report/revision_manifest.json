@@ -19,7 +19,7 @@
     "new_local_links_valid": true,
     "visual_review": "Prior 15-page review retained; Nov 5 changed appendix pages 13-15 rendered and checked after spacing correction. Total remains 15 pages.",
     "isolated_figure_reproduction": "Final script rerun in isolated directory; figure_checks exactly equal to public build. No private data used.",
-    "release_checks": "See ../发布核查_20261105.md; local tests pass, remote CI not yet executed."
+    "release_checks": "Local tests pass; first remote Linux CI succeeded at commit 81e4bce. See ../发布核查_20261105.md."
   },
   "original_pdf_sha256": "5b2f2def93ab91a1261bc373ebfd65fcd7814fb8a787f9457bc92b3c8d269597",
   "files": {
@@ -136,7 +136,7 @@
     "Private input data required for complete training/account runs.",
     "2026 is 175-session cash restart retrospective.",
     "2026 stress cash-exposure change remains to be audited.",
-    "Supplier raw data remains private; remote publication/CI recorded separately."
+    "Supplier raw data remains private; remote publication and CI evidence recorded separately."
   ],
   "files_total_bytes": 1417765
 }

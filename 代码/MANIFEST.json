@@ -31,12 +31,12 @@
       "sha256": "70e437a01e9e3460380774eae5a8d54596b377df1701e747f3e8b11e83c2398b"
     },
     "README.en.md": {
-      "bytes": 4925,
-      "sha256": "e13c9a978be5119807d610a0d019705fa920ee8d313bda36030aa841bf0cfe80"
+      "bytes": 5127,
+      "sha256": "986c2c813146a5a154a14411b8b364e095ea0d5a5012267e531de11e4a449772"
     },
     "README.md": {
-      "bytes": 6185,
-      "sha256": "708fe321cdacbb509ad009dda7cf578eef24c10fc57d0e547bf7c57a2422cff0"
+      "bytes": 6387,
+      "sha256": "dbf2ca90e440aceeb57b1ed2ac0ba5340946569c40571488414c5c399770c130"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 1292,
@@ -147,16 +147,16 @@
       "sha256": "e2ce2b8df9ce252629012854452c6ce805d083d5c1550d134d6e4b479d21bb0e"
     },
     "docs/strategy-report/revision_manifest.json": {
-      "bytes": 5871,
-      "sha256": "6aae911dbacbc18d8fc69eb5bad9608c240a6c93277b9cedba99344940799d85"
+      "bytes": 5907,
+      "sha256": "6a2e7c25ea9adfdba3d1b64fa10614916cf40cdb4abdcc2fd8cc4915721f05bc"
     },
     "docs/strategy-report/图表契约与校核.md": {
       "bytes": 2169,
       "sha256": "94cb17c1374a6f5562294b1656f559c16b96dc4d582871166d3788953977d2b4"
     },
     "docs/发布核查_20261105.md": {
-      "bytes": 3255,
-      "sha256": "aaf88da86848989ba819ba0ecad34ec3204597d315a7973937291c478a8cf84f"
+      "bytes": 3824,
+      "sha256": "dfe628e95ecab6f864696cc1e5ce079f0753a209460501593d2be3b0c1a09036"
     },
     "docs/开源项目定位评估_20261014.md": {
       "bytes": 3772,
@@ -1295,5 +1295,5 @@
       "sha256": "d535e3ffe1f7fb8363f2f83b98298b09450164067bbe0b4126af37b5eb617022"
     }
   },
-  "files_total_bytes": 19072675
+  "files_total_bytes": 19073684
 }
