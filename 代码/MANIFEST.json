@@ -2,6 +2,10 @@
   "date": "2026-11-05",
   "scope": "Public Git-selected file snapshot, regenerated for this release. Formal PDF/ZIP unchanged; excludes this manifest itself and Git-ignored private input/build files. Not the original submission acceptance manifest.",
   "files": {
+    ".gitattributes": {
+      "bytes": 81,
+      "sha256": "3cace63ddb4ee3bbc4f54e59d4f24500e6cdc996360192b877837222e8526265"
+    },
     ".github/workflows/tests.yml": {
       "bytes": 477,
       "sha256": "78720b78c39a6f81d526343f281fcb2ff10854eb92d82b55c51f095cce09260d"
@@ -80,7 +84,7 @@
     },
     "docs/strategy-report/figures/actual_weights_2026.pdf": {
       "bytes": 25924,
-      "sha256": "cfea59967e7e90470b021ce7a3fa5d15f1f787876d1a8d65aa232bbdb07d72e7"
+      "sha256": "3fab15d221f955d35f3b842db41c2a9a1e9f49d884e3b3d4dc287c4f1bf617ea"
     },
     "docs/strategy-report/figures/actual_weights_2026.png": {
       "bytes": 100321,
@@ -88,11 +92,11 @@
     },
     "docs/strategy-report/figures/actual_weights_2026.svg": {
       "bytes": 53143,
-      "sha256": "c00ac0350d95093dfee880b1057bbb69d81075b0b99409c385e614c50c6bc0d8"
+      "sha256": "08e57fc1dbd4bc996bd9cb7b4c8c6ce48566d27872deb4ae94f7ccc016d0fbbb"
     },
     "docs/strategy-report/figures/component_contributions.pdf": {
       "bytes": 25581,
-      "sha256": "e1ab0533cd637fac23cd63f61a84304ec8be7a84a26de892f98753e91e56c57f"
+      "sha256": "99e05084401a0beb6ad77855e918e0e622bbbff0362a3123091589e0db290b7d"
     },
     "docs/strategy-report/figures/component_contributions.png": {
       "bytes": 108855,
@@ -100,11 +104,11 @@
     },
     "docs/strategy-report/figures/component_contributions.svg": {
       "bytes": 17982,
-      "sha256": "393ef448935dddcca57ccfe6bef4535007c4d591c8478fc387b975e03a7501e1"
+      "sha256": "a1a4e9ccab123e2e9a61478345ed4784cfb0241f859eba6da5c231d3d8ace887"
     },
     "docs/strategy-report/figures/extension_nav_drawdown.pdf": {
       "bytes": 21104,
-      "sha256": "466ddddfa4ade831bd8c3ce81aa1349ad7c21c658222f1dad4e50741d13399f6"
+      "sha256": "569f6593d92f17caa90f12febab9161a29724e400ae4e8435e01f36d69503426"
     },
     "docs/strategy-report/figures/extension_nav_drawdown.png": {
       "bytes": 238084,
@@ -112,11 +116,11 @@
     },
     "docs/strategy-report/figures/extension_nav_drawdown.svg": {
       "bytes": 30331,
-      "sha256": "a62209dfb2e547aff7813d49e72f91a67a8993c8691bfb05f4d8ca6d8a87d193"
+      "sha256": "f696acd57f0a8ea315bd789f1329de741502439fca59ab9f03277166fc4f50f3"
     },
     "docs/strategy-report/figures/historical_nav_drawdown.pdf": {
       "bytes": 29523,
-      "sha256": "e14b0a5a7c3da59991757fecf48b3b34142b368d839cadb6ea62297f6652904c"
+      "sha256": "3a8fd5e95ce47e4f716bf75a5f7de7725fc7157e7d91aa5d766af2e47e99d1a2"
     },
     "docs/strategy-report/figures/historical_nav_drawdown.png": {
       "bytes": 196084,
@@ -124,27 +128,27 @@
     },
     "docs/strategy-report/figures/historical_nav_drawdown.svg": {
       "bytes": 58281,
-      "sha256": "d7b0ad17e2c3a2356a2727886b5785891c207fa87332a917b9315071dd487244"
+      "sha256": "e1e19cfed0c14459f00e93ab16d89911bc4c8f1e70ce8692437aaeacf212421e"
     },
     "docs/strategy-report/main.tex": {
-      "bytes": 36775,
-      "sha256": "e4832fe14c709ced502a9c4596275c5eaab005e0ade83ce25b2c1f5855fec9a6"
+      "bytes": 36774,
+      "sha256": "160de7a8b5cc431b973e857d2df3a7f64d3e57105defd888322294c69f011bfd"
     },
     "docs/strategy-report/monthly_table.tex": {
       "bytes": 1359,
       "sha256": "bf35c9bcd3c4d784e8ca1cd839c8682e937de2129a293b42ea2f1dc699fb69b6"
     },
     "docs/strategy-report/report.pdf": {
-      "bytes": 381598,
-      "sha256": "c180b0e8d41421e8208b7af64a6518b25be81105ce8e0db2d4003a65c7559824"
+      "bytes": 381255,
+      "sha256": "43af222ee71de44e0809e4c15a0771e3a6e8b83fe06a78de836a1852dbfef8f0"
     },
     "docs/strategy-report/requirements.txt": {
       "bytes": 150,
       "sha256": "e2ce2b8df9ce252629012854452c6ce805d083d5c1550d134d6e4b479d21bb0e"
     },
     "docs/strategy-report/revision_manifest.json": {
-      "bytes": 5895,
-      "sha256": "46d448dcd130c9f391b8f7beb16ad3806f2b98f85e173b50a49f0bb2a94d08a4"
+      "bytes": 5871,
+      "sha256": "6aae911dbacbc18d8fc69eb5bad9608c240a6c93277b9cedba99344940799d85"
     },
     "docs/strategy-report/图表契约与校核.md": {
       "bytes": 2169,
@@ -1291,5 +1295,5 @@
       "sha256": "d535e3ffe1f7fb8363f2f83b98298b09450164067bbe0b4126af37b5eb617022"
     }
   },
-  "files_total_bytes": 19072962
+  "files_total_bytes": 19072675
 }

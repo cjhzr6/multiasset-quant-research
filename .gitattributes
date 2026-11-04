@@ -1,0 +1,2 @@
+# Preserve frozen source/data artifact bytes across operating systems.
+* -text
