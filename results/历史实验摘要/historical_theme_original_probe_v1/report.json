@@ -1,0 +1,78 @@
+{
+  "date_shanghai": "2026-10-08",
+  "scope": "2025 existing themes, four fixed source pages, no 2026 request",
+  "checks": [
+    {
+      "theme": "gold",
+      "article_date": "2025-01-18",
+      "url": "http://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/lastest/rptid/790533971391/index.phtml",
+      "http_status": 200,
+      "status": "FETCHED_NOT_PUBLICATION_VERIFIED",
+      "bytes": 27107,
+      "sha256": "e4cb3baeb284010b6b5d81f938654a1b542ffbc3896c39dea4111303338d94b5",
+      "date_tokens": [
+        "2025-01-18",
+        "2026-10-08"
+      ],
+      "first_publication_verified": false,
+      "report_date_on_source_page": "2025-01-18",
+      "report_date_matches_fragment": true,
+      "interpretation": "Research-report date confirmed on mirror, first web availability and body vintage unverified. Not a direct company event; topic keywords may be incidental."
+    },
+    {
+      "theme": "technology",
+      "article_date": "2025-04-07",
+      "url": "http://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/lastest/rptid/797380198628/index.phtml",
+      "http_status": 200,
+      "status": "FETCHED_NOT_PUBLICATION_VERIFIED",
+      "bytes": 26068,
+      "sha256": "96760501bee53dac42569eac910dd20e58854f71007020349dd6149798d2e64a",
+      "date_tokens": [
+        "2025-04-07",
+        "2026-10-08"
+      ],
+      "first_publication_verified": false,
+      "report_date_on_source_page": "2025-04-07",
+      "report_date_matches_fragment": true,
+      "interpretation": "Research-report date confirmed on mirror, first web availability and body vintage unverified. Not a direct company event; topic keywords may be incidental."
+    },
+    {
+      "theme": "aerospace",
+      "article_date": "2025-04-07",
+      "url": "http://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/lastest/rptid/797387127365/index.phtml",
+      "http_status": 200,
+      "status": "FETCHED_NOT_PUBLICATION_VERIFIED",
+      "bytes": 26617,
+      "sha256": "243129e28f74186f60c9d161f5d18c654b3db81c419fdc76c2b3d843dce2a4bd",
+      "date_tokens": [
+        "2025-04-07",
+        "2026-10-08"
+      ],
+      "first_publication_verified": false,
+      "report_date_on_source_page": "2025-04-07",
+      "report_date_matches_fragment": true,
+      "interpretation": "Research-report date confirmed on mirror, first web availability and body vintage unverified. Not a direct company event; topic keywords may be incidental."
+    },
+    {
+      "theme": "oil",
+      "article_date": "2025-06-15",
+      "url": "http://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/strategy/rptid/803343120366/index.phtml",
+      "http_status": 200,
+      "status": "FETCHED_NOT_PUBLICATION_VERIFIED",
+      "bytes": 25891,
+      "sha256": "5735230fe93429c3cfc26de7a5888b0b42c56124a8a911e1364ee7999d8fa553",
+      "date_tokens": [
+        "2025-06-15",
+        "2026-10-08"
+      ],
+      "first_publication_verified": false,
+      "report_date_on_source_page": "2025-06-15",
+      "report_date_matches_fragment": true,
+      "interpretation": "Research-report date confirmed on mirror, first web availability and body vintage unverified. Not a direct company event; topic keywords may be incidental."
+    }
+  ],
+  "status": "ORIGINAL_PAGE_PROBE_ONLY_NOT_NLP_EFFECT",
+  "fits": 0,
+  "publication_accepted": 0,
+  "source_report_date_matches": 4
+}

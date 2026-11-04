@@ -1,0 +1,343 @@
+{
+  "status": "COMPLETE_MATCHED_ACCOUNT_SIMULATION_WITH_PUBLICATION_GATES",
+  "scenario": "jf05_account_v1",
+  "sealed_2026_evaluated": false,
+  "cash_reconciliation": "PASS every model/session",
+  "inputs": {
+    "prediction_sha256": "8dd521c1e825f0e0830c461c351e287dd6a51d18c356cdf6fe5ac0707e593ada",
+    "market_sha256": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "events_sha256": "6ee7e406a77f0e8b6cc447c07a6bc9ad03f1a3b3b1a444fd970a407593d133c4",
+    "account_engine_sha256": "77156f8cdf8eb51ae5ad9fcaccb4be7106bf992b24a08918ad9425e44fa9c2e6",
+    "config_sha256": "9b0442fa571470ba96e796c4b259d443a5a86f34b4965aa9f6bd1149be50a61d"
+  },
+  "models": {
+    "B01": {
+      "publishable_returns": true,
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "sessions": 485,
+      "trades": 5020,
+      "issues": 0,
+      "issues_by_reason": {},
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "max_cash_flow_residual": 4.656612873077393e-10,
+        "nav_export_pass": true,
+        "max_nav_component_residual": 0.0,
+        "daily_rows": 485,
+        "trade_rows": 5020
+      },
+      "yearly_metrics": {
+        "2024": {
+          "start_nav": 1000000.0,
+          "end_nav": 1218456.1129856587,
+          "total_return": 0.2184561129856586,
+          "annualized_return": 0.22844510584885347,
+          "annualized_volatility": 0.1600939267702148,
+          "sharpe_zero_cash": 1.364908417593104,
+          "max_drawdown": -0.10376018720150348,
+          "max_drawdown_peak_to_trough_sessions": 170,
+          "mean_stock_exposure": 0.8660521138876838,
+          "mean_cash_fraction": 0.1345190619449074,
+          "mean_holdings": 74.90082644628099,
+          "trade_count": 2415,
+          "fees": 17618.791039342548,
+          "realized_dividend_tax": 3988.5054,
+          "slippage_cost": 11065.831894998768,
+          "one_way_turnover_nav": 22.132092794205,
+          "two_way_annualized_turnover": 20.757933855472626
+        },
+        "2025": {
+          "start_nav": 1218456.1129856587,
+          "end_nav": 1322974.4050542896,
+          "total_return": 0.08577928327063278,
+          "annualized_return": 0.08909386642970629,
+          "annualized_volatility": 0.1257434681861724,
+          "sharpe_zero_cash": 0.7422995751784688,
+          "max_drawdown": -0.10392999451022544,
+          "max_drawdown_peak_to_trough_sessions": 61,
+          "mean_stock_exposure": 0.8495762414375921,
+          "mean_cash_fraction": 0.1508618871223553,
+          "mean_holdings": 74.37448559670781,
+          "trade_count": 2605,
+          "fees": 20634.86004037015,
+          "realized_dividend_tax": 3614.5923560000006,
+          "slippage_cost": 14596.997204998355,
+          "one_way_turnover_nav": 23.959810326019202,
+          "two_way_annualized_turnover": 24.74705892518242
+        }
+      }
+    },
+    "E00": {
+      "publishable_returns": true,
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "sessions": 485,
+      "trades": 4103,
+      "issues": 0,
+      "issues_by_reason": {},
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "max_cash_flow_residual": 4.802132025361061e-10,
+        "nav_export_pass": true,
+        "max_nav_component_residual": 0.0,
+        "daily_rows": 485,
+        "trade_rows": 4103
+      },
+      "yearly_metrics": {
+        "2024": {
+          "start_nav": 1000000.0,
+          "end_nav": 1394886.5466695982,
+          "total_return": 0.3948865466695981,
+          "annualized_return": 0.4142023899694067,
+          "annualized_volatility": 0.1668542038489184,
+          "sharpe_zero_cash": 2.1605729279059385,
+          "max_drawdown": -0.0872010290941736,
+          "max_drawdown_peak_to_trough_sessions": 172,
+          "mean_stock_exposure": 0.9043833971364978,
+          "mean_cash_fraction": 0.0962615404591049,
+          "mean_holdings": 77.41735537190083,
+          "trade_count": 2191,
+          "fees": 15363.6309904023,
+          "realized_dividend_tax": 4470.9306400000005,
+          "slippage_cost": 8854.892899999073,
+          "one_way_turnover_nav": 17.71024251893,
+          "two_way_annualized_turnover": 16.000788960583385
+        },
+        "2025": {
+          "start_nav": 1394886.5466695982,
+          "end_nav": 1507242.1266852214,
+          "total_return": 0.08054818528709817,
+          "annualized_return": 0.08365294976583892,
+          "annualized_volatility": 0.10590593434518117,
+          "sharpe_zero_cash": 0.8118487479058228,
+          "max_drawdown": -0.054511969265493176,
+          "max_drawdown_peak_to_trough_sessions": 61,
+          "mean_stock_exposure": 0.9159814316358865,
+          "mean_cash_fraction": 0.08464652584230585,
+          "mean_holdings": 78.0246913580247,
+          "trade_count": 1912,
+          "fees": 14357.52629937775,
+          "realized_dividend_tax": 4715.66311,
+          "slippage_cost": 8767.699674999047,
+          "one_way_turnover_nav": 12.571218974254364,
+          "two_way_annualized_turnover": 12.446168895178044
+        }
+      }
+    },
+    "E10": {
+      "publishable_returns": true,
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "sessions": 485,
+      "trades": 4166,
+      "issues": 0,
+      "issues_by_reason": {},
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "max_cash_flow_residual": 5.820766091346741e-10,
+        "nav_export_pass": true,
+        "max_nav_component_residual": 0.0,
+        "daily_rows": 485,
+        "trade_rows": 4166
+      },
+      "yearly_metrics": {
+        "2024": {
+          "start_nav": 1000000.0,
+          "end_nav": 1368318.1598875003,
+          "total_return": 0.3683181598875003,
+          "annualized_return": 0.3861641306664947,
+          "annualized_volatility": 0.16925377988198514,
+          "sharpe_zero_cash": 2.014366960884508,
+          "max_drawdown": -0.09118706289472212,
+          "max_drawdown_peak_to_trough_sessions": 172,
+          "mean_stock_exposure": 0.9167703881492821,
+          "mean_cash_fraction": 0.08396016050031622,
+          "mean_holdings": 78.32644628099173,
+          "trade_count": 2269,
+          "fees": 16019.48608749945,
+          "realized_dividend_tax": 4389.3671,
+          "slippage_cost": 9397.879784998995,
+          "one_way_turnover_nav": 18.796225952194998,
+          "two_way_annualized_turnover": 16.87806518084719
+        },
+        "2025": {
+          "start_nav": 1368318.1598875003,
+          "end_nav": 1456016.0403347977,
+          "total_return": 0.06409173174644378,
+          "annualized_return": 0.06654281269444429,
+          "annualized_volatility": 0.10570912940948476,
+          "sharpe_zero_cash": 0.6625382528242217,
+          "max_drawdown": -0.05363537024607545,
+          "max_drawdown_peak_to_trough_sessions": 61,
+          "mean_stock_exposure": 0.9208090825415447,
+          "mean_cash_fraction": 0.0798891691542542,
+          "mean_holdings": 78.35802469135803,
+          "trade_count": 1897,
+          "fees": 14235.4787567044,
+          "realized_dividend_tax": 5117.236186,
+          "slippage_cost": 8762.078609998996,
+          "one_way_turnover_nav": 12.807083127385223,
+          "two_way_annualized_turnover": 12.641146798833004
+        }
+      }
+    },
+    "JF05": {
+      "publishable_returns": true,
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "sessions": 485,
+      "trades": 4063,
+      "issues": 0,
+      "issues_by_reason": {},
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "max_cash_flow_residual": 4.656612873077393e-10,
+        "nav_export_pass": true,
+        "max_nav_component_residual": 0.0,
+        "daily_rows": 485,
+        "trade_rows": 4063
+      },
+      "yearly_metrics": {
+        "2024": {
+          "start_nav": 1000000.0,
+          "end_nav": 1387211.488291913,
+          "total_return": 0.3872114882919129,
+          "annualized_return": 0.40610043021544673,
+          "annualized_volatility": 0.16790556560784495,
+          "sharpe_zero_cash": 2.1142389147395995,
+          "max_drawdown": -0.08891285570338336,
+          "max_drawdown_peak_to_trough_sessions": 172,
+          "mean_stock_exposure": 0.9253216546403431,
+          "mean_cash_fraction": 0.0754824287075715,
+          "mean_holdings": 78.79752066115702,
+          "trade_count": 2156,
+          "fees": 14909.87286508735,
+          "realized_dividend_tax": 4769.049568,
+          "slippage_cost": 8331.469954999102,
+          "one_way_turnover_nav": 16.663403310035,
+          "two_way_annualized_turnover": 14.804010330935336
+        },
+        "2025": {
+          "start_nav": 1387211.488291913,
+          "end_nav": 1398006.5164723173,
+          "total_return": 0.007781818613466385,
+          "annualized_return": 0.00807119417828095,
+          "annualized_volatility": 0.11531166657107969,
+          "sharpe_zero_cash": 0.12758545238171928,
+          "max_drawdown": -0.09330648391921159,
+          "max_drawdown_peak_to_trough_sessions": 243,
+          "mean_stock_exposure": 0.9242286656304575,
+          "mean_cash_fraction": 0.07635159335447593,
+          "mean_holdings": 78.52263374485597,
+          "trade_count": 1907,
+          "fees": 14231.03287859655,
+          "realized_dividend_tax": 5328.9240660000005,
+          "slippage_cost": 8718.22093499903,
+          "one_way_turnover_nav": 12.569438356025076,
+          "two_way_annualized_turnover": 12.654468266674252
+        }
+      }
+    }
+  },
+  "comparisons_to_prior_base_2024": {
+    "B01": {
+      "prior_return": 0.2184561129856586,
+      "rerun_return": 0.2184561129856586,
+      "absolute_difference": 0.0,
+      "within_1e_minus_8": true
+    },
+    "E00": {
+      "prior_return": 0.3948865466695981,
+      "rerun_return": 0.3948865466695981,
+      "absolute_difference": 0.0,
+      "within_1e_minus_8": true
+    },
+    "E10": {
+      "prior_return": 0.3683181598875003,
+      "rerun_return": 0.3683181598875003,
+      "absolute_difference": 0.0,
+      "within_1e_minus_8": true
+    }
+  },
+  "prior_baseline_report_sha256": "781df90f8842a3fba0b5c33c5094ab9b9c7d48699ffe5e59b05521ed923a902d",
+  "monthly_results_file": "monthly_account_results.csv",
+  "combined_2024_2025_metrics_file": "combined_2024_2025_metrics.json",
+  "combined_2024_2025_metrics": {
+    "B01": {
+      "start_nav": 1000000.0,
+      "end_nav": 1322974.4050542896,
+      "total_return": 0.32297440505428954,
+      "annualized_return": 0.1565292621432539,
+      "annualized_volatility": 0.1438171206508733,
+      "sharpe_zero_cash": 1.0833021085181684,
+      "max_drawdown": -0.13770245646532198,
+      "max_drawdown_peak_to_trough_sessions": 121,
+      "mean_stock_exposure": 0.8577971922271224,
+      "mean_cash_fraction": 0.14270732280701018,
+      "mean_holdings": 74.63711340206186,
+      "trade_count": 5020,
+      "fees": 38253.6510797127,
+      "realized_dividend_tax": 7603.097756000001,
+      "slippage_cost": 25662.82909999712,
+      "gross_traded_notional_start_nav": 51.32607015192
+    },
+    "E00": {
+      "start_nav": 1000000.0,
+      "end_nav": 1507242.1266852214,
+      "total_return": 0.5072421266852214,
+      "annualized_return": 0.23760397308889036,
+      "annualized_volatility": 0.13980555305728248,
+      "sharpe_zero_cash": 1.594765885008568,
+      "max_drawdown": -0.08720102909417371,
+      "max_drawdown_peak_to_trough_sessions": 40,
+      "mean_stock_exposure": 0.9101943711227894,
+      "mean_cash_fraction": 0.09044205890883239,
+      "mean_holdings": 77.72164948453609,
+      "trade_count": 4103,
+      "fees": 29721.15728978005,
+      "realized_dividend_tax": 9186.59375,
+      "slippage_cost": 17622.592574998118,
+      "gross_traded_notional_start_nav": 35.245666741355
+    },
+    "E10": {
+      "start_nav": 1000000.0,
+      "end_nav": 1456016.0403347977,
+      "total_return": 0.4560160403347977,
+      "annualized_return": 0.21556760592059376,
+      "annualized_volatility": 0.14115381458113224,
+      "sharpe_zero_cash": 1.453793518381827,
+      "max_drawdown": -0.09118706289472245,
+      "max_drawdown_peak_to_trough_sessions": 40,
+      "mean_stock_exposure": 0.9187938989478796,
+      "mean_cash_fraction": 0.08192046792899031,
+      "mean_holdings": 78.34226804123712,
+      "trade_count": 4166,
+      "fees": 30254.96484420385,
+      "realized_dividend_tax": 9506.603286000001,
+      "slippage_cost": 18159.958394997993,
+      "gross_traded_notional_start_nav": 36.320390370585
+    },
+    "JF05": {
+      "start_nav": 1000000.0,
+      "end_nav": 1398006.5164723173,
+      "total_return": 0.3980065164723172,
+      "annualized_return": 0.19015843248778874,
+      "annualized_volatility": 0.1442268692475058,
+      "sharpe_zero_cash": 1.2792448620296026,
+      "max_drawdown": -0.09330648391921159,
+      "max_drawdown_peak_to_trough_sessions": 86,
+      "mean_stock_exposure": 0.9247740333426067,
+      "mean_cash_fraction": 0.07591790707705147,
+      "mean_holdings": 78.65979381443299,
+      "trade_count": 4063,
+      "fees": 29140.9057436839,
+      "realized_dividend_tax": 10097.973634,
+      "slippage_cost": 17049.690889998128,
+      "gross_traded_notional_start_nav": 34.09987259889
+    }
+  },
+  "monthly_results_sha256": "01d495a17fe8bbd8df12283578dc825a1503ef3a3e381dffefa0e56d5c00b36b",
+  "combined_metrics_sha256": "949cbd3d8985837123c69d147b6624bf6f9c76ca3433abba13068b63cc905ffd",
+  "summary_version": "jf05_account_summary_v2",
+  "summary_definitions": {
+    "max_drawdown_peak_to_trough_sessions": "Intervals from the latest NAV peak at or before the maximum-drawdown trough to that trough; the initial NAV is included.",
+    "gross_traded_notional_start_nav": "Sum of absolute BUY and SELL trade notionals divided by period-start NAV; this is two-sided gross turnover, not one-way turnover."
+  }
+}

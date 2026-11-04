@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "model_reconstruction_pass": {
+    "E00": true,
+    "RG01": true,
+    "SQ01": true
+  },
+  "target80_all_rebalances": true,
+  "max_weight_reconciliation_abs_error": {
+    "E00": 4.6629367034256575e-15,
+    "RG01": 4.440892098500626e-15,
+    "SQ01": 4.440892098500626e-15
+  },
+  "rows": {
+    "capital_weights": 86416,
+    "rank_drop": 3011,
+    "blocked_pairs": 3310,
+    "path_points": 240775,
+    "quarter_summary": 24
+  },
+  "path_horizons": [
+    5,
+    20
+  ],
+  "source_sha256_check_all_pass": true,
+  "sealed_2026_rows": 0,
+  "rank_drop_status_counts": {
+    "SELECTED_THEN_RANK_ABOVE_120": 2973,
+    "MISSING_NEXT_RANK_NOT_COUNTED_AS_EXIT": 38
+  }
+}

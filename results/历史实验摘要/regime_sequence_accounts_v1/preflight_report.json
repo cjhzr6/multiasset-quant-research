@@ -1,0 +1,49 @@
+{
+  "status": "PASS_ACCOUNT_PREFLIGHT",
+  "sessions": 485,
+  "date_range": [
+    "2024-01-02",
+    "2025-12-31"
+  ],
+  "prediction_rows": 143945,
+  "candidate_models": [
+    "RG01",
+    "SQ01"
+  ],
+  "rank_days": {
+    "RG01": 485,
+    "SQ01": 485
+  },
+  "key_count_matches_panel": true,
+  "e00_baseline_binding": {
+    "standard": {
+      "path": "results/jf05_account_v1/E00_daily.csv",
+      "sha256": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd",
+      "config_path": "results/jf05_account_v1/config.json",
+      "config_sha256": "9b0442fa571470ba96e796c4b259d443a5a86f34b4965aa9f6bd1149be50a61d",
+      "report_path": "results/jf05_account_v1/report.json",
+      "report_sha256": "1cab515557a0ea95168d373fe242b8819b38d99c6170ed78a3285a93936357ea",
+      "sessions": 485,
+      "first_date": "2024-01-02",
+      "last_date": "2025-12-31"
+    },
+    "cost2": {
+      "path": "results/jf05_account_cost2/E00_daily.csv",
+      "sha256": "287bb673f37f210897a3f361fbce4cafc3986190325667cc196b54ba22848e5d",
+      "config_path": "results/jf05_account_cost2/config.json",
+      "config_sha256": "deb054b702119c4743eab16a4796e66e8e13ca9cb06981b547485cd74aa2d282",
+      "report_path": "results/jf05_account_cost2/report.json",
+      "report_sha256": "44a5a95220db509ff75ab66b9db3c96e1918060a83de15eca01aff458e60c093",
+      "sessions": 485,
+      "first_date": "2024-01-02",
+      "last_date": "2025-12-31"
+    }
+  },
+  "event_rows": 3633,
+  "unsupported_factor_change_rows": 4,
+  "mergers_verified": 2,
+  "sealed_2026_access": false,
+  "accounts_started": false,
+  "new_fits": 0,
+  "freeze_manifest_sha256": "44b55b556c192009871d716c36ada48fdae129d4415c3caabd5cb388d6a9fe68"
+}

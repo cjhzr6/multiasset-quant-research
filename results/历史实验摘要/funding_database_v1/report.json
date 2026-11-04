@@ -1,0 +1,143 @@
+{
+  "status": "NORMALIZED_RESEARCH_ONLY",
+  "sources": {
+    "margin_market": {
+      "path": "E00研究交接包\\两融余额_沪深汇总.csv",
+      "sha256": "4fd86672a0cbe0ca129db02739b560cc39e3bbeb2c78de0d520fb7ca34d47c72"
+    },
+    "connect_flows": {
+      "path": "E00研究交接包\\北向资金_沪深港通成交历史.csv",
+      "sha256": "fb5512300036630217c1d55753122519c9b4680541625c42ea8a7318753ecd11"
+    },
+    "dragon_events": {
+      "path": "E00研究交接包\\龙虎榜_近期明细.csv",
+      "sha256": "6d77d6d4d093dcc564b64aec2d6fb14602600706d2cb3e614a5d2291827bc103"
+    }
+  },
+  "tables": {
+    "margin_market": {
+      "rows": 4011,
+      "min_date": "2010-03-31",
+      "max_date": "2026-10-08",
+      "nulls": {
+        "DIM_DATE": 0,
+        "RZYE": 0,
+        "RZMRE": 0,
+        "RZCHE": 1,
+        "RQYE": 0,
+        "RQMCL": 0,
+        "RZRQYE": 0,
+        "RZYEZB": 0,
+        "LTZB": 4011,
+        "NEW": 0,
+        "ZDF": 0,
+        "trade_date": 0,
+        "source_row": 0,
+        "source_sha256": 0,
+        "release_timestamp_verified": 0,
+        "unit_verified": 0,
+        "balance_identity_error_raw": 0
+      }
+    },
+    "connect_flows": {
+      "rows": 15533,
+      "min_date": "2014-11-17",
+      "max_date": "2026-10-09",
+      "nulls": {
+        "MUTUAL_TYPE": 0,
+        "TRADE_DATE": 0,
+        "NET_DEAL_AMT": 1504,
+        "BUY_AMT": 1506,
+        "SELL_AMT": 1509,
+        "HOLD_MARKET_CAP": 2185,
+        "DEAL_AMT": 3,
+        "ACCUM_DEAL_AMT": 1503,
+        "LEAD_STOCKS_CODE": 0,
+        "LEAD_STOCKS_NAME": 0,
+        "LS_CHANGE_RATE": 0,
+        "trade_date": 0,
+        "source_row": 0,
+        "source_sha256": 0,
+        "release_timestamp_verified": 0,
+        "unit_verified": 0,
+        "net_flow_missing": 0
+      }
+    },
+    "dragon_events": {
+      "rows": 10000,
+      "min_date": "2026-04-24",
+      "max_date": "2026-10-09",
+      "nulls": {
+        "TRADE_DATE": 0,
+        "SECURITY_CODE": 0,
+        "SECURITY_NAME_ABBR": 0,
+        "EXPLAIN": 175,
+        "BILLBOARD_DEAL_AMT": 0,
+        "DEAL_AMOUNT_RATIO": 0,
+        "CLOSE_PRICE": 0,
+        "CHANGE_RATE": 0,
+        "FREE_MARKET_CAP": 174,
+        "BILLBOARD_NET_AMT": 0,
+        "BUY_AMT": 10000,
+        "SELL_AMT": 10000,
+        "trade_date": 0,
+        "source_row": 0,
+        "source_sha256": 0,
+        "release_timestamp_verified": 0,
+        "unit_verified": 0,
+        "potential_posthoc_explain": 0
+      }
+    }
+  },
+  "training_authorized": false,
+  "fits": 0,
+  "metadata_verified": false,
+  "etf_gap": "2020-2021 prices and corporate actions; no bulk duplicate downloads",
+  "probes": [
+    {
+      "api": "margin",
+      "params": {
+        "trade_date": "20241008"
+      },
+      "code": 0,
+      "rows": 3,
+      "fields": [
+        "trade_date",
+        "exchange_id",
+        "rzye",
+        "rzmre",
+        "rzche",
+        "rqye",
+        "rqmcl",
+        "rzrqye",
+        "rqyl"
+      ],
+      "response_bytes": 548
+    },
+    {
+      "api": "fund_daily",
+      "params": {
+        "ts_code": "159919.SZ",
+        "start_date": "20200102",
+        "end_date": "20200103"
+      },
+      "code": 0,
+      "rows": 2,
+      "fields": [
+        "ts_code",
+        "trade_date",
+        "pre_close",
+        "open",
+        "high",
+        "low",
+        "close",
+        "change",
+        "pct_chg",
+        "vol",
+        "amount"
+      ],
+      "response_bytes": 418
+    }
+  ],
+  "output_bytes": 2196424
+}

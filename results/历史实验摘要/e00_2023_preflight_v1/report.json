@@ -1,0 +1,434 @@
+{
+  "version": "E00_2023_PREFLIGHT_v1",
+  "as_of": "2026-10-07 Asia/Shanghai",
+  "status": "PREDICTIONS_AND_MARKET_READY_CORPORATE_ACTION_REVIEW_REQUIRED_YEAR_ONLY_RUNNER_MISSING",
+  "scope": "Read-only readiness check for 2023 E00 backtest; no model fitting, account execution, downloads, 2026 return access, or freeze changes.",
+  "conclusion": {
+    "can_reuse_existing_e00_predictions": true,
+    "training_needed": false,
+    "2023_E00_prediction_rows": 72425,
+    "signal_dates": 242,
+    "predicted_symbol_rows_match_prediction_ready_panel": true,
+    "2023_account_market_ready": true,
+    "2023_historical_pool_present": true,
+    "2023_record_date_event_table_fully_qualified": false,
+    "reason_event_table": "552 BaoStock source event rows; all 552 have record date, all 545 cash events have payment date; 43 share-distribution events have listing/availability date. However the assembled 2023 event rows include two unresolved source conflicts (600600 on 2023-07-14; 601828 on 2023-07-24), and official issuer-source/vintage validation for the full 2023 event table is not evidenced. The overall input audit remains ACCOUNT_INPUTS_PREPARED_WITH_GAPS.",
+    "unresolved_2023_event_conflicts": [
+      {
+        "symbol": "SHSE.600600",
+        "ex_date": "2023-07-14",
+        "cash_per_share_rmb": 1.8,
+        "source": "BaoStock"
+      },
+      {
+        "symbol": "SHSE.601828",
+        "ex_date": "2023-07-24",
+        "cash_per_share_rmb": 0.08,
+        "source": "BaoStock"
+      }
+    ],
+    "2023_factor_changes_without_same_date_event": 3,
+    "existing_account_runner_supports_2023_only": false,
+    "runner_blocker": "scripts/run_account_backtest.py accepts --start-date only 2020-01-01 or 2024-01-01, has no --end-date or --models filter, and always simulates all four models through the end of account_market_2020_2025.parquet. A 2023-only run requires an isolated year-window E00 runner/adapter; do not run the current full-period command as a substitute."
+  },
+  "temporal_protocol": {
+    "freeze_sha256": "40b3386e46765ca2e0754793e712b05d3dded4cde19129d0330dcc7d61372cd5",
+    "freeze_selected_candidate": "E00",
+    "freeze_status": "CANDIDATE_MODEL_PORTFOLIO_FROZEN_INPUT_AUDIT_ONLY",
+    "development_validation_boundary": "2023 is inside frozen development period 2020-2023; any 2023 result is retrospective development evidence, not independent out-of-sample validation.",
+    "model_family": "LightGBM",
+    "training_window_months": 36,
+    "target": "Mature5session adjusted-open-return within-date percentile minus0.5",
+    "update_schedule": "Original monthly rolling algorithm; no parameter/model selection on2026.",
+    "2023_monthly_e00_fit_count": 12,
+    "all_cutoffs_mature": true,
+    "all_model_file_hashes_match_audit": true,
+    "monthly_audit": [
+      {
+        "month": "2023-01-01",
+        "cutoff": "2022-12-30",
+        "train_first": "2020-01-02",
+        "train_last": "2022-12-22",
+        "max_label_end": "2022-12-30",
+        "train_rows": 212877,
+        "prediction_rows": 4757,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202301.txt",
+        "model_sha256": "ac32a282c7ff840aa219c8c6773afc99c3c387a7ad46583a1d8b1cc4469f49c6",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-02-01",
+        "cutoff": "2023-01-31",
+        "train_first": "2020-02-03",
+        "train_last": "2023-01-16",
+        "max_label_end": "2023-01-31",
+        "train_rows": 213022,
+        "prediction_rows": 5962,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202302.txt",
+        "model_sha256": "d63d1e8ba0704c1d265d57d2f3f1a3ae36a4eb5c9da3f65dff14c6f6a786a24d",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-03-01",
+        "cutoff": "2023-02-28",
+        "train_first": "2020-03-02",
+        "train_last": "2023-02-20",
+        "max_label_end": "2023-02-28",
+        "train_rows": 213167,
+        "prediction_rows": 6886,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202303.txt",
+        "model_sha256": "88b5d34c9c30accca29bb9e3fb51354f71431355b49971cdf14b2b42b77003d6",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-04-01",
+        "cutoff": "2023-03-31",
+        "train_first": "2020-04-01",
+        "train_last": "2023-03-23",
+        "max_label_end": "2023-03-31",
+        "train_rows": 213598,
+        "prediction_rows": 5698,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202304.txt",
+        "model_sha256": "c42b2f7d115b81edf60b16ee69bc725fc42bd841920eecc795f4792ce36a9c9e",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-05-01",
+        "cutoff": "2023-04-28",
+        "train_first": "2020-05-06",
+        "train_last": "2023-04-20",
+        "max_label_end": "2023-04-28",
+        "train_rows": 213100,
+        "prediction_rows": 6000,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202305.txt",
+        "model_sha256": "20a011a0cd00da05f1e267bfb6a1932e18d4ee53063071f5b4fd91e7afcb61b7",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-06-01",
+        "cutoff": "2023-05-31",
+        "train_first": "2020-06-01",
+        "train_last": "2023-05-23",
+        "max_label_end": "2023-05-31",
+        "train_rows": 213824,
+        "prediction_rows": 5981,
+        "prediction_missing_labels": 5,
+        "model_file": "results\\rolling_signal_v1\\E00_202306.txt",
+        "model_sha256": "00a12da6ffb8c2ec4592e886383037c2b1b1dc59bef9723bd4e315b34eeb5835",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-07-01",
+        "cutoff": "2023-06-30",
+        "train_first": "2020-07-01",
+        "train_last": "2023-06-20",
+        "max_label_end": "2023-06-30",
+        "train_rows": 213951,
+        "prediction_rows": 6279,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202307.txt",
+        "model_sha256": "b4c834715e4cf7150b999a5c0c9a61869c36e04f4accf5d49619f9af6090a5d6",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-08-01",
+        "cutoff": "2023-07-31",
+        "train_first": "2020-08-03",
+        "train_last": "2023-07-21",
+        "max_label_end": "2023-07-31",
+        "train_rows": 213495,
+        "prediction_rows": 6877,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202308.txt",
+        "model_sha256": "7f58691869158ca9f75d941ffcfbc191432be09516369b83596e9419ebdd5f04",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-09-01",
+        "cutoff": "2023-08-31",
+        "train_first": "2020-09-01",
+        "train_last": "2023-08-23",
+        "max_label_end": "2023-08-31",
+        "train_rows": 214201,
+        "prediction_rows": 5989,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202309.txt",
+        "model_sha256": "f2a53235c742b124da808c4f80fcdb5aef5c87970fe19e3b5e7f14642a08b87b",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-10-01",
+        "cutoff": "2023-09-28",
+        "train_first": "2020-10-09",
+        "train_last": "2023-09-20",
+        "max_label_end": "2023-09-28",
+        "train_rows": 213729,
+        "prediction_rows": 5100,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202310.txt",
+        "model_sha256": "e4d2f9a6f252eca2941a7792c3c3a37e589d651fcf83afa280426dfda0a88a89",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-11-01",
+        "cutoff": "2023-10-31",
+        "train_first": "2020-11-02",
+        "train_last": "2023-10-23",
+        "max_label_end": "2023-10-31",
+        "train_rows": 214161,
+        "prediction_rows": 6600,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202311.txt",
+        "model_sha256": "43ddc34d06c390d2ca9e176a825cc917da5b8094d742eacf141be906b1dcd2b8",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      },
+      {
+        "month": "2023-12-01",
+        "cutoff": "2023-11-30",
+        "train_first": "2020-12-01",
+        "train_last": "2023-11-22",
+        "max_label_end": "2023-11-30",
+        "train_rows": 214594,
+        "prediction_rows": 6296,
+        "prediction_missing_labels": 0,
+        "model_file": "results\\rolling_signal_v1\\E00_202312.txt",
+        "model_sha256": "9c2db9b7c1cd45b5810145d25ac56858b579d32097374eb85076e2f43bad1506",
+        "model_file_sha_matches": true,
+        "mature_cutoff_pass": true
+      }
+    ]
+  },
+  "2023_coverage": {
+    "account_market_rows": 154154,
+    "account_market_sessions": 242,
+    "account_market_unique_session_symbol_keys": true,
+    "rows_per_session_min_max": [
+      637,
+      637
+    ],
+    "panel_rows": 72600,
+    "panel_pool_rows_per_session_min_max": [
+      300,
+      300
+    ],
+    "prediction_ready_rows": 72425,
+    "prediction_ready_missing_rows": 175,
+    "E00_prediction_rows": 72425,
+    "E00_prediction_dates": 242,
+    "E00_prediction_key_duplicates": 0,
+    "E00_prediction_key_match_to_prediction_ready_panel": true,
+    "baostock_event_rows": 552,
+    "unique_symbol_ex_date_rows": 552,
+    "record_date_present": 552,
+    "payment_date_present": 545,
+    "cash_events": 545,
+    "cash_events_missing_payment_date": 0,
+    "share_events": 43,
+    "share_events_with_listing_date": 43,
+    "assembled_event_rows": 554,
+    "assembled_event_conflicts": 2
+  },
+  "input_sha256_and_bytes": {
+    "configs/e00_final_candidate_freeze_v2.json": {
+      "bytes": 5356,
+      "sha256": "40b3386e46765ca2e0754793e712b05d3dded4cde19129d0330dcc7d61372cd5"
+    },
+    "scripts/train_rolling_signal.py": {
+      "bytes": 8269,
+      "sha256": "9443ce975679f43d9759bdf6636dec391d171fe0c3eb5432f3299105639214c6"
+    },
+    "scripts/build_training_panel.py": {
+      "bytes": 6667,
+      "sha256": "7595f3765594d2b4b3d19d26947f1f159e518b15b3bce71ea16c572ca0135f31"
+    },
+    "scripts/build_price_features.py": {
+      "bytes": 6368,
+      "sha256": "38b734144fa75a5f80ae197a309090a2779742ce49d3cb9a2345b21a1dd8ec20"
+    },
+    "scripts/run_account_backtest.py": {
+      "bytes": 17017,
+      "sha256": "fee9b39c3e30214d8215a1d4411e8f5932e3c9c8fe53bf0e41c8b71332b8896d"
+    },
+    "scripts/account_engine.py": {
+      "bytes": 14402,
+      "sha256": "77156f8cdf8eb51ae5ad9fcaccb4be7106bf992b24a08918ad9425e44fa9c2e6"
+    },
+    "scripts/preflight_e00_2023.py": {
+      "bytes": 15204,
+      "sha256": "ac805b29442446a501c06cbda40ba3a016cbdaf77682b853e69b9d25d8da6ccc"
+    },
+    "results/rolling_signal_v1/config.json": {
+      "bytes": 1748,
+      "sha256": "99cdfaf9ffc9982f225efbd9a6d312a14b5518011217ab0cfc1a4ddd3df07c0c"
+    },
+    "results/rolling_signal_v1/report.json": {
+      "bytes": 68274,
+      "sha256": "d1bd9e99be7b3692c27f6aacc1d805c7f1f25ebb7515dca1ca6653b60f984d8a"
+    },
+    "results/training_panel_v1.json": {
+      "bytes": 1434,
+      "sha256": "e61092c360a20d8448a7d05d87789af59c3b9f5032e4a7b22ac06c05be22913f"
+    },
+    "results/account_inputs_v1/report.json": {
+      "bytes": 1559,
+      "sha256": "7634df61fa0085ebce847626e75745a29863afb37292ea027bcc18297a9f9ae7"
+    },
+    "results/data_collection/membership_manifest.json": {
+      "bytes": 82122,
+      "sha256": "9da731b658959179dcb8a8f3aa8b87364d78c031d7fcf306d8050ee0647ee98b"
+    },
+    "data/processed/training_panel_v1.parquet": {
+      "bytes": 71061745,
+      "sha256": "82dec620ec04241b4acb972e42d5bff13166f94974354fa5cb286beee056abff"
+    },
+    "data/processed/account_market_2020_2025.parquet": {
+      "bytes": 27930526,
+      "sha256": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b"
+    },
+    "data/processed/baostock_corporate_dates_2020_2025.parquet": {
+      "bytes": 117267,
+      "sha256": "3b6374096299e1e7624753e6c1e60150e675798fd3e5f2519c742753c8547029"
+    },
+    "data/processed/corporate_actions_unverified_2020_2025.parquet": {
+      "bytes": 157612,
+      "sha256": "f5dddb4079eb36733883cc52f98b666a47df3583eb0f22a409c05da61379405f"
+    },
+    "results/rolling_signal_v1/predictions_2020_2025.parquet": {
+      "bytes": 10183283,
+      "sha256": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5"
+    },
+    "results/account_inputs_v1/factor_change_audit.csv": {
+      "bytes": 172878,
+      "sha256": "b2cc59c0676c31bf7f413aabc2b7bf4d9b0d032bc08cf712db14980c4322b93c"
+    },
+    "results/account_backtest_v1/reconciled_corporate_events.parquet": {
+      "bytes": 56510,
+      "sha256": "fde9e49ebb2a780111567e515aed27f22ddea2b806f9263f47714fb5a385cf49"
+    }
+  },
+  "pool_snapshot_manifest_sha256": "9da731b658959179dcb8a8f3aa8b87364d78c031d7fcf306d8050ee0647ee98b",
+  "pool_snapshots_for_2023_effective_dates": [
+    {
+      "snapshot_date": "2022-12-01",
+      "path": "data/raw/gm/membership/ed881f4e7777a9e3.parquet",
+      "status": "PASS",
+      "bytes": 11732,
+      "sha256": "2929a6db230c3b4e7334853d032021a8b7653dd6c48d50a2612b2cf993a5dc48"
+    },
+    {
+      "snapshot_date": "2023-01-03",
+      "path": "data/raw/gm/membership/09762a82cf0958cd.parquet",
+      "status": "PASS",
+      "bytes": 11706,
+      "sha256": "fb324a034ca55fe6294f945bf0d1353a2f83a68ae85c7bcd1ca877891328c517"
+    },
+    {
+      "snapshot_date": "2023-02-01",
+      "path": "data/raw/gm/membership/09c61b2d5c05a72d.parquet",
+      "status": "PASS",
+      "bytes": 11733,
+      "sha256": "4b7d91cf7ea7a1d64f0d677fafb57c34915ef59ee97dc9bb44c2caa3567205fb"
+    },
+    {
+      "snapshot_date": "2023-03-01",
+      "path": "data/raw/gm/membership/825d84c4cf84ef1e.parquet",
+      "status": "PASS",
+      "bytes": 11733,
+      "sha256": "cde5efce523d21d3547684de3a8f68c0cbd551e36c817ea538f03cfce784a41d"
+    },
+    {
+      "snapshot_date": "2023-04-03",
+      "path": "data/raw/gm/membership/1b53cd780dba7806.parquet",
+      "status": "PASS",
+      "bytes": 11678,
+      "sha256": "59e6532525f0f238475d9b1f585c5fc1325942ee45a0dee2427e5f886830a697"
+    },
+    {
+      "snapshot_date": "2023-05-04",
+      "path": "data/raw/gm/membership/b77bc96b54b5d95a.parquet",
+      "status": "PASS",
+      "bytes": 11731,
+      "sha256": "a908644d26c58b6fb4caaee5dfd7b9cb09abc8bb00e34f4d94dfc0a65e5a5b30"
+    },
+    {
+      "snapshot_date": "2023-06-01",
+      "path": "data/raw/gm/membership/eef6c525987f07a0.parquet",
+      "status": "PASS",
+      "bytes": 11721,
+      "sha256": "1c2a06b476525ecf786c3d75d1590a4bb27db3e27063d2d6745a0534e86fb132"
+    },
+    {
+      "snapshot_date": "2023-07-03",
+      "path": "data/raw/gm/membership/92462832d8ef3be3.parquet",
+      "status": "PASS",
+      "bytes": 11719,
+      "sha256": "2b98b10daf7291798cdff6f62ecdff4223b3988ed3095245e214b29c2bd8748d"
+    },
+    {
+      "snapshot_date": "2023-08-01",
+      "path": "data/raw/gm/membership/51a6d5ade7cb76bb.parquet",
+      "status": "PASS",
+      "bytes": 11701,
+      "sha256": "4a6cb75ab6d49ffc02c37502d3d895e453898658cee9160e02cff1fdc9fba2ef"
+    },
+    {
+      "snapshot_date": "2023-09-01",
+      "path": "data/raw/gm/membership/60b2b1bbcb51e527.parquet",
+      "status": "PASS",
+      "bytes": 11688,
+      "sha256": "3527a1914b000ec1f0afc5d110e6de5ff5bde6668c35a96aa4950061a7822b9b"
+    },
+    {
+      "snapshot_date": "2023-10-09",
+      "path": "data/raw/gm/membership/9439b68ee7474fdc.parquet",
+      "status": "PASS",
+      "bytes": 11720,
+      "sha256": "a3e94e165f501765c9949c3dce0f29f1fe027ff34ce23b24468f8c5b591bed35"
+    },
+    {
+      "snapshot_date": "2023-11-01",
+      "path": "data/raw/gm/membership/64ad71a4ffe39e7c.parquet",
+      "status": "PASS",
+      "bytes": 11697,
+      "sha256": "d1e945db46669e02cfaf45ec2084269ab0f51005d77617ac58b616753ce561cf"
+    }
+  ],
+  "exact_commands": {
+    "reproduce_read_only_preflight": ".\\.venv\\Scripts\\python.exe scripts/preflight_e00_2023.py",
+    "current_valid_2023_only_account_execution_command": null,
+    "proposed_command_after_isolated_runner_is_reviewed": ".\\.venv\\Scripts\\python.exe scripts/run_e00_year_window_account.py --start-date 2023-01-03 --end-date 2023-12-29 --model E00 --output-tag e00_2023_account_v1 --cost-multiplier 1 --slippage 0.0005",
+    "proposed_command_status": "NOT EXECUTABLE YET: isolated script/interface does not exist; command is an interface specification only and must not be run until implementation and separate coordinator authorization.",
+    "do_not_use": "scripts/run_account_backtest.py --start-date 2020-01-01 (runs 2020-2025/four models, not 2023-only)"
+  },
+  "must_repair_before_standalone_2023_account_run": [
+    "Resolve and primary-source check 2023-07-14 SHSE.600600 and 2023-07-24 SHSE.601828 event source conflicts; confirm amount, record date, ex-date, and payment date. If neither was held under E00 the issue may not affect the realized path, but the event table itself remains unqualified until resolved or explicitly bounded.",
+    "Audit all 2023 selected/held company actions against the exact E00 holdings/record-date lots; distinguish issuer scheduled payment from account receipt and specify tax assumptions.",
+    "Use the extant record-date table only after its 2023 event identities/PIT vintage and the seven non-cash stock-only rows' share-availability semantics are documented; cash pay dates are not required for non-cash rows, but actual share availability dates are.",
+    "Implement an isolated 2023-only runner that takes explicit start/end/model filters, initializes cash at first 2023 session, reuses existing 2023 rolling predictions, and writes to a new results/e00_2023_account_v1 directory without changing frozen strategy or overwriting prior outputs.",
+    "Label result as development/review-period retrospective, not independent out-of-sample evidence."
+  ],
+  "training_workload_if_reuse": "Zero additional model fits: existing E00 2023 predictions and all 12 monthly model files are available and mature-cutoff checks pass. If those artifacts fail hash/key audit later, rerunning the full rolling script would be 72 E00+E10 fits (not approved by this preflight); only missing E00 months should be considered under separate approval.",
+  "safety_checks": {
+    "training_run": false,
+    "account_run": false,
+    "downloaded_bytes": 0,
+    "read_2026_returns": false,
+    "freeze_modified": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "EVENT_EXTRACTION_COMPLETE_NO_FIT",
+  "models_fitted": 0,
+  "contract_sha256": "28c52d6a8900286e1006d53fe3231bb50aabf89ce816272e7216786038f26bfa",
+  "source_progress_status_intermediate": "RUNNING",
+  "source_progress_sha256": "ecb67c43ff27ddb84779f71248ab5588d02a92241b6c301f3efa46bb3a0595b2",
+  "source_status": "COLLECTION_STOPPED_WITH_EVIDENCE",
+  "final_capture_report_sha256": "6b7ca0115d5e20eb8fed324105341926c198a0f4e831f93b48be8584ac053675",
+  "completed_urls": 170,
+  "expected_urls": 170,
+  "quality_review_sha256": "f4fc3b073ba381772daddc0557ceafc5cb78d309bf12aa7d6db4912170ff4313",
+  "events": 129,
+  "note": "No fitting is performed by this script. All raw source text remains unchanged.",
+  "accepted_events_sha256": "18572d1cb27c45ada4a62107d660a527a092caa3b36f213cf484755f7e35a67f",
+  "source_assessments": 49,
+  "quality_accepted_source_records": 49,
+  "event_status_counts": {
+    "scheduled_action_announced_now": 26,
+    "newness_unverified": 50,
+    "new_event_candidate": 46,
+    "industry_or_broker_commentary": 7
+  },
+  "category_counts": {
+    "financing_shareholder": 108,
+    "earnings_operations": 17,
+    "orders_investment": 4
+  },
+  "excluded_segment_count": 756,
+  "excluded_segment_counts": {
+    "broad_or_unmapped_industry_commentary": 632,
+    "author_or_institution_or_link_noise": 62,
+    "price_recap": 7,
+    "price_recap_unmapped_entity": 55
+  },
+  "preflight_only": false,
+  "warning": "Text source review must independently attest matching HTML SHA and strict publication date. Current page vintage is not archival proof. No event may be used unless quality acceptance is true and later effective date is computed from the frozen trading calendar."
+}

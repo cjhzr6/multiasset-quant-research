@@ -1,0 +1,400 @@
+{
+  "status": "PASS",
+  "account_count": 11,
+  "accounts": {
+    "E00_standard": {
+      "sessions": 418,
+      "trades": 3409,
+      "issues": 0,
+      "rejections": 79,
+      "cash_flow_error_max": 1.8917489796876907e-10,
+      "nav_identity_error_max": 2.3283064365386963e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.05971234935248404,
+      "sharpe_zero_cash": 0.3611775997709059,
+      "max_drawdown": -0.10197512201231795,
+      "fees": 24167.26490251725,
+      "slippage_cost": 14120.940424998415,
+      "dividend_tax": 5184.377560000001,
+      "mean_equity_exposure": 0.8659502972663844,
+      "ending_equity_exposure": 0.8783487335678826,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.08015105566522518,
+          "sharpe_zero_cash": 0.8501320775422295,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": -0.01892208150475183,
+          "sharpe_zero_cash": -0.13893934538258954,
+          "sessions": 175
+        }
+      }
+    },
+    "E00_stress": {
+      "sessions": 418,
+      "trades": 3394,
+      "issues": 0,
+      "rejections": 78,
+      "cash_flow_error_max": 2.874003257602453e-10,
+      "nav_identity_error_max": 4.656612873077393e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.01726601815683515,
+      "sharpe_zero_cash": 0.14739578539612352,
+      "max_drawdown": -0.1215048982048319,
+      "fees": 47873.1749191658,
+      "slippage_cost": 27620.892089998397,
+      "dividend_tax": 5143.051074,
+      "mean_equity_exposure": 0.8645590466444215,
+      "ending_equity_exposure": 0.873000753145263,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.060275313543414866,
+          "sharpe_zero_cash": 0.6564363894512114,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": -0.04056427122012651,
+          "sharpe_zero_cash": -0.38123289041511177,
+          "sessions": 175
+        }
+      }
+    },
+    "T01_standard": {
+      "sessions": 418,
+      "trades": 2877,
+      "issues": 0,
+      "rejections": 112,
+      "cash_flow_error_max": 6.984919309616089e-10,
+      "nav_identity_error_max": 4.656612873077393e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.13205683065463503,
+      "sharpe_zero_cash": 0.5545842239997275,
+      "max_drawdown": -0.16443158480431552,
+      "fees": 19802.936751366404,
+      "slippage_cost": 10836.652999998823,
+      "dividend_tax": 4579.887934,
+      "mean_equity_exposure": 0.7913245679371195,
+      "ending_equity_exposure": 0.8772006608764983,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.1945050267441426,
+          "sharpe_zero_cash": 1.249461423258777,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": -0.052279559056961356,
+          "sharpe_zero_cash": -0.4153157712560364,
+          "sessions": 175
+        }
+      }
+    },
+    "T01_stress": {
+      "sessions": 418,
+      "trades": 2849,
+      "issues": 0,
+      "rejections": 106,
+      "cash_flow_error_max": 5.820766091346741e-10,
+      "nav_identity_error_max": 2.3283064365386963e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.10655929425838684,
+      "sharpe_zero_cash": 0.4678911713338213,
+      "max_drawdown": -0.16700924903953807,
+      "fees": 39171.0501516152,
+      "slippage_cost": 21354.526279998834,
+      "dividend_tax": 4548.72565,
+      "mean_equity_exposure": 0.7886351592430078,
+      "ending_equity_exposure": 0.8718800745753057,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.17438220464595133,
+          "sharpe_zero_cash": 1.136104113322919,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": -0.05775199089295757,
+          "sharpe_zero_cash": -0.4730454427364759,
+          "sessions": 175
+        }
+      }
+    },
+    "S01_standard": {
+      "sessions": 418,
+      "trades": 4233,
+      "issues": 0,
+      "rejections": 118,
+      "cash_flow_error_max": 5.529727786779404e-10,
+      "nav_identity_error_max": 2.3283064365386963e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.18370217393449528,
+      "sharpe_zero_cash": 0.7332581066391747,
+      "max_drawdown": -0.11572390101155305,
+      "fees": 31436.37378250445,
+      "slippage_cost": 20164.630054997782,
+      "dividend_tax": 5114.013748,
+      "mean_equity_exposure": 0.8089948870815636,
+      "ending_equity_exposure": 0.8981465299385627,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.12143475328754438,
+          "sharpe_zero_cash": 0.8661885440695879,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": 0.05552478239541858,
+          "sharpe_zero_cash": 0.5610682885132755,
+          "sessions": 175
+        }
+      }
+    },
+    "S01_stress": {
+      "sessions": 418,
+      "trades": 4237,
+      "issues": 0,
+      "rejections": 121,
+      "cash_flow_error_max": 4.656612873077393e-10,
+      "nav_identity_error_max": 4.656612873077393e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.1303305036296849,
+      "sharpe_zero_cash": 0.5554178827022751,
+      "max_drawdown": -0.12120838927705513,
+      "fees": 62423.7583453172,
+      "slippage_cost": 39373.613139997804,
+      "dividend_tax": 4908.612215,
+      "mean_equity_exposure": 0.8071797412504891,
+      "ending_equity_exposure": 0.8996041394395006,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.08916679441742303,
+          "sharpe_zero_cash": 0.667039478788533,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": 0.03779376071989016,
+          "sharpe_zero_cash": 0.4111545920389608,
+          "sessions": 175
+        }
+      }
+    },
+    "HISTORY60_standard": {
+      "sessions": 418,
+      "trades": 3385,
+      "issues": 0,
+      "rejections": 106,
+      "cash_flow_error_max": 6.257323548197746e-10,
+      "nav_identity_error_max": 2.3283064365386963e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.18022252133769956,
+      "sharpe_zero_cash": 0.742072395799637,
+      "max_drawdown": -0.16273436636907135,
+      "fees": 24210.4161033036,
+      "slippage_cost": 14432.935519998387,
+      "dividend_tax": 5221.596089000001,
+      "mean_equity_exposure": 0.8316516043447333,
+      "ending_equity_exposure": 0.9000751814123745,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.19984790153588028,
+          "sharpe_zero_cash": 1.3522440938807572,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": -0.016356556671107247,
+          "sharpe_zero_cash": -0.07974089744470664,
+          "sessions": 175
+        }
+      }
+    },
+    "HISTORY60_stress": {
+      "sessions": 418,
+      "trades": 3331,
+      "issues": 0,
+      "rejections": 102,
+      "cash_flow_error_max": 5.529727786779404e-10,
+      "nav_identity_error_max": 4.656612873077393e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.11942041132830039,
+      "sharpe_zero_cash": 0.5317992592391877,
+      "max_drawdown": -0.16576782735988171,
+      "fees": 47346.3478017022,
+      "slippage_cost": 27820.820309998446,
+      "dividend_tax": 5104.737010000001,
+      "mean_equity_exposure": 0.8301532981419687,
+      "ending_equity_exposure": 0.8973107778230538,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.17758152885084577,
+          "sharpe_zero_cash": 1.2239660861429034,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": -0.04939031064736765,
+          "sharpe_zero_cash": -0.4094727345110343,
+          "sessions": 175
+        }
+      }
+    },
+    "MAIN_20D_standard": {
+      "sessions": 418,
+      "trades": 3690,
+      "issues": 0,
+      "rejections": 88,
+      "cash_flow_error_max": 3.7834979593753815e-10,
+      "nav_identity_error_max": 4.656612873077393e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.10791085611787987,
+      "sharpe_zero_cash": 0.5308217275289251,
+      "max_drawdown": -0.13907595928176775,
+      "fees": 26887.17278312295,
+      "slippage_cost": 16640.64135499814,
+      "dividend_tax": 4826.785414,
+      "mean_equity_exposure": 0.8509642035197579,
+      "ending_equity_exposure": 0.885681365591381,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.14363069792435246,
+          "sharpe_zero_cash": 1.1356248043850992,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": -0.03123372070311048,
+          "sharpe_zero_cash": -0.2642965471666517,
+          "sessions": 175
+        }
+      }
+    },
+    "MAIN_20D_stress": {
+      "sessions": 418,
+      "trades": 3669,
+      "issues": 0,
+      "rejections": 86,
+      "cash_flow_error_max": 4.656612873077393e-10,
+      "nav_identity_error_max": 2.3283064365386963e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.0719282577336875,
+      "sharpe_zero_cash": 0.3824448351102663,
+      "max_drawdown": -0.1496655960500234,
+      "fees": 53225.2107223136,
+      "slippage_cost": 32598.56369999815,
+      "dividend_tax": 4739.785514,
+      "mean_equity_exposure": 0.8497061365879955,
+      "ending_equity_exposure": 0.8752218194000465,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.11698556123071358,
+          "sharpe_zero_cash": 0.9451405317230137,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": -0.040338304326316465,
+          "sharpe_zero_cash": -0.3704580797466517,
+          "sessions": 175
+        }
+      }
+    },
+    "SENSITIVITY_40D_standard": {
+      "sessions": 418,
+      "trades": 3632,
+      "issues": 0,
+      "rejections": 88,
+      "cash_flow_error_max": 4.220055416226387e-10,
+      "nav_identity_error_max": 2.3283064365386963e-10,
+      "cash_flow_pass": true,
+      "nav_identity_pass": true,
+      "total_return": 0.1676779547100089,
+      "sharpe_zero_cash": 0.7524940160534587,
+      "max_drawdown": -0.13963364081719842,
+      "fees": 26339.203062993904,
+      "slippage_cost": 16142.569209998206,
+      "dividend_tax": 5117.494207,
+      "mean_equity_exposure": 0.8526350040619692,
+      "ending_equity_exposure": 0.9019319031860564,
+      "end_2025_acquired_lots_remaining": 0,
+      "yearly": {
+        "2025": {
+          "total_return": 0.2065987134221423,
+          "sharpe_zero_cash": 1.506999258856525,
+          "sessions": 243
+        },
+        "2026": {
+          "total_return": -0.032256588938128994,
+          "sharpe_zero_cash": -0.27264460854015454,
+          "sessions": 175
+        }
+      }
+    }
+  },
+  "selection_logs": {
+    "selectors/main_20d_selection_log.csv": {
+      "nodes": 21,
+      "T01": 4,
+      "E00": 17,
+      "switches": 4
+    },
+    "selectors/sensitivity_40d_selection_log.csv": {
+      "nodes": 11,
+      "T01": 2,
+      "E00": 9,
+      "switches": 2
+    },
+    "history60/selection_log_standard.csv": {
+      "nodes": 21,
+      "T01": 10,
+      "E00": 11,
+      "switches": 4
+    },
+    "history60/selection_log_stress.csv": {
+      "nodes": 21,
+      "T01": 11,
+      "E00": 10,
+      "switches": 4
+    }
+  },
+  "main_standard_gate": {
+    "delta_vs_E00": 0.16964412775801918,
+    "min_delta": 0.1,
+    "beats_T01": false,
+    "beats_S01": false,
+    "stress_delta_vs_E00": 0.23504904971414275,
+    "passes_all": false
+  },
+  "state_sha256": "2ff2d76fe29a0b0480f0418629930c63a5bef1ca6f34fda36dc4e427d4aa9b15",
+  "contract_sha256": "c0d80e37ae7ebad6f317e8095f861af53c88ba5f7e3aaa3688c42d050662e61a",
+  "runner_sha256": "1cb2c70d37cb682b1c79d4e1de14051661c740566b99b4c227e6ee8c00fbe02a",
+  "runner_sha256_at_comparator_execution": "259eac3398e6e93b79560f98c41f78fc3ae98b5dd438c835f7ca8172b314d776",
+  "contract_sha256_at_comparator_execution": "0afd0af27af0bd1a2d94e9fdfd8b44dc4321cc93a62ac0b9ad20528101acb355",
+  "all_accounts_same_418_dates": true,
+  "common_cash_date": "2025-01-02",
+  "first_possible_fill": "2025-01-03 open",
+  "subaccount_nav_summed": false,
+  "note": "Independent CSV cash-flow and NAV identities; account object/lots persist continuously across 2025-12-31 to 2026-01-05.",
+  "selector_switch_inventory": {
+    "path": "results/strategy_switch_trial_v1/selector_switch_inventory.csv",
+    "status": "RECONSTRUCTED_AND_MATCHED_DAILY_HOLDING_COUNTS_AND_MARKET_VALUE",
+    "switch_rows": 10,
+    "source": "executed account fills + executed corporate-action ledger + same-day raw close; checked against all 418 daily account holdings counts and switch-day market value"
+  },
+  "runner_sha256_at_execution": "1cb2c70d37cb682b1c79d4e1de14051661c740566b99b4c227e6ee8c00fbe02a",
+  "runner_sha256_current": "a3f66046b3a5a109d07e5402932726ac2aa078e10f23134f5b696dea38afeabc",
+  "post_execution_change": "Added a guard preventing selector runs from substituting any state file other than the contract-pinned Nico2 v2 artifact; no account code, rules, inputs, or outputs changed after execution."
+}

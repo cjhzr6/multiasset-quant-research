@@ -1,0 +1,39 @@
+{
+  "status": "TEX_WRITTEN_TABLES_NUMBERED_AND_REFERENCED",
+  "reports": [
+    {
+      "stem": "01_投资策略实验复盘_通俗版",
+      "title": "量化选股策略研究报告",
+      "tables": [
+        "route",
+        "annual",
+        "recent",
+        "risk",
+        "months"
+      ],
+      "formula_count": 0,
+      "refs": 1,
+      "source_sha": "1aec9ded9d6f5c3a3fdd834f9e8d22f8a3e1dc84706ee46f1b75db56f2e10c0d"
+    },
+    {
+      "stem": "02_量化投资策略比较研究报告",
+      "title": "市场状态变化下的量化选股策略",
+      "tables": [
+        "route",
+        "history",
+        "annual",
+        "recent",
+        "risk",
+        "costs",
+        "months",
+        "months-risk",
+        "nlp"
+      ],
+      "formula_count": 6,
+      "refs": 4,
+      "source_sha": "0f8a07cc351e7d555e1d1c1ad2ac4850bfa692fa1831b61041a447c580c258ae"
+    }
+  ],
+  "new_training": false,
+  "new_backtest": false
+}

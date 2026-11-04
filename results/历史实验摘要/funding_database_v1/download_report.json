@@ -1,0 +1,87 @@
+{
+  "new_response_bytes": 180194,
+  "records": [
+    {
+      "api": "fund_daily",
+      "code": "159919.SZ",
+      "response_bytes": 43711,
+      "status_code": 0,
+      "rows": 486,
+      "sha256": "744363e31ca7ea3b91b6625bf63b4e0458e6e3af720c175b8bf15b555a6ea403",
+      "has_more": false,
+      "min_date": "20200102",
+      "max_date": "20211231"
+    },
+    {
+      "api": "fund_div",
+      "code": "159919.SZ",
+      "response_bytes": 2064,
+      "status_code": 0,
+      "rows": 11,
+      "sha256": "bb5ec582573462fca6a2ab41e82ee353a05961695953e22677f62a9aa75de075",
+      "has_more": false
+    },
+    {
+      "api": "fund_daily",
+      "code": "518800.SH",
+      "response_bytes": 43047,
+      "status_code": 0,
+      "rows": 486,
+      "sha256": "1b4d3b37099369c368249171b3c6b69956d48caad4e5863544a89012a0c92693",
+      "has_more": false,
+      "min_date": "20200102",
+      "max_date": "20211231"
+    },
+    {
+      "api": "fund_div",
+      "code": "518800.SH",
+      "response_bytes": 340,
+      "status_code": 0,
+      "rows": 0,
+      "sha256": "aece716fe09998c813049bed115b36b7d8a2702bf6952fb4dc9452f0b3083056",
+      "has_more": false
+    },
+    {
+      "api": "fund_daily",
+      "code": "511010.SH",
+      "response_bytes": 46276,
+      "status_code": 0,
+      "rows": 486,
+      "sha256": "680eae5b65acaa2dc940ef137e957318a599f36cd88ed92a9cfa8eeec82f7f47",
+      "has_more": false,
+      "min_date": "20200102",
+      "max_date": "20211231"
+    },
+    {
+      "api": "fund_div",
+      "code": "511010.SH",
+      "response_bytes": 1834,
+      "status_code": 0,
+      "rows": 10,
+      "sha256": "cc39fb2e5c364a2f911b792ff074b282746b2d3e2dc1a227aa86eabc9a0280a4",
+      "has_more": false
+    },
+    {
+      "api": "fund_daily",
+      "code": "513500.SH",
+      "response_bytes": 42582,
+      "status_code": 0,
+      "rows": 486,
+      "sha256": "c3dfc0be280c23d2bd0d5acb3af5ffcc553cdc17ec602a84288c12bbaa7ee58c",
+      "has_more": false,
+      "min_date": "20200102",
+      "max_date": "20211231"
+    },
+    {
+      "api": "fund_div",
+      "code": "513500.SH",
+      "response_bytes": 340,
+      "status_code": 0,
+      "rows": 0,
+      "sha256": "aece716fe09998c813049bed115b36b7d8a2702bf6952fb4dc9452f0b3083056",
+      "has_more": false
+    }
+  ],
+  "training_ready": false,
+  "remaining": "dividend semantics/date coverage and pre2022 candidate strategy PIT histories need verification"
+}

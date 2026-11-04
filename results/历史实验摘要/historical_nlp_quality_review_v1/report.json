@@ -1,0 +1,68 @@
+{
+  "version": "HISTORICAL_NLP_QUALITY_REVIEW_V1",
+  "date_shanghai": "2026-10-08",
+  "status": "SOURCE_QUALITY_REVIEWED_SUPPORT_INSUFFICIENT_NO_FIT",
+  "scope": "Read-only quality screening of the fixed 170 URLs plus exact publication dates recovered from existing cached HTML only. No network fetch, model fit, prediction labels, NAV or 2026 data read.",
+  "contract_sha256": "28c52d6a8900286e1006d53fe3231bb50aabf89ce816272e7216786038f26bfa",
+  "collector_report": "results/historical_nlp_originals_v1/report.json",
+  "collector_report_sha256": "6b7ca0115d5e20eb8fed324105341926c198a0f4e831f93b48be8584ac053675",
+  "collector_status": "COLLECTION_STOPPED_WITH_EVIDENCE",
+  "collector_completed": 170,
+  "collector_total_urls": 170,
+  "collector_bytes": 10932975,
+  "collector_source_sha256": "a0fdb7e3b637a2c348911859672b8996ff596ccc2a67320798625cd4f3f607fd",
+  "collector_fetch_or_parse_failures": 12,
+  "source_date_candidates": 62,
+  "quality_counts": {
+    "rejected": 116,
+    "accepted": 49,
+    "uncertain": 5
+  },
+  "supplemental_strict_DOM_dates": 6,
+  "known_date_misplacements_independently_rechecked": 2,
+  "original_text_samples_reviewed": 12,
+  "support_gate": {
+    "rule": "At least30 distinct source-verified issuer/date events and10 dates in each split; otherwise data limitation report, no fit",
+    "minimum_distinct_issuer_date_events_per_split": 30,
+    "minimum_distinct_source_dates_per_split": 10,
+    "accepted_distinct_issuer_date_events_total": 49,
+    "training_source_date_window": "2025-01-01 through 2025-05-31",
+    "training_rows": 28,
+    "training_distinct_issuer_date_events": 28,
+    "training_distinct_source_dates": 26,
+    "evaluation_source_date_window": "2025-07-01 through 2025-12-31",
+    "evaluation_rows": 15,
+    "evaluation_distinct_issuer_date_events": 15,
+    "evaluation_distinct_source_dates": 12,
+    "passed": false,
+    "interpretation": "Source quality review is complete, but minimum event support is not met separately in each split; no fit."
+  },
+  "date_policy": {
+    "accepted": "Exact publisher publication metadata, JSON-LD datePublished, dated publisher issue/masthead, or explicitly labeled publication time in cached page DOM.",
+    "excluded": "Body/event/footnote/fiscal/report-period dates, research-report cover/report dates without separate publication evidence, page footers, modified/updated timestamps, related links, or issuer tags alone.",
+    "known_corrections": [
+      "SZSE.000002: cached 2025-01-04 corrected to visible publisher date 2025-02-12 15:10; price recap rejected.",
+      "SHSE.600989: cached 2025-01-12 corrected to publisher epoch 2023-01-06 18:32:12+08:00; Jan12 is event date; reject."
+    ],
+    "source_vs_event": "source_date is publisher publication date only; underlying event/fiscal/report date is separately noted and never substituted."
+  },
+  "entity_content_policy": {
+    "accepted": "Explicit issuer/controlled-subsidiary event or company-specific results/operations/investment/financing/buyback/ownership/listing action.",
+    "rejected": "Broad market/sector opinion, price recap, stock picks, generic robot/company lists, related-link boilerplate or mismatched entity without direct body evidence.",
+    "uncertain": "Material event plausible but first-public issuer/version chain or investable-universe scope is not established."
+  },
+  "vintage_limit": "The accepted source pages have current publication date and fetched HTML SHA; first historical archive vintage is unverified. This is not a historically version-certified or licensed corpus.",
+  "limits": [
+    "No fitting or price outcome tests were run.",
+    "Downstream must join the frozen historical eligible pool; this review did not inspect labels or outcomes.",
+    "12 fetch/parse failures remain; no retry/re-download.",
+    "No claim of NLP predictive value follows from the support-gate result."
+  ],
+  "outputs": {
+    "accepted": "results/historical_nlp_quality_review_v1/accepted_events.csv",
+    "uncertain": "results/historical_nlp_quality_review_v1/uncertain_events.csv",
+    "rejected": "results/historical_nlp_quality_review_v1/rejected_events.csv",
+    "samples": "results/historical_nlp_quality_review_v1/sample_review.json",
+    "builder": "results/historical_nlp_quality_review_v1/build_quality_review.py"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "deleted": [
+    {
+      "path": "scripts\\__pycache__",
+      "bytes": 763060,
+      "reason": "regenerated Python bytecode only"
+    }
+  ],
+  "freed_bytes": 763060,
+  "raw_data_deleted": false,
+  "failure_evidence_deleted": false
+}

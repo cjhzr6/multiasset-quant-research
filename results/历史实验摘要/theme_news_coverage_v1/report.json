@@ -1,0 +1,71 @@
+{
+  "status": "COVERAGE_TRIAGE_COMPLETE_NOT_NLP_ALPHA",
+  "themes": {
+    "gold": {
+      "fragment_count": 119,
+      "reported_distinct_dates": 95,
+      "reported_year_counts": {
+        "2025": 104,
+        "2022": 4,
+        "2020": 4,
+        "2023": 4,
+        "2024": 3
+      },
+      "original_publication_verified": false,
+      "security_mapping_verified": false
+    },
+    "technology": {
+      "fragment_count": 721,
+      "reported_distinct_dates": 273,
+      "reported_year_counts": {
+        "2025": 646,
+        "2023": 17,
+        "2022": 15,
+        "2021": 15,
+        "2024": 14,
+        "2020": 14
+      },
+      "original_publication_verified": false,
+      "security_mapping_verified": false
+    },
+    "aerospace": {
+      "fragment_count": 123,
+      "reported_distinct_dates": 93,
+      "reported_year_counts": {
+        "2025": 108,
+        "2020": 5,
+        "2024": 4,
+        "2021": 3,
+        "2023": 2,
+        "2022": 1
+      },
+      "original_publication_verified": false,
+      "security_mapping_verified": false
+    },
+    "oil": {
+      "fragment_count": 139,
+      "reported_distinct_dates": 100,
+      "reported_year_counts": {
+        "2025": 106,
+        "2022": 9,
+        "2023": 8,
+        "2020": 6,
+        "2024": 6,
+        "2021": 4
+      },
+      "original_publication_verified": false,
+      "security_mapping_verified": false
+    }
+  },
+  "patterns": {
+    "gold": "\u9ec4\u91d1|\u91d1\u4ef7|\u8d35\u91d1\u5c5e|gold",
+    "technology": "\u534a\u5bfc\u4f53|\u82af\u7247|\u7b97\u529b|\u4eba\u5de5\u667a\u80fd|CPO|\u5149\u6a21\u5757|AI",
+    "aerospace": "\u822a\u5929|\u536b\u661f|\u706b\u7bad|\u5546\u4e1a\u822a\u7a7a",
+    "oil": "\u77f3\u6cb9|\u539f\u6cb9|\u6cb9\u4ef7|OPEC|\u5e03\u4f26\u7279|WTI"
+  },
+  "source_sha256": "76b163adc3e675f76fa3a7723867b51a568c13c5c0de99e7c765455284bd307e",
+  "fits": 0,
+  "new_downloads": 0,
+  "sealed_2026_outcomes_accessed": false,
+  "limitation": "Overlapping keyword matches on biased retrieval snippets. Dates are supplier-reported, not verified first publication. No matched security, attention denominator, sentiment, or backtest. No 2026 corpus available."
+}

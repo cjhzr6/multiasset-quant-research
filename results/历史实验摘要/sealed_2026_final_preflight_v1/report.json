@@ -1,0 +1,51 @@
+{
+  "date_shanghai": "2026-10-08T15:42:00.059370+08:00",
+  "status": "FINAL_INPUT_REVIEW_NOT_YET_EXECUTION_AUTHORIZED",
+  "frozen_and_fee_sha_all_match": true,
+  "source_sha_checks": {
+    "scripts/train_rolling_signal.py": true,
+    "scripts/build_price_features.py": true,
+    "scripts/build_training_panel.py": true,
+    "scripts/account_engine.py": true,
+    "scripts/run_account_backtest.py": true,
+    "results/jf05_account_v1/report.json": true,
+    "results/jf05_account_cost2/report.json": true,
+    "results/regime_sequence_accounts_v1/report.json": true,
+    "results/signal_to_holdings_diagnostic_v1/report.json": true,
+    "results/signal_to_holdings_diagnostic_v1/coordinator_summary_audit.json": true,
+    "data/processed/training_panel_v1.parquet": true,
+    "scripts/build_signal_to_holdings_diagnostic_v1.py": true,
+    "results/signal_to_holdings_diagnostic_v1/summary_by_quarter.csv": true,
+    "scripts/fees_2026_v1.py": true,
+    "scripts/account_engine_2026_v1.py": true,
+    "tests/test_fees_2026_v1.py": true
+  },
+  "sessions": 175,
+  "end": "2026-09-21",
+  "factor_changes": 602,
+  "factor_changes_without_effective_event": 0,
+  "canonical_event_keys_unique": true,
+  "event_unresolved_rows": 0,
+  "rights_event_rows": 0,
+  "pool_critical_missing": {
+    "pre_close": 0,
+    "upper_limit": 0,
+    "lower_limit": 0,
+    "adj_factor": 0,
+    "is_suspended": 0,
+    "board": 0,
+    "trade_n": 0,
+    "price_tick": 0
+  },
+  "record_date_not_previous_session": [],
+  "reference_review_rows": 8,
+  "source_explanation_in_progress": [
+    "002831 issuer gives holder cash .8038127 and transfer .4019063, reference .7991573 and .3995786",
+    "000703 issuer gives holder cash .9 and reference .8164176",
+    "600690 notice confirms holder cash .89151 and excluded repurchased shares; complete reference verification pending"
+  ],
+  "fitting_or_predictions": false,
+  "account_evaluated": false,
+  "new_news": false,
+  "next": "Complete reference and corporate-action gate, hash final input/code and issue the original once-only E00 standard/stress sealed run; no strategy search on 2026."
+}

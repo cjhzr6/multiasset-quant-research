@@ -1,0 +1,568 @@
+{
+  "status": "PASS_ALL_23_MONTHS_BEFORE_ANY_NEW_FIT",
+  "authorization_sha256": "f660f956ceaea74b40be4ec59252bc73e1b4bf7ad1699a54976b54cae3c58fce",
+  "runner_sha256": "d2992e8c87c4afed0a4959692f88aaa4e216f00e4112f64c880d63588a0e340f",
+  "freeze_manifest_sha256": "c7366c1cb6c57cb10442e886b7a2a06cb1644518d7008b23918ad4e5cd21730e",
+  "source_sha256": {
+    "configs/regime_sequence_remaining_months_authorization_v1.json": "f660f956ceaea74b40be4ec59252bc73e1b4bf7ad1699a54976b54cae3c58fce",
+    "results/financial_strategy_review_20261006/regime_sequence_trial_design_v1.json": "67cbb408007c04d0a57ddca0e419fab9ba7ed79fcc94fcc8510ef53b40b275d9",
+    "scripts/run_regime_sequence_first_stage_v3.py": "64a8aaad6cd68af0ded38fb1dac05325be1fe4ce0fb059c1db229bf8101af7ae",
+    "scripts/train_rolling_signal.py": "9443ce975679f43d9759bdf6636dec391d171fe0c3eb5432f3299105639214c6",
+    "scripts/build_training_panel.py": "7595f3765594d2b4b3d19d26947f1f159e518b15b3bce71ea16c572ca0135f31",
+    "scripts/build_price_features.py": "38b734144fa75a5f80ae197a309090a2779742ce49d3cb9a2345b21a1dd8ec20",
+    "data/processed/training_panel_v1.parquet": "82dec620ec04241b4acb972e42d5bff13166f94974354fa5cb286beee056abff",
+    "data/processed/account_market_2020_2025.parquet": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "results/rolling_signal_v1/predictions_2020_2025.parquet": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "results/regime_sequence_first_stage_v3/coordinator_output_audit.json": "d2333ec0abf0525e39372faee966e498c1a87504dac173a1175be0ef73b03b2f",
+    "results/regime_sequence_first_stage_v3/jan2024_predictions.parquet": "a1e3d4dad767870ba3bf7d70c33548179839109c5648174928f0d4f291303382",
+    "results/regime_sequence_first_stage_v3/hmm_checkpoint.json": "e65702f236160cf9ebf951ab9483c2d2c716759831f8bccab23ea7d5ab116fd8",
+    "results/regime_sequence_first_stage_v3/pre2026_sequence_cache.parquet": "2f5ec957be9674eed08dbe48e68431da7abd9034a6ae5932825d10c787e9513b",
+    "results/regime_sequence_first_stage_v3/pre2026_sequence_cache_manifest.json": "6a657d279c6fdb39a74f6dfc1f82f3265db8dce7dc845a66eb98745fbfbcb548"
+  },
+  "months": [
+    {
+      "month": "2024-02-01",
+      "training_rows": 214848,
+      "prediction_rows": 4500,
+      "cutoff": "2024-01-31",
+      "max_label_end": "2024-01-31",
+      "train_keys_sha256": "4fcf53cb11a1aa01dfa1ca615f02d017ac57125cf96e68e92cb9537495deea3e",
+      "prediction_keys_sha256": "7c15f3dd46ec9d882670e6dfc7165e15e88298378de318826c9c33d0f809ee06",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 513.4849622105506,
+          "date_ess": 521.0917541738489,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 209.51503778944925,
+          "date_ess": 217.28891059502277,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-03-01",
+      "training_rows": 214911,
+      "prediction_rows": 6292,
+      "cutoff": "2024-02-29",
+      "max_label_end": "2024-02-29",
+      "train_keys_sha256": "2cedf706277bc2fa487ba5a122292c2d2f45f6b6125bf10aa1030ee6514d7928",
+      "prediction_keys_sha256": "123308f7efc8bdb84184d9bcba55d84c789d10a789659406d4c2f4e921e0397e",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 524.2885681888138,
+          "date_ess": 532.5400271021903,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 198.71143181118623,
+          "date_ess": 207.18129843752374,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-04-01",
+      "training_rows": 214413,
+      "prediction_rows": 5980,
+      "cutoff": "2024-03-29",
+      "max_label_end": "2024-03-29",
+      "train_keys_sha256": "69aa329ec254b5be7ce7fa001adb125edbeeeca6e6d62b244c7110f6f447213e",
+      "prediction_keys_sha256": "a7c216f20acc9f794ce6aaa0416fb25dd96c26aaa5448bd5a2b2d6b5626ebf99",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 530.0504574835038,
+          "date_ess": 538.7030778882779,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 190.9495425164962,
+          "date_ess": 199.8604867707953,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-05-01",
+      "training_rows": 214220,
+      "prediction_rows": 5980,
+      "cutoff": "2024-04-30",
+      "max_label_end": "2024-04-30",
+      "train_keys_sha256": "c473b9d3d035fb781afca678cdbe09f91ca30770b3d50fb69615a586ca9a5654",
+      "prediction_keys_sha256": "ba103ba9a34e01acded1c2c4083c5c86e99009fe586d7c86565d44aa9d3c0a46",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 540.8127666609765,
+          "date_ess": 548.6503757035107,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 179.1872333390234,
+          "date_ess": 187.2609792288124,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-06-01",
+      "training_rows": 214885,
+      "prediction_rows": 5683,
+      "cutoff": "2024-05-31",
+      "max_label_end": "2024-05-31",
+      "train_keys_sha256": "678d536137d46e8afdb0a3f90282839b2c130fb3414c584db0bc17d7b65e67e3",
+      "prediction_keys_sha256": "b331996b2156511f357270b0f0a6afc8396aff9c8bdd52c6d2276fd2e530985f",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 543.2651871496153,
+          "date_ess": 550.6926026535011,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 178.7348128503848,
+          "date_ess": 186.37527265002484,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-07-01",
+      "training_rows": 214399,
+      "prediction_rows": 6891,
+      "cutoff": "2024-06-28",
+      "max_label_end": "2024-06-28",
+      "train_keys_sha256": "c926b2daab5b7c75e09768085ce64b679d6b4431d0764dfed5392dc79f628a79",
+      "prediction_keys_sha256": "2fdf7a4afa0981b682bf6a6d6b979709db3260fe396a7236024efe050da1e6b8",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 541.4456785455864,
+          "date_ess": 548.7052578624085,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 178.55432145441364,
+          "date_ess": 186.017264236673,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-08-01",
+      "training_rows": 214798,
+      "prediction_rows": 6571,
+      "cutoff": "2024-07-31",
+      "max_label_end": "2024-07-31",
+      "train_keys_sha256": "4acdf17b0a16efd5c64e63eca1e7941993d9789dc94387f19730cd960870d4ca",
+      "prediction_keys_sha256": "6b7e4ce38703386a5b85996d76b549b076a1d17a7885b99e73e4d4f9ffe20554",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 546.583554374893,
+          "date_ess": 553.705097345252,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 174.41644562510703,
+          "date_ess": 181.74163992227875,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-09-01",
+      "training_rows": 214873,
+      "prediction_rows": 5591,
+      "cutoff": "2024-08-30",
+      "max_label_end": "2024-08-30",
+      "train_keys_sha256": "516eb3a6b534c5986566ec440899174824c58fdfba7621f7166bad4de6f04990",
+      "prediction_keys_sha256": "1c9c779302f738c1f54a18edc07fd6dfdff11b602fe676c6c9874dcc8650c382",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 568.4262740998611,
+          "date_ess": 575.3916501832219,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 152.57372590013898,
+          "date_ess": 159.77977491812504,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-10-01",
+      "training_rows": 214538,
+      "prediction_rows": 5292,
+      "cutoff": "2024-09-30",
+      "max_label_end": "2024-09-30",
+      "train_keys_sha256": "a830d0a8786ac3efbf26d2abe52a32d9dc4adf8c05fd73d284a0777a6d8bbc4a",
+      "prediction_keys_sha256": "55a9b0e1378ad6b585be11359041bdbc0ef5c37e9883b4710421396716c5bb89",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 572.9440462858091,
+          "date_ess": 578.1593857504431,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 147.05595371419076,
+          "date_ess": 152.41250415508037,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-11-01",
+      "training_rows": 215071,
+      "prediction_rows": 6193,
+      "cutoff": "2024-10-31",
+      "max_label_end": "2024-10-31",
+      "train_keys_sha256": "4fa4c5b9f03814f00c62a84702923c9e0b8940b87dae3a3e65caafb78df484ea",
+      "prediction_keys_sha256": "41d6d4ed54bce84a50c954d7e15902a1e736e432e47305f13f5af812232e8002",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 559.9070170733343,
+          "date_ess": 565.1654019857075,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 162.09298292666574,
+          "date_ess": 167.47542788738562,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2024-12-01",
+      "training_rows": 214704,
+      "prediction_rows": 6518,
+      "cutoff": "2024-11-29",
+      "max_label_end": "2024-11-29",
+      "train_keys_sha256": "c4711ced7631d7da25ba3944f3800bd35697c979828d891bd236cc99dc90cdde",
+      "prediction_keys_sha256": "a4cc4bea1cedafc725f524ac22eab6fb5d8d4a210897ec5fd52eb933205ce702",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 537.9332875026753,
+          "date_ess": 543.2182063545246,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 183.0667124973247,
+          "date_ess": 188.45423304904406,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-01-01",
+      "training_rows": 214420,
+      "prediction_rows": 5342,
+      "cutoff": "2024-12-31",
+      "max_label_end": "2024-12-31",
+      "train_keys_sha256": "723fcce3516969933d5185ed28f64149b8a10c60eda88d6c81d7fefcad21836e",
+      "prediction_keys_sha256": "31e6206540c4868fab0b65ce395bde5b2e6fdfee567b1a4e724a67271b4fecb0",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 527.4761602423698,
+          "date_ess": 533.2257263062849,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 192.52383975763016,
+          "date_ess": 198.38454849703567,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-02-01",
+      "training_rows": 214175,
+      "prediction_rows": 5316,
+      "cutoff": "2025-01-27",
+      "max_label_end": "2025-01-27",
+      "train_keys_sha256": "2be381026b8074b18ca612002ce3f4ccddbb699a037bf4fb1ebe6eef830ef58e",
+      "prediction_keys_sha256": "6ca1cec5e67a3cb7524ff27991772e821d06e3582735ee6a2aaf6518d75ab07e",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 526.476086339831,
+          "date_ess": 532.2259424189547,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 192.52391366016903,
+          "date_ess": 198.3847999625562,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-03-01",
+      "training_rows": 214777,
+      "prediction_rows": 6148,
+      "cutoff": "2025-02-28",
+      "max_label_end": "2025-02-28",
+      "train_keys_sha256": "3dc0507536a503ed127e055558399143cfa019945855fb31dbe0e9e21887fbfb",
+      "prediction_keys_sha256": "a1b18a95f45ba1102bbf7e9fc0434393978bf831f86545489e8817475e6b1d03",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 528.7850736509802,
+          "date_ess": 534.237766915598,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 192.21492634901978,
+          "date_ess": 197.76788353554022,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-04-01",
+      "training_rows": 214105,
+      "prediction_rows": 6190,
+      "cutoff": "2025-03-31",
+      "max_label_end": "2025-03-31",
+      "train_keys_sha256": "54256345ce39add3b2283f0c090d3f7eff9d5c4768b47ea7fceefce56de619dd",
+      "prediction_keys_sha256": "7a3cd993367f06c2bb619ed7984fb15b6d407e762fb77f03a3ae23ce4562585f",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 544.7871408145259,
+          "date_ess": 550.0682645289529,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 174.2128591854741,
+          "date_ess": 179.60517394053355,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-05-01",
+      "training_rows": 214652,
+      "prediction_rows": 5625,
+      "cutoff": "2025-04-30",
+      "max_label_end": "2025-04-30",
+      "train_keys_sha256": "04675620e3302e972dece6fe8e738a222dd13804ca5175ee524b281d0dd166ae",
+      "prediction_keys_sha256": "11c16ca85782ef586aba4f8cf3f62f025b8f0f20936f7c21e86d0d7fc9c9d988",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 553.7809958827083,
+          "date_ess": 559.0555630018507,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 167.21900411729166,
+          "date_ess": 172.61232253133926,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-06-01",
+      "training_rows": 214652,
+      "prediction_rows": 5916,
+      "cutoff": "2025-05-30",
+      "max_label_end": "2025-05-30",
+      "train_keys_sha256": "f6bdaf31b67a47927c7f7f320bf9af5e313a273e9f794439f4577b8af97b90aa",
+      "prediction_keys_sha256": "7cd39ac49dc170c6199400d6d779d36c96a8a8795c22ea37ec574cd417ea6be6",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 564.5704985723921,
+          "date_ess": 569.9783565398702,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 156.42950142760776,
+          "date_ess": 161.97597613912419,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-07-01",
+      "training_rows": 214379,
+      "prediction_rows": 6820,
+      "cutoff": "2025-06-30",
+      "max_label_end": "2025-06-30",
+      "train_keys_sha256": "d9fbaf2932fc041989abe722d5d7651934c8bfb2d891398dab4be0a54b9b1c9b",
+      "prediction_keys_sha256": "2cc5f5b9e2194c40e65c35d496466e998864c947af69259090f1bd6087076dc6",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 583.3479066413904,
+          "date_ess": 587.6699880696099,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 136.6520933586095,
+          "date_ess": 141.08145054625356,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-08-01",
+      "training_rows": 214966,
+      "prediction_rows": 6196,
+      "cutoff": "2025-07-31",
+      "max_label_end": "2025-07-31",
+      "train_keys_sha256": "f0976418628f0631831048ddd7f86f266919e4b539dfd5ca831930f96be92a45",
+      "prediction_keys_sha256": "36b7488a982a22f9cfb86b58b67420add3a5bac525c92935a69f6ecd67cafd42",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 592.8981028619229,
+          "date_ess": 596.6302728879432,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 129.1018971380771,
+          "date_ess": 132.92041892535158,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-09-01",
+      "training_rows": 214302,
+      "prediction_rows": 6494,
+      "cutoff": "2025-08-29",
+      "max_label_end": "2025-08-29",
+      "train_keys_sha256": "8bc7555afe0d99fefff7a4933d84654be004fd5f36757abff5ed998a12c6d317",
+      "prediction_keys_sha256": "4d4dc19a37809574ea0374c6c27234c6f1cf571847f1e394c9528f5592d746bd",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 590.9053896816256,
+          "date_ess": 594.6302669201798,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 129.09461031837452,
+          "date_ess": 132.90542203825436,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-10-01",
+      "training_rows": 214521,
+      "prediction_rows": 5048,
+      "cutoff": "2025-09-30",
+      "max_label_end": "2025-09-30",
+      "train_keys_sha256": "cb0dfc4e541f084687226bd747015e84d18d739b497091821aec944afaa3c956",
+      "prediction_keys_sha256": "74c264a1b7e60155e8da67f2f4c93e247875eb0c212b64dab9802953a2c09fb1",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 571.2830884929847,
+          "date_ess": 575.3381152015428,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 149.71691150701523,
+          "date_ess": 153.85463696114812,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-11-01",
+      "training_rows": 214807,
+      "prediction_rows": 5927,
+      "cutoff": "2025-10-31",
+      "max_label_end": "2025-10-31",
+      "train_keys_sha256": "d658a7bbb58f4330ec89254e054bf9f543608b88a4fa7a459e70b6a0547cde6b",
+      "prediction_keys_sha256": "b047919d9fb1db1a25f8b9e8a4bac46e50e69e92608e2dde0474e0145b62ce87",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 575.4663029327185,
+          "date_ess": 579.6577535696688,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 146.53369706728165,
+          "date_ess": 150.8164580202883,
+          "fit_expected": true
+        }
+      ]
+    },
+    {
+      "month": "2025-12-01",
+      "training_rows": 214191,
+      "prediction_rows": 6832,
+      "cutoff": "2025-11-28",
+      "max_label_end": "2025-11-28",
+      "train_keys_sha256": "e6c76624e35da75ca9d0488207a0330a450037007faa70ed87fc62bff2d6d282",
+      "prediction_keys_sha256": "be7afea87d423567f54b21ce8024813391d1fcf3752fe109496a6bd4451fd774",
+      "state_support": [
+        {
+          "state": 0,
+          "mass": 591.9015466693756,
+          "date_ess": 597.4079369665221,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass": 128.09845333062435,
+          "date_ess": 133.79677877967544,
+          "fit_expected": true
+        }
+      ]
+    }
+  ],
+  "new_fits_attempted": 0,
+  "accounts": 0,
+  "sealed_2026_access": false,
+  "output_columns": [
+    "signal_date",
+    "symbol",
+    "RG01_score",
+    "SQ01_score",
+    "RG01_rank",
+    "SQ01_rank",
+    "q0",
+    "q1",
+    "sequence_ready",
+    "E00_rank"
+  ]
+}

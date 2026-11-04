@@ -1,0 +1,4 @@
+# Only for regenerating report figures; trading/ML requirements are in ../../代码/requirements.txt
+numpy>=1.26,<3
+pandas>=2.2,<3
+matplotlib>=3.8,<4

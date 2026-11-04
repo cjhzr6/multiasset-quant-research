@@ -1,0 +1,20 @@
+{
+  "verified_at": "2026-10-07T17:48:11+08:00",
+  "source_doc": "https://tushare.pro/document/2?doc_id=143",
+  "api": "news",
+  "params": {
+    "src": "sina",
+    "start_date": "2025-07-07 09:00:00",
+    "end_date": "2025-07-07 09:15:00"
+  },
+  "requested_fields": "datetime,title,content,channels",
+  "credential_persisted": false,
+  "method": "OFFICIAL_HTTPS_API_NOT_MCP_TOOL_CALL",
+  "strategy_training": false,
+  "access_2026_outcomes": false,
+  "code": 40203,
+  "message": "抱歉，您没有接口(news)访问权限，权限的具体详情访问：https://tushare.pro/document/1?doc_id=108。",
+  "fields": null,
+  "row_count": 0,
+  "status": "REQUEST_REJECTED"
+}

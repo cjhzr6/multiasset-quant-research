@@ -1,0 +1,17 @@
+[
+  {
+    "strategy": "N02_seed11",
+    "max_metric_difference": 0.0,
+    "match": true
+  },
+  {
+    "strategy": "N02_seed23",
+    "max_metric_difference": 0.0,
+    "match": true
+  },
+  {
+    "strategy": "N02_seed37",
+    "max_metric_difference": 0.0,
+    "match": true
+  }
+]

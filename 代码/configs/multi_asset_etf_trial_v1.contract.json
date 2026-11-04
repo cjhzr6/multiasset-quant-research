@@ -1,0 +1,247 @@
+{
+  "version": "MULTI_ASSET_ETF_TRIAL_v1",
+  "date_shanghai": "2026-10-09",
+  "status": "RULES_FROZEN_AWAIT_PRODUCT_DATA_AND_EXECUTION_BINDING",
+  "authorization": {
+    "user_authorized_multi_asset_validation": true,
+    "scope": "One fixed long-only four-class local-RMB ETF trend filter versus the same static basket; no stock-pool change",
+    "this_phi_turn": "Contract only; no training, account run, stock-engine edit, or subagent",
+    "coordinator": "01a10a86-d8f6-7423-bb05-bd1481d1d8b5",
+    "phase_switch_status": "PAUSED_PENDING_DISCUSSION; no additional 20/40-day/origin switch trials; retain existing40-day candidate and results"
+  },
+  "question": "Does a fixed252-session own-total-return filter improve after-cost Sharpe over equal25-percent allocations to the same four ETFs?",
+  "budget": {
+    "model_fits": 0,
+    "account_runs_max": 4,
+    "accounts": [
+      "TREND_STANDARD",
+      "STATIC_STANDARD",
+      "TREND_STRESS",
+      "STATIC_STRESS"
+    ],
+    "no_parameter_search": true,
+    "no_additional_cash_bond_or_sector_variant": true,
+    "invalid_technical_attempts": "Preserve and report; any rerun requires coordinator error-fix binding, not parameter rescue"
+  },
+  "universe": {
+    "selection_asof": "2023-12-31",
+    "selection_calendar_cutoff": "Last mainland exchange session on or before selection_asof",
+    "venues": [
+      "SSE",
+      "SZSE"
+    ],
+    "currency": "CNY",
+    "product_type": "Exchange-listed ETF secondary-market units only; no LOF, feeder, off-exchange NAV subscription, overseas account, leveraged/inverse product or futures",
+    "classes": [
+      {
+        "id": "CN_EQUITY",
+        "benchmark_requirement": "CSI300 broad index ETF, not sector or enhanced variant",
+        "symbol": "SZSE.159919"
+      },
+      {
+        "id": "US_EQUITY",
+        "benchmark_requirement": "S&P500 broad index QDII ETF, not Nasdaq/sector substitute",
+        "symbol": "SHSE.513500"
+      },
+      {
+        "id": "GOLD",
+        "benchmark_requirement": "Domestic gold ETF primarily tracking exchange physical/spot gold; not mining equities or commodity-futures index",
+        "symbol": "SHSE.518800"
+      },
+      {
+        "id": "CN_GOV_BOND",
+        "benchmark_requirement": "CNY Chinese treasury bond ETF; not credit/policy-bank/convertible/money-market substitute",
+        "symbol": "SHSE.511010"
+      }
+    ],
+    "asof_eligibility": "Listed and existing at selection cutoff, at least252 mainland exchange sessions since listing, benchmark/type verified by contemporaneous documents",
+    "sorting": "Within each eligible class: listing_date ascending, then zero-padded six-digit security_code ascending, then venue ascending",
+    "selection_owner": "尼哥2 verifies exact codes, asof historical candidate list, listing dates, classification and evidence; coordinator binds selected four",
+    "no_hindsight_substitution": "Do not silently exclude a historically eligible ETF because its later return/liquidity/termination is inconvenient; selected-product data or execution failure stops the trial for coordinator resolution, not replacement by a winner",
+    "product_binding_required": [
+      "symbol",
+      "venue",
+      "listing_date",
+      "benchmark",
+      "quote_unit",
+      "buy_lot_units",
+      "sell_lot_and_odd_lot_rule",
+      "price_tick_cny",
+      "turnaround_rule_by_date",
+      "price_limit_rule_by_date",
+      "secondary_market_fee_and_tax_rule",
+      "corporate_action_entitlement_rule",
+      "evidence_urls_and_hashes"
+    ],
+    "selected_product_source": "results/multi_asset_etf_trial_v1/products.json",
+    "selected_product_source_sha256": "3717b633d720399c77e21968174674e31c2e949a0c81f4f82ac91ebf9f2b748b"
+  },
+  "period": {
+    "warmup": "2024 primarily; include the minimum earlier2023 sessions if required to have253 genuine price observations before first252-return signal",
+    "evaluation_start": "2025-01-02",
+    "evaluation_end": "2026-09-21",
+    "calendar": "Verified common mainland exchange trading calendar; session count derived from bound data, not hardcoded",
+    "initial_capital_cny": 1000000,
+    "initial_cash_fraction": 1.0,
+    "initial_positions": [],
+    "cash_yield": 0.0,
+    "across_years": "One continuous cash/inventory/receivable ledger; no January restart",
+    "research_status": "All already-viewed years exploratory; no blind-test claim"
+  },
+  "signal": {
+    "lookback_return_intervals": 252,
+    "required_close_observations": 253,
+    "basis": "Own CNY secondary-market total return computed from raw ETF close prices plus verified cash distributions and unit-conversion events, all known by signal close",
+    "daily_gross_factor": "g[d]=(S[d]*C[d]+D_old_unit[d])/C[d-1]; S is new units per previous-day unit (default1), D is cash entitlement per previous-day unit (default0); normalize source units and action ordering explicitly",
+    "window_return": "product(g for the252 latest calendar return intervals ending at signal_date)-1",
+    "cash_distribution_timing": "Recognize in signal on official ex-distribution date, not payment date; only public terms available by that close; do not use a later revised vendor adjustment without provenance",
+    "signal_reinvestment": "Theoretical ex-date reinvestment embedded in gross-factor chain; actual account does not automatically reinvest before next rebalance",
+    "no_double_adjustment": "Do not apply distributions/splits again to a vendor total-return or adjusted-price series; raw-price-plus-events is canonical, adjusted series is independent diagnostic only",
+    "missing": "First node requires valid253-observation/252-factor history for all four. Later uncomputable asset signal targets cash for that class and is logged; never change lookback or fill from future observations",
+    "no_fund_nav_fx_or_premium_signal": "Official NAV/IOPV/FX are diagnostics only. No premium threshold, currency overlay or underlying-index feature; CNY ETF prices already include currency effects"
+  },
+  "strategy": {
+    "decision_cadence_sessions": 20,
+    "decision_nodes": "Close of evaluation session indices0,20,40,...; first signal is first evaluation day's close, not the preceding2024 close",
+    "trend_target": "Each class independently: window_return>0 gives0.25 of signal-time totalNAV; window_return<=0 or later missing gives0; remainder is cash",
+    "static_target": "0.25 of signal-time totalNAV per selected ETF at the same decision nodes",
+    "no_active_weight_renormalization": true,
+    "no_daily_rebalance_or_special_switch": true,
+    "no_stock80_120_or_three_percent_buy_cap": true,
+    "shorting_leverage_and_primary_market_creation_redemption": false,
+    "end_mark": "Mark at final close including legitimate receivables; no mandatory terminal liquidation or future-day trade"
+  },
+  "execution": {
+    "adapter": "Isolated ETF runner/fee and event adapter; stock engine and frozen stock rules remain unchanged",
+    "order_formation": "At decision close derive integer unit targets from target_weight*totalNAV/raw_close; floor buys to verified buy lot. Use source-verified residual/odd-lot sell rule; never erase residual units",
+    "execution_day": "Next mainland exchange session only; first possible fill is2025-01-03 if verified calendar confirms it. A last-day decision without an in-period next session is not executed",
+    "price_assumption": "Verified next-session actual ETF unadjusted open from the bound source, with fixed directional slippage, rounded to actual product tick: buys round upward, sells downward. Third-party fallback is labelled and not falsely described as official exchange data. This is a daily-bar simulation, not proven opening-auction fills.",
+    "trade_order": "Apply due events/availability first; eligible net sells before net buys; use deterministic class order CN_EQUITY,US_EQUITY,GOLD,CN_GOV_BOND within each side",
+    "cash_and_quantity": "Keep decision-close target quantities; opening gaps may cause cash-limited buys, never borrowing. If aggregate requested buys exceed cash including fees, scale requests proportionally, floor to lots, then charge each actual fill's fee; retain rounding cash rather than prioritize one asset to fill25-percent weights",
+    "availability": "Bind actual T+1/T+0 eligibility by product/date. No strategy relies on same-unit intraday round trips; sold cash reusable same day only under verified local brokerage/exchange convention, withdrawal and cross-border creation settlement are irrelevant",
+    "liquidity_capacity": "Each order capped at1percent of prior20 exchange sessions' mean traded ETF units, using information known at decision close; floor to lots. Record every capacity-induced partial fill; no future full-day volume used to choose order size",
+    "no_fill_conditions": "No valid open/zero trading activity/suspension/not-yet-available units; conservatively no BUY at opening upper limit, no SELL at opening lower limit when such limits apply. Tick-rounded simulated price outside valid daily range/limit is unfilled, not silently clipped",
+    "unfilled_order_expiry": "Cancel at end of that execution session; no within-stage retries or discretionary rebalancing; reevaluate only at next20-session node",
+    "valuation": "Raw closing price times owned units plus cash and declared distribution receivables; known suspension can carry last publicly available mark with a flag, never substitute official fundNAV for a missing tradable price"
+  },
+  "fees_and_tax": {
+    "investor_scope": "Simulated domestic individual secondary-market ETF investor; no direct overseas securities or professional primary-market participant",
+    "standard": {
+      "commission_rate": 0.0003,
+      "commission_min_cny_per_fill": 5.0,
+      "commission_definition": "Inclusive broker commission assumption max(5,notional*0.0003), rounded half-up toCNY cents; includes broker-passed exchange/settlement charges rather than adding them twice",
+      "slippage_rate_each_side": 0.0005,
+      "stamp_tax_rate": 0.0,
+      "separate_stock_transfer_fee_rate": 0.0
+    },
+    "stress": {
+      "commission_rate": 0.0006,
+      "commission_min_cny_per_fill": 10.0,
+      "commission_definition": "Double inclusive standard transaction commission and minimum; same rounding and fee base",
+      "slippage_rate_each_side": 0.001,
+      "stamp_tax_rate": 0.0,
+      "separate_stock_transfer_fee_rate": 0.0
+    },
+    "assumption_disclosure": "Commission/minimum/slippage are fixed public simulation assumptions, not an asserted user broker quote. Stress doubles transaction commissions and changes slippage5bp to10bp; does not invent exempt tax or change signal/windows",
+    "stamp_and_dividend_rule": "Verify selected domestic ETF type/date against official secondary-market exemption and open-ended fund distribution policy. Do not apply A-share holding-period dividend tax. For verified covered fund distributions use announced investor cash per unit, no additional investor holding tax; product-specific exceptions require pre-run coordinator resolution",
+    "fund_embedded_expenses": "Management/custody fees, underlying dividend withholding and fund trading costs already embodied in fund performance are not deducted again from the investor ledger",
+    "rounding": "Cash balances calculated with auditable precision; transaction charge rounding half-up to cents, corporate payouts by product distribution terms"
+  },
+  "corporate_actions_and_settlement": {
+    "distributions": "Snapshot owned/eligible units at official registration cutoff; create receivable on official ex-date so price drop does not falsely eraseNAV; credit stated investor payout only on official payment date",
+    "payment_intraday_convention": "When exact intraday cash availability is not provided, recognize payment-date cash at end of day and make it spendable at next exchange open, not same-day opening. A stated non-trading payment date credits after that calendar date and is available at the next exchange open. Announced schedule is a disclosed simulation, not broker bank reconciliation",
+    "fund_unit_conversion": "Apply official conversion ratio, entitlement cutoff and new-unit tradability date; keep fractional/residual entitlements by official terms; do not treat it as a stock bonus/dividend-tax event",
+    "no_fake_reinvestment": "Account distribution cash is retained until scheduled target rebalance; signal and account action logic are deliberately distinct",
+    "unresolved": "Unknown payout scale, registration, ex-date, payment or unit-conversion availability blocks the affected event/account until explicit source resolution; never use2099 placeholder or delete cash claims"
+  },
+  "input_and_execution_gates": {
+    "mandatory": [
+      "Four exact product identities and asof sorting bound with source evidence; same four across all accounts",
+      "Common calendar and raw open/close/traded-unit data with listing/trading status; no untradable index substitutes",
+      "First-node253-close/252-return histories and event-normalized signal validated without future adjustment",
+      "Product/date lot, tick, availability, price-limit, secondary-market tax and distribution handling verified",
+      "Ledger includes real per-ETF units, cash, entitlement/receivable/payment and conversion events; no NAV splice or sleeve transfer",
+      "Fund-specific adapter smoke checks and independent cash/NAV/cost reconciliation pass before four-account economic run",
+      "Coordinator binds contract, product master, calendar, market/event input and isolated runner/fee code SHA before run"
+    ],
+    "later_missing_signal_node_fraction_max": 0.05,
+    "missing_definition": "Number of20-session nodes with at least one uncomputable252-factor signal divided by all scheduled nodes; first node failure is immediately blocking",
+    "nav_quality_diagnostics": "QDII historical officialNAV/publish-time/valuation-day, premium notices and underlying calendar/FX may be incomplete; save gap and limit attribution, but do not block valid actual-CNY-price account simulation solely for missingNAV. No unverified premium timing rule",
+    "data_reuse": "Reuse available matching inputs; acquire only verified four-ETF gaps under coordinator download budget; no market-wide duplicate download",
+    "halt_data_vs_halt_performance": "Data/engineering failure invalidates economic conclusions; poor valid performance is retained and stops this fixed research hypothesis"
+  },
+  "evaluation": {
+    "primary": "After-cost zero-cash Sharpe=sqrt(252)*mean(daily_NAV_returns)/sample_std(ddof1); full common interval, first cash day included",
+    "zero_volatility": "Sharpe undefined, not positive infinity; cannot pass economic gate",
+    "daily_return": "NAV[t]/NAV[t-1]-1; initial priorNAV=initial capital; NAV includes legitimate outstanding receivables and no external contributions",
+    "advance_requires_all": {
+      "trend_standard_sharpe_strict_positive": true,
+      "standard_sharpe_delta_vs_static_min": 0.1,
+      "stress_sharpe_delta_vs_static_strict_positive": true,
+      "valid_engineering_and_inputs": true
+    },
+    "interpretation": "Fixed decision preference, not proof of statistical significance or investment suitability. Only tests this own-return filter, not all cross-asset strategies",
+    "uncertainty": "Report paired Sharpe differences with20-session moving-block bootstrap,2000 repetitions,seed20261009; no tuning from intervals and no blind-test claim",
+    "secondary": [
+      "Total/annualized return",
+      "Maximum drawdown",
+      "Volatility",
+      "Exposure by class and cash",
+      "Monthly and year-segment returns",
+      "Turnover and all fees/slippage",
+      "Orders/fills/unfilled/capacity and allocation drift",
+      "Distributions and outstanding entitlements",
+      "Price-versus-NAV diagnostics with publication lag if available"
+    ],
+    "E00_reference": "Only reuse accepted same-start continuous E00 if date, capital and first-signal/fill convention match; otherwise explicitly descriptive due to timing differences. No fifth ETF budget account or stitched2025/2026NAV",
+    "fail_stop": "Failed gate: retain all four valid results and stop this filter; no lookback, rebalance frequency, ETF replacement or start-date search. Any combination/phase selector is a separately authorized experiment",
+    "no_old_stock_economic_gates": "Do not reinstate per-year outperformance or prior stock drawdown thresholds; disclose risks alongside primary Sharpe"
+  },
+  "required_outputs": [
+    "Selected product master and historical candidate sorting evidence",
+    "Input/code/contract binding and provenance hashes",
+    "Signal/corporate-action normalization checks",
+    "Four continuous daily ledgers, orders, fills, events, fees and reconciliation",
+    "Common-period standard/stress comparison and paired uncertainty",
+    "NAV/timezone/source gaps and assumptions disclosure"
+  ],
+  "source_index_owner": "Coordinator alone updates 参考/重要研究与报告索引_20261009.md from the sources below; phi does not coedit it",
+  "official_sources_checked_20261009": [
+    {
+      "topic": "ETF lot and tick",
+      "url": "https://www.sse.com.cn/assortment/fund/etf/question/c/c_20240118_5734754.shtml",
+      "evidence": "Official indexed answer:100 units and0.001CNY general ETF rule; exact selected products/dates still bind"
+    },
+    {
+      "topic": "ETF turnaround",
+      "url": "https://www.sse.com.cn/assortment/fund/etf/question/c/c_20240118_5734755.shtml",
+      "evidence": "Official indexed answer: stock ETF T+1; some cross-border/gold/bond ETFs T+0; not creation/redemption settlement"
+    },
+    {
+      "topic": "Secondary-market sale cash convention and stamp exemption",
+      "url": "https://etf.sse.com.cn/fund/learning/knowledge/c/5704298.shtml",
+      "evidence": "Official indexed investor education: secondary-market ETF stamp exemption, sale cash usable same day and withdrawable next day"
+    },
+    {
+      "topic": "2025 exchange fee table",
+      "url": "https://www.sse.com.cn/services/tradingservice/charge/ssecharge/c/c_20250102_10767593.shtml",
+      "evidence": "Official indexed table reports0.004percent ETF handling fee with bond/money exemption; included broker-commission assumption avoids duplicate charge;2026 or selected-product changes still verify"
+    },
+    {
+      "topic": "Open-ended fund distributions",
+      "url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n812203/200207/c1208424/content.html",
+      "evidence": "Tax authority indexed text of 财税2002第128号: investor fund-distribution tax exemption; fund underlying withholding is distinct. Applicable selected fund/date evidence still verify"
+    },
+    {
+      "topic": "ETF tax education corroboration",
+      "url": "https://edu.sse.com.cn/best/article/mcontent/c/4731121.shtml",
+      "evidence": "Exchange investor education distinguishes ETF stamp/distribution treatment from stocks; not a broker quotation"
+    }
+  ],
+  "coordinator_clarifications": [
+    "Accepted third-party actual ETF raw-price source labelled as such; no need for duplicate full official price download.",
+    "Historical active-status extract not separately obtained; verified listing and observed historical trading are sufficient for exploratory implementation with limitation.",
+    "Outstanding product-specific rules/events remain gates, not silently treated as already verified.",
+    "A failed trend-vs-static increment does not reject the same-basket static portfolio as a useful high-Sharpe candidate; report opportunity-set improvement and timing increment separately."
+  ]
+}

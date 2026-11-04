@@ -1,0 +1,115 @@
+{
+  "version": "REGIME_SEQUENCE_TECHNICAL_PREFLIGHT_FIX_v3",
+  "date_shanghai": "2026-10-07",
+  "status": "CODE_REPAIRS_COMPLETE_PURE_NUMERICAL_TESTS_PASS_WAITING_COORDINATOR_REVIEW",
+  "runner": "scripts/run_regime_sequence_first_stage_v2.py",
+  "runner_sha256": "2170b2aeaf1c0b8c2a6345ca2d2ea4cd897bc8d805ef8a52f77d01c993577732",
+  "test_file": "tests/test_regime_sequence_preflight_v2.py",
+  "test_sha256": "7e4a734e20fcff3e7ea6e1613a71b82eef693cda2704dac89305ca913ffa85e8",
+  "prior_attempts_preserved": {
+    "v1_HMM_fit_attempts": 1,
+    "v1_expert_fits": 0,
+    "v1_ridge_fits": 0,
+    "v1_accounts": 0,
+    "v2_new_fits": 0,
+    "sealed_2026_access": false
+  },
+  "fixes": [
+    {
+      "id": "F1",
+      "issue": "ESN development scaler used standard deviation across date-level cross-sectional means, discarding within-date stock-day dispersion.",
+      "fix": "Equal date-weighted stock-day mean; two-pass variance equals mean over dates of each date cross-sectional mean squared deviation from global weighted mean.",
+      "test": "Synthetic unequal stock counts verify mean 52.5 and variance 2268.75."
+    },
+    {
+      "id": "F2",
+      "issue": "Factor-rescaling probe concatenated securities and computed pct_change/rolling across ticker boundaries; absolute-only 1e-12 check failed on float64 residue.",
+      "fix": "Production sequence_inputs run per complete global calendar for original and per-security rescaled factors; exact validity/nonfinite-mask checks, reject infinities, compare finite fields with rtol=1e-10/atol=1e-12 and report max absolute/relative discrepancies. Runs before any fit.",
+      "test": "Synthetic two-security source with a missing bar passes production-path rescaling and missing-mask checks."
+    },
+    {
+      "id": "F3",
+      "issue": "State columns were indexed as q[k], and support ESS summed q by stock rows, overweighting days with more stocks.",
+      "fix": "Use q0/q1 columns; aggregate q to one mean per distinct training date, then mass=sum(q_day), ESS=sum(q_day)^2/sum(q_day^2); training dates with missing state use q=.5; missing prediction state uses whole-day E00-rank fallback. Expert-month fallback fraction denominator is explicitly the 2 January expert-month opportunities.",
+      "test": "Unequal stock-row counts leave two-date mass/ESS equal to date-level contract."
+    },
+    {
+      "id": "F4",
+      "issue": "SQ01 cold rows had ready-only model ranks, then another rerank, violating full-pool rank calibration.",
+      "fix": "Rank readout predictions over each complete E00 prediction pool including cold rows; center percentile by -0.5; then replace cold rows by same-date centered E00 percentile rank without reranking.",
+      "test": "Numerical full-pool ranking/fallback example."
+    },
+    {
+      "id": "F5",
+      "issue": "Sequence input path relied on source row order and could compress a globally missing date.",
+      "fix": "Reindex every security to the complete state/global calendar; missing bars remain explicit NaN rows and reset hidden state/warmup; recurrent computation remains causal.",
+      "test": "Synthetic omitted stock-session retained as invalid global-calendar row; perturbing future inputs leaves all prior hidden states unchanged."
+    },
+    {
+      "id": "F6",
+      "issue": "Prediction dataframes/readers included future label/outcome columns.",
+      "fix": "Separate projections: prediction panel contains features/states/readiness only; baseline only keys+score; labels loaded separately for exact mature training keys. Jan prediction output contains keys plus model outputs only.",
+      "test": "Projection contract asserts future-label fields excluded."
+    },
+    {
+      "id": "F7",
+      "issue": "HMM/ESN results were not checkpointed before downstream checks; reruns could overwrite/duplicate work.",
+      "fix": "Fresh v2 output; immutable code/input/contract/recovery-auth freeze; signed source SHAs rechecked; all deterministic preflight checks before fit; HMM start marker and atomic parameters/diagnostics checkpoint saved/read-back before filtering; ESN Parquet+manifest atomic; stale/mismatched or orphaned checkpoints refuse refit; prior v1 HMM attempt explicitly carried. V2 runner refuses to fit without a new recovery authorization bound to runner SHA, prior attempt count, exact Jan2024 fit list and cumulative cap>=5; other months/accounts/2026 remain false.",
+      "test": "Matching checkpoint is reused without calling hmm_em; orphaned marker blocks an uncounted refit."
+    },
+    {
+      "id": "F8",
+      "issue": "Causal forward filter needed a direct pure numerical prefix/normalization test.",
+      "fix": "Explicit normalized log-space forward recursion; missing emissions propagate using the transition matrix; no smoothing output.",
+      "test": "Fixed-parameter prefix equals full filter prefix exactly, probabilities finite and sum to one."
+    },
+    {
+      "id": "F9",
+      "issue": "Ridge weights had mean one and total N while adding lambda*I, so actual regularization strength depended on training-row count and violated the signed objective.",
+      "fix": "Only Ridge readout now uses equal-date weights normalized to sum 1; LightGBM keeps its original mean-one weights. Diagnostics record pre/post weight sums, weighted SSE, lambda penalty and full objective.",
+      "test": "Hand-calculated weighted SSE + unpenalized-intercept Ridge penalty matches diagnostics; duplicating an entire same-date cross-section preserves each date total mass, coefficients and objective."
+    }
+  ],
+  "verification": {
+    "ast_parse": "PASS",
+    "affected_pure_numerical_tests": {
+      "passed": 12,
+      "failed": 0
+    },
+    "test_command": ".venv\\Scripts\\python.exe -m unittest discover -s tests -p test_regime_sequence_preflight_v2.py -v",
+    "signed_design_source_sha_checks": {
+      "passed": 9,
+      "failed": 0
+    },
+    "full_input_preflight_rerun": false,
+    "model_fits_in_this_repair": 0,
+    "accounts": 0,
+    "downloads": 0,
+    "sealed_2026_loaded": false
+  },
+  "authorization_gate": {
+    "v1_HMM_attempt_consumed": true,
+    "new_authorization_file": "configs/regime_sequence_first_stage_recovery_authorization_v2.json",
+    "required_status": "APPROVED_SINGLE_HMM_RECOVERY_AND_JAN2024_REMAINDER_ONLY",
+    "allowed_fits_exact": [
+      "HMM_RECOVERY",
+      "RG01_JAN2024_EXPERT_0",
+      "RG01_JAN2024_EXPERT_1",
+      "SQ01_JAN2024_RIDGE_READOUT"
+    ],
+    "minimum_cumulative_fit_attempt_cap": 5,
+    "remaining_months_authorized": false,
+    "new_accounts_authorized": false,
+    "sealed_2026_access_authorized": false
+  },
+  "remaining_limitations": [
+    "The v1 HMM parameters were not checkpointed and cannot be resumed; a same-parameter HMM recovery is a second project-level attempt and requires a new signed coordinator authorization.",
+    "Real frozen-input preflight, first-month model fits and timing were not rerun in this code-review stage.",
+    "No Jan2024 RG/SQ predictions exist; the post-selection rank-drop/path diagnostic remains unrun."
+  ],
+  "sources": {
+    "design": "results/financial_strategy_review_20261006/regime_sequence_trial_design_v1.json",
+    "old_failure_record": "results/regime_sequence_first_stage_v1/run_failures.json",
+    "old_v1_freeze": "results/regime_sequence_first_stage_v1/freeze_manifest.json"
+  }
+}

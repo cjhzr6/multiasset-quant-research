@@ -1,0 +1,64 @@
+{
+  "historical_nav_drawdown": {
+    "RISK-B1": {
+      "sessions": 485,
+      "return": 0.27795333265060584,
+      "sharpe_zero_cash": 2.8577379593666943,
+      "max_drawdown": -0.03383417339402395,
+      "first_date": "2024-01-02",
+      "last_date": "2025-12-31"
+    },
+    "固定25%": {
+      "sessions": 485,
+      "return": 0.4612512468487786,
+      "sharpe_zero_cash": 2.6416187476677875,
+      "max_drawdown": -0.055493641816351524,
+      "first_date": "2024-01-02",
+      "last_date": "2025-12-31"
+    }
+  },
+  "extension_nav_drawdown": {
+    "RISK-B1": {
+      "sessions": 175,
+      "return": 0.029569422040202742,
+      "sharpe_zero_cash": 0.4461138852586109,
+      "max_drawdown": -0.08757733495499409,
+      "first_date": "2026-01-05",
+      "last_date": "2026-09-21"
+    },
+    "固定25%": {
+      "sessions": 175,
+      "return": 0.005216420116230358,
+      "sharpe_zero_cash": 0.12245274696081146,
+      "max_drawdown": -0.10218676975003804,
+      "first_date": "2026-01-05",
+      "last_date": "2026-09-21"
+    }
+  },
+  "weights": {
+    "rows": 175,
+    "minimum_sum": 0.9986480997766433,
+    "maximum_sum": 1.0001506854830118,
+    "means": {
+      "股票": 0.1578130660965495,
+      "标普500": 0.321929277845846,
+      "黄金": 0.1526411785884148,
+      "国债": 0.20936461787709032,
+      "现金": 0.15823405442623062
+    }
+  },
+  "contributions": {
+    "B1_2024_2025": 27.79533326506058,
+    "FIXED25_2024_2025": 46.125124684877854,
+    "B1_2026": 2.9569422040202773,
+    "FIXED25_2026": 0.5216420116230387
+  },
+  "reconciliation": "Component sums and compounded monthly returns agree with each standalone account endpoint, tolerance 1e-10.",
+  "files": {
+    "contributions.csv": "6fb4a9da1ba5497bf4aaf547ac10cd15ae5a961d83cd082f582817e7bfc332b0",
+    "monthly_returns.csv": "790602a3f7ccb05b903da9ea5120531ef0ec355d4a0f79e9bcda3eabbca98a6f",
+    "nav_2024_2025.csv": "03dcaed181f70d29be853b2d5f57e94360b18c1cd414014fcbbe689cd2a8ec6b",
+    "nav_2026.csv": "8fc2be9f8d5b8e9c95033eb7ff81df5ff05a060cce17a15038f55f83c68f1256",
+    "weights_2026.csv": "429fb4ffb3663c012a09797055f3994cb9a5d16e7024d29226a6b803f27b9340"
+  }
+}

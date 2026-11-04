@@ -1,0 +1,98 @@
+{
+  "version": "TREND_STATE_ACCOUNT_AUDIT_v1",
+  "status": "PASS_BOTH_CANDIDATES_FAIL_STANDARD_ECONOMIC_GATE",
+  "run_report_sha256": "70d1b1ca20c607327a36d1b0db31c9b945026991f8314da6d180f50ac7ffc209",
+  "contract_sha256": "11b418268c07ec1d498492cbcf7d6209d59ada9375a51ce87e8e02c8101acd36",
+  "accounts": [
+    {
+      "account": "T01_standard",
+      "sessions": 485,
+      "trades": 3354,
+      "issues": 0,
+      "maximum_nav_identity_error": 4.656612873077393e-10,
+      "maximum_cash_flow_error": 8.149072527885437e-10,
+      "daily_sha256": "c8cafd1058060e9635509e9aeaa2084e5736e625222eb90207eaa8c66f9b87ab",
+      "independent_metrics": {
+        "total_return": 0.31926226850967043,
+        "annualized_return": 0.15484200627339972,
+        "sharpe_zero_cash": 0.9019678858212106,
+        "max_drawdown": -0.18644852316445215
+      },
+      "2025_return": 0.17338974567711118
+    },
+    {
+      "account": "T01_cost2",
+      "sessions": 485,
+      "trades": 3311,
+      "issues": 0,
+      "maximum_nav_identity_error": 4.656612873077393e-10,
+      "maximum_cash_flow_error": 5.820766091346741e-10,
+      "daily_sha256": "1ac0dfe027c2fd64e5fc2c9ade5450a82bcdffe8563757e5e107022772c5b713",
+      "independent_metrics": {
+        "total_return": 0.2632495167013218,
+        "annualized_return": 0.1291002459405204,
+        "sharpe_zero_cash": 0.778198962564353,
+        "max_drawdown": -0.19296860568218
+      },
+      "2025_return": 0.14608720138476472
+    },
+    {
+      "account": "S01_standard",
+      "sessions": 485,
+      "trades": 5017,
+      "issues": 0,
+      "maximum_nav_identity_error": 2.3283064365386963e-10,
+      "maximum_cash_flow_error": 2.750311978161335e-09,
+      "daily_sha256": "7bcec5f22efe77acf14359bbf2e39ba83705cad9df01c992bf663fe6f898a30f",
+      "independent_metrics": {
+        "total_return": 0.45772413816748414,
+        "annualized_return": 0.2163083397417107,
+        "sharpe_zero_cash": 1.2287726820875138,
+        "max_drawdown": -0.16700428032447578
+      },
+      "2025_return": 0.13481806579373679
+    },
+    {
+      "account": "S01_cost2",
+      "sessions": 485,
+      "trades": 5058,
+      "issues": 0,
+      "maximum_nav_identity_error": 4.656612873077393e-10,
+      "maximum_cash_flow_error": 3.14321368932724e-09,
+      "daily_sha256": "7b2fc5e7fca92fa2603fd294e38dcdec173fcc3b7c29872ad646ddd58a541f5d",
+      "independent_metrics": {
+        "total_return": 0.3939646602611784,
+        "annualized_return": 0.18836932194015854,
+        "sharpe_zero_cash": 1.093285481194461,
+        "max_drawdown": -0.1769351624260388
+      },
+      "2025_return": 0.1128003790601253
+    }
+  ],
+  "independent_gates": {
+    "T01": {
+      "standard_2025_delta": 0.09284156039001301,
+      "standard_two_year_cagr_delta": -0.08276196681549064,
+      "standard_absolute_drawdown_worsening": 0.09924749407027844,
+      "standard_pass": false,
+      "cost2_2025_delta": 0.08449712305906254,
+      "cost2_candidate_2025_return": 0.14608720138476472,
+      "cost2_pass": true,
+      "engineering_pass": true,
+      "overall_pass": false
+    },
+    "S01": {
+      "standard_2025_delta": 0.05426988050663861,
+      "standard_two_year_cagr_delta": -0.021295633347179654,
+      "standard_absolute_drawdown_worsening": 0.07980325123030207,
+      "standard_pass": false,
+      "cost2_2025_delta": 0.05121030073442312,
+      "cost2_candidate_2025_return": 0.1128003790601253,
+      "cost2_pass": true,
+      "engineering_pass": true,
+      "overall_pass": false
+    }
+  },
+  "sealed_2026_evaluated": false,
+  "decision": "Neither T01 nor S01 passes the predeclared overall gate; retain E00 as temporary candidate, do not tune these rules."
+}

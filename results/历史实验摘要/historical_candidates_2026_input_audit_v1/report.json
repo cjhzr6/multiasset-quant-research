@@ -1,0 +1,220 @@
+{
+  "audit_version": "historical_candidates_2026_input_audit_v1",
+  "generated_at_shanghai": "2026-10-08",
+  "purpose": "Read-only input readiness audit for fixed 2026 comparison of previously tried candidate methods; no fitting, downloading, tuning, or E00 changes.",
+  "scope": {
+    "comparison_period": "2026-01-01 through 2026-09-30",
+    "available_market_data_through": "2026-09-21",
+    "latest_mature_5_session_signal": "2026-09-11",
+    "latest_mature_20_session_signal": null,
+    "constraint": "Existing E00 preflight indicates 5-session outcomes mature through 2026-09-11 only; later signals are not mature. No 20-session mature endpoint was read or inferred."
+  },
+  "macro_nlp": {
+    "research_unit": "macro/theme/date; issuer ticker is not a valid screening requirement for this macro question",
+    "2025_data_location": "results/ifind_capture_audit_v1/news_fragments.csv",
+    "raw_source_directory": "data/raw/ifind_time_limited_v1/news/",
+    "2025_fragment_rows": 2349,
+    "2025_unique_urls": 2349,
+    "2025_article_dates_with_fragments": 245,
+    "2025_requested_calendar_dates": 365,
+    "2025_excerpt_missing_rows": 0,
+    "2025_publication_date_bounds_in_existing_macro_audit": "2025-01-01 through 2025-12-01",
+    "2023_2024_2026_coverage": {
+      "queried_dates": {
+        "2023": 12,
+        "2024": 53,
+        "2026": 0
+      },
+      "queried_dates_with_articles": {
+        "2023": 12,
+        "2024": 12,
+        "2026": 0
+      },
+      "unique_fragments": {
+        "2023": 114,
+        "2024": 113,
+        "2026": 0
+      }
+    },
+    "usable_for": [
+      "descriptive analysis of the retrieved sample",
+      "exploratory macro-theme coding with explicit coverage and retrieval-bias limitations",
+      "manual hypothesis generation"
+    ],
+    "not_usable_as": [
+      "an exhaustive or representative daily news corpus",
+      "unqualified news-volume or sentiment time series",
+      "evidence of oil-price forecasting performance",
+      "a claim of macro-to-security-code relevance"
+    ],
+    "retrieval_quality_evidence": {
+      "raw_response_count": 466,
+      "quota_exhausted_responses": 161,
+      "content_responses": 305,
+      "news_exhaustive": false,
+      "raw_only_not_training_ready": true,
+      "responses_hit_cap": 0,
+      "explicit_truncation_flags": 0,
+      "interpretation": "No response cap/truncation was flagged, but successful retrieval was relevance-ranked and sparse by day; this does not establish complete coverage."
+    },
+    "latest_probe": {
+      "path": "results/ifind_session_probe_20261008/report.json",
+      "status": "CONNECTED_BUT_NEWS_QUOTA_EXHAUSTED",
+      "2026_rows": 0,
+      "meaning": "supplier quota exhaustion, not evidence of permission denial"
+    },
+    "existing_macro_features": {
+      "path": "results/macro_theme_nlp_v1/daily_calendar_features.csv",
+      "rows": 13152,
+      "date_range": "2023-01-01 through 2025-12-31",
+      "2026_rows": 0
+    },
+    "decision": "Do not apply title/code event filtering. Existing 2025 fragments may support a clearly labeled exploratory sample analysis; they do not satisfy broad 2023-2026 news coverage. 2026 fixed NLP comparison is not runnable without timestamped 2026 macro text.",
+    "no_zero_imputation": "2026 count 0 means no retrieved 2026 news rows exist; no missing-news sentiment/theme value is filled with numeric zero."
+  },
+  "candidate_readiness": [
+    {
+      "candidate": "JF05",
+      "status": "BLOCKED_ON_2026_PIT_FINANCE_FEATURE_ROWS",
+      "reusable": "2026 OHLCV/market-state features through 2026-09-21",
+      "missing": "The 14 finance feature rows in the historical JF05 panel stop at 2025-12-31; raw 2026 filing/valuation coverage has not been verified in this audit.",
+      "next_minimum": "Verify existing raw source coverage and build point-in-time finance rows before any fixed-contract comparison; wait for label maturity by the original cutoff."
+    },
+    {
+      "candidate": "P20",
+      "status": "COMPLETE_FIXED_2026_COMPARISON_POSTHOC",
+      "reusable": "Frozen 25 price/state inputs, 2026 canonical market, and historical P20 label cache; cross-2026 labels are now rebuilt only for endpoints matured by each monthly cutoff.",
+      "missing": "None for this P20 run. Predictions and two canonical 2026 account scenarios completed under the frozen design.",
+      "next_minimum": "Keep the comparison descriptive and post-hoc; do not alter final E00 or infer independent validation."
+    },
+    {
+      "candidate": "JF20",
+      "status": "BLOCKED_ON_PIT_FINANCE_ROWS_AND_NEW_20D_OUTPUTS",
+      "reusable": "Same 2026 price/state inputs as P20",
+      "missing": "2026 PIT finance rows plus causal 20-session labels and monthly predictions.",
+      "next_minimum": "Verify raw finance source coverage, then only proceed under fixed contract and maturity cutoffs."
+    },
+    {
+      "candidate": "Qlib adapted joint screen",
+      "status": "2026_DERIVED_FEATURES_AND_PREDICTIONS_NOT_BUILT",
+      "reusable": "OHLCV through 2026-09-21; frozen historical adapted workflow",
+      "missing": "2026 99 price-derived alpha features, PIT finance rows, and forecasts. This is an adapted Alpha158-family/DoubleEnsemble screen, not exact Qlib replication.",
+      "next_minimum": "Derive only frozen features and predictions if separately authorized; no refit/tuning in this audit."
+    },
+    {
+      "candidate": "RG01/SQ01",
+      "status": "DERIVED_2026_SEQUENCE_ROWS_NOT_BUILT_RAW_FIELDS_AVAILABLE",
+      "reusable": "2026 canonical OHLCV through 2026-09-21; frozen HMM checkpoint and sequence cache; completed historical 2024-02 through 2025-12 23-month extension (46 RG fits + 23 SQ fits) and completed 2024-2025 accounts.",
+      "missing": "2026 causal state/sequence features and predictions have not been derived; this is implementation work, not a demonstrated source-field gap. The earlier v3 first-month report is not the complete historical result.",
+      "next_minimum": "Use frozen causal transform/checkpoint on canonical 2026 rows; inspect exact required source columns, then report implementation scope."
+    },
+    {
+      "candidate": "Macro NLP",
+      "status": "BLOCKED_ON_2026_NEWS_TEXT",
+      "reusable": "2025 iFind fragments and 2023-2025 theme calendar features",
+      "missing": "No timestamped 2026 news rows; current session probe was quota-exhausted.",
+      "next_minimum": "Obtain an authorized 2026 macro-text source or wait for quota reset; define source/coverage before any comparison. No ticker-based title gate."
+    }
+  ],
+  "shared_2026_inputs": {
+    "market_panel": "data/processed/sealed_2026/account_market_2026_candidate.parquet",
+    "market_rows": 111475,
+    "market_dates": "2026-01-05 through 2026-09-21",
+    "symbols": 637,
+    "daily_pool_size": 300,
+    "e00_feature_file": "results/e00_2026_feature_build_v1/e00_2026_prediction_features.parquet",
+    "e00_feature_rows": 52500,
+    "prediction_ready_rows": 51893,
+    "feature_status": "FEATURES_ONLY_NO_LABELS_NO_PREDICTIONS at preflight; subsequent E00 evaluation artifacts are separate and are not inputs for other candidates unless contract allows reuse."
+  },
+  "operations": {
+    "downloads": 0,
+    "model_fits": 0,
+    "accounts_run": 0,
+    "final_E00_changed": false,
+    "source_data_modified": false
+  },
+  "P20_FinalComparisonEvidence": {
+    "status": "COMPLETE_P20_2026_TWO_CANONICAL_ACCOUNTS_WITH_RECOVERED_STANDARD_SUMMARY",
+    "contract": "results/p20_2026_comparison_v1/contract.json",
+    "contract_sha256": "9bb6433f14223228b2d5973c30038a49845a32460c38628537c09c22207b6598",
+    "runner": "scripts/run_p20_2026_comparison_v1.py",
+    "runner_sha256": "42b54bb687ee089b995894e15d9544c0094418fd4be364cadbaabcf803874c2e",
+    "recovery_runner": "scripts/recover_p20_2026_accounts_v1.py",
+    "recovery_sha256": "b046c7b0a24d7cdaed2c8455f262d4b4fa2b5d45385544ca0a3f5db9f508c70d",
+    "fit_report_sha256": "a38875b417fb567c7c02d9ab476302975dbbb124390c0eb05b253566520dfdfb",
+    "prediction_rows": 51893,
+    "monthly_fits": 9,
+    "period": "2026-01-05 through 2026-09-21 (175 sessions)",
+    "standard": {
+      "total_return": -0.03159267768960872,
+      "sessions": 175,
+      "trades": 1899,
+      "issues": 0,
+      "cash_flow_pass": true,
+      "nav_export_pass": true
+    },
+    "original_stress": {
+      "total_return": -0.053118997601888096,
+      "sessions": 175,
+      "trades": 1883,
+      "issues": 0,
+      "cash_flow_pass": true,
+      "nav_export_pass": true
+    },
+    "posthoc_after_E00": true,
+    "parameter_search": false,
+    "downloads": 0,
+    "final_E00_changed": false,
+    "account_failure_record": "results/p20_2026_comparison_v1/account_standard_failure.json",
+    "interpretation": "Descriptive fixed-candidate comparison after E00 outcomes were observed; not independent confirmation and not authority to replace E00."
+  },
+  "P20_PreparationEvidence": {
+    "accounts": 0,
+    "fits": 0,
+    "runner_sha256": "42b54bb687ee089b995894e15d9544c0094418fd4be364cadbaabcf803874c2e",
+    "prediction_has_future_label_filter": false,
+    "status": "PREPARED_NO_FITS_OR_ACCOUNTS",
+    "contract": "results/p20_2026_comparison_v1/contract.json",
+    "contract_sha256": "9bb6433f14223228b2d5973c30038a49845a32460c38628537c09c22207b6598",
+    "downloads": 0,
+    "preflight": "PASS_INPUT_PREFLIGHT_NO_FITS",
+    "runner": "scripts/run_p20_2026_comparison_v1.py"
+  },
+  "RG01_SQ01_2024_2025_Evidence": {
+    "prediction_report": "results/regime_sequence_remaining_months_v1_1/execution_summary.json",
+    "status": "COMPLETE_FIXED_23_MONTH_PREDICTIONS",
+    "months": "2024-02 through 2025-12",
+    "RG_fits": 46,
+    "SQ_fits": 23,
+    "prediction_rows": 143945,
+    "account_report": "results/regime_sequence_accounts_v1/report.json",
+    "account_status": "COMPLETE_FOUR_FIXED_RG01_SQ01_ACCOUNTS",
+    "account_period": "2024-01-02 through 2025-12-31",
+    "canonical_2026_market_columns": [
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume",
+      "adj_factor",
+      "is_suspended"
+    ],
+    "derived_sequence_inputs": [
+      "adjusted close return",
+      "adjusted volume / trailing 20-session mean",
+      "(high-low)/close",
+      "close/open - 1",
+      "market_ret20",
+      "market_vol20"
+    ],
+    "HMM_checkpoint_sha256": "e65702f236160cf9ebf951ab9483c2d2c716759831f8bccab23ea7d5ab116fd8",
+    "ESN_development_scaler": "technical_gate.json esn.dev_scaler_mean/std (6 inputs; 951 dates)",
+    "reservoir_seed": 20261007,
+    "HMM_state_scaler": "Reproduce from frozen 2020-2023 training_panel via stable_states rule; no standalone saved scaler file located",
+    "estimated_2026_sequence_grid_rows": 111475,
+    "estimated_prediction_rows": 51893,
+    "estimated_supervised_fits_if_nine_months": 27,
+    "new_2026_fit_authorized": false
+  }
+}

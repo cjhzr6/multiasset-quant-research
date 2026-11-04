@@ -1,0 +1,122 @@
+{
+  "status": "DESCRIPTIVE_FIXED_RULE_YEAR_COMPARISON",
+  "generated_at": "2026-10-07T22:36:26+08:00",
+  "source_sha256": {
+    "results\\account_2023_diagnostic_v1\\E00_daily.csv": "1643d1ca0d9b8147bed08f5e4c882f5bc4b49891df3f0f5deca2c42280c67d4e",
+    "results\\e00_isolated_replay_v2\\E00_daily.csv": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd",
+    "results\\account_2023_diagnostic_v1\\T01_daily.csv": "f79223a7be1191df27293a9121f83817fd36347df97d35525903693da2bc6ae7",
+    "results\\trend_state_trial_v1\\T01_standard_daily.csv": "c8cafd1058060e9635509e9aeaa2084e5736e625222eb90207eaa8c66f9b87ab",
+    "results\\account_2023_diagnostic_v1\\S01_daily.csv": "9452e248c48ea5757d68fcad1fa6f2a2a4e806121f5f3c372efa9b7e90bb8297",
+    "results\\trend_state_trial_v1\\S01_standard_daily.csv": "7bcec5f22efe77acf14359bbf2e39ba83705cad9df01c992bf663fe6f898a30f"
+  },
+  "annual_metrics": [
+    {
+      "model": "E00",
+      "year": 2023,
+      "net_return": 0.06755612478267481,
+      "max_drawdown": -0.08380350327992625,
+      "annualized_volatility": 0.10662441204063174,
+      "mean_stock_exposure": 0.8980435883957859,
+      "sessions": 242
+    },
+    {
+      "model": "E00",
+      "year": 2024,
+      "net_return": 0.3948865466695981,
+      "max_drawdown": -0.08720102909417371,
+      "annualized_volatility": 0.16685420384891855,
+      "mean_stock_exposure": 0.9043833971364978,
+      "sessions": 242
+    },
+    {
+      "model": "E00",
+      "year": 2025,
+      "net_return": 0.08054818528709817,
+      "max_drawdown": -0.054511969265493176,
+      "annualized_volatility": 0.10590593434518122,
+      "mean_stock_exposure": 0.9159814316358865,
+      "sessions": 243
+    },
+    {
+      "model": "T01",
+      "year": 2023,
+      "net_return": -0.027594583429018438,
+      "max_drawdown": -0.15709533758362682,
+      "annualized_volatility": 0.13179483015206425,
+      "mean_stock_exposure": 0.8343708856863922,
+      "sessions": 242
+    },
+    {
+      "model": "T01",
+      "year": 2024,
+      "net_return": 0.12431719585923484,
+      "max_drawdown": -0.13244313706313093,
+      "annualized_volatility": 0.1873235723035013,
+      "mean_stock_exposure": 0.8536502461546772,
+      "sessions": 242
+    },
+    {
+      "model": "T01",
+      "year": 2025,
+      "net_return": 0.17338974567711118,
+      "max_drawdown": -0.11885004899717644,
+      "annualized_volatility": 0.166346800364515,
+      "mean_stock_exposure": 0.8131275879939519,
+      "sessions": 243
+    },
+    {
+      "model": "S01",
+      "year": 2023,
+      "net_return": -0.0001970094077068385,
+      "max_drawdown": -0.09485264026314655,
+      "annualized_volatility": 0.11738134546257546,
+      "mean_stock_exposure": 0.869161020333373,
+      "sessions": 242
+    },
+    {
+      "model": "S01",
+      "year": 2024,
+      "net_return": 0.28454435306146997,
+      "max_drawdown": -0.09340901104530563,
+      "annualized_volatility": 0.18399975308864758,
+      "mean_stock_exposure": 0.8773048694328737,
+      "sessions": 242
+    },
+    {
+      "model": "S01",
+      "year": 2025,
+      "net_return": 0.13481806579373679,
+      "max_drawdown": -0.10378730897643695,
+      "annualized_volatility": 0.15782462151087812,
+      "mean_stock_exposure": 0.8563583049848055,
+      "sessions": 243
+    }
+  ],
+  "descriptive_market_condition_days": [
+    {
+      "signal_date": 2023,
+      "observed_dates": 242,
+      "trend_condition_dates": 52,
+      "trend_condition_fraction": 0.21487603305785125
+    },
+    {
+      "signal_date": 2024,
+      "observed_dates": 242,
+      "trend_condition_dates": 101,
+      "trend_condition_fraction": 0.41735537190082644
+    },
+    {
+      "signal_date": 2025,
+      "observed_dates": 243,
+      "trend_condition_dates": 143,
+      "trend_condition_fraction": 0.588477366255144
+    }
+  ],
+  "caveats": [
+    "2023 standalone cash start;2024 cash start;2025 carries2024 holdings.",
+    "Yearly drawdown here uses a fresh yearly peak anchor; different from whole2024-2025 maximum drawdown.",
+    "2023 was development data;2024-2025 repeatedly observed selection data.",
+    "Do not choose a regime rule by annual winners;2026 data never loaded.",
+    "Publishable account status requires separate2023 ledger/source acceptance."
+  ]
+}

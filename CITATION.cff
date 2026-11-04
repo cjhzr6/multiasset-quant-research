@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or its research artifacts, cite this repository and identify the exact commit used."
+type: software
+title: "Multi-Asset Quant Research: Price-Volume Stock Selection and Cross-Asset Risk Budgeting"
+authors:
+  - name: "Multi-Asset Quant Research contributors"
+version: 1.0.0
+license: MIT
+abstract: "An exploratory research artifact connecting rolling LightGBM stock ranking, risk-budget allocation, and shared-cash execution, with explicit data and reproduction boundaries."
+keywords:
+  - quantitative-finance
+  - portfolio-allocation
+  - risk-budgeting
+  - backtesting
+  - reproducible-research
+repository-code: "https://github.com/cjhzr6/multiasset-quant-research"
+url: "https://github.com/cjhzr6/multiasset-quant-research"

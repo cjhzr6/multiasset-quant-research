@@ -1,0 +1,168 @@
+{
+  "contract_id": "stock_etf_stage_trial_v1",
+  "date_shanghai": "2026-10-10",
+  "status": "DESIGN_FROZEN_IMPLEMENTATION_AND_INPUT_BINDING_REQUIRED",
+  "authorization": {
+    "scope": "User-authorized small stock-and-ETF strategy trial, with executable stage selection and a fixed mixture comparator",
+    "coordinator_thread": "01a10a86-d8f6-7423-bb05-bd1481d1d8b5",
+    "phi_delivery": "Contract and short explanation only; no economic run, fitting, download, search or agent",
+    "prior_40_day_stock_candidate": "Preserve all old contracts, code, results and saved manifest unchanged; this is a new trial",
+    "superseded_gate": "The previous proposed historical static Sharpe>=1 prerequisite does not apply to this authorized stage-selection trial"
+  },
+  "question": "Does a frozen A-share opportunity-state rule selecting between S01 stocks and ETF price-rule allocation improve after-cost Sharpe over a fixed 50/50 allocation to these same two candidates?",
+  "budget": {
+    "new_model_fits": 0,
+    "new_downloads": 0,
+    "new_evaluated_accounts_max": 4,
+    "account_ids": ["STAGE_STANDARD", "FIXED_STANDARD", "STAGE_STRESS", "FIXED_STRESS"],
+    "additional_shadow_accounts": 0,
+    "parameter_or_start_offset_search": false,
+    "signal_derivations": "One causal four-ETF score table and reuse/mapping of existing stock states/rankings; not model training or shadow account simulation",
+    "technical_fixes": "Preserve failed attempts and error evidence; rerun only a documented correctness fix with unchanged financial rules, bounded to these four account identities"
+  },
+  "period": {
+    "start": "2025-01-02",
+    "end": "2026-09-21",
+    "expected_sessions": 418,
+    "calendar_source": "results/multi_asset_etf_trial_v1/common_calendar.csv",
+    "calendar_sha256_reference": "1f959f3571c961539a7157cad7157149a1b82b94465ae99885cd431fecd3e2c7",
+    "calendar_gate": "Same ordered dates must match accepted stock inputs and ETF calendar exactly; do not shorten by dropping inconvenient sessions",
+    "capital_cny": 1000000,
+    "initial_cash_fraction": 1,
+    "cash_yield": 0,
+    "warmup": "Reuse pre-2025 prices/events and frozen prediction/state inputs only; first ETF score needs61 genuine closes and60 event-normalized daily returns",
+    "first_signal": "Evaluation index0 close, 2025-01-02; earliest execution is next common session, 2025-01-03",
+    "cross_year": "Continuous lots, acquisition dates, cash, marks, tax bases, entitlements and receivables; no January reset",
+    "terminal_treatment": "Final-close mark including valid receivables and stock estimated dividend tax liability; no forced terminal liquidation or future execution",
+    "research_label": "Exploratory already-viewed historical period, not blind validation"
+  },
+  "candidates": {
+    "STOCK_S01": {
+      "mechanism": "Existing conditional A-share stock ranking policy; it incorporates E00 and T01 rather than counting them as independent allocations",
+      "source_contract": "configs/strategy_switch_trial_v1.contract.json",
+      "rankings": "Reuse exact frozen E00 predictions and T01 ret60/ret120/momentum20_skip5 percentile-mean rankings and their point-in-time stock pools",
+      "internal_rule": "At each five-session stock node, select T01 iff CSI300 ret20>0 and CSI300 close/MA60-1>0; otherwise E00, as in accepted S01",
+      "internal_rebalance_sessions": 5,
+      "inventory_selection": "Existing top80 selection with held-stock retention within top120, using this mixed account's actual stock inventory",
+      "planning_budget": "stock_fraction*signal_total_NAV/80 per selected stock; preserve original lot rounding, fee reserve and small-pool cash remainder",
+      "buy_cap": "Original 3percent stock cap applied to stock_fraction*opening_total_NAV; retain existing holdings above cap and permit sales, never apply this cap to ETF units",
+      "no_extra_candidates": "E00, T01 and S01 do not each receive a separate fixed-mixture weight; old standalone accounts remain descriptive references"
+    },
+    "ETF_R60_TOP2": {
+      "mechanism": "Positive own-price trend and cross-asset risk-adjusted relative strength, without new ML",
+      "products": {"csi300": "159919", "sp500_qdii": "513500", "physical_gold": "518800", "rmb_gov_bond": "511010"},
+      "product_master": "results/multi_asset_etf_trial_v1/products.json",
+      "parent_contract": "configs/multi_asset_etf_trial_v1.contract.json",
+      "parent_execution_binding": "results/multi_asset_etf_trial_v1/execution_binding.json",
+      "return_intervals": 60,
+      "required_close_observations": 61,
+      "gross_factor": "Reuse canonical parent raw-price-plus-events total-return factor g[d]; theoretical signal reinvestment is separate from actual account cash",
+      "return": "R60=product(last60 g)-1",
+      "volatility": "s60=sample_std(last60 (g-1), ddof=1)",
+      "score": "Q=R60/(sqrt(60)*s60); valid only when all60 observations are finite and s60>0",
+      "ranking": "At each ETF node sort valid positive Q descending; exact ties by six-digit product code ascending",
+      "weights_within_candidate": "First two positive-score ETFs each0.50. If one qualifies, allocate0.50 and leave0.50 cash; if none qualifies, all cash. Do not renormalize a single survivor to100percent",
+      "internal_rebalance_sessions": 20,
+      "missing": "First node requires valid scores for all four; later invalid ETF scores excluded and logged, not filled or window-adjusted. More than10percent ETF nodes with any invalid score invalidates input readiness",
+      "no_extra_signals": "No NAV premium, FX overlay, future overseas close, sector expansion, leverage or shorts; CNY ETF prices already include FX",
+      "scope": "New frozen price-rule hypothesis, not an asserted low-correlation strategy and not evidence of trend superiority"
+    }
+  },
+  "selector": {
+    "hold_sessions": 40,
+    "decision_indices": "0,40,80,...,400, at that session close; no start-offset alternatives",
+    "state_source": "results/strategy_switch_trial_v2/states_daily_v2.parquet",
+    "state_source_sha256_reference": "2ff2d76fe29a0b0480f0418629930c63a5bef1ca6f34fda36dc4e427d4aa9b15",
+    "M": "M_csi300_ma60_distance: CSI300 close / trailing60-session mean close -1",
+    "B": "B_pool_share_above_ma60: share of eligible point-in-time stocks above own trailing60-session mean",
+    "ready": "M,B finite, contemporaneous pool provenance valid, B_coverage>=0.80; only required M/B readiness, not unrelated P readiness",
+    "rule": "When ready and M>0 and B>0.50 choose STOCK_S01 with stock_fraction1 and ETF_fraction0; otherwise choose ETF_R60_TOP2 with stock_fraction0 and ETF_fraction1",
+    "mechanism": "A-share market strength with broad participation favors stock selection; weak or narrow A-share participation delegates to a multi-asset opportunity rule. This is a fixed financial hypothesis, not a proven regime map",
+    "missing_rule": "An invalid outer state uses ETF_R60_TOP2 and logs fallback; >10percent outer nodes invalid stops economic interpretation, not a fitted rescue",
+    "identity_lock": "Lock STOCK_S01 or ETF_R60_TOP2 for40 sessions. S01's existing E00/T01 internal choice may still change every5 sessions; ETF constituents may change every20. No unscheduled outer switch",
+    "no_performance_selector": "No trailing120-day Sharpe, realized candidate return winner, threshold fit, volatility overlay or shadow NAV input"
+  },
+  "fixed_comparator": {
+    "stock_fraction": 0.5,
+    "etf_fraction": 0.5,
+    "candidates": ["STOCK_S01", "ETF_R60_TOP2"],
+    "timing": "Same five-session stock clock and20-session ETF clock, both anchored at index0. At each family node use its fixed fraction of current totalNAV to form targets. Allocation can drift between nodes and due to rejected trades",
+    "comparison": "This is an actual mixed inventory account, not0.5*standalone NAVs. ETF candidate cash remains cash and is not reassigned to stocks"
+  },
+  "minimal_account_interface": {
+    "structure": "One portfolio cash balance and totalNAV, two typed inventory/event adapters: STOCK for existing lots/tax/mergers, ETF for fund units/ticks/consolidation. Family allocations are planning budgets, not funded NAV sleeves or synthetic capital transfers",
+    "do_not_patch_old_sources": "New isolated mixed runner/adapter may reuse existing helpers; old stock Account and accepted ETF runner source/result files remain unchanged",
+    "net_targets": "Form stock and ETF unit targets at signal close; union targets with actual owned symbols, so exits appear as zero targets. Trade net differences from actual holdings, never import child-account inventory",
+    "active_family_schedule": "Stock targets update at indices divisible by5; ETF targets update only at indices divisible by20. A40-session outer node is both. Between ETF nodes hold its live units, including residuals, without adjusting ETF weights",
+    "inactive_family_residuals": "At each global five-session node set all holdings of an outer-inactive family to zero targets and attempt exit at next open. This explicit five-session exit retry is the only cross-family residual retry; no daily retries or deletion. ETF constituent exits while ETF family remains active are attempted again only at its next20-session node",
+    "exit_failure": "Failed exits remain real holdings with fees/tax/events/marks; identity lock does not imply100percent achieved allocation. Buys require actual available shared cash, no borrowing or fictitious immediate cash transfer",
+    "order_formation": "Signal-close NAV and raw close determine integer targets. Opening marks used only for execution constraints, not selection or target hindsight. Keep fees and cash reserve inside lot-rounded planning budgets",
+    "execution_sequence": "Apply due events and lot availability; all eligible stock and ETF sells before any buys. Preserve stock selected-ranking buy order and ETF class order csi300,sp500_qdii,physical_gold,rmb_gov_bond",
+    "shared_cash_rationing": "If combined preliminarily eligible buy cost including fees exceeds available cash, proportionally scale buy requests by their estimated all-in notional, floor using each instrument's lot rule, recheck fees and reduce until affordable; do not borrow or reallocate rounding remainder by performance. Then execute frozen stock-rank/ETF-class order",
+    "order_expiry": "Signal-close target order valid only next common session; remaining quantity expires. Later retries follow only the schedules above",
+    "symbol_types": "Explicit typed symbol namespace; an ETF cannot be routed through stock80/120,3percent cap, stock stamp/dividend tax or stock merger code",
+    "valuation": "totalNAV=cash+stock market value+ETF market value+valid outstanding receivables-estimated stock dividend tax liability; no double counting cash or fund units"
+  },
+  "execution_costs_events": {
+    "stock": {
+      "sources": ["scripts/account_engine_2026_v1.py", "scripts/audit_account_inputs.py", "scripts/fees_2026_v1.py", "scripts/run_strategy_switch_trial_v1.py"],
+      "fee_routing": "Reuse accepted2025/2026 date-specific equity fee components, original limit/lot/T+1 availability, acquisition-based dividend-tax and reviewed stock actions/mergers",
+      "standard": {"one_way_slippage": 0.0005, "trade_fee_multiplier": 1.0},
+      "stress": {"one_way_slippage": 0.001, "trade_fee_multiplier": 2.0},
+      "tax_distinction": "Preserve old accepted multiplier semantics for transaction fee components; do not double acquisition-based dividend tax or silently exempt stocks"
+    },
+    "etf": {
+      "fees": "Inherit exact parent contract standard/stress ETF commission, minimum, slippage and exemption rules, with product/date lots,ticks,T+0/T+1 and price limits from bound product master",
+      "capacity": "Parent1percent prior20-session mean traded units, correctly adjusted for unit consolidation; no future full-day volume sizing",
+      "events": "Parent verified fund record/ex/payment dates, unit conversions and fractional rounding; actual entitlement based on this account's holdings, not standalone portfolio events",
+      "cash_availability": "Distribution payment at close is spendable next common open; verified secondary-market sale proceeds usable same day. No automatic reinvestment outside target nodes",
+      "daily_range_rejection": "Retain parent adverse tick-rounded slippage outside daily high/low no-fill rule. A simulated rejection, including Apr8, does not establish historical inability to trade. No clipping price to rescue a strategy",
+      "events_source": "data/processed/multi_asset_etf_trial_v1/corporate_actions.csv"
+    },
+    "execution_price": "Same next-session raw opening-price conventions and disclosed product-specific adapters for all four accounts; no fill at signal close",
+    "forward_information": "Only source prices, PIT stock pools, frozen causal predictions and announced events known by each signal close; no later revised total-return data or future US underlying close",
+    "carry_events": "Inactive/residual holdings still receive corporate actions and settlements; stock tax bases/acquisition dates and ETF receivables survive switching and year boundary"
+  },
+  "binding_and_engineering_gate": {
+    "before_run": "Coordinator/runner binds SHA256 of this contract, all input files, calendar, state mapping, predictions/rankings, stock rule/event/fee sources, ETF products/prices/events and new runner. Parent bindings are references, not proof new mixed engine is accepted",
+    "checks": ["Common418-date calendar and first-close/next-open timing", "Zero unsupported source gaps and causal state/score construction", "No negative cash or illegal available lots", "Typed stock/fund taxes,ticks,consolidation and merger events", "Both-family sell-before-buy with rejected exits preserved", "Shared cash, marks, receivables and estimated tax reconcile each session", "No duplicated/dropped entitlements across stages and years", "Independent post-run inventory/fee/cash/NAV reconstruction"],
+    "reconciliation_tolerance_cny": 0.000001,
+    "engineering_failure": "Retain invalid output and report specific cause; fix correctness without changing rule/period. Never treat an invalid ledger as a strategy failure"
+  },
+  "evaluation": {
+    "primary": "After-cost zero-cash Sharpe=sqrt(252)*mean(all418 dailyNAV returns)/sample_std(ddof1); first cash day included with precedingNAV=initial capital",
+    "zero_volatility": "Undefined Sharpe cannot pass; no positive-infinity substitution",
+    "selection_increment_pass_requires_all": {
+      "valid_inputs_and_engineering": true,
+      "stage_standard_sharpe_strict_positive": true,
+      "standard_sharpe_delta_vs_fixed_min": 0.1,
+      "stage_stress_sharpe_strict_positive": true,
+      "stress_sharpe_delta_vs_fixed_strict_positive": true,
+      "each_candidate_complete_selected_40_session_stages_min": 2
+    },
+    "coverage": "Only full40-session stages count; final18-session stage is reported but not counted. Limited regime coverage means no meaningful mechanism test, not proof against the candidate",
+    "uncertainty": "Paired20-session moving-block bootstrap,2000 repetitions,seed20261010, of same-scenario stage-minus-fixed Sharpe; interval crossing zero precludes significant-improvement language but does not trigger parameter search",
+    "existing_references": "Reuse accepted same-period continuous E00/T01/S01 and four-ETF static standard/stress results without new accounts. Verify calendar/capital/first-signal and cost definitions, otherwise descriptive only",
+    "replacement_claim": "Passing stage-minus-fixed gate only supports selection increment for these two candidates. If not better than the best compatible existing reference, do not claim project-wide best strategy or replace it. No standalone ETF_R60_TOP2 evaluation is silently added",
+    "secondary": ["Total/annualized return and maximum drawdown", "Daily gross/net exposures, cash and allocation drift", "Each full/partial stage and year-segment performance", "ETF score/selection and S01 inner E00/T01 choice", "Transition turnover, all fees/taxes/slippage", "Rejected/partial fills, exit retry and residual exposure", "Asset P&L contributions with reconciliation and separate yearly NAV denominators"],
+    "correlation_scope": "Coordinator observed same-period T01-S01 correlation0.9033; ETF_FIXED correlations are descriptive and do not prove ETF_R60_TOP2 diversification. Do not fit or select weights from viewed correlations",
+    "fail_stop": "Failed valid gate: save all four accounts and stop this fixed selector. No automatic60/120-day score variants, threshold/weight/hold/start search, ETF substitution or model refit. A successful fixed comparator remains useful even when selection fails",
+    "no_other_economic_gates": "No static historical Sharpe>=1 prerequisite, no per-year winner rule or reinstated old drawdown veto"
+  },
+  "limitations": [
+    "S01 is an existing compound stock policy;40-day outer lock is not40-day E00/T01 lock and does not eliminate internal trading",
+    "Choice of60/40/20 and50percent breadth is a financial/engineering hypothesis, not calibrated optimum",
+    "Small four-ETF pool, previously viewed period and limited independent stages; no universal or blind-test claim",
+    "Public third-party daily ETF prices, generic verified product limit assumptions and weaker2026 bond distribution source are inherited and disclosed",
+    "252-day filter only triggered once and its exit was unfilled in prior daily-bar model; that result does not justify calling trend theory ineffective"
+  ],
+  "required_outputs": [
+    "execution_binding.json with source mappings and hashes",
+    "outer_selection_log.csv and causal etf_score_table",
+    "Four mixed daily ledgers, typed orders/fills/rejections and stock/ETF event ledgers",
+    "Closing typed holdings/lots, receivables and stock dividend tax bases",
+    "summary.json with four-account comparison, gates, coverage, year/stage/asset attribution and reused references",
+    "independent_acceptance.json with reconciliation and timing/fee/event checks"
+  ],
+  "output_root": "results/stock_etf_stage_trial_v1"
+}

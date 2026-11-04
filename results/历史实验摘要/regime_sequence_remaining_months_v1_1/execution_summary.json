@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE_FIXED_23_MONTH_PREDICTIONS",
+  "completed_months": 23,
+  "prediction_rows_including_reused_january": 143945,
+  "prediction_sha256": "022d0cc4686df7147c25ffb64fdcb9d3ae7ea2248fc66fa1de68fe5fb1c342c7",
+  "fit_counts": {
+    "RG01": 46,
+    "SQ01": 23,
+    "started": 0,
+    "complete": 69
+  },
+  "prior_actual_fit_attempts": 5,
+  "cumulative_actual_fit_attempts": 74,
+  "accounts": 0,
+  "downloads": 0,
+  "sealed_2026_access": false,
+  "economic_gate_evaluated": false,
+  "months": [
+    "2024-02-01",
+    "2024-03-01",
+    "2024-04-01",
+    "2024-05-01",
+    "2024-06-01",
+    "2024-07-01",
+    "2024-08-01",
+    "2024-09-01",
+    "2024-10-01",
+    "2024-11-01",
+    "2024-12-01",
+    "2025-01-01",
+    "2025-02-01",
+    "2025-03-01",
+    "2025-04-01",
+    "2025-05-01",
+    "2025-06-01",
+    "2025-07-01",
+    "2025-08-01",
+    "2025-09-01",
+    "2025-10-01",
+    "2025-11-01",
+    "2025-12-01"
+  ]
+}

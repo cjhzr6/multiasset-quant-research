@@ -1,0 +1,75 @@
+{
+  "version": "NEWS_SOURCE_FEASIBILITY_v1",
+  "date_shanghai": "2026-10-07",
+  "status": "NO_LICENSED_REUSABLE_HISTORICAL_FULLTEXT_SOURCE_PASSED",
+  "inventory_checked": [
+    "规划/项目数据总清单与下载安排.md",
+    "results/project_data_inventory.json"
+  ],
+  "duplicate_request_decision": "No new competition data request. Existing security_master is not re-requested; current deliveries REQ-ZXB-20261006-463d599dec2b4838 and REQ-ZXB-20261006-ecfd5c12ca4a4135 are earnings_forecast only.",
+  "bounded_public_samples": [
+    {
+      "target_day": "2023-07-03",
+      "url": "https://www.news.cn/2023-07/03/c_1129730250.htm",
+      "http_status": 200,
+      "bytes": 13998,
+      "sha256": "e922b1b97f01bc6c0883b74006f6992390669eb210d3c3e3d83a2989b62e5383",
+      "detected_article_text_chars": 452,
+      "publication_time_precision": "web-indexed page timestamp 2023-07-03 19:09:20; fetched HTML had no reliable publication timestamp field beyond publishid",
+      "http_date": "2026-10-07 (response generation/fetch date, not article scrape/revision time)",
+      "last_modified": null,
+      "etag": null,
+      "fulltext_retained": false
+    },
+    {
+      "target_day": "2024-07-03",
+      "url": "https://www.news.cn/fortune/20240703/997c6a9e98814636a705945a3cd1f0de/c.html",
+      "http_status": 200,
+      "bytes": 17735,
+      "sha256": "15f069f1bb5859859fbc00503020198c1627e24534f38d3014f2f6b6758ac6c5",
+      "detected_article_text_chars": 1120,
+      "publication_time_precision": "page metadata date-only 2024-07-03; indexed result has 2024-07-03 08:00:32",
+      "http_date": "2026-10-07 (response generation/fetch date, not article scrape/revision time)",
+      "last_modified": null,
+      "etag": null,
+      "fulltext_retained": false
+    }
+  ],
+  "license": "Xinhua copyright page says works sourced from Xinhua Net are owned/licensed by Xinhua Net and cannot be reproduced, excerpted, or otherwise used without authorization. Accessible pages therefore fail reusable NLP training license gate; sample body text was not retained.",
+  "gdelt": {
+    "route": "GDELT Article List GAL",
+    "finding": "metadata dataset; not full article body; date may be publication time or time first seen and older republishes may be misdated; one 2023-07-03 archive HEAD succeeded (803324 bytes); exact 2024-07-03 archive minute probes yielded 404. Stop after three consecutive 404 responses; no further probes.",
+    "eligible_for_fulltext_training": false
+  },
+  "tushare_option": {
+    "finding": "Official docs describe historical news content/title/datetime, >6 years coverage and up to 1500 records/request; separate permission (not points). Actual account permission, exact historical coverage, licensing, first-public/revision/syndication semantics remain unverified; not downloaded."
+  },
+  "minimum_next_action": "If full-news NLP remains desired, request/enable Tushare news permission or obtain explicit reuse authorization, then verify historical window, licensing, publication/revision semantics, stable URLs/IDs and coverage before any collection. No user account action required for RG01/SQ01.",
+  "sources_checked": [
+    {
+      "url": "https://www.news.cn/copyrightad.htm",
+      "checked": "2026-10-07",
+      "scope": "Xinhua Net rights and reuse terms"
+    },
+    {
+      "url": "https://www.gdeltproject.org/about.html#termsofuse",
+      "checked": "2026-10-07",
+      "scope": "GDELT dataset terms"
+    },
+    {
+      "url": "https://blog.gdeltproject.org/announcing-the-gdelt-article-list-rss-feed/",
+      "checked": "2026-10-07",
+      "scope": "GAL field/coverage description"
+    },
+    {
+      "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+      "checked": "2026-10-07",
+      "scope": "DOC API temporal window"
+    },
+    {
+      "url": "https://tushare.pro/document/2?doc_id=143",
+      "checked": "2026-10-07",
+      "scope": "Tushare news API fields/history/permission"
+    }
+  ]
+}

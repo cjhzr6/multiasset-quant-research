@@ -1,0 +1,290 @@
+[
+  {
+    "strategy": "B00",
+    "references": [
+      {
+        "source": "results\\account_backtest_validation_reset\\B00_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_monthly_v1\\B00_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_v1\\B00_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "B01",
+    "references": [
+      {
+        "source": "results\\account_backtest_validation_reset\\B01_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\jf05_account_cost2\\B01_daily.csv",
+        "max_nav_difference": 75805.18439158611
+      },
+      {
+        "source": "results\\jf05_account_v1\\B01_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_monthly_v1\\B01_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_v1\\B01_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\jf05_account_v1\\failed_attempts\\attempt_001\\B01_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "E00",
+    "references": [
+      {
+        "source": "results\\account_backtest_validation_reset\\E00_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\e00_isolated_replay_v1\\E00_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\e00_isolated_replay_v2\\E00_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\jf05_account_cost2\\E00_daily.csv",
+        "max_nav_difference": 58748.72842227644
+      },
+      {
+        "source": "results\\jf05_account_v1\\E00_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_monthly_v1\\E00_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_v1\\E00_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "E10",
+    "references": [
+      {
+        "source": "results\\account_backtest_validation_reset\\E10_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\jf05_account_cost2\\E10_daily.csv",
+        "max_nav_difference": 47168.78369136341
+      },
+      {
+        "source": "results\\jf05_account_v1\\E10_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_monthly_v1\\E10_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_v1\\E10_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "Q_STATE_FIN",
+    "references": [
+      {
+        "source": "results\\joint_screen_accounts_monthly_v1\\Q_STATE_FIN_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_v1\\Q_STATE_FIN_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "QLIB_JOINT",
+    "references": [
+      {
+        "source": "results\\joint_screen_accounts_monthly_v1\\QLIB_JOINT_daily.csv",
+        "max_nav_difference": 0.0
+      },
+      {
+        "source": "results\\joint_screen_accounts_v1\\QLIB_JOINT_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "QLIB_MONTHLY",
+    "references": [
+      {
+        "source": "results\\joint_screen_accounts_monthly_v1\\QLIB_MONTHLY_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "JF05",
+    "references": [
+      {
+        "source": "results\\jf05_account_cost2\\JF05_daily.csv",
+        "max_nav_difference": 44444.54071405996
+      },
+      {
+        "source": "results\\jf05_account_v1\\JF05_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "JF20",
+    "references": [
+      {
+        "source": "results\\jf20_p20_full_accounts_cost2_v1\\JF20_daily.csv",
+        "max_nav_difference": 39909.53697237442
+      },
+      {
+        "source": "results\\jf20_p20_full_accounts_standard_v1\\JF20_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "P20",
+    "references": [
+      {
+        "source": "results\\jf20_p20_full_accounts_cost2_v1\\P20_daily.csv",
+        "max_nav_difference": 49257.49495640141
+      },
+      {
+        "source": "results\\jf20_p20_full_accounts_standard_v1\\P20_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "T01",
+    "references": [
+      {
+        "source": "results\\trend_state_trial_v1\\T01_standard_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "S01",
+    "references": [
+      {
+        "source": "results\\trend_state_trial_v1\\S01_standard_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "RG01",
+    "references": [
+      {
+        "source": "results\\regime_sequence_accounts_v1\\RG01_standard_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "SQ01",
+    "references": [
+      {
+        "source": "results\\regime_sequence_accounts_v1\\SQ01_standard_daily.csv",
+        "max_nav_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "ATTN_seed11",
+    "references": [
+      {
+        "source": "pilot standard summary",
+        "max_metric_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "ATTN_seed23",
+    "references": [
+      {
+        "source": "pilot standard summary",
+        "max_metric_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "ATTN_seed37",
+    "references": [
+      {
+        "source": "pilot standard summary",
+        "max_metric_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "MLP_seed11",
+    "references": [
+      {
+        "source": "pilot standard summary",
+        "max_metric_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "MLP_seed23",
+    "references": [
+      {
+        "source": "pilot standard summary",
+        "max_metric_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  },
+  {
+    "strategy": "MLP_seed37",
+    "references": [
+      {
+        "source": "pilot standard summary",
+        "max_metric_difference": 0.0
+      }
+    ],
+    "exact_original_match": true
+  }
+]

@@ -1,0 +1,524 @@
+{
+  "status": "PASS",
+  "scope": "three individual ZIPs; no downloads, installs, or model training",
+  "zip_dir": "<LOCAL_HOME>\\Desktop\\智享杯\\交付准备_最终版\\上传文件",
+  "extract_root": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652",
+  "packages": {
+    "报告.zip": {
+      "path": "<LOCAL_HOME>\\Desktop\\智享杯\\交付准备_最终版\\上传文件\\报告.zip",
+      "compressed_bytes": 482277,
+      "target_95MB_pass": true,
+      "within_100MB": true,
+      "uncompressed_file_bytes": 553783,
+      "file_count": 8,
+      "sha256": "b4a143992ecdcb8bf4c307c6a356add17d723318f47b0122b1e0fc8ea7c6d58e"
+    },
+    "代码.zip": {
+      "path": "<LOCAL_HOME>\\Desktop\\智享杯\\交付准备_最终版\\上传文件\\代码.zip",
+      "compressed_bytes": 5380397,
+      "target_95MB_pass": true,
+      "within_100MB": true,
+      "uncompressed_file_bytes": 13859361,
+      "file_count": 95,
+      "sha256": "9f8068f6079794e028dc1509b3550d92404c7c108f104b4f1c78ee5496abdb76"
+    },
+    "数据.zip": {
+      "path": "<LOCAL_HOME>\\Desktop\\智享杯\\交付准备_最终版\\上传文件\\数据.zip",
+      "compressed_bytes": 78505035,
+      "target_95MB_pass": true,
+      "within_100MB": true,
+      "uncompressed_file_bytes": 81515873,
+      "file_count": 38,
+      "sha256": "7e3cf54c816350501170fcbe35b5ebc6904c3a327d9ae83aff225e54b92fc612"
+    }
+  },
+  "layout_errors": [],
+  "project_path_scan": {
+    "status": "PASS",
+    "findings": []
+  },
+  "data_manifest_hashes": {
+    "status": "PASS",
+    "checked": 37,
+    "errors": []
+  },
+  "replay": {
+    "command": [
+      "D:\\缓存\\anaconda3\\python.exe",
+      "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\代码\\run_reproduce.py",
+      "--data-root",
+      "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\数据",
+      "--output-dir",
+      "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_output"
+    ],
+    "return_code": 0,
+    "seconds": 70.84625005722046,
+    "log": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_logs\\run_reproduce.log",
+    "passed": true
+  },
+  "packaged_verifier": {
+    "command": [
+      "D:\\缓存\\anaconda3\\python.exe",
+      "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\代码\\verify_results.py",
+      "--output-dir",
+      "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_output"
+    ],
+    "return_code": 0,
+    "seconds": 0.7114863395690918,
+    "log": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_logs\\verify_results.log",
+    "passed": true
+  },
+  "daily_ledger_comparison": {
+    "status": "PASS",
+    "checks": [
+      {
+        "account": [
+          "C1_fixed25",
+          "2023",
+          "standard"
+        ],
+        "generated": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_output\\accounts\\FIXED25\\2023_validation\\standard\\daily.csv",
+        "reference": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\数据\\参考结果\\C1_fixed25\\2023\\standard\\daily.csv",
+        "compared_columns": [
+          "cash",
+          "cash_paid",
+          "dividend_receivable",
+          "estimated_dividend_tax",
+          "fund_market_value",
+          "fund_mv_csi300",
+          "fund_mv_physical_gold",
+          "fund_mv_rmb_gov_bond",
+          "fund_mv_sp500_qdii",
+          "fund_units_csi300",
+          "fund_units_physical_gold",
+          "fund_units_rmb_gov_bond",
+          "fund_units_sp500_qdii",
+          "fund_weight_csi300",
+          "fund_weight_physical_gold",
+          "fund_weight_rmb_gov_bond",
+          "fund_weight_sp500_qdii",
+          "holdings",
+          "market_value",
+          "nav",
+          "stock_market_value"
+        ],
+        "generated_metrics": {
+          "sessions": 242,
+          "start_date": "2023-01-03",
+          "end_date": "2023-12-29",
+          "total_return": 0.125245336036514,
+          "annualized_return": 0.13074551886198038,
+          "annualized_volatility": 0.046574579972177545,
+          "sharpe_zero_cash": 2.662115495819761,
+          "max_drawdown": -0.02504065931878674
+        },
+        "reference_metrics": {
+          "sessions": 242,
+          "start_date": "2023-01-03",
+          "end_date": "2023-12-29",
+          "total_return": 0.125245336036514,
+          "annualized_return": 0.13074551886198038,
+          "annualized_volatility": 0.046574579972177545,
+          "sharpe_zero_cash": 2.662115495819761,
+          "max_drawdown": -0.02504065931878674
+        },
+        "max_abs_metric_diff": 0.0,
+        "ledger_match": true,
+        "errors": []
+      },
+      {
+        "account": [
+          "C1_fixed25",
+          "2024_2025",
+          "standard"
+        ],
+        "generated": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_output\\accounts\\FIXED25\\2024_2025_exploratory\\standard\\daily.csv",
+        "reference": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\数据\\参考结果\\C1_fixed25\\2024_2025\\standard\\daily.csv",
+        "compared_columns": [
+          "cash",
+          "cash_paid",
+          "dividend_receivable",
+          "estimated_dividend_tax",
+          "fund_market_value",
+          "fund_mv_csi300",
+          "fund_mv_physical_gold",
+          "fund_mv_rmb_gov_bond",
+          "fund_mv_sp500_qdii",
+          "fund_units_csi300",
+          "fund_units_physical_gold",
+          "fund_units_rmb_gov_bond",
+          "fund_units_sp500_qdii",
+          "fund_weight_csi300",
+          "fund_weight_physical_gold",
+          "fund_weight_rmb_gov_bond",
+          "fund_weight_sp500_qdii",
+          "holdings",
+          "market_value",
+          "nav",
+          "stock_market_value"
+        ],
+        "generated_metrics": {
+          "sessions": 485,
+          "start_date": "2024-01-02",
+          "end_date": "2025-12-31",
+          "total_return": 0.4612512468487786,
+          "annualized_return": 0.21783658760723768,
+          "annualized_volatility": 0.07572084938940202,
+          "sharpe_zero_cash": 2.641618747667779,
+          "max_drawdown": -0.055493641816351524
+        },
+        "reference_metrics": {
+          "sessions": 485,
+          "start_date": "2024-01-02",
+          "end_date": "2025-12-31",
+          "total_return": 0.4612512468487786,
+          "annualized_return": 0.21783658760723768,
+          "annualized_volatility": 0.07572084938940202,
+          "sharpe_zero_cash": 2.641618747667779,
+          "max_drawdown": -0.055493641816351524
+        },
+        "max_abs_metric_diff": 0.0,
+        "ledger_match": true,
+        "errors": []
+      },
+      {
+        "account": [
+          "C1_fixed25",
+          "2024_2025",
+          "stress"
+        ],
+        "generated": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_output\\accounts\\FIXED25\\2024_2025_exploratory\\stress\\daily.csv",
+        "reference": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\数据\\参考结果\\C1_fixed25\\2024_2025\\stress\\daily.csv",
+        "compared_columns": [
+          "cash",
+          "cash_paid",
+          "dividend_receivable",
+          "estimated_dividend_tax",
+          "fund_market_value",
+          "fund_mv_csi300",
+          "fund_mv_physical_gold",
+          "fund_mv_rmb_gov_bond",
+          "fund_mv_sp500_qdii",
+          "fund_units_csi300",
+          "fund_units_physical_gold",
+          "fund_units_rmb_gov_bond",
+          "fund_units_sp500_qdii",
+          "fund_weight_csi300",
+          "fund_weight_physical_gold",
+          "fund_weight_rmb_gov_bond",
+          "fund_weight_sp500_qdii",
+          "holdings",
+          "market_value",
+          "nav",
+          "stock_market_value"
+        ],
+        "generated_metrics": {
+          "sessions": 485,
+          "start_date": "2024-01-02",
+          "end_date": "2025-12-31",
+          "total_return": 0.4439934265210048,
+          "annualized_return": 0.21034202330374496,
+          "annualized_volatility": 0.07584697570966548,
+          "sharpe_zero_cash": 2.5559013814696447,
+          "max_drawdown": -0.05595010248114507
+        },
+        "reference_metrics": {
+          "sessions": 485,
+          "start_date": "2024-01-02",
+          "end_date": "2025-12-31",
+          "total_return": 0.4439934265210048,
+          "annualized_return": 0.21034202330374496,
+          "annualized_volatility": 0.07584697570966548,
+          "sharpe_zero_cash": 2.5559013814696447,
+          "max_drawdown": -0.05595010248114507
+        },
+        "max_abs_metric_diff": 0.0,
+        "ledger_match": true,
+        "errors": []
+      },
+      {
+        "account": [
+          "RISK_B1",
+          "2023",
+          "standard"
+        ],
+        "generated": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_output\\accounts\\RISK_B1\\2023_validation\\standard\\daily.csv",
+        "reference": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\数据\\参考结果\\RISK_B1\\2023\\standard\\daily.csv",
+        "compared_columns": [
+          "cash",
+          "cash_paid",
+          "dividend_receivable",
+          "estimated_dividend_tax",
+          "fund_market_value",
+          "fund_mv_csi300",
+          "fund_mv_physical_gold",
+          "fund_mv_rmb_gov_bond",
+          "fund_mv_sp500_qdii",
+          "fund_units_csi300",
+          "fund_units_physical_gold",
+          "fund_units_rmb_gov_bond",
+          "fund_units_sp500_qdii",
+          "fund_weight_csi300",
+          "fund_weight_physical_gold",
+          "fund_weight_rmb_gov_bond",
+          "fund_weight_sp500_qdii",
+          "holdings",
+          "market_value",
+          "nav",
+          "stock_market_value"
+        ],
+        "generated_metrics": {
+          "sessions": 242,
+          "start_date": "2023-01-03",
+          "end_date": "2023-12-29",
+          "total_return": 0.08488771876522283,
+          "annualized_return": 0.08854647157941309,
+          "annualized_volatility": 0.030066884031117395,
+          "sharpe_zero_cash": 2.8372630297278034,
+          "max_drawdown": -0.017389677757089328
+        },
+        "reference_metrics": {
+          "sessions": 242,
+          "start_date": "2023-01-03",
+          "end_date": "2023-12-29",
+          "total_return": 0.08488771876522283,
+          "annualized_return": 0.08854647157941309,
+          "annualized_volatility": 0.030066884031117395,
+          "sharpe_zero_cash": 2.8372630297278034,
+          "max_drawdown": -0.017389677757089328
+        },
+        "max_abs_metric_diff": 0.0,
+        "ledger_match": true,
+        "errors": []
+      },
+      {
+        "account": [
+          "RISK_B1",
+          "2024_2025",
+          "standard"
+        ],
+        "generated": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_output\\accounts\\RISK_B1\\2024_2025_exploratory\\standard\\daily.csv",
+        "reference": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\数据\\参考结果\\RISK_B1\\2024_2025\\standard\\daily.csv",
+        "compared_columns": [
+          "cash",
+          "cash_paid",
+          "dividend_receivable",
+          "estimated_dividend_tax",
+          "fund_market_value",
+          "fund_mv_csi300",
+          "fund_mv_physical_gold",
+          "fund_mv_rmb_gov_bond",
+          "fund_mv_sp500_qdii",
+          "fund_units_csi300",
+          "fund_units_physical_gold",
+          "fund_units_rmb_gov_bond",
+          "fund_units_sp500_qdii",
+          "fund_weight_csi300",
+          "fund_weight_physical_gold",
+          "fund_weight_rmb_gov_bond",
+          "fund_weight_sp500_qdii",
+          "holdings",
+          "market_value",
+          "nav",
+          "stock_market_value"
+        ],
+        "generated_metrics": {
+          "sessions": 485,
+          "start_date": "2024-01-02",
+          "end_date": "2025-12-31",
+          "total_return": 0.27795333265060584,
+          "annualized_return": 0.13590987116936848,
+          "annualized_volatility": 0.0449572668001265,
+          "sharpe_zero_cash": 2.8577379593667067,
+          "max_drawdown": -0.033834173394023614
+        },
+        "reference_metrics": {
+          "sessions": 485,
+          "start_date": "2024-01-02",
+          "end_date": "2025-12-31",
+          "total_return": 0.27795333265060584,
+          "annualized_return": 0.13590987116936848,
+          "annualized_volatility": 0.0449572668001265,
+          "sharpe_zero_cash": 2.8577379593667067,
+          "max_drawdown": -0.033834173394023614
+        },
+        "max_abs_metric_diff": 0.0,
+        "ledger_match": true,
+        "errors": []
+      },
+      {
+        "account": [
+          "RISK_B1",
+          "2024_2025",
+          "stress"
+        ],
+        "generated": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\_acceptance_output\\accounts\\RISK_B1\\2024_2025_exploratory\\stress\\daily.csv",
+        "reference": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652\\数据\\参考结果\\RISK_B1\\2024_2025\\stress\\daily.csv",
+        "compared_columns": [
+          "cash",
+          "cash_paid",
+          "dividend_receivable",
+          "estimated_dividend_tax",
+          "fund_market_value",
+          "fund_mv_csi300",
+          "fund_mv_physical_gold",
+          "fund_mv_rmb_gov_bond",
+          "fund_mv_sp500_qdii",
+          "fund_units_csi300",
+          "fund_units_physical_gold",
+          "fund_units_rmb_gov_bond",
+          "fund_units_sp500_qdii",
+          "fund_weight_csi300",
+          "fund_weight_physical_gold",
+          "fund_weight_rmb_gov_bond",
+          "fund_weight_sp500_qdii",
+          "holdings",
+          "market_value",
+          "nav",
+          "stock_market_value"
+        ],
+        "generated_metrics": {
+          "sessions": 485,
+          "start_date": "2024-01-02",
+          "end_date": "2025-12-31",
+          "total_return": 0.2702960959185494,
+          "annualized_return": 0.13236837950835434,
+          "annualized_volatility": 0.04572183589482751,
+          "sharpe_zero_cash": 2.7423766345069605,
+          "max_drawdown": -0.03440993410687565
+        },
+        "reference_metrics": {
+          "sessions": 485,
+          "start_date": "2024-01-02",
+          "end_date": "2025-12-31",
+          "total_return": 0.2702960959185494,
+          "annualized_return": 0.13236837950835434,
+          "annualized_volatility": 0.04572183589482751,
+          "sharpe_zero_cash": 2.7423766345069605,
+          "max_drawdown": -0.03440993410687565
+        },
+        "max_abs_metric_diff": 0.0,
+        "ledger_match": true,
+        "errors": []
+      }
+    ],
+    "errors": [],
+    "required_accounts": [
+      [
+        "C1_fixed25",
+        "2023",
+        "standard"
+      ],
+      [
+        "C1_fixed25",
+        "2024_2025",
+        "standard"
+      ],
+      [
+        "C1_fixed25",
+        "2024_2025",
+        "stress"
+      ],
+      [
+        "RISK_B1",
+        "2023",
+        "standard"
+      ],
+      [
+        "RISK_B1",
+        "2024_2025",
+        "standard"
+      ],
+      [
+        "RISK_B1",
+        "2024_2025",
+        "stress"
+      ]
+    ]
+  },
+  "error": null,
+  "final_payload_inheritance": {
+    "status": "PASS_FINAL_ZIP_PAYLOAD_INHERITANCE",
+    "final_packages": {
+      "报告.zip": {
+        "bytes": 482277,
+        "sha256": "b4a143992ecdcb8bf4c307c6a356add17d723318f47b0122b1e0fc8ea7c6d58e",
+        "files": 8,
+        "uncompressed_bytes": 553783,
+        "top_level": [
+          "报告"
+        ],
+        "unsafe_paths": [],
+        "within_limit": true
+      },
+      "代码.zip": {
+        "bytes": 5380397,
+        "sha256": "9f8068f6079794e028dc1509b3550d92404c7c108f104b4f1c78ee5496abdb76",
+        "files": 95,
+        "uncompressed_bytes": 13859361,
+        "top_level": [
+          "代码"
+        ],
+        "unsafe_paths": [],
+        "within_limit": true
+      },
+      "数据.zip": {
+        "bytes": 78505035,
+        "sha256": "7e3cf54c816350501170fcbe35b5ebc6904c3a327d9ae83aff225e54b92fc612",
+        "files": 38,
+        "uncompressed_bytes": 81515873,
+        "top_level": [
+          "数据"
+        ],
+        "unsafe_paths": [],
+        "within_limit": true
+      }
+    },
+    "payload_comparison_to_externally_extracted_run_20261010_232652": {
+      "报告.zip": {
+        "compared_payload_files": 8,
+        "excluded_file": null,
+        "differences": [],
+        "pass": true
+      },
+      "代码.zip": {
+        "compared_payload_files": 95,
+        "excluded_file": null,
+        "differences": [],
+        "pass": true
+      },
+      "数据.zip": {
+        "compared_payload_files": 37,
+        "excluded_file": "数据/MANIFEST.json",
+        "differences": [],
+        "pass": true
+      }
+    },
+    "data_manifest": {
+      "checked": 37,
+      "errors": [],
+      "status": "PASS"
+    },
+    "capacity_manifest_matches_current_zips": true,
+    "prior_isolated_acceptance": {
+      "extract_root": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652",
+      "replay_passed": true,
+      "verifier_passed": true,
+      "daily_ledger_status": "PASS",
+      "daily_ledger_checks": 5,
+      "all_daily_ledgers_match": true
+    },
+    "inheritance_basis": "Only 数据/MANIFEST.json changed after the isolated replay. All 8 report files, 95 code files, and the other 37 data members compare byte-for-byte with that replay extraction. The final manifest binds all 37 data payload entries, including the reference daily/fills files. No model fitting or replay was repeated."
+  },
+  "final_validation_method": "Inherited run/verification/daily-ledger PASS from the prior externally isolated extraction after byte-for-byte payload comparison; only data/MANIFEST.json changed. Latest manifest SHA checks pass for every payload item.",
+  "historical_six_account_recheck": {
+    "status": "PASS",
+    "checked_accounts": 6,
+    "additional_missing_account_added": "C1_fixed25|2023|standard",
+    "source": "already generated external acceptance replay output, no rerun",
+    "evidence": "historical_sixth_account_recheck.json"
+  },
+  "historical_six_accounts": "PASS",
+  "package_scope_note": "These hashes and replay apply to the pre-2026-refresh package only. Refreshed 2026 ZIPs must be independently checked before claiming current final package PASS.",
+  "2026_refresh_status": "PENDING_FINAL_ZIPS"
+}

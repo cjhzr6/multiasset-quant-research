@@ -1,0 +1,686 @@
+{
+  "status": "EXISTING_2025_ORIGINALS_SHA_REUSE_VERIFIED_NO_NETWORK",
+  "verified_at": "2026-10-08T20:48:50.458958+08:00",
+  "source_sha256": "18572d1cb27c45ada4a62107d660a527a092caa3b36f213cf484755f7e35a67f",
+  "verified_existing_originals": 49,
+  "new_downloads": 0,
+  "models_fitted": 0,
+  "dates": {
+    "2025-08": 8,
+    "2025-02": 2,
+    "2025-01": 4,
+    "2025-03": 11,
+    "2025-04": 8,
+    "2025-12": 1,
+    "2025-06": 6,
+    "2025-05": 3,
+    "2025-07": 6
+  },
+  "lexical_theme_source_counts": {
+    "gold": 10,
+    "technology": 23,
+    "aerospace": 3,
+    "oil": 6
+  },
+  "records": [
+    {
+      "url": "http://app.cnstock.com/zzb/zgzqb/html/2025-08/02/nw.D110000zgzqb_20250802_3-B018.htm",
+      "symbol": "SZSE.000338",
+      "publisher_date": "2025-08-02",
+      "raw_file": "results/historical_nlp_originals_v1/f83692b04b86a9a769b76ce4.html",
+      "text_file": "results/historical_nlp_originals_v1/f83692b04b86a9a769b76ce4.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "6807a3e6bd49d521715c395c2aaf863b271eaba7dd4b5c11ba348ca10f1b3136",
+      "lexical_theme_hits": [
+        "gold"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://cj.sina.com.cn/articles/view/7517400647/1c0126e4705907d55u",
+      "symbol": "SZSE.002352",
+      "publisher_date": "2025-08-09",
+      "raw_file": "results/historical_nlp_originals_v1/3e3da5c5feefa303cf1fb367.html",
+      "text_file": "results/historical_nlp_originals_v1/3e3da5c5feefa303cf1fb367.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "8ff5dad3bc0a329a8ae044f4fef7cf56bcbc497d6bb87b0b5fd8de90ea560a39",
+      "lexical_theme_hits": [
+        "gold"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-02/06/nw.D110000zgzqb_20250206_4-B042.htm",
+      "symbol": "SZSE.002352",
+      "publisher_date": "2025-02-06",
+      "raw_file": "results/historical_nlp_originals_v1/347ffb9dbaa5d56d700e4535.html",
+      "text_file": "results/historical_nlp_originals_v1/347ffb9dbaa5d56d700e4535.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "fead88a2dd5bd956f21cc91b4c6856a0b5096c2da474a943b8977a780f62adf8",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://finance.sina.com.cn/jjxw/2025-01-11/doc-ineepzmf5423352.shtml",
+      "symbol": "SZSE.000338",
+      "publisher_date": "2025-01-11",
+      "raw_file": "results/historical_nlp_originals_v1/1c4d559003c9152c47ca5c2f.html",
+      "text_file": "results/historical_nlp_originals_v1/1c4d559003c9152c47ca5c2f.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "8511ec804d39a70b64c0db575b17998e2d23f5cc92b1159b8e48eab339cf903e",
+      "lexical_theme_hits": [
+        "gold",
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://h5.ifeng.com/c/vivoArticle/v002eJEDMQfYndTJj--BB6k28q42Lu4q3Z5XfgHtysUOiH6I__",
+      "symbol": "SHSE.601628",
+      "publisher_date": "2025-01-30",
+      "raw_file": "results/historical_nlp_originals_v1/03e43b952943c8a59e13b6c7.html",
+      "text_file": "results/historical_nlp_originals_v1/03e43b952943c8a59e13b6c7.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "100aa8aee7b239d8d206f3b256312c76218d72409be5b2965af964e7dbc33474",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://mnews.tianyancha.com/ll_39t9p21r24.html",
+      "symbol": "SZSE.300450",
+      "publisher_date": "2025-01-31",
+      "raw_file": "results/historical_nlp_originals_v1/d2c21e7820d654b4a6c002f8.html",
+      "text_file": "results/historical_nlp_originals_v1/d2c21e7820d654b4a6c002f8.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "16e09eb05ad33072ea6a62e94658dcadf2c6261c5b495246d8a9826afee60cc7",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-03/22/content_2039509.htm",
+      "symbol": "SHSE.601088",
+      "publisher_date": "2025-03-22",
+      "raw_file": "results/historical_nlp_originals_v1/8ab978ac6e26b8e383581e0f.html",
+      "text_file": "results/historical_nlp_originals_v1/8ab978ac6e26b8e383581e0f.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "2b45d8e61fac108d4d971fef5f44881178ef06b74546493d2b68c998390a5911",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://stock.caijing.com.cn/20250125/5067643.shtml",
+      "symbol": "SZSE.300803",
+      "publisher_date": "2025-01-25",
+      "raw_file": "results/historical_nlp_originals_v1/4e712b910f345f0885cc3488.html",
+      "text_file": "results/historical_nlp_originals_v1/4e712b910f345f0885cc3488.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "1070a7e0bcca994528da541eea055dfc5fcf97554b8e5e9f459891bac9561eea",
+      "lexical_theme_hits": [
+        "technology",
+        "aerospace"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://www.escn.com.cn/news/show-2103455.html",
+      "symbol": "SZSE.000539",
+      "publisher_date": "2025-04-23",
+      "raw_file": "results/historical_nlp_originals_v1/1c4718a20c77d07bc6d9a0b8.html",
+      "text_file": "results/historical_nlp_originals_v1/1c4718a20c77d07bc6d9a0b8.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "9747444808fcc81b5399d84c05487928ae40011a982f760ec1971e69b0b1eefb",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://www.financialnews.com.cn/2025-04/11/content_422791.html",
+      "symbol": "SHSE.601818",
+      "publisher_date": "2025-04-11",
+      "raw_file": "results/historical_nlp_originals_v1/b6b1442c0cf32698dc8dbe02.html",
+      "text_file": "results/historical_nlp_originals_v1/b6b1442c0cf32698dc8dbe02.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "27b59d20908fd5a3406b0da605ac1d3855ee0645a2697b2e56515df7ccfd9f4c",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://h5.ifeng.com/c/vivo/v002nMBLrXm-_o6TWALy3uSHACeqvE8K8zfU3l0rBn7Ia2fo__",
+      "symbol": "SHSE.601838",
+      "publisher_date": "2025-03-10",
+      "raw_file": "results/historical_nlp_originals_v1/8f870ffbe0bbb881b99c3386.html",
+      "text_file": "results/historical_nlp_originals_v1/8f870ffbe0bbb881b99c3386.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "dc145c48db9a760ee54edefd8b54bdc29d5e2f4ed9ec3cc4c90a9c14795fb3b2",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-03/29/content_2042293.htm",
+      "symbol": "SHSE.601375",
+      "publisher_date": "2025-03-29",
+      "raw_file": "results/historical_nlp_originals_v1/32d22b14984609ee90859d9b.html",
+      "text_file": "results/historical_nlp_originals_v1/32d22b14984609ee90859d9b.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "1e2dde17d3b017a840e0a3db575a12b4f894a84e025370d4adc30199dde57c06",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://www.cnfin.com/gs-lb/detail/20250327/4206927_1.html",
+      "symbol": "SZSE.300750",
+      "publisher_date": "2025-03-27",
+      "raw_file": "results/historical_nlp_originals_v1/87390bbb5f2fc2542b512cc5.html",
+      "text_file": "results/historical_nlp_originals_v1/87390bbb5f2fc2542b512cc5.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "6b982cdcb657ec66e27f5aed88a57e9d79f2fe16f2795c04a1cea6f0bfcbdb2a",
+      "lexical_theme_hits": [
+        "technology",
+        "oil"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://finance.sina.com.cn/jjxw/2025-03-04/doc-inenmtfx5718097.shtml",
+      "symbol": "SZSE.000625",
+      "publisher_date": "2025-03-04",
+      "raw_file": "results/historical_nlp_originals_v1/44825f026a1edb7bdb3dcea9.html",
+      "text_file": "results/historical_nlp_originals_v1/44825f026a1edb7bdb3dcea9.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "70be6faeaf3064c74fb251701e34621c761f8ddf341be2f498bb8473cc768a57",
+      "lexical_theme_hits": [
+        "gold",
+        "technology",
+        "oil"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://mnews.tianyancha.com/ll_bmzc9ue41l.html",
+      "symbol": "SHSE.600031",
+      "publisher_date": "2025-02-18",
+      "raw_file": "results/historical_nlp_originals_v1/9d1f63d414f7283fe61e98af.html",
+      "text_file": "results/historical_nlp_originals_v1/9d1f63d414f7283fe61e98af.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "384e6a6d912b905b30b7ef7e70275f9523b216c386517b35889bcbe750886321",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-04/26/content_2056594.htm",
+      "symbol": "SZSE.002797",
+      "publisher_date": "2025-04-26",
+      "raw_file": "results/historical_nlp_originals_v1/b1fac42037ee0d413587e7a9.html",
+      "text_file": "results/historical_nlp_originals_v1/b1fac42037ee0d413587e7a9.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "924f13a64168571d79f0c06a05cf397145eff6f2fdb7b5441858676614dc1526",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-03/28/nw.D110000zgzqb_20250328_1-B089.htm",
+      "symbol": "SHSE.600909",
+      "publisher_date": "2025-03-28",
+      "raw_file": "results/historical_nlp_originals_v1/7c62592d6b75e819bfb5cd5b.html",
+      "text_file": "results/historical_nlp_originals_v1/7c62592d6b75e819bfb5cd5b.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "f4b91a2a46d34477bbd9c08cc90d9ca8a8734afc3747ffea8910712f7616a069",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://finance.sina.com.cn/jjxw/2025-03-18/doc-inepznxr8956144.shtml",
+      "symbol": "SHSE.600196",
+      "publisher_date": "2025-03-18",
+      "raw_file": "results/historical_nlp_originals_v1/70936380d47db995d07b033f.html",
+      "text_file": "results/historical_nlp_originals_v1/70936380d47db995d07b033f.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "19697d9690b16f6402041f996e0882fcd2c43f67d0cfd0d912b58359d0827b0e",
+      "lexical_theme_hits": [
+        "gold",
+        "technology",
+        "aerospace",
+        "oil"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://h5.ifeng.com/c/vivoArticle/v002kbB7JV6Dw-_eB0ve4bk--i--Yd462cIT0g8NQeapNtfcxQ__",
+      "symbol": "SHSE.601766",
+      "publisher_date": "2025-12-01",
+      "raw_file": "results/historical_nlp_originals_v1/fb63fa9a6a17cb6207600388.html",
+      "text_file": "results/historical_nlp_originals_v1/fb63fa9a6a17cb6207600388.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "555f189d851600b4b21b909ad2c4bd04859dc8db3dc4032b779bd52ffa24a537",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-04/29/content_2059342.htm",
+      "symbol": "SZSE.000783",
+      "publisher_date": "2025-04-29",
+      "raw_file": "results/historical_nlp_originals_v1/701287821d5acd506738a892.html",
+      "text_file": "results/historical_nlp_originals_v1/701287821d5acd506738a892.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "5f340d3f6e8031fca500a2539cdc1cfb59ff9f11cb4adfd3b8a60f36f6e1e003",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-03/29/nw.D110000zgzqb_20250329_1-B081.htm",
+      "symbol": "SHSE.601881",
+      "publisher_date": "2025-03-29",
+      "raw_file": "results/historical_nlp_originals_v1/513baf8dea0be811f62bf874.html",
+      "text_file": "results/historical_nlp_originals_v1/513baf8dea0be811f62bf874.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "ce05c962c88dcfb7375b93e5577b78393dadd6c7f6d598b66a2650b35334cdf1",
+      "lexical_theme_hits": [
+        "gold",
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://finance.sina.com.cn/jjxw/2025-06-24/doc-infcciyu9384634.shtml",
+      "symbol": "SHSE.601390",
+      "publisher_date": "2025-06-24",
+      "raw_file": "results/historical_nlp_originals_v1/1812efac2300fd96e0ce3266.html",
+      "text_file": "results/historical_nlp_originals_v1/1812efac2300fd96e0ce3266.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "6af6cf20903c484ffd737df64fb25b24ee65923b66ccc7aa13321b679b72a463",
+      "lexical_theme_hits": [
+        "gold",
+        "technology",
+        "aerospace",
+        "oil"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://mnews.tianyancha.com/ll_0rj3qab4if.html",
+      "symbol": "SZSE.000938",
+      "publisher_date": "2025-03-08",
+      "raw_file": "results/historical_nlp_originals_v1/9e7b7884dbdb7fc46963efa1.html",
+      "text_file": "results/historical_nlp_originals_v1/9e7b7884dbdb7fc46963efa1.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "c9cbdab81439ebad62fd9f234d782d7f69080337929a7fe6087121ba1f07b6d9",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-04/30/content_2061221.htm",
+      "symbol": "SHSE.601939",
+      "publisher_date": "2025-04-30",
+      "raw_file": "results/historical_nlp_originals_v1/6eb5ee5b29fe8354c8108f21.html",
+      "text_file": "results/historical_nlp_originals_v1/6eb5ee5b29fe8354c8108f21.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "ed78737ad9bf0bf571794778f9de25fa9f5a1ef747f44b962fa5ab2e35efad02",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-03/31/nw.D110000zgzqb_20250331_1-A09.htm",
+      "symbol": "SHSE.601939",
+      "publisher_date": "2025-03-31",
+      "raw_file": "results/historical_nlp_originals_v1/a525d4b94ad520bee708bf93.html",
+      "text_file": "results/historical_nlp_originals_v1/a525d4b94ad520bee708bf93.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "d890f8472352e6657426983f6538ae252c2fdc5a2aeef28427725e916bf76489",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://mnews.tianyancha.com/ll_z24xn05wkm.html",
+      "symbol": "SHSE.601162",
+      "publisher_date": "2025-03-13",
+      "raw_file": "results/historical_nlp_originals_v1/c6e84317778a5243421e659b.html",
+      "text_file": "results/historical_nlp_originals_v1/c6e84317778a5243421e659b.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "15bba9e92f93c10171be270337ea92af1f2741463c25bb14077f83d42823d4d5",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-05/13/content_2066512.htm",
+      "symbol": "SZSE.000898",
+      "publisher_date": "2025-05-13",
+      "raw_file": "results/historical_nlp_originals_v1/47fa22494a280a8ce191e007.html",
+      "text_file": "results/historical_nlp_originals_v1/47fa22494a280a8ce191e007.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "a8c392a70745e4e0804c1d4854906ff37d9cea91f70291c727b7486e9370b4df",
+      "lexical_theme_hits": [
+        "gold",
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-04/17/nw.D110000zgzqb_20250417_3-B040.htm",
+      "symbol": "SZSE.000800",
+      "publisher_date": "2025-04-17",
+      "raw_file": "results/historical_nlp_originals_v1/d4eb0ab4a8fa7c04cbe3ca80.html",
+      "text_file": "results/historical_nlp_originals_v1/d4eb0ab4a8fa7c04cbe3ca80.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "d8afb4e57a154a25852b2501c41ddd1b777f584b0bad7c9ae7e5f4f9ce2caf41",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-05/30/content_2075216.htm",
+      "symbol": "SHSE.600941",
+      "publisher_date": "2025-05-30",
+      "raw_file": "results/historical_nlp_originals_v1/0dde49eeedcce409bdcbfcd0.html",
+      "text_file": "results/historical_nlp_originals_v1/0dde49eeedcce409bdcbfcd0.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "f09ce1d3325685e286f760b418ed0abd974ab18e8dea2a1f58951ba4c80268cd",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-06/04/content_2076421.htm",
+      "symbol": "SZSE.000338",
+      "publisher_date": "2025-06-04",
+      "raw_file": "results/historical_nlp_originals_v1/125d8b1d62518ffb28622a28.html",
+      "text_file": "results/historical_nlp_originals_v1/125d8b1d62518ffb28622a28.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "e9b8ed30b8c7655c6d37c1aa15fba8c6858b23cadc5ba82df6cefc0e091660cf",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-04/25/nw.D110000zgzqb_20250425_1-B564.htm",
+      "symbol": "SHSE.600390",
+      "publisher_date": "2025-04-25",
+      "raw_file": "results/historical_nlp_originals_v1/d9ce44ffab476dd14f688d9a.html",
+      "text_file": "results/historical_nlp_originals_v1/d9ce44ffab476dd14f688d9a.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "b903180675ea02f2b4a04af1988b5ccaa33f5d74a5e140b4b165b920dc1bb521",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://paper.cnstock.com/html/2025-06/14/content_2080803.htm",
+      "symbol": "SZSE.300124",
+      "publisher_date": "2025-06-14",
+      "raw_file": "results/historical_nlp_originals_v1/6b623e12a0decc360fd28c03.html",
+      "text_file": "results/historical_nlp_originals_v1/6b623e12a0decc360fd28c03.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "f44fdf27d65d5ab106d6028971426f59729d8a4a7ea5357fec62d81f98ea6451",
+      "lexical_theme_hits": [
+        "gold",
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-04/26/nw.D110000zgzqb_20250426_6-B010.htm",
+      "symbol": "SHSE.601939",
+      "publisher_date": "2025-04-26",
+      "raw_file": "results/historical_nlp_originals_v1/58130ad6f38b7298f74f6ac5.html",
+      "text_file": "results/historical_nlp_originals_v1/58130ad6f38b7298f74f6ac5.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "440bb281fb1c3e3024a61375f3f3c47ee7532d87639163955af68d33f54e9419",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-06/21/content_2083382.htm",
+      "symbol": "SHSE.601390",
+      "publisher_date": "2025-06-21",
+      "raw_file": "results/historical_nlp_originals_v1/ab893c0f0585adade76770c9.html",
+      "text_file": "results/historical_nlp_originals_v1/ab893c0f0585adade76770c9.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "3ecc2fcee6299127ebdb105a7743b2398fe35e82849d7c6e38965e4e27f8ff42",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-05/24/nw.D110000zgzqb_20250524_2-B005.htm",
+      "symbol": "SHSE.601328",
+      "publisher_date": "2025-05-24",
+      "raw_file": "results/historical_nlp_originals_v1/437173ddf3f53a607c93a820.html",
+      "text_file": "results/historical_nlp_originals_v1/437173ddf3f53a607c93a820.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "838934d2a7085ddbdc63956caded5034f1c3f5ff2c1c5379dcc8f5f7b822ef7b",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://www.gelonghui.com/live/2020267",
+      "symbol": "SHSE.601989",
+      "publisher_date": "2025-08-14",
+      "raw_file": "results/historical_nlp_originals_v1/4a0745a0f60ca8b406baaecd.html",
+      "text_file": "results/historical_nlp_originals_v1/4a0745a0f60ca8b406baaecd.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "9276b83c3bb5832c9c81f0a8949aca42d764111d90f76f22c4d39eaddd31c40e",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-06/25/nw.D110000zgzqb_20250625_3-B035.htm",
+      "symbol": "SZSE.002384",
+      "publisher_date": "2025-06-25",
+      "raw_file": "results/historical_nlp_originals_v1/4f24a93a26a89c6683c3d57e.html",
+      "text_file": "results/historical_nlp_originals_v1/4f24a93a26a89c6683c3d57e.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "69260225e4855b0988500faa48a8b41f02cad1e868d38d5c2fcca965b20f028a",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-07/09/content_2091137.htm",
+      "symbol": "SHSE.601288",
+      "publisher_date": "2025-07-09",
+      "raw_file": "results/historical_nlp_originals_v1/947e539ced8840413e525d6e.html",
+      "text_file": "results/historical_nlp_originals_v1/947e539ced8840413e525d6e.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "0edc846a22811e5ddee961d6caa4c46a744282650ddcb122998f884959f2e774",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-06/26/nw.D110000zgzqb_20250626_6-B024.htm",
+      "symbol": "SHSE.601390",
+      "publisher_date": "2025-06-26",
+      "raw_file": "results/historical_nlp_originals_v1/ed540b39cb084eb541f3cec0.html",
+      "text_file": "results/historical_nlp_originals_v1/ed540b39cb084eb541f3cec0.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "426496ab2de59ba96ace20af0668bd1f9f493f6c4c7ee6131659c24da965fc0d",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://paper.cnstock.com/html/2025-07/23/content_2097060.htm",
+      "symbol": "SZSE.003816",
+      "publisher_date": "2025-07-23",
+      "raw_file": "results/historical_nlp_originals_v1/8597e7ef6a11817814a67352.html",
+      "text_file": "results/historical_nlp_originals_v1/8597e7ef6a11817814a67352.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "011a6da60737a6150f8053f6ec2a92d4f1247935bbabd7530ef59db033ef7fa4",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-07/03/nw.D110000zgzqb_20250703_1-B039.htm",
+      "symbol": "SZSE.000581",
+      "publisher_date": "2025-07-03",
+      "raw_file": "results/historical_nlp_originals_v1/ea19e5cf8d6db5574f3aa4e0.html",
+      "text_file": "results/historical_nlp_originals_v1/ea19e5cf8d6db5574f3aa4e0.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "61194f107e7617cb776271a62515264ffcd4d3a5a188fe9ae1b0b51eccdf7458",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-08/07/content_2102540.htm",
+      "symbol": "SZSE.002027",
+      "publisher_date": "2025-08-07",
+      "raw_file": "results/historical_nlp_originals_v1/9e81240d7f24293e5598f3fa.html",
+      "text_file": "results/historical_nlp_originals_v1/9e81240d7f24293e5598f3fa.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "25ed050e7b9f8caecd20e2706f3e27716ed4d5a573ee3f55407030780e833018",
+      "lexical_theme_hits": [
+        "gold",
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-07/03/nw.D110000zgzqb_20250703_10-B041.htm",
+      "symbol": "SZSE.002352",
+      "publisher_date": "2025-07-03",
+      "raw_file": "results/historical_nlp_originals_v1/d82e00a2bfaf8d738098c652.html",
+      "text_file": "results/historical_nlp_originals_v1/d82e00a2bfaf8d738098c652.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "118eb11da091c28cdec748359a309ba541c64f559aa1ef2489a8b698e7ba8429",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "http://paper.cnstock.com/html/2025-08/16/content_2105765.htm",
+      "symbol": "SHSE.601088",
+      "publisher_date": "2025-08-16",
+      "raw_file": "results/historical_nlp_originals_v1/678161c058300c5e744bad64.html",
+      "text_file": "results/historical_nlp_originals_v1/678161c058300c5e744bad64.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "61f6c8a96f94375ba8c8511a10d34d2f2ce7b40e594578eac6abdeed2961593c",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-07/04/nw.D110000zgzqb_20250704_5-B027.htm",
+      "symbol": "SHSE.600938",
+      "publisher_date": "2025-07-04",
+      "raw_file": "results/historical_nlp_originals_v1/5d8fc484dd6fe0b0dadccc85.html",
+      "text_file": "results/historical_nlp_originals_v1/5d8fc484dd6fe0b0dadccc85.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "d512bea97e0171b3dedcab0b5892846104d5cb964a22df3d1aeac8b28dfcc439",
+      "lexical_theme_hits": [
+        "oil"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/wap/html/2025-07/26/nw.D110000zgzqb_20250726_1-B078.htm",
+      "symbol": "SHSE.601136",
+      "publisher_date": "2025-07-26",
+      "raw_file": "results/historical_nlp_originals_v1/9fe471ba5672da70e7d1fff4.html",
+      "text_file": "results/historical_nlp_originals_v1/9fe471ba5672da70e7d1fff4.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "f94c1c340bc344d8deb49408b5c38e8970a211501c951dd1737544225bfc7b6f",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-08/02/nw.D110000zgzqb_20250802_1-B074.htm",
+      "symbol": "SHSE.601088",
+      "publisher_date": "2025-08-02",
+      "raw_file": "results/historical_nlp_originals_v1/2cd32bac837187ba68b18e33.html",
+      "text_file": "results/historical_nlp_originals_v1/2cd32bac837187ba68b18e33.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "bce348530b6713d9661a49088627ab4dadc6b4a3e4464820c36087682ee9580f",
+      "lexical_theme_hits": [
+        "technology"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-08/09/nw.D110000zgzqb_20250809_3-B047.htm",
+      "symbol": "SHSE.601868",
+      "publisher_date": "2025-08-09",
+      "raw_file": "results/historical_nlp_originals_v1/032865151c7cf9ea9be21518.html",
+      "text_file": "results/historical_nlp_originals_v1/032865151c7cf9ea9be21518.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "4fddf74ca4452586019acbe5e39bb2c0158c05b707b9ab4fcaa0f5a8dfe39e0b",
+      "lexical_theme_hits": [],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    },
+    {
+      "url": "https://epaper.cs.com.cn/zgzqb/html/2025-08/15/nw.D110000zgzqb_20250815_1-A05.htm",
+      "symbol": "SHSE.600369",
+      "publisher_date": "2025-08-15",
+      "raw_file": "results/historical_nlp_originals_v1/f1f159f597062e9def421b38.html",
+      "text_file": "results/historical_nlp_originals_v1/f1f159f597062e9def421b38.txt",
+      "raw_sha_valid": true,
+      "reuse_without_download": true,
+      "text_sha256": "b538e792815085aa7dc9f905970878296a895019c0fbce3fc5e3c82e077558a9",
+      "lexical_theme_hits": [
+        "oil"
+      ],
+      "not_inference": "Lexical match only; no industry attribution or predictive signal claim"
+    }
+  ],
+  "existing_support_gate": "Original frozen experiment remains train16/test10 issuer-days, no fit; reuse audit does not change gate",
+  "remaining_gaps": "Body-level sector events and first-published PIT coverage; title fragments are not full text. No whole-year 2025 re-download."
+}

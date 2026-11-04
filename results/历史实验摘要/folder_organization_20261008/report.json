@@ -1,0 +1,40 @@
+{
+  "status": "ORGANIZATION_ACCEPTED",
+  "updated_at": "2026-10-08T22:26:19.555975+08:00",
+  "snapshot_manifest": "规划/历史版本/文件夹整理前_20261008_222619/manifest.json",
+  "snapshot_files": 6,
+  "rewritten_current_entries": [
+    "README.md",
+    "规划/项目关键备忘录.md",
+    "规划/模型接手指南.md",
+    "规划/任务清单.md",
+    "规划/投资策略目标与四天执行计划.md"
+  ],
+  "new_index": "规划/项目文件索引.md",
+  "raw_or_result_files_moved": 0,
+  "deleted_files": 0,
+  "report_draft_modified_this_stage": false,
+  "2026_evaluation_executed": false,
+  "logical_size_note": "directory sums include hardlinked paths; not physical disk space",
+  "main_changes": [
+    "current-entry snapshots",
+    "compact current instructions",
+    "explicit2026authorization with organize-first order",
+    "file role and evidence index"
+  ],
+  "next": "report remains paused",
+  "verified_at": "2026-10-08T22:28:15+08:00",
+  "structure_audit": {
+    "status": "PASS",
+    "documents": 61,
+    "local_links": 404,
+    "broken_links": 0,
+    "syntax_errors": 0,
+    "retained_papers": 8
+  },
+  "snapshots_sha_pass": true,
+  "existing_report_sha256": "d36ad8537791ca5407dc1661f14e63e212bd0539f7425f917ab6eedabbb23443",
+  "report_file_last_modified_epoch": 1791469070.9900622,
+  "current_status_consistency_checked_at": "2026-10-08T22:43:18.622922+08:00",
+  "subsequent_status": "2026 evaluation accepted; final report not written"
+}

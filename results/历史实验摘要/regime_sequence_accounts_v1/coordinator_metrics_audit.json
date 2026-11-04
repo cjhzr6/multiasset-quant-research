@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INDEPENDENT_METRICS_RECALCULATION_BOTH_CANDIDATES_FAIL",
+  "timestamp_shanghai": "2026-10-07T15:53:31+08:00",
+  "metrics": {
+    "RG01_standard": {
+      "annualized_return_252": 0.2590742049055026,
+      "max_drawdown": -0.08749818853938851,
+      "year2025_return": 0.05272954272118224,
+      "sha256": "aff84fb8f5ba008dca1491648073c52df14ce885e52fa9f0fe5c3e5c245d7ff8"
+    },
+    "RG01_cost2": {
+      "annualized_return_252": 0.23686385907044394,
+      "max_drawdown": -0.08894813537592228,
+      "year2025_return": 0.03612233690735467,
+      "sha256": "fcdd0116b4532221de0d80c0f6110073a4884e6d600236971303270d8902258d"
+    },
+    "SQ01_standard": {
+      "annualized_return_252": 0.1386535395184545,
+      "max_drawdown": -0.0903501520273825,
+      "year2025_return": 0.059611460546266315,
+      "sha256": "982983dbaf7e0fb90b2c152cc9226d27309c12eb6f22638a30ca1928787ad752"
+    },
+    "SQ01_cost2": {
+      "annualized_return_252": 0.12464859088585212,
+      "max_drawdown": -0.09311180455816903,
+      "year2025_return": 0.0488056692704828,
+      "sha256": "99615470ca128484f1a7715c6698c8242b055cda8c86bf208448e4e28439a0b1"
+    }
+  },
+  "no_new_fits_accounts_or2026": true
+}

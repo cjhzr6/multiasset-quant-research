@@ -1,0 +1,157 @@
+{
+  "status": "PASS_FULL_PREDICTION_OUTPUT_AUDIT",
+  "timestamp_shanghai": "2026-10-07T15:42:04+08:00",
+  "rows": 143945,
+  "sessions": 485,
+  "keys_equal_E00": true,
+  "E00_percentile_max_diff": 0,
+  "Jan_rows_identical": true,
+  "finite_and_probability_sum1": true,
+  "monthly_maturity": [
+    {
+      "month": "2024-02-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0
+    },
+    {
+      "month": "2024-03-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0
+    },
+    {
+      "month": "2024-04-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0
+    },
+    {
+      "month": "2024-05-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0
+    },
+    {
+      "month": "2024-06-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.00035192679922576106
+    },
+    {
+      "month": "2024-07-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0023218691046292266
+    },
+    {
+      "month": "2024-08-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0
+    },
+    {
+      "month": "2024-09-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0
+    },
+    {
+      "month": "2024-10-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0
+    },
+    {
+      "month": "2024-11-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.002906507347004683
+    },
+    {
+      "month": "2024-12-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.005369745320650507
+    },
+    {
+      "month": "2025-01-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.009921377761138151
+    },
+    {
+      "month": "2025-02-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0028216704288939053
+    },
+    {
+      "month": "2025-03-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0008132726089785296
+    },
+    {
+      "month": "2025-04-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.003554119547657512
+    },
+    {
+      "month": "2025-05-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.005333333333333333
+    },
+    {
+      "month": "2025-06-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0037187288708586883
+    },
+    {
+      "month": "2025-07-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.00498533724340176
+    },
+    {
+      "month": "2025-08-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0
+    },
+    {
+      "month": "2025-09-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.00554357868801971
+    },
+    {
+      "month": "2025-10-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0
+    },
+    {
+      "month": "2025-11-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.0028682301332883416
+    },
+    {
+      "month": "2025-12-01",
+      "maturity": true,
+      "RG_fallback": 0.0,
+      "SQ_fallback": 0.005122950819672131
+    }
+  ],
+  "yearly_SQ_fallback": {
+    "2024": 0.0009848663494749692,
+    "2025": 0.003743702507863167
+  },
+  "prediction_sha256": "022d0cc4686df7147c25ffb64fdcb9d3ae7ea2248fc66fa1de68fe5fb1c342c7",
+  "economic_result": false,
+  "sealed_2026_access": false
+}

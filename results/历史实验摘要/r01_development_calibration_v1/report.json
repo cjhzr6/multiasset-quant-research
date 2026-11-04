@@ -1,0 +1,20 @@
+{
+  "status": "DEVELOPMENT_CALIBRATION_READY_FOR_COORDINATOR_REVIEW",
+  "calibration_sha256": "2a012f87ad01af8f2eb9dbc15876d7354c45556c88c84bbeac03f5285cbe62b5",
+  "calibration_table_sha256": "12cc3d518b48e31a4e887523d1d112006a357469624a447aeedc6a06e650bbd9",
+  "decision_cache_sha256": "c861292ca24f5dccab64c0b06217074e3dc6b363f5f99efc3acb560d0ad46e46",
+  "static_stock_fraction_candidate": 0.5964844994983244,
+  "selection_invalid_fraction": 0.0,
+  "selection_invalid_data_gate": "PASS",
+  "development_coverage_gate": "PASS",
+  "source_hashes": {
+    "approval_sha256": "77984f2bf20336e159c4c99338982ab57f39bc88a57bee24c372a04c57ae9643",
+    "contract_sha256": "e3a83640079591af30aa68aa96504ac8f57aa7b31977838e363dfcfeaf1b9dc9",
+    "account_market_sha256": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "e00_predictions_sha256": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "account_engine_sha256": "77156f8cdf8eb51ae5ad9fcaccb4be7106bf992b24a08918ad9425e44fa9c2e6",
+    "price_feature_code_sha256": "38b734144fa75a5f80ae197a309090a2779742ce49d3cb9a2345b21a1dd8ec20"
+  },
+  "selection_accounts_created": 0,
+  "sealed_2026_evaluated": false
+}

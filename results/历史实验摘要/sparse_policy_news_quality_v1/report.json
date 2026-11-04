@@ -1,0 +1,258 @@
+{
+  "status": "SMALL_POLICY_SOURCE_AUDIT_COMPLETE_NOT_MODEL_READY",
+  "records": [
+    {
+      "url": "https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20183",
+      "raw_file": "data/raw/sparse_policy_news_v1/21171af9a17f67383bf2dea0.html",
+      "raw_sha256": "9211f8671e2e86e130f23052f9728c5e9b16333c303590a6bfb916c6c813376b",
+      "text_file": "results/sparse_policy_news_quality_v1/21171af9a17f67383bf2dea0.txt",
+      "text_sha256": "5382b154f6f27614d15d2ab4a4e2e604e38dcca66cea94935b0015393567cbc4",
+      "text_chars": 5194,
+      "publisher_date": "2023-02-20",
+      "publication_evidence": [
+        {
+          "value": "2023-02-20",
+          "method": "PUBLICATION_META"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "关于统筹节能降碳和回收利用 加快重点领域产品设备更新改造的指导意见(发改环资〔2023〕178号)_政府信息公开_政务公开-国家发展改革委",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": true
+    },
+    {
+      "url": "https://www.gov.cn/zhengce/zhengceku/202306/content_6885692.htm",
+      "raw_file": "data/raw/sparse_policy_news_v1/06058ae14fd5c5c696f8bf6b.html",
+      "raw_sha256": "284605006cc3f184e941b29734a6aa100b905098a0083ea2c6a9e0b3c5ee18a5",
+      "text_file": "results/sparse_policy_news_quality_v1/06058ae14fd5c5c696f8bf6b.txt",
+      "text_sha256": "052474ad3b2cd9bf7dfee1d742509f8cb74b8457970c3dd5ab59e378a4b95a71",
+      "text_chars": 1500,
+      "publisher_date": "2023-06-10",
+      "publication_evidence": [
+        {
+          "value": "2023-06-10-12:34:48",
+          "method": "PUBLICATION_META"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "商务部办公厅关于组织开展汽车促消费活动的通知_国务院部门文件_中国政府网",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": false
+    },
+    {
+      "url": "https://app.www.gov.cn/govdata/gov/202307/31/505851/article.html",
+      "raw_file": "data/raw/sparse_policy_news_v1/48641cb961e9f1aef2914a07.html",
+      "raw_sha256": "01c9a3fdd4b6cf5399b21bed6b6425aee3f0a608cd31e1dd2315c78bb1d824fc",
+      "text_file": "results/sparse_policy_news_quality_v1/48641cb961e9f1aef2914a07.txt",
+      "text_sha256": "b6a8abb6a686f8d84983e663e456b8efea6da8122279b7c623504f2515d517f6",
+      "text_chars": 4844,
+      "publisher_date": "2023-07-31",
+      "publication_evidence": [
+        {
+          "value": "2023-07-31",
+          "method": "PUBLISHER_SOURCE_DATE_HEADER"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "国务院办公厅转发国家发展改革委关于恢复和扩大消费措施的通知",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": false
+    },
+    {
+      "url": "https://app.www.gov.cn/govdata/gov/202306/19/504387/article.html",
+      "raw_file": "data/raw/sparse_policy_news_v1/375331d6e2d5ebd7b4f231d3.html",
+      "raw_sha256": "0a251f0ee0725dd21d326b8bf8e94703353ac817855e8235c0e136fb338fc4df",
+      "text_file": "results/sparse_policy_news_quality_v1/375331d6e2d5ebd7b4f231d3.txt",
+      "text_sha256": "71d2465c68bec6051d56ca71fa25d6a4818c7a60a145ac0eaf36cf164d2bd40a",
+      "text_chars": 5034,
+      "publisher_date": "2023-06-19",
+      "publication_evidence": [
+        {
+          "value": "2023-06-19",
+          "method": "PUBLISHER_SOURCE_DATE_HEADER"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "国务院办公厅关于进一步构建高质量充电基础设施体系的指导意见",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": false
+    },
+    {
+      "url": "https://app.www.gov.cn/govdata/gov/202404/10/513811/article.html",
+      "raw_file": "data/raw/sparse_policy_news_v1/43f5b358b1fbf50ec57c55e1.html",
+      "raw_sha256": "ef29ee8bca5f9f33723232819756c1a7ccfe5cc056d18dc360c1a7b22c8b10f9",
+      "text_file": "results/sparse_policy_news_quality_v1/43f5b358b1fbf50ec57c55e1.txt",
+      "text_sha256": "e136b0ca59dff37d8316d5dc98cfc38c203a79017b2a898b549d0e51de427c88",
+      "text_chars": 4023,
+      "publisher_date": "2024-04-10",
+      "publication_evidence": [
+        {
+          "value": "2024-04-10",
+          "method": "PUBLISHER_SOURCE_DATE_HEADER"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "工业和信息化部等七部门关于印发推动工业领域设备更新实施方案的通知",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": false
+    },
+    {
+      "url": "https://app.www.gov.cn/govdata/gov/202406/26/516593/article.html",
+      "raw_file": "data/raw/sparse_policy_news_v1/4838d37e9b73e744fc457190.html",
+      "raw_sha256": "8beeffbd6258882ce4f78771c805da4686b74a02d415c008d4fe2dc8ca03a54d",
+      "text_file": "results/sparse_policy_news_quality_v1/4838d37e9b73e744fc457190.txt",
+      "text_sha256": "5f3998ff0becc8c5efdbe22fd223dcf309eab31fe6370648849386c5cf83256f",
+      "text_chars": 3068,
+      "publisher_date": "2024-06-26",
+      "publication_evidence": [
+        {
+          "value": "2024-06-26",
+          "method": "PUBLISHER_SOURCE_DATE_HEADER"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "关于实施设备更新贷款财政贴息政策的通知",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": false
+    },
+    {
+      "url": "https://app.www.gov.cn/govdata/gov/202407/25/517625/article.html",
+      "raw_file": "data/raw/sparse_policy_news_v1/b33c708513a96a495d4b32cb.html",
+      "raw_sha256": "72f5fa7f0829b5d51404902a021b5ff05bb4c3caefc32be36f172c22a5f6df94",
+      "text_file": "results/sparse_policy_news_quality_v1/b33c708513a96a495d4b32cb.txt",
+      "text_sha256": "8ff122d10a1acad1991a43bf863d67660e805201a02a2e8e37be36a995904a0b",
+      "text_chars": 3840,
+      "publisher_date": "2024-07-25",
+      "publication_evidence": [
+        {
+          "value": "2024-07-25",
+          "method": "PUBLISHER_SOURCE_DATE_HEADER"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "国家发展改革委 财政部印发 《关于加力支持大规模设备更新和消费品以旧换新的若干措施》的通知",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": false
+    },
+    {
+      "url": "https://app.www.gov.cn/govdata/gov/202408/11/518161/articleNew.html",
+      "raw_file": "data/raw/sparse_policy_news_v1/ea0b1c2f4b72fd305c29f495.html",
+      "raw_sha256": "994fdad45150cae60f521a72d2312baefd267ef3183a126266144a52782782c4",
+      "text_file": "results/sparse_policy_news_quality_v1/ea0b1c2f4b72fd305c29f495.txt",
+      "text_sha256": "a50f0be885526f6f1f122f70311201c4dd8c7696842bdea90c9c04c01f319ed8",
+      "text_chars": 7726,
+      "publisher_date": "2024-08-11",
+      "publication_evidence": [
+        {
+          "value": "2024-08-11",
+          "method": "PUBLISHER_SOURCE_DATE_HEADER"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "中共中央 国务院关于加快经济社会发展全面绿色转型的意见",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": false
+    },
+    {
+      "url": "https://app.www.gov.cn/govdata/gov/202409/21/519713/article.html",
+      "raw_file": "data/raw/sparse_policy_news_v1/bf00ecc5a34f9740fa24c99b.html",
+      "raw_sha256": "eb2a4ee13ef1c4e27efffb0c60a28e95fcbab452037e78ca14e66c27349d4ec5",
+      "text_file": "results/sparse_policy_news_quality_v1/bf00ecc5a34f9740fa24c99b.txt",
+      "text_sha256": "9699a0c149493e456a2261b50c1b4687959031b4301eef1e4470a8ea23375233",
+      "text_chars": 325,
+      "publisher_date": "2024-09-21",
+      "publication_evidence": [
+        {
+          "value": "2024-09-21",
+          "method": "PUBLISHER_SOURCE_DATE_HEADER"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "工业和信息化部办公厅关于印发工业重点行业领域设备更新和技术改造指南的通知",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": true
+    },
+    {
+      "url": "https://app.www.gov.cn/govdata/gov/202404/11/513851/article.html",
+      "raw_file": "data/raw/sparse_policy_news_v1/63d3a568629ebed56bd6adff.html",
+      "raw_sha256": "7c25bdb7a121c134f671243f5e10513c735226358a3c40b650bdc0b8aff17368",
+      "text_file": "results/sparse_policy_news_quality_v1/63d3a568629ebed56bd6adff.txt",
+      "text_sha256": "7eee7b220baa6c21de5b601d46a83a9c07b8a761c92eabffa528d1959d4a0716",
+      "text_chars": 4379,
+      "publisher_date": "2024-04-11",
+      "publication_evidence": [
+        {
+          "value": "2024-04-11",
+          "method": "PUBLISHER_SOURCE_DATE_HEADER"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "市场监管总局等七部门关于印发《以标准提升牵引设备更新和消费品以旧换新行动方案》的通知",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": true
+    },
+    {
+      "url": "https://app.www.gov.cn/govdata/gov/202406/08/515905/article.html",
+      "raw_file": "data/raw/sparse_policy_news_v1/b800791ee06941655f089416.html",
+      "raw_sha256": "e1f39b3767694e36c433d7048f629ba5a403f8a1698e9d6dfc510f428bee0233",
+      "text_file": "results/sparse_policy_news_quality_v1/b800791ee06941655f089416.txt",
+      "text_sha256": "49bf749dfaac0925442aa73c736d5f4ae54826a39b8840b3a9d9cd204f6f4dc6",
+      "text_chars": 4385,
+      "publisher_date": "2024-06-08",
+      "publication_evidence": [
+        {
+          "value": "2024-06-08",
+          "method": "PUBLISHER_SOURCE_DATE_HEADER"
+        }
+      ],
+      "body_container_matched": true,
+      "status": "SOURCE_DATE_AND_BODY_CANDIDATE",
+      "title": "交通运输部等十三部门关于印发《交通运输大规模设备更新行动方案》的通知",
+      "date_precision": "DAY_REQUIRES_CONSERVATIVE_LAG",
+      "immutable_first_vintage_verified": false,
+      "training_authorized": false,
+      "attachment_may_hold_additional_content": false
+    }
+  ],
+  "source_date_body_candidates": 11,
+  "models_fitted": 0,
+  "new_2025_downloads": 0,
+  "limitations": [
+    "Search-selected sparse policy sample, no continuous historical coverage",
+    "Sector/macroeconomic text is not issuer-labelled company events",
+    "Current page is not proof of immutable first publication",
+    "Day-resolution timestamps require conservative trading lag",
+    "Attachments not downloaded; text sufficiency differs by policy",
+    "No NLP return-increment inference"
+  ]
+}

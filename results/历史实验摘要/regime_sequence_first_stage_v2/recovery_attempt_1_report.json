@@ -1,0 +1,93 @@
+{
+  "version": "RG01_SQ01_FIRST_MONTH_RECOVERY_EXECUTION_ATTEMPT_1",
+  "date_shanghai": "2026-10-07",
+  "status": "STOPPED_BEFORE_ANY_SUPERVISED_FIT_CHECKPOINTS_VALID",
+  "authorization": "configs/regime_sequence_first_stage_recovery_authorization_v2.json",
+  "coordinator_review": "results/regime_sequence_first_stage_v2/coordinator_implementation_review.json",
+  "runner_sha256": "c69d699a5202102277dd30625afa9a2061a0f73de28fc1a58792b9d7ab410dff",
+  "runner_sha256_matches_authorization": true,
+  "execution_window_approx": {
+    "freeze_created": "2026-10-07T15:14:03+08:00",
+    "HMM_checkpoint_created": "2026-10-07T15:14:09+08:00",
+    "ESN_cache_created": "2026-10-07T15:14:27+08:00",
+    "elapsed_to_stop_seconds_approx": 24
+  },
+  "preflight": {
+    "status": "PASS_BEFORE_ANY_FIT",
+    "training_rows": 214162,
+    "prediction_rows": 6600,
+    "cutoff": "2023-12-29",
+    "max_training_label_end": "2023-12-29",
+    "future_2026_loaded": false,
+    "factor_check": {
+      "status": "PASS",
+      "rtol": 1e-10,
+      "atol": 1e-12,
+      "max_abs_diff": 3.552713678800501e-15,
+      "max_relative_diff": 2.999724025389664e-06,
+      "finite_values_compared": 6629201,
+      "rows": 1547273,
+      "valid_mask_equal": true,
+      "nonfinite_mask_equal": true,
+      "per_security_scale": "1+(sorted_symbol_index mod 13)",
+      "input_fields": [
+        "adjusted close return",
+        "adjusted volume/trailing20mean",
+        "(high-low)/close",
+        "close/open-1",
+        "market_ret20",
+        "market_vol20"
+      ]
+    }
+  },
+  "HMM": {
+    "current_recovery_fit_count": 1,
+    "prior_lost_v1_attempts": 1,
+    "cumulative_HMM_attempts": 2,
+    "EM_iterations": 9,
+    "converged": true,
+    "loglik": -6055.591103575785,
+    "emission_mean_distance": 1.8959791245889568,
+    "minimum_emission_mean_distance": 0.5,
+    "checkpoint_sha256": "b7d1fa35871eea3d10afafedfeb9237c34add21d082302d7d06567a6eb261016",
+    "attempt_record_sha256": "4d3f577de4fc123bc2865b16a3fba29bfae06c77cc452afdc813ad86416d70c5",
+    "checkpoint_frozen_hash_match": true,
+    "attempt_checkpoint_hash_match": true
+  },
+  "sequence_cache": {
+    "rows": 1547273,
+    "cache_sha256_actual": "2f5ec957be9674eed08dbe48e68431da7abd9034a6ae5932825d10c787e9513b",
+    "cache_sha256_manifest": "2f5ec957be9674eed08dbe48e68431da7abd9034a6ae5932825d10c787e9513b",
+    "manifest_sha256": "a59d5311c3f9912287d5f53f75212b682761a0c5c0839a7c730ff39ac247cbe8",
+    "cache_hash_matches_manifest": true,
+    "freeze_manifest_hash_matches": true
+  },
+  "supervised_fit_counts": {
+    "RG01_experts": 0,
+    "SQ01_ridge": 0
+  },
+  "accounts": 0,
+  "downloads": 0,
+  "sealed_2026_loaded": false,
+  "stop": {
+    "exception": "ValueError: assignment destination is read-only",
+    "location": "scripts/run_regime_sequence_first_stage_v2.py: qtrain[train_missing_state]=.5",
+    "point": "before the first LightGBM expert fit; no supervised fit started"
+  },
+  "fit_attempt_accounting": {
+    "prior_v1_HMM": 1,
+    "v2_HMM_recovery": 1,
+    "cumulative_attempts": 2,
+    "authorization_cap": 5,
+    "automatic_retry": false,
+    "additional_fit_authorization_required": true
+  },
+  "outputs": {
+    "preflight": "results/regime_sequence_first_stage_v2/preflight_report.json",
+    "HMM_checkpoint": "results/regime_sequence_first_stage_v2/hmm_checkpoint.json",
+    "ESN_cache": "results/regime_sequence_first_stage_v2/pre2026_sequence_cache.parquet",
+    "ESN_cache_manifest": "results/regime_sequence_first_stage_v2/pre2026_sequence_cache_manifest.json",
+    "jan2024_predictions_created": false
+  },
+  "note": "The checkpointed HMM and cache are evidence. Do not rerun or overwrite; the current signed runner cannot proceed until coordinator reviews the read-only assignment failure and issues a hash-bound continuation/fix authorization."
+}

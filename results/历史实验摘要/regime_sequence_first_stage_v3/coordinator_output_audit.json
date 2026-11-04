@@ -1,0 +1,17 @@
+{
+  "status": "PASS_FIRST_MONTH_OUTPUT_INDEPENDENT_AUDIT",
+  "rows": 6600,
+  "canonical_keys_equal_E00": true,
+  "duplicates": 0,
+  "scores_and_probabilities_finite": true,
+  "probability_sum1": true,
+  "E00_percentile_max_difference": 0,
+  "date_range": [
+    "2024-01-02",
+    "2024-01-31"
+  ],
+  "prediction_sha256": "a1e3d4dad767870ba3bf7d70c33548179839109c5648174928f0d4f291303382",
+  "sealed_2026_access": false,
+  "economic_result": false,
+  "initial_audit_failure": "DataFrame.equals distinguishes string vs categorical symbol dtype; canonical values identical, no model/output change."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "CLEANUP_COMPLETE_RESEARCH_CLOSED",
+  "updated_at": "2026-10-08T23:23:41.899313+08:00",
+  "targets_recycled": 36,
+  "permanent_deletion": false,
+  "automatic_permanent_delete_rejected": true,
+  "archive_original_bytes": 160627068,
+  "archive_bytes": 18289308,
+  "logical_removed_bytes": 315351177,
+  "environment_relocated_bytes": 397033458,
+  "environment_path": "<LOCAL_HOME>\\Desktop\\智享杯_本机运行环境\\.venv",
+  "final_bound_hashes_passed": 20,
+  "final_report_hash_unchanged": true,
+  "raw_data_receipts_papers_preserved": true,
+  "report_written": false,
+  "physical_disk_space_release_claimed": false,
+  "submission_layout": {
+    "submit": "提交材料/报告、代码、数据",
+    "archive": "研究档案",
+    "actual_training_unique_rows": 261844,
+    "training_data_bytes": 44872187,
+    "training_input_verification": "PASS_ALL_9_MONTHS_NO_FITS",
+    "report_finalized": false
+  }
+}

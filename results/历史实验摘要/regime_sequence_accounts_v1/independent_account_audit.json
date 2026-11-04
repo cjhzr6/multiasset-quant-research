@@ -1,0 +1,52 @@
+{
+  "status": "PASS_FOUR_ACCOUNT_INDEPENDENT_EXPORT_AUDIT",
+  "accounts": {
+    "RG01_standard": {
+      "sessions": 485,
+      "trades": 4612,
+      "rejections": 138,
+      "corporate_ledger_rows": 463,
+      "issues": 0,
+      "max_cash_residual": 4.220055416226387e-10,
+      "max_nav_component_residual": 2.3283064365386963e-10,
+      "daily_sha256": "aff84fb8f5ba008dca1491648073c52df14ce885e52fa9f0fe5c3e5c245d7ff8"
+    },
+    "RG01_cost2": {
+      "sessions": 485,
+      "trades": 4518,
+      "rejections": 136,
+      "corporate_ledger_rows": 463,
+      "issues": 0,
+      "max_cash_residual": 7.275957614183426e-10,
+      "max_nav_component_residual": 2.3283064365386963e-10,
+      "daily_sha256": "fcdd0116b4532221de0d80c0f6110073a4884e6d600236971303270d8902258d"
+    },
+    "SQ01_standard": {
+      "sessions": 485,
+      "trades": 2874,
+      "rejections": 130,
+      "corporate_ledger_rows": 441,
+      "issues": 0,
+      "max_cash_residual": 4.0745362639427185e-10,
+      "max_nav_component_residual": 2.3283064365386963e-10,
+      "daily_sha256": "982983dbaf7e0fb90b2c152cc9226d27309c12eb6f22638a30ca1928787ad752"
+    },
+    "SQ01_cost2": {
+      "sessions": 485,
+      "trades": 2981,
+      "rejections": 131,
+      "corporate_ledger_rows": 441,
+      "issues": 0,
+      "max_cash_residual": 1.3096723705530167e-10,
+      "max_nav_component_residual": 2.3283064365386963e-10,
+      "daily_sha256": "99615470ca128484f1a7715c6698c8242b055cda8c86bf208448e4e28439a0b1"
+    }
+  },
+  "daily_calendar_equal_E00": true,
+  "all_issues_zero": true,
+  "all_cash_reconciliations_pass": true,
+  "all_nav_components_pass": true,
+  "gate_recalculation_matches": true,
+  "report_sha256": "5e566f12e220c516440577a779c823381ba3fbf8d9fc1ff112bca0a36d59e5c9",
+  "sealed_2026_access": false
+}

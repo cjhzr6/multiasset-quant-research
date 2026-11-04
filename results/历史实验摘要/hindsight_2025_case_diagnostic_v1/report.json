@@ -1,0 +1,31 @@
+{
+  "status": "RETROSPECTIVE_CASE_SHORTLIST_ONLY",
+  "period": "2025Q3 price/rank;2025annual actual contribution",
+  "selection_rule": "Q3 eligible prediction>=30days; retrospectively highest Q3adjusted-close endpoint returns withtop80selection<=25%,5examples;2coveredwinnercontrols;3lowestactualannualcontributions",
+  "ranking_tie_limit": "rank(method=first) on stored prediction order, case frequency proxy not exact rebalance portfolio; final executor can bind score/symbol ranking",
+  "not_strategy_returns": "firstQ3close tolastQ3close, adjusted-price descriptive return; no corporate cash/fees execution or oracle account;annualcontributions original actualE00 attribution, not Q3 loss",
+  "survivorship_limit": "637union source, eligibility restricted via actualdated E00predictions and >=30days; endpointreturn not tradablefullquarterforlatejoiners",
+  "causal_claims": "NONE; posthoc winner selection needs historical-event/trade verification;include successfulcontrols",
+  "sealed_2026_access": false,
+  "candidate_symbols": [
+    "SHSE.601138",
+    "SZSE.300502",
+    "SZSE.002709",
+    "SZSE.300014",
+    "SZSE.002916"
+  ],
+  "covered_controls": [
+    "SZSE.300308",
+    "SZSE.300274"
+  ],
+  "negative_symbols": [
+    "SZSE.002304",
+    "SHSE.600377",
+    "SHSE.601607"
+  ],
+  "input_sha256": {
+    "results/rolling_signal_v1/predictions_2020_2025.parquet": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "data/processed/account_market_2020_2025.parquet": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "results/strategy_attribution_v1/per_stock_annual_contributions.csv": "bc4fd985e83c1f4d829201e6a8c578f4e76d691d2ee13e5591abde0f09aadc20"
+  }
+}

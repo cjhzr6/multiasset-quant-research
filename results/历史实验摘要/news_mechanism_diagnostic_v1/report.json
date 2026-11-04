@@ -1,0 +1,98 @@
+{
+  "created_at_local": "2026-10-07",
+  "source": "49 cached fragments from five frozen sample dates; no new API calls",
+  "input_design": "results/news_increment_design_phi_v1/design.md",
+  "items": 49,
+  "all_fragments_retained": true,
+  "class_counts": {
+    "价格复述": 14,
+    "旧事件评论": 16,
+    "新事件候选": 18,
+    "无法判断": 1
+  },
+  "per_sample_date": {
+    "2022-07-01": {
+      "items": 10,
+      "new_event_candidates": 2
+    },
+    "2024-07-01": {
+      "items": 9,
+      "new_event_candidates": 3
+    },
+    "2025-07-01": {
+      "items": 10,
+      "new_event_candidates": 4
+    },
+    "2025-08-19": {
+      "items": 10,
+      "new_event_candidates": 4
+    },
+    "2025-09-01": {
+      "items": 10,
+      "new_event_candidates": 5
+    }
+  },
+  "pit_gate": {
+    "criterion": "At least one time-verifiable new clue on at least 3 sample dates and at least 2 independent original sources.",
+    "dates_with_time_verifiable_clue": 0,
+    "independent_original_sources_verified": 0,
+    "result": "FAIL_NOT_MET",
+    "reason": "The independent-event floor is not met (18 candidate rows at most versus 30 required). In addition, all three allowed original-page checks failed to fetch, so there are zero time-verifiable clue dates and zero verified original sources. No item is PIT-passed."
+  },
+  "original_page_checks": [
+    {
+      "url": "http://www.es.csg.cn/news/gsxw/202407/t20240701_20468.html",
+      "result": "FETCH_FAILED",
+      "observation": "Official South Grid page inaccessible in browser tool; cannot confirm original date/content."
+    },
+    {
+      "url": "http://www.xinhuanet.com//20240731/a6e506084fa24c0ab8ddf0ca4a301ca6/c.html",
+      "result": "FETCH_FAILED",
+      "observation": "Cached URL path is dated 2024-07-31 and text mentions 2024-07-02, after 2024-07-01 sample date."
+    },
+    {
+      "url": "http://www.xinhuanet.com//20250901/04fa38d173b94c6d8ec6f5fffedd29ef/c.html",
+      "result": "FETCH_FAILED",
+      "observation": "Cached Xinhua page could not be fetched; same-day release time remains unknown."
+    }
+  ],
+  "time_suspect_candidates": [
+    {
+      "sample_date": "2024-07-01",
+      "item_nos": [
+        1,
+        3,
+        7
+      ]
+    },
+    {
+      "sample_date": "2025-07-01",
+      "item_nos": [
+        7,
+        10
+      ]
+    },
+    {
+      "sample_date": "2025-09-01",
+      "item_nos": [
+        1,
+        3,
+        4
+      ]
+    }
+  ],
+  "scope_limitations": [
+    "Classifications are cache-based candidate judgments, not verified availability facts.",
+    "This pass did not join candidates to frozen E00 holdings/exposures.",
+    "No 2026 values or returns inspected.",
+    "A failed fetch records tool failure, not proof the public source is unavailable."
+  ],
+  "next_step": "Stop return/performance testing for this sample. Retain the 49-row diagnostic; no training preparation or return-improvement claim. Reconsider only after obtaining a source set with at least 30 independent events and verifiable timestamps.",
+  "independent_event_gate": {
+    "minimum_independent_events": 30,
+    "candidate_rows_before_event_deduplication": 18,
+    "maximum_possible_independent_events_from_candidate_rows": 18,
+    "result": "FAIL_NOT_MET",
+    "interpretation": "Even treating every cache-based new-event candidate as independent would yield only 18, below the 30-event gate; duplicate/reposted coverage can only reduce the count. Return/performance testing is stopped."
+  }
+}

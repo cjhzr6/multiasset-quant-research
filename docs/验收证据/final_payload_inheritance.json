@@ -1,0 +1,73 @@
+{
+  "status": "PASS_FINAL_ZIP_PAYLOAD_INHERITANCE",
+  "final_packages": {
+    "报告.zip": {
+      "bytes": 482277,
+      "sha256": "b4a143992ecdcb8bf4c307c6a356add17d723318f47b0122b1e0fc8ea7c6d58e",
+      "files": 8,
+      "uncompressed_bytes": 553783,
+      "top_level": [
+        "报告"
+      ],
+      "unsafe_paths": [],
+      "within_limit": true
+    },
+    "代码.zip": {
+      "bytes": 5380397,
+      "sha256": "9f8068f6079794e028dc1509b3550d92404c7c108f104b4f1c78ee5496abdb76",
+      "files": 95,
+      "uncompressed_bytes": 13859361,
+      "top_level": [
+        "代码"
+      ],
+      "unsafe_paths": [],
+      "within_limit": true
+    },
+    "数据.zip": {
+      "bytes": 78505035,
+      "sha256": "7e3cf54c816350501170fcbe35b5ebc6904c3a327d9ae83aff225e54b92fc612",
+      "files": 38,
+      "uncompressed_bytes": 81515873,
+      "top_level": [
+        "数据"
+      ],
+      "unsafe_paths": [],
+      "within_limit": true
+    }
+  },
+  "payload_comparison_to_externally_extracted_run_20261010_232652": {
+    "报告.zip": {
+      "compared_payload_files": 8,
+      "excluded_file": null,
+      "differences": [],
+      "pass": true
+    },
+    "代码.zip": {
+      "compared_payload_files": 95,
+      "excluded_file": null,
+      "differences": [],
+      "pass": true
+    },
+    "数据.zip": {
+      "compared_payload_files": 37,
+      "excluded_file": "数据/MANIFEST.json",
+      "differences": [],
+      "pass": true
+    }
+  },
+  "data_manifest": {
+    "checked": 37,
+    "errors": [],
+    "status": "PASS"
+  },
+  "capacity_manifest_matches_current_zips": true,
+  "prior_isolated_acceptance": {
+    "extract_root": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232652",
+    "replay_passed": true,
+    "verifier_passed": true,
+    "daily_ledger_status": "PASS",
+    "daily_ledger_checks": 5,
+    "all_daily_ledgers_match": true
+  },
+  "inheritance_basis": "Only 数据/MANIFEST.json changed after the isolated replay. All 8 report files, 95 code files, and the other 37 data members compare byte-for-byte with that replay extraction. The final manifest binds all 37 data payload entries, including the reference daily/fills files. No model fitting or replay was repeated."
+}

@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-07T22:11:58+08:00",
+  "status": "FEASIBILITY_DIAGNOSTIC_ONLY_NO_RETURN_TEST",
+  "inputs": {
+    "results\\ifind_capture_audit_v1\\news_fragments.csv": "76b163adc3e675f76fa3a7723867b51a568c13c5c0de99e7c765455284bd307e",
+    "results\\qlib_joint_screen_v1\\joint_panel_pre2026.parquet": "cc48c5b97664e56d76657fc439e36cd41af910e29db6a4d57503237cd162f53f"
+  },
+  "unique_fragments": 2931,
+  "actual_article_days_by_year": {
+    "2020": 12,
+    "2021": 12,
+    "2022": 12,
+    "2023": 12,
+    "2024": 12,
+    "2025": 245
+  },
+  "articles_with_explicit_stock_codes_in_title": 64,
+  "title_event_keyword_articles": 46,
+  "strict_code_and_event_candidates": 2,
+  "contemporaneous_pool_candidates": 0,
+  "candidate_time_verified_count": 0,
+  "url_later_date_questions": 220,
+  "preregistered_guidance_title_rows": 3,
+  "preregistered_guidance_minimum_independent_events": 30,
+  "preregistered_guidance_gate_status": "STOP_TITLE_EVENT_UPPER_BOUND_BELOW_30",
+  "preregistered_guidance_gate_note": "A title can mention several companies; one title is not necessarily one event. No claim that this conservative row count proves a universal shortage of company events. The selected single-company non-summary event design requires enough independent eligible articles.",
+  "event_words": [
+    "订单",
+    "中标",
+    "上调",
+    "下调",
+    "预增",
+    "预减",
+    "预亏",
+    "扭亏",
+    "业绩预告",
+    "产能",
+    "投产"
+  ],
+  "rules": "Explicit title codes only; event keywords are screening, not sentiment or novelty labels; next trading signal day is provisional and does not cure incorrect publication dates.",
+  "limitations": [
+    "Company-name and industry-only news not mapped by this conservative check.",
+    "URL dates are suspicious indicators, not verified publication times.",
+    "RAG retrieval selection and missing articles prevent exhaustive coverage claims.",
+    "No return labels, predictions, model fitting, portfolio simulation or 2026 data loaded."
+  ],
+  "decision": "Complete bounded mechanism/source verification before any financial increment experiment; news benefit remains untested."
+}

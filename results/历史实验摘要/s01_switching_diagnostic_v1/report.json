@@ -1,0 +1,132 @@
+{
+  "status": "COMPLETE_EXISTING_LEDGER_DESCRIPTIVE_SWITCH_DIAGNOSTIC",
+  "source_sha256": {
+    "results\\account_2023_diagnostic_v1\\E00_daily.csv": "1643d1ca0d9b8147bed08f5e4c882f5bc4b49891df3f0f5deca2c42280c67d4e",
+    "results\\account_2023_diagnostic_v1\\T01_daily.csv": "f79223a7be1191df27293a9121f83817fd36347df97d35525903693da2bc6ae7",
+    "results\\account_2023_diagnostic_v1\\S01_daily.csv": "9452e248c48ea5757d68fcad1fa6f2a2a4e806121f5f3c372efa9b7e90bb8297",
+    "results\\account_2023_diagnostic_v1\\state_selection_log.csv": "39e3523b156414f549e4e99ea6609c41814bbaf63ed375d6c94f631798329739",
+    "results\\e00_isolated_replay_v2\\E00_daily.csv": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd",
+    "results\\trend_state_trial_v1\\T01_standard_daily.csv": "c8cafd1058060e9635509e9aeaa2084e5736e625222eb90207eaa8c66f9b87ab",
+    "results\\trend_state_trial_v1\\S01_standard_daily.csv": "7bcec5f22efe77acf14359bbf2e39ba83705cad9df01c992bf663fe6f898a30f",
+    "results\\trend_state_trial_v1\\state_selection_log.csv": "04dac1c6ce90c2a38c74ea9d8ea9e6d6dd1d8935f2ebd3da95277adf82583960"
+  },
+  "new_fits": 0,
+  "new_accounts": 0,
+  "sealed_2026_read": false,
+  "year_mode_summary": [
+    {
+      "year": 2023,
+      "requested_mode": "CASH",
+      "sessions": 1,
+      "S01_minus_E00_log_return": 0.0,
+      "S01_minus_T01_log_return": 0.0
+    },
+    {
+      "year": 2023,
+      "requested_mode": "E00",
+      "sessions": 181,
+      "S01_minus_E00_log_return": -0.007624531612004697,
+      "S01_minus_T01_log_return": 0.01928158983448448
+    },
+    {
+      "year": 2023,
+      "requested_mode": "T01",
+      "sessions": 60,
+      "S01_minus_E00_log_return": -0.057944537852012645,
+      "S01_minus_T01_log_return": 0.00850384759300758
+    },
+    {
+      "year": 2024,
+      "requested_mode": "CASH",
+      "sessions": 1,
+      "S01_minus_E00_log_return": 0.0,
+      "S01_minus_T01_log_return": 0.0
+    },
+    {
+      "year": 2024,
+      "requested_mode": "E00",
+      "sessions": 140,
+      "S01_minus_E00_log_return": -0.00609667970152327,
+      "S01_minus_T01_log_return": 0.1169412858455543
+    },
+    {
+      "year": 2024,
+      "requested_mode": "T01",
+      "sessions": 101,
+      "S01_minus_E00_log_return": -0.07631233730380214,
+      "S01_minus_T01_log_return": 0.01628686618130432
+    },
+    {
+      "year": 2025,
+      "requested_mode": "E00",
+      "sessions": 95,
+      "S01_minus_E00_log_return": -0.028491040819966052,
+      "S01_minus_T01_log_return": -0.022101234734558155
+    },
+    {
+      "year": 2025,
+      "requested_mode": "T01",
+      "sessions": 148,
+      "S01_minus_E00_log_return": 0.07749489311891275,
+      "S01_minus_T01_log_return": -0.011323200123698175
+    }
+  ],
+  "worst_episodes_vs_E00": [
+    {
+      "period": "2024_2025",
+      "episode_id": 41,
+      "signal_date": "2024-11-11",
+      "execution_start": "2024-11-12",
+      "mode": "T01",
+      "mode_changed": true,
+      "S01_minus_E00_log_return": -0.0754784864787854,
+      "S01_minus_T01_log_return": -0.0003032755528019149
+    },
+    {
+      "period": "2024_2025",
+      "episode_id": 85,
+      "signal_date": "2025-10-09",
+      "execution_start": "2025-10-10",
+      "mode": "T01",
+      "mode_changed": false,
+      "S01_minus_E00_log_return": -0.048048622299427725,
+      "S01_minus_T01_log_return": 0.0004666791115705344
+    },
+    {
+      "period": "2024_2025",
+      "episode_id": 58,
+      "signal_date": "2025-03-19",
+      "execution_start": "2025-03-20",
+      "mode": "T01",
+      "mode_changed": false,
+      "S01_minus_E00_log_return": -0.026149146735048485,
+      "S01_minus_T01_log_return": -0.0017156560329753406
+    },
+    {
+      "period": "2024_2025",
+      "episode_id": 90,
+      "signal_date": "2025-11-13",
+      "execution_start": "2025-11-14",
+      "mode": "T01",
+      "mode_changed": true,
+      "S01_minus_E00_log_return": -0.022490786021044144,
+      "S01_minus_T01_log_return": 0.0023244299626901397
+    },
+    {
+      "period": "2024_2025",
+      "episode_id": 48,
+      "signal_date": "2024-12-30",
+      "execution_start": "2024-12-31",
+      "mode": "T01",
+      "mode_changed": false,
+      "S01_minus_E00_log_return": -0.022150753778238472,
+      "S01_minus_T01_log_return": -0.0004179223945686662
+    }
+  ],
+  "limitations": [
+    "Requested mode becomes active only next session; real holdings retain120-buffer and execution constraints.",
+    "Log-relative contributions sum exactly to log relative wealth; they are not annual percentage-point return differences.",
+    "Conditional grouping is retrospective descriptive, not causal attribution or a profitable switching rule.",
+    "Fixed thresholds retained; no new variant, optimization, or future information."
+  ]
+}

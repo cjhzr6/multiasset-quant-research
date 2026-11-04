@@ -1,0 +1,89 @@
+{
+  "scope": "Only common sequence-ready label-available securities; raw model scores, not shared-fallback account IC. Post-checkpoint diagnostic, not training selection.",
+  "rows": [
+    {
+      "model": "ATTN",
+      "seed": 11,
+      "year": 2024,
+      "days": 242,
+      "mean_rankic": 0.027540380142228826
+    },
+    {
+      "model": "ATTN",
+      "seed": 11,
+      "year": 2025,
+      "days": 243,
+      "mean_rankic": 0.02260930468996977
+    },
+    {
+      "model": "ATTN",
+      "seed": 23,
+      "year": 2024,
+      "days": 242,
+      "mean_rankic": 0.0721196609723778
+    },
+    {
+      "model": "ATTN",
+      "seed": 23,
+      "year": 2025,
+      "days": 243,
+      "mean_rankic": 0.03543035014690202
+    },
+    {
+      "model": "ATTN",
+      "seed": 37,
+      "year": 2024,
+      "days": 242,
+      "mean_rankic": 0.06289458429409696
+    },
+    {
+      "model": "ATTN",
+      "seed": 37,
+      "year": 2025,
+      "days": 243,
+      "mean_rankic": -0.0035352114369120308
+    },
+    {
+      "model": "MLP",
+      "seed": 11,
+      "year": 2024,
+      "days": 242,
+      "mean_rankic": 0.02893248555781787
+    },
+    {
+      "model": "MLP",
+      "seed": 11,
+      "year": 2025,
+      "days": 243,
+      "mean_rankic": -0.007137960659164391
+    },
+    {
+      "model": "MLP",
+      "seed": 23,
+      "year": 2024,
+      "days": 242,
+      "mean_rankic": 0.026274986508833746
+    },
+    {
+      "model": "MLP",
+      "seed": 23,
+      "year": 2025,
+      "days": 243,
+      "mean_rankic": -0.0033571872615714825
+    },
+    {
+      "model": "MLP",
+      "seed": 37,
+      "year": 2024,
+      "days": 242,
+      "mean_rankic": 0.045550128000431796
+    },
+    {
+      "model": "MLP",
+      "seed": 37,
+      "year": 2025,
+      "days": 243,
+      "mean_rankic": 0.014734543648113281
+    }
+  ]
+}

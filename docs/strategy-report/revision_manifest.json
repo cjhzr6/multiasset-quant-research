@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-05",
+  "reason": "Public release: reconcile recovered branch evidence and improve table-note spacing.",
+  "changes": [
+    "New 15-page report, 16 numbered tables and 4 figures",
+    "Existing contribution analysis integrated",
+    "Public derived-results reproduction added; no vendor raw data",
+    "README and reproduction boundary clarified",
+    "N01/N02/N03 recovery status reconciled with Oct 14 records",
+    "Table note spacing corrected; MIT selected; source/report hashes refreshed"
+  ],
+  "impact": "Report and documentation only; main strategy parameters and frozen performance unchanged. Separate frozen-account verification on Nov 5, no retraining.",
+  "checks": {
+    "pages": 15,
+    "author_team_info_present": false,
+    "undefined_references": false,
+    "missing_glyphs": false,
+    "overfull_boxes": false,
+    "new_local_links_valid": true,
+    "visual_review": "Oct 31 full 15-page review retained for prior version; Nov 5 changed appendix pages 13-15 rendered and checked, spacing corrected and pages 14-15 checked again.",
+    "isolated_figure_reproduction": "Final script rerun in isolated directory; figure_checks exactly equal to public build. No private data used.",
+    "release_checks": "See ../发布核查_20261105.md; local tests pass, remote CI not yet executed."
+  },
+  "original_pdf_sha256": "5b2f2def93ab91a1261bc373ebfd65fcd7814fb8a787f9457bc92b3c8d269597",
+  "files": {
+    "build_figures.py": {
+      "bytes": 8113,
+      "sha256": "87e4f62f191e6a616357c5f94370b2524c4606eecb243b59a82abc96b65efac7"
+    },
+    "build_report.py": {
+      "bytes": 1047,
+      "sha256": "9c41a0e0708599f98ebf5a0e462beee4fe45979f445bc1d15350c13c6c099dc1"
+    },
+    "figure_checks.json": {
+      "bytes": 2213,
+      "sha256": "6b912e67c16bd72b76632474fb0f9ac14b5e37ea16c59d6c6467c2e2b559728a"
+    },
+    "figure_data/contributions.csv": {
+      "bytes": 1076,
+      "sha256": "6fb4a9da1ba5497bf4aaf547ac10cd15ae5a961d83cd082f582817e7bfc332b0"
+    },
+    "figure_data/monthly_returns.csv": {
+      "bytes": 3316,
+      "sha256": "790602a3f7ccb05b903da9ea5120531ef0ec355d4a0f79e9bcda3eabbca98a6f"
+    },
+    "figure_data/nav_2024_2025.csv": {
+      "bytes": 38323,
+      "sha256": "03dcaed181f70d29be853b2d5f57e94360b18c1cd414014fcbbe689cd2a8ec6b"
+    },
+    "figure_data/nav_2026.csv": {
+      "bytes": 13936,
+      "sha256": "8fc2be9f8d5b8e9c95033eb7ff81df5ff05a060cce17a15038f55f83c68f1256"
+    },
+    "figure_data/weights_2026.csv": {
+      "bytes": 18595,
+      "sha256": "429fb4ffb3663c012a09797055f3994cb9a5d16e7024d29226a6b803f27b9340"
+    },
+    "figure_sources.json": {
+      "bytes": 1376,
+      "sha256": "e800008bf3ee8c5385707cb5a2d25a79de5a61d8d755e5aa668e70df6c571890"
+    },
+    "figures/actual_weights_2026.pdf": {
+      "bytes": 25924,
+      "sha256": "cfea59967e7e90470b021ce7a3fa5d15f1f787876d1a8d65aa232bbdb07d72e7"
+    },
+    "figures/actual_weights_2026.png": {
+      "bytes": 100321,
+      "sha256": "a5a68107ed4b4f9bedfa1857dd886dc6d294b555d63e576734aabbdb7a696638"
+    },
+    "figures/actual_weights_2026.svg": {
+      "bytes": 53143,
+      "sha256": "c00ac0350d95093dfee880b1057bbb69d81075b0b99409c385e614c50c6bc0d8"
+    },
+    "figures/component_contributions.pdf": {
+      "bytes": 25581,
+      "sha256": "e1ab0533cd637fac23cd63f61a84304ec8be7a84a26de892f98753e91e56c57f"
+    },
+    "figures/component_contributions.png": {
+      "bytes": 108855,
+      "sha256": "9d0900e98ace48f6a042eecd4c9476c6cf58db0722f109d270c185c053c16623"
+    },
+    "figures/component_contributions.svg": {
+      "bytes": 17982,
+      "sha256": "393ef448935dddcca57ccfe6bef4535007c4d591c8478fc387b975e03a7501e1"
+    },
+    "figures/extension_nav_drawdown.pdf": {
+      "bytes": 21104,
+      "sha256": "466ddddfa4ade831bd8c3ce81aa1349ad7c21c658222f1dad4e50741d13399f6"
+    },
+    "figures/extension_nav_drawdown.png": {
+      "bytes": 238084,
+      "sha256": "874ccb012947ffa7d3b955cb0759a444ce85568d6442330be3c8e330f1603a8d"
+    },
+    "figures/extension_nav_drawdown.svg": {
+      "bytes": 30331,
+      "sha256": "a62209dfb2e547aff7813d49e72f91a67a8993c8691bfb05f4d8ca6d8a87d193"
+    },
+    "figures/historical_nav_drawdown.pdf": {
+      "bytes": 29523,
+      "sha256": "e14b0a5a7c3da59991757fecf48b3b34142b368d839cadb6ea62297f6652904c"
+    },
+    "figures/historical_nav_drawdown.png": {
+      "bytes": 196084,
+      "sha256": "3c27f19b029f6797a150366f63a61e6afc2b003beebae37fc5325b02f7f29964"
+    },
+    "figures/historical_nav_drawdown.svg": {
+      "bytes": 58281,
+      "sha256": "d7b0ad17e2c3a2356a2727886b5785891c207fa87332a917b9315071dd487244"
+    },
+    "main.tex": {
+      "bytes": 36775,
+      "sha256": "e4832fe14c709ced502a9c4596275c5eaab005e0ade83ce25b2c1f5855fec9a6"
+    },
+    "monthly_table.tex": {
+      "bytes": 1359,
+      "sha256": "bf35c9bcd3c4d784e8ca1cd839c8682e937de2129a293b42ea2f1dc699fb69b6"
+    },
+    "README.md": {
+      "bytes": 2850,
+      "sha256": "226fadd8a4b80b09ef93a870aa53b8943144af69ef746112336acbf8b6b763e9"
+    },
+    "report.pdf": {
+      "bytes": 381598,
+      "sha256": "c180b0e8d41421e8208b7af64a6518b25be81105ce8e0db2d4003a65c7559824"
+    },
+    "requirements.txt": {
+      "bytes": 150,
+      "sha256": "e2ce2b8df9ce252629012854452c6ce805d083d5c1550d134d6e4b479d21bb0e"
+    },
+    "图表契约与校核.md": {
+      "bytes": 2169,
+      "sha256": "94cb17c1374a6f5562294b1656f559c16b96dc4d582871166d3788953977d2b4"
+    }
+  },
+  "known_limits": [
+    "Private input data required for complete training/account runs.",
+    "2026 is 175-session cash restart retrospective.",
+    "2026 stress cash-exposure change remains to be audited.",
+    "Supplier raw data remains private; remote publication/CI recorded separately."
+  ],
+  "files_total_bytes": 1418109
+}

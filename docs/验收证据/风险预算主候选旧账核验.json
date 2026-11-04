@@ -1,0 +1,17 @@
+[
+  {
+    "period": "2023",
+    "mode": "standard",
+    "max_nav_difference": 0.0
+  },
+  {
+    "period": "2024_2025",
+    "mode": "standard",
+    "max_nav_difference": 0.0
+  },
+  {
+    "period": "2024_2025",
+    "mode": "stress",
+    "max_nav_difference": 0.0
+  }
+]

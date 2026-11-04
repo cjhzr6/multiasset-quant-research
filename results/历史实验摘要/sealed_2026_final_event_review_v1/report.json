@@ -1,0 +1,341 @@
+{
+  "version": "SEALED_2026_FINAL_EVENT_REVIEW_V1",
+  "generated_at": "2026-10-08T22:35:48.788099+08:00",
+  "status": "PARTIAL_PASS_3_REFERENCE_FORMULAS_RECONCILED_5_STILL_SOURCE_BLOCKED",
+  "frozen_candidate": "E00",
+  "preflight_status": "FINAL_INPUT_REVIEW_NOT_YET_EXECUTION_AUTHORIZED",
+  "input_report_status": "CACHED_EVENT_INPUTS_RECONCILED_NO_ACCOUNT_AUTHORIZATION",
+  "resolved_exception_groups": {
+    "officially_resolved_total": 11,
+    "factor_anomalies": 4,
+    "duplicate_groups": 7,
+    "canonical_rows": 606,
+    "canonical_event_keys_unique": true,
+    "canonical_unresolved_rows": 0,
+    "initial_remaining_input_gap_rows": 0,
+    "v1_3_minimum_gap_rows_superseded_by_later_review": 21
+  },
+  "reference_review": {
+    "cases_total": 8,
+    "limited_pass": 3,
+    "blocked": 5,
+    "cases": [
+      {
+        "symbol": "SZSE.300750",
+        "trade_date": "2026-04-22",
+        "status": "BLOCKED_ISSUER_FORMULA_SOURCE_NOT_IN_REVIEWED_EVIDENCE",
+        "market_pre_close": 440.6900024414063,
+        "previous_raw_close": 447.6,
+        "candidate_holder_cash_ps": 6.956999999999999,
+        "naive_reference_gap": 0.0470024414062777,
+        "official_identity_verified_in_current_input": false,
+        "explanation": "Exact provider date-field/cash candidate exists, but reviewed source set has no issuer notice calculation explaining the reference delta; do not infer cash entitlement from price difference.",
+        "source_proof": null
+      },
+      {
+        "symbol": "SZSE.300529",
+        "trade_date": "2026-06-01",
+        "status": "BLOCKED_ISSUER_FORMULA_SOURCE_NOT_IN_REVIEWED_EVIDENCE",
+        "market_pre_close": 17.690000534057617,
+        "previous_raw_close": 18.19,
+        "candidate_holder_cash_ps": 0.52,
+        "naive_reference_gap": 0.0200005340576154,
+        "official_identity_verified_in_current_input": false,
+        "explanation": "Exact provider date-field/cash candidate exists, but reviewed source set has no issuer notice calculation explaining the reference delta; do not infer cash entitlement from price difference.",
+        "source_proof": null
+      },
+      {
+        "symbol": "SZSE.002831",
+        "trade_date": "2026-06-04",
+        "status": "LIMITED_PASS_MIRROR_FORMULA_RECONCILES_PRIMARY_BYTES_UNVERIFIED",
+        "market_pre_close": 28.71999931335449,
+        "previous_raw_close": 41.0,
+        "candidate_holder_cash_ps": 0.8038126999999999,
+        "naive_reference_gap": 0.0474786891159091,
+        "official_identity_verified_in_current_input": false,
+        "explanation": "Gross holder cash and diluted market-reference cash differ because treasury shares are excluded from distribution but retained in total-share denominator.",
+        "source_proof": {
+          "local_file": "results\\sealed_2026_final_preflight_v1\\002831_issuer_notice.html",
+          "retrieved_url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12359850&stockid=002831",
+          "sha256": "b5e978130d41e028e33e438e93b3da9220fed84ea762203d9e63fc9076638f4f",
+          "bytes": 33430,
+          "provenance": "existing Sina filing-mirror HTML, not official-host bytes",
+          "required_notice_terms_present": true,
+          "actual_eligible_holder_gross_cash_ps": "0.8038127",
+          "diluted_reference_cash_ps": "0.7991573",
+          "official_reference_formula_value": "28.72353342641849482408490670",
+          "market_pre_close": "28.71999931335449",
+          "rounded_to_tick": "28.72",
+          "formula_matches_market_tick": true
+        }
+      },
+      {
+        "symbol": "SZSE.000333",
+        "trade_date": "2026-06-29",
+        "status": "BLOCKED_ISSUER_FORMULA_SOURCE_NOT_IN_REVIEWED_EVIDENCE",
+        "market_pre_close": 74.83000183105469,
+        "previous_raw_close": 78.55,
+        "candidate_holder_cash_ps": 3.8,
+        "naive_reference_gap": 0.0800018310546875,
+        "official_identity_verified_in_current_input": false,
+        "explanation": "Exact provider date-field/cash candidate exists, but reviewed source set has no issuer notice calculation explaining the reference delta; do not infer cash entitlement from price difference.",
+        "source_proof": null
+      },
+      {
+        "symbol": "SHSE.601021",
+        "trade_date": "2026-08-03",
+        "status": "BLOCKED_ISSUER_FORMULA_SOURCE_NOT_IN_REVIEWED_EVIDENCE",
+        "market_pre_close": 46.4900016784668,
+        "previous_raw_close": 47.0,
+        "candidate_holder_cash_ps": 0.53,
+        "naive_reference_gap": 0.020001678466798,
+        "official_identity_verified_in_current_input": false,
+        "explanation": "Exact provider date-field/cash candidate exists, but reviewed source set has no issuer notice calculation explaining the reference delta; do not infer cash entitlement from price difference.",
+        "source_proof": null
+      },
+      {
+        "symbol": "SHSE.600690",
+        "trade_date": "2026-08-21",
+        "status": "LIMITED_PASS_MIRROR_FORMULA_RECONCILES_PRIMARY_BYTES_UNVERIFIED",
+        "market_pre_close": 20.89999961853028,
+        "previous_raw_close": 21.77,
+        "candidate_holder_cash_ps": 0.89151,
+        "naive_reference_gap": 0.0215096185302776,
+        "official_identity_verified_in_current_input": false,
+        "explanation": "Gross holder cash and diluted market-reference cash differ because treasury shares are excluded from distribution but retained in total-share denominator.",
+        "source_proof": {
+          "local_file": "results\\sealed_2026_final_preflight_v1\\600690_issuer_notice.html",
+          "retrieved_url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12495431&stockid=600690",
+          "sha256": "0cb9ebf463569d590d1938c194e0e3e000309594feed5cd1a31044939bf28b79",
+          "bytes": 31679,
+          "provenance": "existing Sina filing-mirror HTML, not official-host bytes",
+          "required_notice_terms_present": true,
+          "actual_eligible_holder_gross_cash_ps": "0.89151",
+          "diluted_reference_cash_ps": "0.87373",
+          "official_reference_formula_value": "20.89627",
+          "market_pre_close": "20.89999961853028",
+          "rounded_to_tick": "20.90",
+          "formula_matches_market_tick": true
+        }
+      },
+      {
+        "symbol": "SZSE.002352",
+        "trade_date": "2026-09-17",
+        "status": "BLOCKED_ISSUER_FORMULA_SOURCE_NOT_IN_REVIEWED_EVIDENCE",
+        "market_pre_close": 30.280000686645508,
+        "previous_raw_close": 30.75,
+        "candidate_holder_cash_ps": 0.49,
+        "naive_reference_gap": 0.0200006866455062,
+        "official_identity_verified_in_current_input": false,
+        "explanation": "Exact provider date-field/cash candidate exists, but reviewed source set has no issuer notice calculation explaining the reference delta; do not infer cash entitlement from price difference.",
+        "source_proof": null
+      },
+      {
+        "symbol": "SZSE.000703",
+        "trade_date": "2026-09-18",
+        "status": "LIMITED_PASS_MIRROR_FORMULA_RECONCILES_PRIMARY_BYTES_UNVERIFIED",
+        "market_pre_close": 16.90999984741211,
+        "previous_raw_close": 17.73,
+        "candidate_holder_cash_ps": 0.9,
+        "naive_reference_gap": 0.0799998474121075,
+        "official_identity_verified_in_current_input": false,
+        "explanation": "Gross holder cash and diluted market-reference cash differ because treasury shares are excluded from distribution but retained in total-share denominator.",
+        "source_proof": {
+          "local_file": "results\\sealed_2026_final_preflight_v1\\000703_issuer_notice.html",
+          "retrieved_url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12595894&stockid=000703",
+          "sha256": "8183d7ed86ffec2c694dce7eb615adf4fd543eb331ad4cb6106fe49cebe99c06",
+          "bytes": 31285,
+          "provenance": "existing Sina filing-mirror HTML, not official-host bytes",
+          "required_notice_terms_present": true,
+          "actual_eligible_holder_gross_cash_ps": "0.9",
+          "diluted_reference_cash_ps": "0.8164176",
+          "official_reference_formula_value": "16.9135824",
+          "market_pre_close": "16.90999984741211",
+          "rounded_to_tick": "16.91",
+          "formula_matches_market_tick": true
+        }
+      }
+    ]
+  },
+  "cash_and_shares": {
+    "cash": "Use issuer final gross per-eligible-share amount, record-date holdings, and scheduled payment date under frozen simulated ledger; this is a scheduled gross receivable/payment, not observed broker credit.",
+    "account_entitlement_and_tax": "Not assessed here; holdings/tax lots/account ledger were not read. Exact per-account net cash and actual receipt require separately authorized account inputs/evidence.",
+    "share_listing": "Where a normal bonus/transfer to all eligible holders exists, use final share ratio and official listing/availability date; 300760 and 301308 are one consolidated payment each, with source components retained.",
+    "000793": {
+      "status": "PASS_NO_OLD_HOLDER_SHARES",
+      "canonical_row_present": true,
+      "zero_old_holder_cash_or_share_credit": true,
+      "scope": "Reference-price adjustment only for old holder book; investor/creditor allocations require beneficiary-specific evidence."
+    },
+    "rights_events": 0
+  },
+  "reference_and_factor": {
+    "factor_changes": 602,
+    "factor_changes_without_effective_event": 0,
+    "record_date_not_previous_session": [],
+    "source_formula_explanations_in_progress": [
+      "002831 issuer gives holder cash .8038127 and transfer .4019063, reference .7991573 and .3995786",
+      "000703 issuer gives holder cash .9 and reference .8164176",
+      "600690 notice confirms holder cash .89151 and excluded repurchased shares; complete reference verification pending"
+    ],
+    "raw_market_rows_reviewed_only_for_affected_event_dates": [
+      {
+        "trade_date": "2026-04-22",
+        "symbol": "SZSE.300750",
+        "open": 441.01,
+        "pre_close": 440.69000244140625,
+        "is_suspended": false,
+        "pool_member": true
+      },
+      {
+        "trade_date": "2026-06-01",
+        "symbol": "SZSE.300529",
+        "open": 17.71,
+        "pre_close": 17.690000534057617,
+        "is_suspended": false,
+        "pool_member": false
+      },
+      {
+        "trade_date": "2026-06-04",
+        "symbol": "SZSE.002831",
+        "open": 28.74,
+        "pre_close": 28.719999313354492,
+        "is_suspended": false,
+        "pool_member": false
+      },
+      {
+        "trade_date": "2026-06-29",
+        "symbol": "SZSE.000333",
+        "open": 75.79,
+        "pre_close": 74.83000183105469,
+        "is_suspended": false,
+        "pool_member": true
+      },
+      {
+        "trade_date": "2026-08-03",
+        "symbol": "SHSE.601021",
+        "open": 47.05,
+        "pre_close": 46.4900016784668,
+        "is_suspended": false,
+        "pool_member": true
+      },
+      {
+        "trade_date": "2026-08-21",
+        "symbol": "SHSE.600690",
+        "open": 20.92,
+        "pre_close": 20.899999618530273,
+        "is_suspended": false,
+        "pool_member": true
+      },
+      {
+        "trade_date": "2026-09-17",
+        "symbol": "SZSE.002352",
+        "open": 30.26,
+        "pre_close": 30.280000686645508,
+        "is_suspended": false,
+        "pool_member": true
+      },
+      {
+        "trade_date": "2026-09-18",
+        "symbol": "SZSE.000703",
+        "open": 16.8,
+        "pre_close": 16.90999984741211,
+        "is_suspended": false,
+        "pool_member": false
+      },
+      {
+        "trade_date": "2026-06-22",
+        "symbol": "SZSE.000793",
+        "open": 2.64,
+        "pre_close": 2.509999990463257,
+        "is_suspended": false,
+        "pool_member": false
+      }
+    ],
+    "preclose_is_not_cash": true
+  },
+  "implementation_caution": "account_engine_2026_v1.py corporate_action uses gross cash_ps and holder share ratios to adjust its stale mark. For differentiated dividends with issuer treasury shares, this does not equal the diluted market-reference formula. Raw unsuspended opening quotes exist for all 9 affected event rows reviewed, but this audit did not execute or inspect the account runner call order; coordinator should confirm the raw opening mark replaces the provisional mark before NAV/trading, or isolate a fix before execution.",
+  "source_limits": [
+    "The three retrieved notice copies are Sina filing mirrors, not official-host byte archives; their notice text and equations reconcile, but primary-byte provenance remains limited.",
+    "Five reference-difference cases have no matching issuer notice in the reviewed source manifest: SZSE.300750, SZSE.300529, SZSE.000333, SHSE.601021, SZSE.002352.",
+    "BaoStock date-only historical vintage is unverified; exact-date match is a reconciliation candidate, not PIT proof.",
+    "No account holdings, account-specific tax lots, actual broker receipts, predictions, labels, NAV, trades, or returns were read."
+  ],
+  "files_reviewed_sha256": {
+    "configs/e00_final_candidate_freeze_v2.json": {
+      "sha256": "40b3386e46765ca2e0754793e712b05d3dded4cde19129d0330dcc7d61372cd5",
+      "bytes": 5356
+    },
+    "results/sealed_2026_event_inputs_v1/report.json": {
+      "sha256": "cf9344321ade9707116b4068922dd94d2b0b893a716e8865616f36f16486a02b",
+      "bytes": 1552
+    },
+    "results/sealed_2026_event_inputs_v1/canonical_events.parquet": {
+      "sha256": "739e3e7d96cbc00300a9d46829ad85652a14647833f66ffe3e6034652f3eb5bc",
+      "bytes": 19384
+    },
+    "results/sealed_2026_event_inputs_v1/remaining_input_gaps.csv": {
+      "sha256": "a21040c8be8d94a363564c0578df5c41ce5230c8393a7e0362f4167b5e598574",
+      "bytes": 23
+    },
+    "results/sealed_2026_event_resolution_v1/report.md": {
+      "sha256": "424bb43a747722967452e3db3d6edd4b9dfd9b5aff54b612bd5a3def5167de65",
+      "bytes": 3071
+    },
+    "results/sealed_2026_event_resolution_v1/event_resolution_table.csv": {
+      "sha256": "04885c9b817be94908099fad409b6d65c72a7412d26cdad0613e90f9af1b5aa2",
+      "bytes": 8264
+    },
+    "results/sealed_2026_event_resolution_v1/remaining_gaps.json": {
+      "sha256": "deebed3aff8113ee151e7e6e05118880370915aec3a31db8967484d6f09ba7c7",
+      "bytes": 3354
+    },
+    "results/sealed_2026_event_resolution_v1/source_manifest.json": {
+      "sha256": "38853e86012a7139bc7aef1128d3f646ccc65819ad6330a793b26c271ccb2033",
+      "bytes": 16789
+    },
+    "results/sealed_2026_input_review_v1_3/canonical_coverage_review_v1_2.json": {
+      "sha256": "3fb659b8c09565b3b4f830975b5085c5a610fb6af338f5eb650f7906ab1ee598",
+      "bytes": 5070
+    },
+    "results/sealed_2026_input_review_v1_3/minimum_event_gap_list.csv": {
+      "sha256": "40219be3c489db925f1c46010a43e7ce7bf6f980fcabf5fee223fb794b827607",
+      "bytes": 4092
+    },
+    "results/sealed_2026_final_preflight_v1/report.json": {
+      "sha256": "a7b6ba9159fe384b098921d8c2a972a498f93b7af388068e45fdb196333f450f",
+      "bytes": 2158
+    },
+    "results/sealed_2026_final_preflight_v1/reference_review.csv": {
+      "sha256": "af46fb3c7174bab20e621ea4f0fa20eaacac379ff12a28ccc7847964a7d83d1b",
+      "bytes": 4135
+    },
+    "results/sealed_2026_final_preflight_v1/source_manifest.json": {
+      "sha256": "4794e5c9de2a65789cd211b80b7708d403f42dcb9eddec78220e22fe92dfa561",
+      "bytes": 1122
+    },
+    "scripts/account_engine_2026_v1.py": {
+      "sha256": "2dd01ae039a391aa3e2e0cf82e2894acdd848e3dbb949bc644915cb7cf1182bc",
+      "bytes": 14426
+    },
+    "data/processed/sealed_2026/account_market_2026_candidate.parquet": {
+      "sha256": "9680e1322f8a33ac3c75206c1eaa22a6b31d690ad73e213a4a0e0015a88ce139",
+      "bytes": 4254402
+    },
+    "results/sealed_2026_final_preflight_v1/002831_issuer_notice.html": {
+      "sha256": "b5e978130d41e028e33e438e93b3da9220fed84ea762203d9e63fc9076638f4f",
+      "bytes": 33430
+    },
+    "results/sealed_2026_final_preflight_v1/600690_issuer_notice.html": {
+      "sha256": "0cb9ebf463569d590d1938c194e0e3e000309594feed5cd1a31044939bf28b79",
+      "bytes": 31679
+    },
+    "results/sealed_2026_final_preflight_v1/000703_issuer_notice.html": {
+      "sha256": "8183d7ed86ffec2c694dce7eb615adf4fd543eb331ad4cb6106fe49cebe99c06",
+      "bytes": 31285
+    }
+  },
+  "downloads": 0,
+  "fits": 0,
+  "predictions_or_account_returns_read": false
+}

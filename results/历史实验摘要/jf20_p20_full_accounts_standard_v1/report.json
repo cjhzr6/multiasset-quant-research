@@ -1,0 +1,134 @@
+{
+  "status": "COMPLETE_MATCHED_ACCOUNT_SIMULATION_WITH_PUBLICATION_GATES",
+  "scenario": "jf20_p20_full_accounts_standard_v1",
+  "sealed_2026_evaluated": false,
+  "cash_reconciliation": "PASS every model/session",
+  "inputs": {
+    "prediction_sha256": "310f1af16093e52467eb830baa082b2dda6c7924d823861818f1070fec05fd37",
+    "model_report_sha256": "50e4b2d4eecd712f82ecd63007c6cd93a6eea77e8d72b286fa5d1f987a35aabf",
+    "approval_sha256": "7db593c638ad1c921078b2b6653132e7cf51e0b173eeb693f03095c8c1439e6f",
+    "contract_sha256": "4ea8ce4d2c74bc0c132f90497d425d900f39e5c30d3ab50dd96e564f6c90f1fd",
+    "market_sha256": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "corporate_date_source_sha256": "3b6374096299e1e7624753e6c1e60150e675798fd3e5f2519c742753c8547029",
+    "account_engine_sha256": "77156f8cdf8eb51ae5ad9fcaccb4be7106bf992b24a08918ad9425e44fa9c2e6",
+    "prepared_events_sha256": "5a50f424dcafe8417979097eceeae8a65a10203119fb43a326a0ee91ce29fdfc",
+    "unsupported_factor_rows": 0
+  },
+  "models": {
+    "P20": {
+      "publishable_returns": true,
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "sessions": 485,
+      "trades": 4067,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "max_cash_flow_residual": 9.89530235528946e-10,
+        "nav_export_pass": true,
+        "max_nav_component_residual": 0.0,
+        "daily_rows": 485,
+        "trade_rows": 4067
+      },
+      "combined_2024_2025_metrics": {
+        "start_nav": 1000000.0,
+        "end_nav": 1492021.0034499678,
+        "total_return": 0.4920210034499679,
+        "annualized_return": 0.23109426275213796,
+        "annualized_volatility": 0.14633835341930604,
+        "sharpe_zero_cash": 1.4939587216717771,
+        "max_drawdown": -0.08287085702917196,
+        "max_drawdown_peak_to_trough_sessions": 40,
+        "mean_stock_exposure": 0.9208800287597907,
+        "mean_cash_fraction": 0.07980949629605155,
+        "mean_holdings": 78.48659793814433,
+        "trade_count": 4067,
+        "fees": 29115.03231903365,
+        "realized_dividend_tax": 8482.764866000001,
+        "slippage_cost": 16892.39102499821,
+        "gross_traded_notional_start_nav": 33.785256762015
+      }
+    },
+    "JF20": {
+      "publishable_returns": true,
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "sessions": 485,
+      "trades": 3745,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "max_cash_flow_residual": 3.2014213502407074e-10,
+        "nav_export_pass": true,
+        "max_nav_component_residual": 0.0,
+        "daily_rows": 485,
+        "trade_rows": 3745
+      },
+      "combined_2024_2025_metrics": {
+        "start_nav": 1000000.0,
+        "end_nav": 1439660.5896980525,
+        "total_return": 0.43966058969805255,
+        "annualized_return": 0.2084536519410567,
+        "annualized_volatility": 0.14415504889210518,
+        "sharpe_zero_cash": 1.3855304833251723,
+        "max_drawdown": -0.08820009083739322,
+        "max_drawdown_peak_to_trough_sessions": 97,
+        "mean_stock_exposure": 0.9269719492149437,
+        "mean_cash_fraction": 0.07377748190196048,
+        "mean_holdings": 78.72164948453609,
+        "trade_count": 3745,
+        "fees": 25850.96020494925,
+        "realized_dividend_tax": 7448.828862,
+        "slippage_cost": 13906.303404998467,
+        "gross_traded_notional_start_nav": 27.813091102675
+      }
+    }
+  },
+  "limitations": [
+    "2024-2025 are previously inspected selection data, not independent confirmation.",
+    "Daily OHLC cannot establish order queue priority or partial fills.",
+    "Corporate-action and tax assumptions remain as documented in the shared account engine."
+  ],
+  "monthly_results_file": "monthly_account_results.csv",
+  "combined_2024_2025_metrics_file": "combined_2024_2025_metrics.json",
+  "combined_2024_2025_metrics": {
+    "P20": {
+      "start_nav": 1000000.0,
+      "end_nav": 1492021.0034499678,
+      "total_return": 0.4920210034499679,
+      "annualized_return": 0.23109426275213796,
+      "annualized_volatility": 0.14633835341930604,
+      "sharpe_zero_cash": 1.4939587216717771,
+      "max_drawdown": -0.08287085702917196,
+      "max_drawdown_peak_to_trough_sessions": 40,
+      "mean_stock_exposure": 0.9208800287597907,
+      "mean_cash_fraction": 0.07980949629605155,
+      "mean_holdings": 78.48659793814433,
+      "trade_count": 4067,
+      "fees": 29115.03231903365,
+      "realized_dividend_tax": 8482.764866000001,
+      "slippage_cost": 16892.39102499821,
+      "gross_traded_notional_start_nav": 33.785256762015
+    },
+    "JF20": {
+      "start_nav": 1000000.0,
+      "end_nav": 1439660.5896980525,
+      "total_return": 0.43966058969805255,
+      "annualized_return": 0.2084536519410567,
+      "annualized_volatility": 0.14415504889210518,
+      "sharpe_zero_cash": 1.3855304833251723,
+      "max_drawdown": -0.08820009083739322,
+      "max_drawdown_peak_to_trough_sessions": 97,
+      "mean_stock_exposure": 0.9269719492149437,
+      "mean_cash_fraction": 0.07377748190196048,
+      "mean_holdings": 78.72164948453609,
+      "trade_count": 3745,
+      "fees": 25850.96020494925,
+      "realized_dividend_tax": 7448.828862,
+      "slippage_cost": 13906.303404998467,
+      "gross_traded_notional_start_nav": 27.813091102675
+    }
+  },
+  "monthly_results_sha256": "7949115b01b458e0a0ca10742a43f033eb232b5d4162ac95f7c26c3d7a0c5410",
+  "combined_metrics_sha256": "02e0e785db3a0da8731fe019dba019513e8c966bf9633199b448dac4f3cbc2f4"
+}

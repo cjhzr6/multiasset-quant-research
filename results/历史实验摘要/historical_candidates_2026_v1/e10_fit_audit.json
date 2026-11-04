@@ -1,0 +1,101 @@
+[
+  {
+    "fit_month": "2026-01-01",
+    "cutoff": "2025-12-31",
+    "rows": 214449,
+    "unique_signal_dates": 721,
+    "max_label_end_date": "2025-12-31",
+    "historical_rows": 214449,
+    "online_2026_rows": 0,
+    "prediction_rows": 5914,
+    "model_sha256": "7e8de8abb470db1fc83a37ef7281e34ec3d9135bb61c3f46796dbbf9a86bae51"
+  },
+  {
+    "fit_month": "2026-02-01",
+    "cutoff": "2026-01-30",
+    "rows": 215608,
+    "unique_signal_dates": 725,
+    "max_label_end_date": "2026-01-30",
+    "historical_rows": 211468,
+    "online_2026_rows": 4140,
+    "prediction_rows": 4119,
+    "model_sha256": "16530bc17d0cff442bee882cf66b97a2f45030716a05efa100ace728de7bcadb"
+  },
+  {
+    "fit_month": "2026-03-01",
+    "cutoff": "2026-02-27",
+    "rows": 213764,
+    "unique_signal_dates": 719,
+    "max_label_end_date": "2026-02-27",
+    "historical_rows": 205506,
+    "online_2026_rows": 8258,
+    "prediction_rows": 6474,
+    "model_sha256": "a5d00bcb2fbe5eca6b261b9fb63abf081546b4052bf07fc5a8307e45e75102c0"
+  },
+  {
+    "fit_month": "2026-04-01",
+    "cutoff": "2026-03-31",
+    "rows": 213339,
+    "unique_signal_dates": 718,
+    "max_label_end_date": "2026-03-31",
+    "historical_rows": 198620,
+    "online_2026_rows": 14719,
+    "prediction_rows": 6233,
+    "model_sha256": "767b35b9d15e5a33f446e9671bd2515a4a33f32e80ad8de7e2c651312de7fd06"
+  },
+  {
+    "fit_month": "2026-05-01",
+    "cutoff": "2026-04-30",
+    "rows": 213862,
+    "unique_signal_dates": 720,
+    "max_label_end_date": "2026-04-30",
+    "historical_rows": 192922,
+    "online_2026_rows": 20940,
+    "prediction_rows": 5341,
+    "model_sha256": "e5c16c3768e03c69c2295423c28080c6f8ec11e3ee54073ff10c9a9413279d0b"
+  },
+  {
+    "fit_month": "2026-06-01",
+    "cutoff": "2026-05-29",
+    "rows": 213208,
+    "unique_signal_dates": 718,
+    "max_label_end_date": "2026-05-29",
+    "historical_rows": 186922,
+    "online_2026_rows": 26286,
+    "prediction_rows": 6238,
+    "model_sha256": "658083ead768249e6ae66a8bddb9f4f99f7a383df5ce9d97cd1ea93360b1dc1a"
+  },
+  {
+    "fit_month": "2026-07-01",
+    "cutoff": "2026-06-30",
+    "rows": 213458,
+    "unique_signal_dates": 719,
+    "max_label_end_date": "2026-06-30",
+    "historical_rows": 180946,
+    "online_2026_rows": 32512,
+    "prediction_rows": 6842,
+    "model_sha256": "f87331dcbe270ba06431c29e0a3f4aff35ea9fa33addebf22b805fcbc06a84a4"
+  },
+  {
+    "fit_month": "2026-08-01",
+    "cutoff": "2026-07-31",
+    "rows": 214021,
+    "unique_signal_dates": 721,
+    "max_label_end_date": "2026-07-31",
+    "historical_rows": 174667,
+    "online_2026_rows": 39354,
+    "prediction_rows": 6264,
+    "model_sha256": "db50278809ce0c6c7f011b128cefa5ba12ddab4a3a68ca7e8ed67134b4cd17db"
+  },
+  {
+    "fit_month": "2026-09-01",
+    "cutoff": "2026-08-31",
+    "rows": 213409,
+    "unique_signal_dates": 719,
+    "max_label_end_date": "2026-08-31",
+    "historical_rows": 167790,
+    "online_2026_rows": 45619,
+    "prediction_rows": 4468,
+    "model_sha256": "a05d06ac5f159c1b22255d94ccc0f878ec5945034cb798fd63a868cb62aeca89"
+  }
+]

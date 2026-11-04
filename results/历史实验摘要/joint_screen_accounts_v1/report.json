@@ -1,0 +1,145 @@
+{
+  "status": "COMPLETE_JOINT_SCREEN_ACCOUNTS_WITH_GATES",
+  "cash_reconciliation": "PASS all model/session balances",
+  "sealed_2026_evaluated": false,
+  "models": {
+    "B00": {
+      "publishable_returns": true,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "sessions": 485,
+      "diagnostic_performance": {
+        "total_return": 0.2260811580903983,
+        "annualized_return": 0.11171506481155391,
+        "volatility": 0.10735114418372517,
+        "sharpe_zero_cash": 1.0401412328563633,
+        "max_drawdown": -0.0863661959618599,
+        "mean_holdings": 203.8659793814433,
+        "mean_cash_fraction": 0.43340004866021414,
+        "trading_fees": 12122.3861905993,
+        "realized_dividend_tax": 866.039575,
+        "slippage_cost": 1771.0734899998129,
+        "annualized_two_sided_turnover": 1.6669801927672139
+      },
+      "diagnostic_yearly_returns": {
+        "2024": 0.12948864124674886,
+        "2025": 0.08551880321437233
+      }
+    },
+    "B01": {
+      "publishable_returns": true,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "sessions": 485,
+      "diagnostic_performance": {
+        "total_return": 0.32297440505428954,
+        "annualized_return": 0.1565292621432539,
+        "volatility": 0.1438171206508733,
+        "sharpe_zero_cash": 1.0833021085181667,
+        "max_drawdown": -0.13770245646532198,
+        "mean_holdings": 74.63711340206186,
+        "mean_cash_fraction": 0.14270732280701015,
+        "trading_fees": 38253.6510797127,
+        "realized_dividend_tax": 7603.097756000001,
+        "slippage_cost": 25662.82909999712,
+        "annualized_two_sided_turnover": 22.853291034699865
+      },
+      "diagnostic_yearly_returns": {
+        "2024": 0.2184561129856586,
+        "2025": 0.08577928327063278
+      }
+    },
+    "E00": {
+      "publishable_returns": true,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "sessions": 485,
+      "diagnostic_performance": {
+        "total_return": 0.5072421266852214,
+        "annualized_return": 0.23760397308889036,
+        "volatility": 0.13980555305728237,
+        "sharpe_zero_cash": 1.594765885008571,
+        "max_drawdown": -0.0872010290941736,
+        "mean_holdings": 77.72164948453609,
+        "mean_cash_fraction": 0.09044205890883239,
+        "trading_fees": 29721.15728978005,
+        "realized_dividend_tax": 9186.59375,
+        "slippage_cost": 17622.59257499812,
+        "annualized_two_sided_turnover": 14.010076434762388
+      },
+      "diagnostic_yearly_returns": {
+        "2024": 0.3948865466695981,
+        "2025": 0.08054818528709817
+      }
+    },
+    "E10": {
+      "publishable_returns": true,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "sessions": 485,
+      "diagnostic_performance": {
+        "total_return": 0.4560160403347977,
+        "annualized_return": 0.21556760592059376,
+        "volatility": 0.14115381458113238,
+        "sharpe_zero_cash": 1.4537935183818274,
+        "max_drawdown": -0.09118706289472212,
+        "mean_holdings": 78.34226804123712,
+        "mean_cash_fraction": 0.08192046792899031,
+        "trading_fees": 30254.964844203852,
+        "realized_dividend_tax": 9506.603286000001,
+        "slippage_cost": 18159.958394997993,
+        "annualized_two_sided_turnover": 14.528575837128342
+      },
+      "diagnostic_yearly_returns": {
+        "2024": 0.3683181598875003,
+        "2025": 0.06409173174644378
+      }
+    },
+    "Q_STATE_FIN": {
+      "publishable_returns": true,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "sessions": 485,
+      "diagnostic_performance": {
+        "total_return": 0.38687863036944314,
+        "annualized_return": 0.18522669551957938,
+        "volatility": 0.13504853438253914,
+        "sharpe_zero_cash": 1.3258445787923823,
+        "max_drawdown": -0.08448256804812715,
+        "mean_holdings": 78.76288659793815,
+        "mean_cash_fraction": 0.07578978040363187,
+        "trading_fees": 25339.84431055985,
+        "realized_dividend_tax": 8570.783885,
+        "slippage_cost": 13808.513284998538,
+        "annualized_two_sided_turnover": 11.493812746593813
+      },
+      "diagnostic_yearly_returns": {
+        "2024": 0.3150939077949759,
+        "2025": 0.054585244558564616
+      }
+    },
+    "QLIB_JOINT": {
+      "publishable_returns": true,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "sessions": 485,
+      "diagnostic_performance": {
+        "total_return": 0.40237782081478857,
+        "annualized_return": 0.19209057705940902,
+        "volatility": 0.14185475856463078,
+        "sharpe_zero_cash": 1.3096812899946846,
+        "max_drawdown": -0.08475929631990475,
+        "mean_holdings": 79.02061855670104,
+        "mean_cash_fraction": 0.06948026528636847,
+        "trading_fees": 27983.1014152128,
+        "realized_dividend_tax": 8961.85641,
+        "slippage_cost": 16021.7684599983,
+        "annualized_two_sided_turnover": 12.97371684318593
+      },
+      "diagnostic_yearly_returns": {
+        "2024": 0.36957261668487007,
+        "2025": 0.023952876780878762
+      }
+    }
+  }
+}

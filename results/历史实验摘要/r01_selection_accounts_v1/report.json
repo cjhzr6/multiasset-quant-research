@@ -1,0 +1,1091 @@
+{
+  "status": "COMPLETE_R01_MATCHED_FOUR_ACCOUNT_SIMULATION",
+  "selection_period": "2024-01-02 through 2025-12-31",
+  "capital": 1000000,
+  "decision_count": 80,
+  "session_count": 485,
+  "sealed_2026_evaluated": false,
+  "selection_returns_used_for_calibration": false,
+  "frozen_calibration_scalar": 0.5964844994983244,
+  "calibration_scope": "development RMS forecast-risk match, not realized net-account-risk match",
+  "source_hashes": {
+    "account_approval_sha256": "624eb2bfc57cfb37b310d57e8aefd9d45a954c536053a7d9e60345fd995f37c6",
+    "preregistration_sha256": "e3a83640079591af30aa68aa96504ac8f57aa7b31977838e363dfcfeaf1b9dc9",
+    "development_calibration_report_sha256": "8c483164cc1e898d449576d9acacb3181929b58422a647f89e517414320e2c1c",
+    "development_calibration_sha256": "2a012f87ad01af8f2eb9dbc15876d7354c45556c88c84bbeac03f5285cbe62b5",
+    "development_table_sha256": "12cc3d518b48e31a4e887523d1d112006a357469624a447aeedc6a06e650bbd9",
+    "decision_cache_sha256": "c861292ca24f5dccab64c0b06217074e3dc6b363f5f99efc3acb560d0ad46e46",
+    "e00_predictions_sha256": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "account_market_source_sha256": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "account_engine_sha256": "77156f8cdf8eb51ae5ad9fcaccb4be7106bf992b24a08918ad9425e44fa9c2e6",
+    "risk_control_code_sha256": "94f8f5400cdeead05c028f4f0b75adcbb4ec8d603a2a290823472ed0a62f1259",
+    "runner_code_sha256": "233e5ef706682d6732d10abdf457510069f521b4476ebb4206e1e010799fcf0d",
+    "approval_status": "APPROVED_FOUR_MATCHED_R01_SELECTION_ACCOUNTS"
+  },
+  "models": {
+    "R01_DYNAMIC_STANDARD": {
+      "policy": "dynamic",
+      "cost_scenario": "standard",
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "publishable_returns": true,
+      "sessions": 485,
+      "trades": 4777,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "rejection_count": 94,
+      "rejections_by_reason": {
+        "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 31,
+        "LOT_CAP_OR_CASH_BUDGET": 30,
+        "SUSPENDED_OR_MISSING_OPEN": 17,
+        "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 16
+      },
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "maximum_cash_flow_error": 6.984919309616089e-10,
+        "nav_identity_pass": true,
+        "maximum_nav_identity_error": 4.656612873077393e-10,
+        "daily_rows": 485,
+        "trade_rows": 4777
+      },
+      "combined_2024_2025_metrics": {
+        "start_nav": 1000000.0,
+        "end_nav": 1325755.4549590608,
+        "total_return": 0.32575545495906066,
+        "annualized_return": 0.15779182685322257,
+        "annualized_volatility": 0.1249596274274633,
+        "sharpe_zero_cash": 1.2342348769425413,
+        "max_drawdown": -0.08713524763262626,
+        "max_drawdown_peak_to_trough_sessions": 40,
+        "mean_stock_exposure": 0.7779454012310316,
+        "mean_cash_fraction": 0.2225623540308181,
+        "mean_holdings": 74.45773195876289,
+        "trade_count": 4777,
+        "fees": 31240.4913009441,
+        "realized_dividend_tax": 7744.05486,
+        "slippage_cost": 14559.377279998447,
+        "gross_traded_notional_start_nav": 29.11920890776
+      },
+      "yearly_metrics": {
+        "2024": {
+          "sessions": 242,
+          "start_nav": 1000000.0,
+          "end_nav": 1294055.0389637495,
+          "total_return": 0.2940550389637495,
+          "annualized_return": 0.30791311553277034,
+          "annualized_volatility": 0.1479788225428458,
+          "sharpe_zero_cash": 1.886769450456632,
+          "max_drawdown": -0.08713524763262626,
+          "mean_actual_stock_exposure": 0.7416601874958466,
+          "mean_target_stock_fraction": 0.838257517283596,
+          "trade_count": 2508,
+          "fees": 15815.05944125525,
+          "slippage_cost": 6719.776154999299,
+          "rejection_count": 42,
+          "rejections_by_reason": {
+            "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 16,
+            "LOT_CAP_OR_CASH_BUDGET": 12,
+            "SUSPENDED_OR_MISSING_OPEN": 8,
+            "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 6
+          }
+        },
+        "2025": {
+          "sessions": 243,
+          "start_nav": 1294055.0389637495,
+          "end_nav": 1325755.4549590608,
+          "total_return": 0.024496961134432338,
+          "annualized_return": 0.02541569102021146,
+          "annualized_volatility": 0.09643066645134823,
+          "sharpe_zero_cash": 0.30873403497881086,
+          "max_drawdown": -0.05975968199007453,
+          "mean_actual_stock_exposure": 0.8140812930989939,
+          "mean_target_stock_fraction": 0.9142887490371792,
+          "trade_count": 2269,
+          "fees": 15425.43185968885,
+          "slippage_cost": 7839.601124999148,
+          "rejection_count": 52,
+          "rejections_by_reason": {
+            "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 25,
+            "LOT_CAP_OR_CASH_BUDGET": 18,
+            "SUSPENDED_OR_MISSING_OPEN": 9
+          }
+        }
+      },
+      "exposure_diagnostics": {
+        "mean_target_fraction": 0.8763515158735357,
+        "mean_actual_stock_exposure": 0.7779454012310316,
+        "mean_target_minus_actual": 0.09840611464250391,
+        "mean_absolute_target_actual_gap": 0.10552698120061102,
+        "realized_annualized_volatility": 0.1249596274274633,
+        "forecast_risk_target_annual_volatility": 0.12,
+        "valid_decision_count": 97,
+        "skipped_decision_count": 0
+      }
+    },
+    "R01_STATIC_STANDARD": {
+      "policy": "static",
+      "cost_scenario": "standard",
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "publishable_returns": true,
+      "sessions": 485,
+      "trades": 3142,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "rejection_count": 102,
+      "rejections_by_reason": {
+        "LOT_CAP_OR_CASH_BUDGET": 34,
+        "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 31,
+        "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 19,
+        "SUSPENDED_OR_MISSING_OPEN": 16,
+        "SLIPPAGE_OUTSIDE_PRICE_LIMIT": 2
+      },
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "maximum_cash_flow_error": 6.984919309616089e-10,
+        "nav_identity_pass": true,
+        "maximum_nav_identity_error": 2.3283064365386963e-10,
+        "daily_rows": 485,
+        "trade_rows": 3142
+      },
+      "combined_2024_2025_metrics": {
+        "start_nav": 1000000.0,
+        "end_nav": 1255704.6834035006,
+        "total_return": 0.2557046834035006,
+        "annualized_return": 0.1255913033346221,
+        "annualized_volatility": 0.07746602682690412,
+        "sharpe_zero_cash": 1.566068840873348,
+        "max_drawdown": -0.05051540866511561,
+        "max_drawdown_peak_to_trough_sessions": 40,
+        "mean_stock_exposure": 0.49756695881327906,
+        "mean_cash_fraction": 0.502784854813768,
+        "mean_holdings": 73.64329896907216,
+        "trade_count": 3142,
+        "fees": 19936.865191500503,
+        "realized_dividend_tax": 4368.566425,
+        "slippage_cost": 8337.198629999108,
+        "gross_traded_notional_start_nav": 16.6746101583
+      },
+      "yearly_metrics": {
+        "2024": {
+          "sessions": 242,
+          "start_nav": 1000000.0,
+          "end_nav": 1208482.1141180878,
+          "total_return": 0.2084821141180877,
+          "annualized_return": 0.21797558750006085,
+          "annualized_volatility": 0.09326816659375307,
+          "sharpe_zero_cash": 2.1611343862652794,
+          "max_drawdown": -0.05051540866511561,
+          "mean_actual_stock_exposure": 0.494421330351547,
+          "mean_target_stock_fraction": 0.5964844994983245,
+          "trade_count": 1730,
+          "fees": 10830.498066913151,
+          "slippage_cost": 4386.488494999537,
+          "rejection_count": 45,
+          "rejections_by_reason": {
+            "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 19,
+            "LOT_CAP_OR_CASH_BUDGET": 17,
+            "SUSPENDED_OR_MISSING_OPEN": 7,
+            "SLIPPAGE_OUTSIDE_PRICE_LIMIT": 2
+          }
+        },
+        "2025": {
+          "sessions": 243,
+          "start_nav": 1208482.1141180878,
+          "end_nav": 1255704.6834035006,
+          "total_return": 0.039075935616866175,
+          "annualized_return": 0.04055215531541756,
+          "annualized_volatility": 0.05734075356252028,
+          "sharpe_zero_cash": 0.7219901284055511,
+          "max_drawdown": -0.031703516480676486,
+          "mean_actual_stock_exposure": 0.5006996423019175,
+          "mean_target_stock_fraction": 0.5964844994983245,
+          "trade_count": 1412,
+          "fees": 9106.36712458735,
+          "slippage_cost": 3950.7101349995714,
+          "rejection_count": 57,
+          "rejections_by_reason": {
+            "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 31,
+            "LOT_CAP_OR_CASH_BUDGET": 17,
+            "SUSPENDED_OR_MISSING_OPEN": 9
+          }
+        }
+      },
+      "exposure_diagnostics": {
+        "mean_target_fraction": 0.5964844994983245,
+        "mean_actual_stock_exposure": 0.49756695881327906,
+        "mean_target_minus_actual": 0.09891754068504538,
+        "mean_absolute_target_actual_gap": 0.09891754068504538,
+        "realized_annualized_volatility": 0.07746602682690412,
+        "forecast_risk_target_annual_volatility": 0.12,
+        "valid_decision_count": 97,
+        "skipped_decision_count": 0
+      }
+    },
+    "R01_DYNAMIC_COST2": {
+      "policy": "dynamic",
+      "cost_scenario": "cost2",
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "publishable_returns": true,
+      "sessions": 485,
+      "trades": 4775,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "rejection_count": 93,
+      "rejections_by_reason": {
+        "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 32,
+        "LOT_CAP_OR_CASH_BUDGET": 28,
+        "SUSPENDED_OR_MISSING_OPEN": 17,
+        "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 16
+      },
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "maximum_cash_flow_error": 9.313225746154785e-10,
+        "nav_identity_pass": true,
+        "maximum_nav_identity_error": 2.3283064365386963e-10,
+        "daily_rows": 485,
+        "trade_rows": 4775
+      },
+      "combined_2024_2025_metrics": {
+        "start_nav": 1000000.0,
+        "end_nav": 1278629.8899047235,
+        "total_return": 0.2786298899047235,
+        "annualized_return": 0.13622228986795348,
+        "annualized_volatility": 0.12490326888632651,
+        "sharpe_zero_cash": 1.0841119867903997,
+        "max_drawdown": -0.08898297073514316,
+        "max_drawdown_peak_to_trough_sessions": 40,
+        "mean_stock_exposure": 0.7780227059367204,
+        "mean_cash_fraction": 0.22248132704686016,
+        "mean_holdings": 74.40618556701031,
+        "trade_count": 4775,
+        "fees": 62210.5016152792,
+        "realized_dividend_tax": 7592.109759999999,
+        "slippage_cost": 28635.257119998427,
+        "gross_traded_notional_start_nav": 28.636123818959994
+      },
+      "yearly_metrics": {
+        "2024": {
+          "sessions": 242,
+          "start_nav": 1000000.0,
+          "end_nav": 1270310.3468763444,
+          "total_return": 0.27031034687634437,
+          "annualized_return": 0.28293197795100844,
+          "annualized_volatility": 0.14770007142983327,
+          "sharpe_zero_cash": 1.7593795118656705,
+          "max_drawdown": -0.08898297073514316,
+          "mean_actual_stock_exposure": 0.7427486597798412,
+          "mean_target_stock_fraction": 0.838257517283596,
+          "trade_count": 2520,
+          "fees": 31711.291983656,
+          "slippage_cost": 13346.86479999923,
+          "rejection_count": 42,
+          "rejections_by_reason": {
+            "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 16,
+            "LOT_CAP_OR_CASH_BUDGET": 12,
+            "SUSPENDED_OR_MISSING_OPEN": 8,
+            "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 6
+          }
+        },
+        "2025": {
+          "sessions": 243,
+          "start_nav": 1270310.3468763444,
+          "end_nav": 1278629.8899047235,
+          "total_return": 0.00654922086467824,
+          "annualized_return": 0.006792606594632877,
+          "annualized_volatility": 0.09671514444049914,
+          "sharpe_zero_cash": 0.11859495156608953,
+          "max_drawdown": -0.06387408329744204,
+          "mean_actual_stock_exposure": 0.8131515914098266,
+          "mean_target_stock_fraction": 0.9142887490371792,
+          "trade_count": 2255,
+          "fees": 30499.2096316232,
+          "slippage_cost": 15288.392319999199,
+          "rejection_count": 51,
+          "rejections_by_reason": {
+            "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 26,
+            "LOT_CAP_OR_CASH_BUDGET": 16,
+            "SUSPENDED_OR_MISSING_OPEN": 9
+          }
+        }
+      },
+      "exposure_diagnostics": {
+        "mean_target_fraction": 0.8763515158735357,
+        "mean_actual_stock_exposure": 0.7780227059367204,
+        "mean_target_minus_actual": 0.0983288099368151,
+        "mean_absolute_target_actual_gap": 0.10543137870003096,
+        "realized_annualized_volatility": 0.12490326888632651,
+        "forecast_risk_target_annual_volatility": 0.12,
+        "valid_decision_count": 97,
+        "skipped_decision_count": 0
+      }
+    },
+    "R01_STATIC_COST2": {
+      "policy": "static",
+      "cost_scenario": "cost2",
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "publishable_returns": true,
+      "sessions": 485,
+      "trades": 3150,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "rejection_count": 103,
+      "rejections_by_reason": {
+        "LOT_CAP_OR_CASH_BUDGET": 33,
+        "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 33,
+        "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 19,
+        "SUSPENDED_OR_MISSING_OPEN": 16,
+        "SLIPPAGE_OUTSIDE_PRICE_LIMIT": 2
+      },
+      "independent_reconciliation": {
+        "cash_flow_pass": true,
+        "maximum_cash_flow_error": 4.656612873077393e-10,
+        "nav_identity_pass": true,
+        "maximum_nav_identity_error": 2.3283064365386963e-10,
+        "daily_rows": 485,
+        "trade_rows": 3150
+      },
+      "combined_2024_2025_metrics": {
+        "start_nav": 1000000.0,
+        "end_nav": 1223907.4171108336,
+        "total_return": 0.2239074171108335,
+        "annualized_return": 0.11069053183611133,
+        "annualized_volatility": 0.077243065353171,
+        "sharpe_zero_cash": 1.397770553210083,
+        "max_drawdown": -0.051521917920758,
+        "max_drawdown_peak_to_trough_sessions": 40,
+        "mean_stock_exposure": 0.49699198880843404,
+        "mean_cash_fraction": 0.5033561152633302,
+        "mean_holdings": 73.63298969072164,
+        "trade_count": 3150,
+        "fees": 39846.452074168,
+        "realized_dividend_tax": 4327.6004250000005,
+        "slippage_cost": 16460.815039999092,
+        "gross_traded_notional_start_nav": 16.4612253494
+      },
+      "yearly_metrics": {
+        "2024": {
+          "sessions": 242,
+          "start_nav": 1000000.0,
+          "end_nav": 1190478.6116892423,
+          "total_return": 0.1904786116892423,
+          "annualized_return": 0.1990867080737313,
+          "annualized_volatility": 0.09290693193799017,
+          "sharpe_zero_cash": 2.0008310237275144,
+          "max_drawdown": -0.051521917920758,
+          "mean_actual_stock_exposure": 0.49434250293642923,
+          "mean_target_stock_fraction": 0.5964844994983245,
+          "trade_count": 1722,
+          "fees": 21528.2696107572,
+          "slippage_cost": 8672.545379999501,
+          "rejection_count": 46,
+          "rejections_by_reason": {
+            "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 19,
+            "LOT_CAP_OR_CASH_BUDGET": 18,
+            "SUSPENDED_OR_MISSING_OPEN": 7,
+            "SLIPPAGE_OUTSIDE_PRICE_LIMIT": 2
+          }
+        },
+        "2025": {
+          "sessions": 243,
+          "start_nav": 1190478.6116892423,
+          "end_nav": 1223907.4171108336,
+          "total_return": 0.0280801394442165,
+          "annualized_return": 0.029135152523731334,
+          "annualized_volatility": 0.05734859373942918,
+          "sharpe_zero_cash": 0.5294944722913231,
+          "max_drawdown": -0.033737293618417485,
+          "mean_actual_stock_exposure": 0.4996305714463978,
+          "mean_target_stock_fraction": 0.5964844994983245,
+          "trade_count": 1428,
+          "fees": 18318.182463410798,
+          "slippage_cost": 7788.2696599995925,
+          "rejection_count": 57,
+          "rejections_by_reason": {
+            "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 33,
+            "LOT_CAP_OR_CASH_BUDGET": 15,
+            "SUSPENDED_OR_MISSING_OPEN": 9
+          }
+        }
+      },
+      "exposure_diagnostics": {
+        "mean_target_fraction": 0.5964844994983245,
+        "mean_actual_stock_exposure": 0.49699198880843404,
+        "mean_target_minus_actual": 0.09949251068989029,
+        "mean_absolute_target_actual_gap": 0.09949251068989029,
+        "realized_annualized_volatility": 0.077243065353171,
+        "forecast_risk_target_annual_volatility": 0.12,
+        "valid_decision_count": 97,
+        "skipped_decision_count": 0
+      }
+    }
+  },
+  "comparisons": {
+    "standard": {
+      "opportunity_cost": {
+        "static_positive_return_days": {
+          "days": 261,
+          "dynamic_minus_static_sum": 0.37470355388840415,
+          "dynamic_minus_static_mean": 0.0014356458003387132,
+          "dynamic_wins": 212
+        },
+        "static_negative_return_days": {
+          "days": 223,
+          "dynamic_minus_static_sum": -0.3113602452482809,
+          "dynamic_minus_static_mean": -0.001396234283624578,
+          "dynamic_wins": 40
+        },
+        "static_zero_return_days": {
+          "days": 1,
+          "dynamic_minus_static_sum": 0.0,
+          "dynamic_minus_static_mean": 0.0,
+          "dynamic_wins": 0
+        },
+        "static_negative_then_positive_reversal_days": {
+          "days": 115,
+          "dynamic_minus_static_sum": 0.10918495564943687,
+          "dynamic_minus_static_mean": 0.0009494343969516249,
+          "dynamic_wins": 97,
+          "dates": [
+            "2024-01-09",
+            "2024-01-12",
+            "2024-01-23",
+            "2024-02-06",
+            "2024-02-27",
+            "2024-02-29",
+            "2024-03-08",
+            "2024-03-15",
+            "2024-03-20",
+            "2024-03-26",
+            "2024-03-28",
+            "2024-04-11",
+            "2024-04-15",
+            "2024-04-17",
+            "2024-04-24",
+            "2024-05-06",
+            "2024-05-09",
+            "2024-05-16",
+            "2024-05-27",
+            "2024-06-04",
+            "2024-06-07",
+            "2024-06-12",
+            "2024-06-14",
+            "2024-06-18",
+            "2024-06-21",
+            "2024-06-25",
+            "2024-07-09",
+            "2024-07-11",
+            "2024-07-24",
+            "2024-07-29",
+            "2024-07-31",
+            "2024-08-07",
+            "2024-08-13",
+            "2024-08-15",
+            "2024-08-22",
+            "2024-09-05",
+            "2024-09-12",
+            "2024-09-18",
+            "2024-10-10",
+            "2024-10-14",
+            "2024-10-18",
+            "2024-10-25",
+            "2024-10-31",
+            "2024-11-07",
+            "2024-11-11",
+            "2024-11-13",
+            "2024-11-18",
+            "2024-11-26",
+            "2024-11-29",
+            "2024-12-06",
+            "2024-12-18",
+            "2024-12-23",
+            "2024-12-27",
+            "2025-01-06",
+            "2025-01-14",
+            "2025-01-16",
+            "2025-01-23",
+            "2025-02-06",
+            "2025-02-12",
+            "2025-02-14",
+            "2025-02-19",
+            "2025-02-26",
+            "2025-03-03",
+            "2025-03-11",
+            "2025-03-13",
+            "2025-03-19",
+            "2025-03-24",
+            "2025-03-27",
+            "2025-04-01",
+            "2025-04-08",
+            "2025-04-18",
+            "2025-04-23",
+            "2025-04-25",
+            "2025-05-06",
+            "2025-05-12",
+            "2025-05-19",
+            "2025-05-29",
+            "2025-06-06",
+            "2025-06-11",
+            "2025-06-16",
+            "2025-06-20",
+            "2025-07-01",
+            "2025-07-04",
+            "2025-07-10",
+            "2025-07-14",
+            "2025-07-17",
+            "2025-07-24",
+            "2025-07-30",
+            "2025-08-04",
+            "2025-08-12",
+            "2025-08-15",
+            "2025-08-20",
+            "2025-08-28",
+            "2025-09-02",
+            "2025-09-05",
+            "2025-09-11",
+            "2025-09-17",
+            "2025-09-19",
+            "2025-09-23",
+            "2025-09-26",
+            "2025-10-14",
+            "2025-10-20",
+            "2025-10-27",
+            "2025-10-29",
+            "2025-11-03",
+            "2025-11-13",
+            "2025-11-19",
+            "2025-11-25",
+            "2025-11-27",
+            "2025-12-01",
+            "2025-12-05",
+            "2025-12-12",
+            "2025-12-17",
+            "2025-12-23",
+            "2025-12-25"
+          ]
+        }
+      },
+      "dynamic_minus_static_cagr": 0.03220052351860048,
+      "absolute_drawdown_improvement": -0.03661983896751064,
+      "rules": [
+        {
+          "name": "standard_drawdown_absolute_improvement",
+          "observed": -0.03661983896751064,
+          "operator": ">=",
+          "threshold": 0.01,
+          "status": "FAIL"
+        },
+        {
+          "name": "standard_net_cagr_delta",
+          "observed": 0.03220052351860048,
+          "operator": ">=",
+          "threshold": -0.02,
+          "status": "PASS"
+        }
+      ],
+      "all_rules_pass": false
+    },
+    "cost2": {
+      "opportunity_cost": {
+        "static_positive_return_days": {
+          "days": 254,
+          "dynamic_minus_static_sum": 0.37099686568337154,
+          "dynamic_minus_static_mean": 0.0014606175814305966,
+          "dynamic_wins": 206
+        },
+        "static_negative_return_days": {
+          "days": 230,
+          "dynamic_minus_static_sum": -0.3181837360510943,
+          "dynamic_minus_static_mean": -0.001383407548048236,
+          "dynamic_wins": 39
+        },
+        "static_zero_return_days": {
+          "days": 1,
+          "dynamic_minus_static_sum": 0.0,
+          "dynamic_minus_static_mean": 0.0,
+          "dynamic_wins": 0
+        },
+        "static_negative_then_positive_reversal_days": {
+          "days": 117,
+          "dynamic_minus_static_sum": 0.1250305407570329,
+          "dynamic_minus_static_mean": 0.0010686371004874607,
+          "dynamic_wins": 99,
+          "dates": [
+            "2024-01-09",
+            "2024-01-12",
+            "2024-01-23",
+            "2024-02-06",
+            "2024-02-27",
+            "2024-02-29",
+            "2024-03-08",
+            "2024-03-15",
+            "2024-03-20",
+            "2024-03-26",
+            "2024-03-29",
+            "2024-04-11",
+            "2024-04-15",
+            "2024-04-17",
+            "2024-04-24",
+            "2024-05-06",
+            "2024-05-09",
+            "2024-05-16",
+            "2024-05-27",
+            "2024-06-04",
+            "2024-06-07",
+            "2024-06-12",
+            "2024-06-14",
+            "2024-06-18",
+            "2024-06-21",
+            "2024-06-25",
+            "2024-07-09",
+            "2024-07-11",
+            "2024-07-24",
+            "2024-07-29",
+            "2024-07-31",
+            "2024-08-07",
+            "2024-08-13",
+            "2024-08-15",
+            "2024-08-22",
+            "2024-08-26",
+            "2024-09-05",
+            "2024-09-12",
+            "2024-09-18",
+            "2024-10-10",
+            "2024-10-14",
+            "2024-10-18",
+            "2024-10-25",
+            "2024-10-31",
+            "2024-11-11",
+            "2024-11-13",
+            "2024-11-18",
+            "2024-11-27",
+            "2024-11-29",
+            "2024-12-06",
+            "2024-12-12",
+            "2024-12-18",
+            "2024-12-23",
+            "2024-12-27",
+            "2025-01-06",
+            "2025-01-14",
+            "2025-01-16",
+            "2025-01-23",
+            "2025-02-06",
+            "2025-02-12",
+            "2025-02-14",
+            "2025-02-19",
+            "2025-02-26",
+            "2025-03-03",
+            "2025-03-11",
+            "2025-03-13",
+            "2025-03-19",
+            "2025-03-24",
+            "2025-03-27",
+            "2025-04-01",
+            "2025-04-08",
+            "2025-04-18",
+            "2025-04-23",
+            "2025-04-25",
+            "2025-05-06",
+            "2025-05-12",
+            "2025-05-19",
+            "2025-05-29",
+            "2025-06-06",
+            "2025-06-11",
+            "2025-06-16",
+            "2025-06-20",
+            "2025-07-01",
+            "2025-07-04",
+            "2025-07-10",
+            "2025-07-14",
+            "2025-07-18",
+            "2025-07-24",
+            "2025-07-30",
+            "2025-08-04",
+            "2025-08-08",
+            "2025-08-12",
+            "2025-08-15",
+            "2025-08-20",
+            "2025-08-28",
+            "2025-09-02",
+            "2025-09-05",
+            "2025-09-11",
+            "2025-09-17",
+            "2025-09-19",
+            "2025-09-23",
+            "2025-09-26",
+            "2025-10-14",
+            "2025-10-20",
+            "2025-10-27",
+            "2025-10-29",
+            "2025-11-03",
+            "2025-11-06",
+            "2025-11-13",
+            "2025-11-19",
+            "2025-11-25",
+            "2025-11-27",
+            "2025-12-01",
+            "2025-12-12",
+            "2025-12-17",
+            "2025-12-23",
+            "2025-12-25"
+          ]
+        }
+      },
+      "dynamic_minus_static_cagr": 0.025531758031842156,
+      "absolute_drawdown_improvement": -0.037461052814385165,
+      "rules": [
+        {
+          "name": "cost2_drawdown_absolute_improvement",
+          "observed": -0.037461052814385165,
+          "operator": ">",
+          "threshold": 0,
+          "status": "FAIL"
+        },
+        {
+          "name": "cost2_net_cagr_delta",
+          "observed": 0.025531758031842156,
+          "operator": ">=",
+          "threshold": -0.02,
+          "status": "PASS"
+        }
+      ],
+      "all_rules_pass": false
+    }
+  },
+  "combined_metrics": {
+    "R01_DYNAMIC_STANDARD": {
+      "start_nav": 1000000.0,
+      "end_nav": 1325755.4549590608,
+      "total_return": 0.32575545495906066,
+      "annualized_return": 0.15779182685322257,
+      "annualized_volatility": 0.1249596274274633,
+      "sharpe_zero_cash": 1.2342348769425413,
+      "max_drawdown": -0.08713524763262626,
+      "max_drawdown_peak_to_trough_sessions": 40,
+      "mean_stock_exposure": 0.7779454012310316,
+      "mean_cash_fraction": 0.2225623540308181,
+      "mean_holdings": 74.45773195876289,
+      "trade_count": 4777,
+      "fees": 31240.4913009441,
+      "realized_dividend_tax": 7744.05486,
+      "slippage_cost": 14559.377279998447,
+      "gross_traded_notional_start_nav": 29.11920890776
+    },
+    "R01_STATIC_STANDARD": {
+      "start_nav": 1000000.0,
+      "end_nav": 1255704.6834035006,
+      "total_return": 0.2557046834035006,
+      "annualized_return": 0.1255913033346221,
+      "annualized_volatility": 0.07746602682690412,
+      "sharpe_zero_cash": 1.566068840873348,
+      "max_drawdown": -0.05051540866511561,
+      "max_drawdown_peak_to_trough_sessions": 40,
+      "mean_stock_exposure": 0.49756695881327906,
+      "mean_cash_fraction": 0.502784854813768,
+      "mean_holdings": 73.64329896907216,
+      "trade_count": 3142,
+      "fees": 19936.865191500503,
+      "realized_dividend_tax": 4368.566425,
+      "slippage_cost": 8337.198629999108,
+      "gross_traded_notional_start_nav": 16.6746101583
+    },
+    "R01_DYNAMIC_COST2": {
+      "start_nav": 1000000.0,
+      "end_nav": 1278629.8899047235,
+      "total_return": 0.2786298899047235,
+      "annualized_return": 0.13622228986795348,
+      "annualized_volatility": 0.12490326888632651,
+      "sharpe_zero_cash": 1.0841119867903997,
+      "max_drawdown": -0.08898297073514316,
+      "max_drawdown_peak_to_trough_sessions": 40,
+      "mean_stock_exposure": 0.7780227059367204,
+      "mean_cash_fraction": 0.22248132704686016,
+      "mean_holdings": 74.40618556701031,
+      "trade_count": 4775,
+      "fees": 62210.5016152792,
+      "realized_dividend_tax": 7592.109759999999,
+      "slippage_cost": 28635.257119998427,
+      "gross_traded_notional_start_nav": 28.636123818959994
+    },
+    "R01_STATIC_COST2": {
+      "start_nav": 1000000.0,
+      "end_nav": 1223907.4171108336,
+      "total_return": 0.2239074171108335,
+      "annualized_return": 0.11069053183611133,
+      "annualized_volatility": 0.077243065353171,
+      "sharpe_zero_cash": 1.397770553210083,
+      "max_drawdown": -0.051521917920758,
+      "max_drawdown_peak_to_trough_sessions": 40,
+      "mean_stock_exposure": 0.49699198880843404,
+      "mean_cash_fraction": 0.5033561152633302,
+      "mean_holdings": 73.63298969072164,
+      "trade_count": 3150,
+      "fees": 39846.452074168,
+      "realized_dividend_tax": 4327.6004250000005,
+      "slippage_cost": 16460.815039999092,
+      "gross_traded_notional_start_nav": 16.4612253494
+    }
+  },
+  "yearly_metrics": {
+    "R01_DYNAMIC_STANDARD": {
+      "2024": {
+        "sessions": 242,
+        "start_nav": 1000000.0,
+        "end_nav": 1294055.0389637495,
+        "total_return": 0.2940550389637495,
+        "annualized_return": 0.30791311553277034,
+        "annualized_volatility": 0.1479788225428458,
+        "sharpe_zero_cash": 1.886769450456632,
+        "max_drawdown": -0.08713524763262626,
+        "mean_actual_stock_exposure": 0.7416601874958466,
+        "mean_target_stock_fraction": 0.838257517283596,
+        "trade_count": 2508,
+        "fees": 15815.05944125525,
+        "slippage_cost": 6719.776154999299,
+        "rejection_count": 0
+      },
+      "2025": {
+        "sessions": 243,
+        "start_nav": 1294055.0389637495,
+        "end_nav": 1325755.4549590608,
+        "total_return": 0.024496961134432338,
+        "annualized_return": 0.02541569102021146,
+        "annualized_volatility": 0.09643066645134823,
+        "sharpe_zero_cash": 0.30873403497881086,
+        "max_drawdown": -0.05975968199007453,
+        "mean_actual_stock_exposure": 0.8140812930989939,
+        "mean_target_stock_fraction": 0.9142887490371792,
+        "trade_count": 2269,
+        "fees": 15425.43185968885,
+        "slippage_cost": 7839.601124999148,
+        "rejection_count": 0
+      }
+    },
+    "R01_STATIC_STANDARD": {
+      "2024": {
+        "sessions": 242,
+        "start_nav": 1000000.0,
+        "end_nav": 1208482.1141180878,
+        "total_return": 0.2084821141180877,
+        "annualized_return": 0.21797558750006085,
+        "annualized_volatility": 0.09326816659375307,
+        "sharpe_zero_cash": 2.1611343862652794,
+        "max_drawdown": -0.05051540866511561,
+        "mean_actual_stock_exposure": 0.494421330351547,
+        "mean_target_stock_fraction": 0.5964844994983245,
+        "trade_count": 1730,
+        "fees": 10830.498066913151,
+        "slippage_cost": 4386.488494999537,
+        "rejection_count": 0
+      },
+      "2025": {
+        "sessions": 243,
+        "start_nav": 1208482.1141180878,
+        "end_nav": 1255704.6834035006,
+        "total_return": 0.039075935616866175,
+        "annualized_return": 0.04055215531541756,
+        "annualized_volatility": 0.05734075356252028,
+        "sharpe_zero_cash": 0.7219901284055511,
+        "max_drawdown": -0.031703516480676486,
+        "mean_actual_stock_exposure": 0.5006996423019175,
+        "mean_target_stock_fraction": 0.5964844994983245,
+        "trade_count": 1412,
+        "fees": 9106.36712458735,
+        "slippage_cost": 3950.7101349995714,
+        "rejection_count": 0
+      }
+    },
+    "R01_DYNAMIC_COST2": {
+      "2024": {
+        "sessions": 242,
+        "start_nav": 1000000.0,
+        "end_nav": 1270310.3468763444,
+        "total_return": 0.27031034687634437,
+        "annualized_return": 0.28293197795100844,
+        "annualized_volatility": 0.14770007142983327,
+        "sharpe_zero_cash": 1.7593795118656705,
+        "max_drawdown": -0.08898297073514316,
+        "mean_actual_stock_exposure": 0.7427486597798412,
+        "mean_target_stock_fraction": 0.838257517283596,
+        "trade_count": 2520,
+        "fees": 31711.291983656,
+        "slippage_cost": 13346.86479999923,
+        "rejection_count": 0
+      },
+      "2025": {
+        "sessions": 243,
+        "start_nav": 1270310.3468763444,
+        "end_nav": 1278629.8899047235,
+        "total_return": 0.00654922086467824,
+        "annualized_return": 0.006792606594632877,
+        "annualized_volatility": 0.09671514444049914,
+        "sharpe_zero_cash": 0.11859495156608953,
+        "max_drawdown": -0.06387408329744204,
+        "mean_actual_stock_exposure": 0.8131515914098266,
+        "mean_target_stock_fraction": 0.9142887490371792,
+        "trade_count": 2255,
+        "fees": 30499.2096316232,
+        "slippage_cost": 15288.392319999199,
+        "rejection_count": 0
+      }
+    },
+    "R01_STATIC_COST2": {
+      "2024": {
+        "sessions": 242,
+        "start_nav": 1000000.0,
+        "end_nav": 1190478.6116892423,
+        "total_return": 0.1904786116892423,
+        "annualized_return": 0.1990867080737313,
+        "annualized_volatility": 0.09290693193799017,
+        "sharpe_zero_cash": 2.0008310237275144,
+        "max_drawdown": -0.051521917920758,
+        "mean_actual_stock_exposure": 0.49434250293642923,
+        "mean_target_stock_fraction": 0.5964844994983245,
+        "trade_count": 1722,
+        "fees": 21528.2696107572,
+        "slippage_cost": 8672.545379999501,
+        "rejection_count": 0
+      },
+      "2025": {
+        "sessions": 243,
+        "start_nav": 1190478.6116892423,
+        "end_nav": 1223907.4171108336,
+        "total_return": 0.0280801394442165,
+        "annualized_return": 0.029135152523731334,
+        "annualized_volatility": 0.05734859373942918,
+        "sharpe_zero_cash": 0.5294944722913231,
+        "max_drawdown": -0.033737293618417485,
+        "mean_actual_stock_exposure": 0.4996305714463978,
+        "mean_target_stock_fraction": 0.5964844994983245,
+        "trade_count": 1428,
+        "fees": 18318.182463410798,
+        "slippage_cost": 7788.2696599995925,
+        "rejection_count": 0
+      }
+    }
+  },
+  "monthly_results_file": "monthly_account_results.csv",
+  "limitations": [
+    "2024-2025 were previously inspected selection data; not independent confirmation.",
+    "Development RMS forecast-risk matching does not guarantee equal realized account volatility.",
+    "Existing account-engine fill, daily-bar, corporate-action and tax assumptions remain."
+  ],
+  "recovery": {
+    "saved_ledgers_reused_without_resimulation": true,
+    "reason": "All four complete daily/trade ledgers were exported before a report-serialization circular-reference defect.",
+    "failed_report_write_not_overwritten": true
+  },
+  "engineering_scope_pass": true,
+  "calibration_scope_pass": true,
+  "primary_gate": {
+    "status": "FAIL",
+    "all_frozen_economic_rules_pass": false,
+    "engineering_and_calibration_scope_pass": true,
+    "promotion_claim": "R01 is not automatically promoted; acceptance follows only if all frozen gates pass."
+  },
+  "input_account_approval_sha256": "624eb2bfc57cfb37b310d57e8aefd9d45a954c536053a7d9e60345fd995f37c6",
+  "report_finalizer_code_sha256": "aae844c82a0e401d171ed271c30ff63d63013049452f03e89fd96770f419d772",
+  "derived_statistics_revision": {
+    "name": "annual_rejection_counts_from_saved_ledgers_v1",
+    "reason": "Prior finalizer hard-coded annual rejection_count to zero; total counts were already present.",
+    "old_report_sha256": "35a8fdcdac6d6a7187c04b2700f29efeb4c60356f0a101f328e0b5d48f85bfe9",
+    "source_ledgers": {
+      "R01_DYNAMIC_STANDARD": {
+        "file": "R01_DYNAMIC_STANDARD_rejections.csv",
+        "sha256": "974c50df2c13e5420903bb005dfe3ed6a90c0b5a673515c11cd42dc1a3d79587",
+        "total_rows": 94,
+        "yearly": {
+          "2024": {
+            "rejection_count": 42,
+            "rejections_by_reason": {
+              "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 16,
+              "LOT_CAP_OR_CASH_BUDGET": 12,
+              "SUSPENDED_OR_MISSING_OPEN": 8,
+              "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 6
+            }
+          },
+          "2025": {
+            "rejection_count": 52,
+            "rejections_by_reason": {
+              "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 25,
+              "LOT_CAP_OR_CASH_BUDGET": 18,
+              "SUSPENDED_OR_MISSING_OPEN": 9
+            }
+          }
+        }
+      },
+      "R01_STATIC_STANDARD": {
+        "file": "R01_STATIC_STANDARD_rejections.csv",
+        "sha256": "79f78129ad9b6d6db7b13ed149dd12fbdb29648b827b2520afee7ac7297b98c5",
+        "total_rows": 102,
+        "yearly": {
+          "2024": {
+            "rejection_count": 45,
+            "rejections_by_reason": {
+              "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 19,
+              "LOT_CAP_OR_CASH_BUDGET": 17,
+              "SUSPENDED_OR_MISSING_OPEN": 7,
+              "SLIPPAGE_OUTSIDE_PRICE_LIMIT": 2
+            }
+          },
+          "2025": {
+            "rejection_count": 57,
+            "rejections_by_reason": {
+              "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 31,
+              "LOT_CAP_OR_CASH_BUDGET": 17,
+              "SUSPENDED_OR_MISSING_OPEN": 9
+            }
+          }
+        }
+      },
+      "R01_DYNAMIC_COST2": {
+        "file": "R01_DYNAMIC_COST2_rejections.csv",
+        "sha256": "99937d853af64e827bd0cf813717c7e1c96023ab39db090e96780dffb1fd4e45",
+        "total_rows": 93,
+        "yearly": {
+          "2024": {
+            "rejection_count": 42,
+            "rejections_by_reason": {
+              "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 16,
+              "LOT_CAP_OR_CASH_BUDGET": 12,
+              "SUSPENDED_OR_MISSING_OPEN": 8,
+              "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 6
+            }
+          },
+          "2025": {
+            "rejection_count": 51,
+            "rejections_by_reason": {
+              "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 26,
+              "LOT_CAP_OR_CASH_BUDGET": 16,
+              "SUSPENDED_OR_MISSING_OPEN": 9
+            }
+          }
+        }
+      },
+      "R01_STATIC_COST2": {
+        "file": "R01_STATIC_COST2_rejections.csv",
+        "sha256": "8dcc37d123d995dce666f75a318c3c8a18fc5178cfac71096fced82726eb2f00",
+        "total_rows": 103,
+        "yearly": {
+          "2024": {
+            "rejection_count": 46,
+            "rejections_by_reason": {
+              "OPEN_AT_LIMIT_CONSERVATIVE_NO_FILL": 19,
+              "LOT_CAP_OR_CASH_BUDGET": 18,
+              "SUSPENDED_OR_MISSING_OPEN": 7,
+              "SLIPPAGE_OUTSIDE_PRICE_LIMIT": 2
+            }
+          },
+          "2025": {
+            "rejection_count": 57,
+            "rejections_by_reason": {
+              "T_PLUS_ONE_OR_FROZEN_ODD_LOT": 33,
+              "LOT_CAP_OR_CASH_BUDGET": 15,
+              "SUSPENDED_OR_MISSING_OPEN": 9
+            }
+          }
+        }
+      }
+    },
+    "simulation_rerun": false,
+    "frozen_inputs_modified": false
+  }
+}

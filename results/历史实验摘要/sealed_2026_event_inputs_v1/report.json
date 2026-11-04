@@ -1,0 +1,25 @@
+{
+  "status": "CACHED_EVENT_INPUTS_RECONCILED_NO_ACCOUNT_AUTHORIZATION",
+  "rows": 606,
+  "unique_event_keys": true,
+  "issuer_verified_groups": 11,
+  "unresolved_gaps": [],
+  "old_candidate_missing_cash_fields": 167,
+  "newly_reconciled_amount_method": "GM unique symbol/auxiliary-date key identifies amount; BaoStock effective dates remain separate; check overlapping published amount fields. No created_at-as-effective-date inference.",
+  "source_sha256": {
+    "data\\processed\\sealed_2026\\corporate_action_date_candidates_review.csv": "1b2219f59928ce94721079c7726d3866920cb9e36da86d7c193a442643e65aa1",
+    "data\\processed\\sealed_2026\\gm_created_date_candidates_review.csv": "f26fed9fe921a8c2a6c8ba0f82741c73b802d54051a57f8b0f1cd38e26959062",
+    "results\\sealed_2026_event_resolution_v1\\event_resolution_table.csv": "04885c9b817be94908099fad409b6d65c72a7412d26cdad0613e90f9af1b5aa2"
+  },
+  "output_sha256": "739e3e7d96cbc00300a9d46829ad85652a14647833f66ffe3e6034652f3eb5bc",
+  "account_returns_computed": false,
+  "predictions_computed": false,
+  "fits": 0,
+  "downloads": 0,
+  "remaining_limits": [
+    "Provider historical versions not proven; official source only for11 exceptional groups.",
+    "Dividend entitlement requires record-date holdings under future separately authorized account run.",
+    "Market ex-reference differential dividends and factor jumps still require matching to effective events before final gate.",
+    "Scheduled cash is simulated settlement, not observed broker cash receipt."
+  ]
+}

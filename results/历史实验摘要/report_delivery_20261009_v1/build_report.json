@@ -1,0 +1,31 @@
+{
+  "status": "PASS_TEXT_NUMBERS_AND_VISUAL_REVIEW",
+  "reports": [
+    {
+      "path": "<LOCAL_HOME>\\Desktop\\智享杯\\提交材料\\报告\\01_投资策略实验复盘_通俗版.pdf",
+      "pages": 5,
+      "bytes": 141396,
+      "text_characters": 3341,
+      "sha256": "01488c9be69667e28f0b82a5816ca450651b335585c385082ab10b877400d742"
+    },
+    {
+      "path": "<LOCAL_HOME>\\Desktop\\智享杯\\提交材料\\报告\\02_量化投资策略比较研究报告.pdf",
+      "pages": 9,
+      "bytes": 177347,
+      "text_characters": 6941,
+      "sha256": "d8e69584ca7cc2afa008a35be31b83d9c31298db63d40bf6ac5660d7871d568e"
+    }
+  ],
+  "visual_review": {
+    "all_pages_contact_sheets_reviewed": true,
+    "numeric_table_detailed_review": true,
+    "unicode_minus_font_gap_repaired_with_ASCII_minus": true
+  },
+  "checks": {
+    "chinese_extractable": true,
+    "key_numbers_match_evidence": true,
+    "no_nul_or_replacement_glyph": true,
+    "no_new_training_or_download": true,
+    "uncompleted_scope_distinguished": true
+  }
+}

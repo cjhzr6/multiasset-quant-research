@@ -1,0 +1,63 @@
+{
+  "代码_含2026.zip": {
+    "zip_bytes": 5384338,
+    "zip_sha256": "cb613cccd9698c7a0c2944631ad8c0661fd699836e2c05c292b0e9895ab39ec2",
+    "file_count": 96,
+    "shared_identical_count": 93,
+    "changed_shared": [
+      "MANIFEST.json",
+      "README_使用说明.md"
+    ],
+    "added": [
+      "run_2026_extension.py"
+    ],
+    "removed_from_old": [
+      "src\\__pycache__\\account_engine.cpython-312.pyc",
+      "src\\__pycache__\\audit_account_inputs.cpython-312.pyc",
+      "src\\__pycache__\\build_price_features.cpython-312.pyc",
+      "src\\__pycache__\\build_training_panel.cpython-312.pyc",
+      "src\\__pycache__\\fees_2026_v1.cpython-312.pyc",
+      "src\\__pycache__\\joint_stock_etf_fast_real_v1.cpython-312.pyc",
+      "src\\__pycache__\\multi_asset_etf_trial_v1.cpython-312.pyc",
+      "src\\__pycache__\\run_account_backtest.cpython-312.pyc",
+      "src\\__pycache__\\run_dynamic_risk_trend_v1.cpython-312.pyc",
+      "src\\__pycache__\\run_joint_stock_etf_allocation_search_fast_v1.cpython-312.pyc",
+      "src\\__pycache__\\run_joint_stock_etf_fast_v1.cpython-312.pyc",
+      "src\\__pycache__\\stock_etf_stage_account_engine_v1.cpython-312.pyc",
+      "src\\__pycache__\\stock_etf_stage_trial_v1.cpython-312.pyc"
+    ]
+  },
+  "数据_含2026.zip": {
+    "zip_bytes": 83444668,
+    "zip_sha256": "7f56734827098ed6bc315d85270c5a1b77c4d55d29d4812e952312b0adae72b2",
+    "file_count": 50,
+    "shared_identical_count": 36,
+    "changed_shared": [
+      "MANIFEST.json",
+      "数据字典与来源.md"
+    ],
+    "added": [
+      "data\\processed\\sealed_2026\\account_market_2026_candidate.parquet",
+      "models\\E00_2026\\E00_202601.txt",
+      "models\\E00_2026\\E00_202602.txt",
+      "models\\E00_2026\\E00_202603.txt",
+      "models\\E00_2026\\E00_202604.txt",
+      "models\\E00_2026\\E00_202605.txt",
+      "models\\E00_2026\\E00_202606.txt",
+      "models\\E00_2026\\E00_202607.txt",
+      "models\\E00_2026\\E00_202608.txt",
+      "models\\E00_2026\\E00_202609.txt",
+      "results\\e00_2026_final_v1\\e00_predictions_2026.parquet",
+      "results\\sealed_2026_event_inputs_v1\\canonical_events.parquet"
+    ],
+    "removed_from_old": []
+  },
+  "manifest": {
+    "items": 49,
+    "errors": [],
+    "status": "PASS"
+  },
+  "external_extract_root": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_2026_candidate_v2olzo3x",
+  "run_2026_script_exists": true,
+  "run_2026_script_text": "from __future__ import annotations\n\nimport argparse\nimport hashlib\nimport json\nimport sys\nimport time\nfrom pathlib import Path\n\nimport numpy as np\nimport pandas as pd\n\n\ndef sha256(path: Path) -> str:\n    h = hashlib.sha256()\n    with path.open(\"rb\") as f:\n        for block in iter(lambda: f.read(1024 * 1024), b\"\"):\n            h.update(block)\n    return h.hexdigest()\n\n\ndef resolve(path: str, base: Path) -> Path:\n    value = Path(path)\n    return value.resolve() if value.is_absolute() else (base / value).resolve()\n\n\ndef main() -> None:\n    parser = argparse.ArgumentParser(\n        description=\"Replay the frozen 2026 E00 plus multi-asset accounts.\"\n    )\n    parser.add_argument(\"--data-root\", default=\"数据\")\n    parser.add_argument(\"--output-dir\", default=\"本地2026复现输出\")\n    args = parser.parse_args()\n\n    code_root = Path(__file__).resolve().parent\n    package_root = code_root.parent\n    data_root = resolve(args.data_root, package_root)\n    output = resolve(args.output_dir, package_root)\n    output.mkdir(parents=True, exist_ok=True)\n\n    sys.path.insert(0, str(code_root / \"src\"))\n    import joint_stock_etf_fast_real_v1 as real\n    import run_joint_stock_etf_fast_v1 as fast\n    import run_dynamic_risk_trend_v1 as risk\n    from fees_2026_v1 import fee_components\n\n    paths = {\n        \"market\": data_root / \"data/processed/sealed_2026/account_market_2026_candidate.parquet\",\n        \"predictions\": data_root / \"results/e00_2026_final_v1/e00_predictions_2026.parquet\",\n        \"events\": data_root / \"results/sealed_2026_event_inputs_v1/canonical_events.parquet\",\n        \"etf_prices\": data_root / \"data/processed/multi_asset_etf_trial_v1/four_etf_daily_prices.parquet\",\n        \"etf_events\": data_root / \"data/processed/multi_asset_etf_trial_v1/corporate_actions.csv\",\n        \"proxy_prices\": data_root / \"data/processed/multi_asset_handoff_v2/daily_prices.parquet\",\n        \"proxy_events\": data_root / \"data/processed/multi_asset_etf_trial_v1/corporate_actions.csv\",\n        \"contract\": data_root / \"configs/multi_asset_etf_trial_v1.contract.json\",\n    }\n    missing = [str(p) for p in paths.values() if not p.is_file()]\n    if missing:\n        raise FileNotFoundError(\"Missing packaged inputs: \" + \", \".join(missing))\n\n    real.ROOT = data_root\n    real.START = pd.Timestamp(\"2026-01-01\")\n    real.END = pd.Timestamp(\"2026-09-21\")\n    real.MARKET_PATH = paths[\"market\"]\n    real.PRICE_PATH = paths[\"etf_prices\"]\n    real.EVENT_PATH = paths[\"etf_events\"]\n    real.engine.fee_components = fee_components\n\n    events = pd.read_parquet(paths[\"events\"])\n    for col in (\"ex_date\", \"record_date\", \"pay_date\", \"share_date\"):\n        if col in events:\n            events[col] = pd.to_datetime(events[col])\n    if events.unresolved.fillna(True).any():\n        raise RuntimeError(\"Canonical corporate events contain unresolved rows\")\n    if events.duplicated([\"symbol\", \"ex_date\"]).any():\n        raise RuntimeError(\"Canonical corporate events contain duplicate keys\")\n    if events.rights_ratio.fillna(0).gt(0).any():\n        raise RuntimeError(\"Rights issues are outside this replay contract\")\n    real.prepare_events = lambda calendar: (\n        events.copy(), pd.DataFrame(columns=[\"trade_date\", \"symbol\"])\n    )\n\n    predictions = pd.read_parquet(paths[\"predictions\"])\n    if \"signal_date\" not in predictions:\n        predictions = predictions.rename(columns={\"trade_date\": \"signal_date\"})\n    predictions[\"signal_date\"] = pd.to_datetime(predictions.signal_date).dt.normalize()\n    if predictions.duplicated([\"signal_date\", \"symbol\"]).any():\n        raise RuntimeError(\"Frozen E00 predictions contain duplicate date-symbol keys\")\n\n    market, calendar = real.load_stock_market()\n    ranks = {\n        date: group.sort_values(\n            [\"score\", \"symbol\"], ascending=[False, True], kind=\"stable\"\n        ).symbol.astype(str).tolist()\n        for date, group in predictions.groupby(\"signal_date\", sort=True)\n    }\n    if set(calendar) != set(ranks):\n        raise RuntimeError(f\"Prediction calendar mismatch: {len(ranks)} scores for {len(calendar)} sessions\")\n\n    prices, etf_events, lookup = real.load_etf()\n    fast.ROOT = data_root\n    fast.PRICE = paths[\"proxy_prices\"]\n    fast.EVENT = paths[\"proxy_events\"]\n    proxy = fast.load_panel()[5]\n    if not all(pd.Timestamp(day) in proxy.index for day in calendar):\n        raise RuntimeError(\"Risk proxy does not cover the 2026 account calendar\")\n    if not all((asset, day) in lookup for asset in real.etfs.ASSET_ORDER for day in calendar):\n        raise RuntimeError(\"ETF prices do not cover all account assets and sessions\")\n\n    schedules = risk.make_schedules(proxy, calendar)\n    started = time.perf_counter()\n    results = []\n    for mode in (\"standard\", \"stress\"):\n        for policy in (\"RISK_B1\", \"FIXED25\"):\n            daily, fills, metrics = real.run_mixed_account(\n                ranks,\n                mode,\n                calendar,\n                market,\n                prices,\n                etf_events,\n                lookup,\n                policy,\n                pd.DataFrame(index=calendar),\n                proxy.reindex(calendar),\n                fixed_target_weights=np.full(4, 0.25) if policy == \"FIXED25\" else None,\n                target_weight_schedule=schedules[\"RISK_B1\"] if policy == \"RISK_B1\" else None,\n            )\n            directory = output / policy / mode\n            directory.mkdir(parents=True, exist_ok=True)\n            daily.to_csv(directory / \"daily.csv\", index=False)\n            fills.to_csv(directory / \"fills.csv\", index=False)\n            for key in (\"decisions\", \"etf_orders\", \"etf_events\", \"stock_rejections\"):\n                pd.DataFrame(daily.attrs[key]).to_csv(directory / f\"{key}.csv\", index=False)\n            nav_error = float(\n                (daily.nav - (daily.cash + daily.market_value + daily.dividend_receivable\n                              - daily.estimated_dividend_tax)).abs().max()\n            )\n            fee_error = abs(float(pd.to_numeric(fills.fee).sum()) - metrics[\"fees\"])\n            checks = {\n                \"nav_error\": nav_error,\n                \"fee_error\": fee_error,\n                \"fills_match\": len(fills) == metrics[\"fills\"],\n                \"cash_min\": float(daily.cash.min()),\n                \"issues\": metrics[\"issues\"],\n            }\n            checks[\"pass\"] = bool(\n                nav_error < 1e-6 and fee_error < 0.01 and checks[\"fills_match\"]\n                and checks[\"cash_min\"] >= -1e-6 and metrics[\"issues\"] == 0\n            )\n            results.append({\"policy\": policy, \"mode\": mode, \"metrics\": metrics, \"checks\": checks})\n\n    summary = {\n        \"status\": \"PASS\" if all(row[\"checks\"][\"pass\"] for row in results) else \"REVIEW_REQUIRED\",\n        \"period\": [str(calendar[0].date()), str(calendar[-1].date())],\n        \"sessions\": len(calendar),\n        \"initial_capital_each\": 1_000_000,\n        \"results\": results,\n        \"inputs_sha256\": {name: sha256(path) for name, path in paths.items()},\n        \"monthly_model_files\": sorted(p.name for p in (data_root / \"models/E00_2026\").glob(\"*.txt\")),\n        \"elapsed_seconds\": time.perf_counter() - started,\n        \"limitations\": [\n            \"Fresh 2026 capital; holdings are not inherited from 2025.\",\n            \"Observation ends 2026-09-21 and is not a full calendar year.\",\n            \"Frozen monthly E00 scores are replayed; this entry does not refit models.\",\n            \"2026 results are a previously viewed continuation, not a blind test.\",\n            \"The replay applies the packaged 2026 fee adapter and frozen risk schedule.\",\n        ],\n    }\n    (output / \"reproduction_summary.json\").write_text(\n        json.dumps(summary, ensure_ascii=False, indent=2, default=str), encoding=\"utf-8\"\n    )\n    print(json.dumps({\n        \"status\": summary[\"status\"],\n        \"period\": summary[\"period\"],\n        \"sessions\": summary[\"sessions\"],\n        \"accounts\": [{\n            \"policy\": row[\"policy\"], \"mode\": row[\"mode\"],\n            \"return\": row[\"metrics\"][\"total_return\"],\n            \"sharpe_zero_cash\": row[\"metrics\"][\"sharpe_zero_cash\"],\n            \"max_drawdown\": row[\"metrics\"][\"max_drawdown\"],\n            \"checks\": row[\"checks\"],\n        } for row in results],\n        \"elapsed_seconds\": summary[\"elapsed_seconds\"],\n    }, ensure_ascii=False, indent=2, default=str))\n\n\nif __name__ == \"__main__\":\n    main()\n"
+}

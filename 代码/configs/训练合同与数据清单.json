@@ -1,0 +1,316 @@
+{
+  "status": "PACKAGED_ACTUAL_FROZEN_E00_TRAINING_ROWS_ONLY_REPORT_STILL_DRAFT",
+  "created_at": "2026-10-08T23:30:49.805241+08:00",
+  "scope": "Exactly the training samples, target and weights consumed by nine Jan-Sep2026 monthly E00 fits; no failed-branch or prediction-only rows",
+  "unique_training_rows": 261844,
+  "total_monthly_training_rows": 1925118,
+  "signal_date_min": "2023-01-03",
+  "signal_date_max": "2026-08-21",
+  "max_label_end": "2026-08-31",
+  "features": [
+    "ret1",
+    "ret5",
+    "ret20",
+    "ret60",
+    "ret120",
+    "momentum20_skip5",
+    "vol20",
+    "vol60",
+    "downside20",
+    "range20",
+    "ma20_distance",
+    "ma60_distance",
+    "volume_ratio5_20",
+    "log_amount20",
+    "illiquidity20",
+    "beta60",
+    "residual_vol60",
+    "overnight20",
+    "intraday20",
+    "max_return20"
+  ],
+  "model": {
+    "family": "LightGBM",
+    "params": {
+      "objective": "regression",
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "min_data_in_leaf": 100,
+      "lambda_l2": 5.0,
+      "seed": 20261006,
+      "num_threads": 4,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true
+    },
+    "rounds": 100,
+    "label": "Mature5session adjusted-open-return within-date percentile minus0.5",
+    "weights": "Equal total weight per training date; original mean-one normalization",
+    "training_window_months": 36,
+    "update_schedule": "Original monthly rolling algorithm; no parameter/model selection on2026.",
+    "target_sealed_prediction_months": "2026-01 through2026-09, only available dates<=2026-09-21",
+    "future_prediction_fit_cap": 9,
+    "cutoff": "Previous globally available trading session strictly before prediction month; training signal_date<month and label_end_date<=cutoff.",
+    "label_access": "Training-only Parquet predicates restrict to mature dates at each month; no post-cutoff outcomes materialized or summarized.2026 past-mature labels may enter later monthly training by this predeclared online schedule; no full2026 labels or research diagnosis."
+  },
+  "months": [
+    {
+      "month": "2026-01-01",
+      "cutoff": "2025-12-31",
+      "window_start": "2023-01-01",
+      "train_rows": 214449,
+      "train_dates": 721,
+      "train_first_signal_date": "2023-01-03",
+      "train_last_signal_date": "2025-12-23",
+      "max_label_end_date": "2025-12-31",
+      "historical_panel_training": {
+        "rows": 214449,
+        "first_signal_date": "2023-01-03",
+        "last_signal_date": "2025-12-23",
+        "max_label_end_date": "2025-12-31"
+      },
+      "online_2026_training": {
+        "rows": 0,
+        "first_signal_date": null,
+        "last_signal_date": null,
+        "max_label_end_date": null
+      },
+      "prediction_rows": 5914,
+      "prediction_date_min": "2026-01-05",
+      "prediction_date_max": "2026-01-30",
+      "matured_2026_signal_max": null,
+      "model_sha256": "c9a3c2af66429d5d3c2b7bbe9ae0178ac78a7da1afd5524aee6c044ed790b046"
+    },
+    {
+      "month": "2026-02-01",
+      "cutoff": "2026-01-30",
+      "window_start": "2023-02-01",
+      "train_rows": 215608,
+      "train_dates": 725,
+      "train_first_signal_date": "2023-02-01",
+      "train_last_signal_date": "2026-01-22",
+      "max_label_end_date": "2026-01-30",
+      "historical_panel_training": {
+        "rows": 211468,
+        "first_signal_date": "2023-02-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 4140,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-01-22",
+        "max_label_end_date": "2026-01-30"
+      },
+      "prediction_rows": 4119,
+      "prediction_date_min": "2026-02-02",
+      "prediction_date_max": "2026-02-27",
+      "matured_2026_signal_max": "2026-01-22",
+      "model_sha256": "648c1218d47c0bfdae386434753ad7e604dcd76efbea0860f3fe90b18c88d2e2"
+    },
+    {
+      "month": "2026-03-01",
+      "cutoff": "2026-02-27",
+      "window_start": "2023-03-01",
+      "train_rows": 213764,
+      "train_dates": 719,
+      "train_first_signal_date": "2023-03-01",
+      "train_last_signal_date": "2026-02-11",
+      "max_label_end_date": "2026-02-27",
+      "historical_panel_training": {
+        "rows": 205506,
+        "first_signal_date": "2023-03-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 8258,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-02-11",
+        "max_label_end_date": "2026-02-27"
+      },
+      "prediction_rows": 6474,
+      "prediction_date_min": "2026-03-02",
+      "prediction_date_max": "2026-03-31",
+      "matured_2026_signal_max": "2026-02-11",
+      "model_sha256": "0d87e6e6c4e549c1ea9d369844fedcbdcd1d14ccfcfe78ab7b1b66be63af1647"
+    },
+    {
+      "month": "2026-04-01",
+      "cutoff": "2026-03-31",
+      "window_start": "2023-04-01",
+      "train_rows": 213339,
+      "train_dates": 718,
+      "train_first_signal_date": "2023-04-03",
+      "train_last_signal_date": "2026-03-23",
+      "max_label_end_date": "2026-03-31",
+      "historical_panel_training": {
+        "rows": 198620,
+        "first_signal_date": "2023-04-03",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 14719,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-03-23",
+        "max_label_end_date": "2026-03-31"
+      },
+      "prediction_rows": 6233,
+      "prediction_date_min": "2026-04-01",
+      "prediction_date_max": "2026-04-30",
+      "matured_2026_signal_max": "2026-03-23",
+      "model_sha256": "9eea1105a97a5480211c9abe64c2a0da8263ba15aa17b4a3cef28d99c58c491c"
+    },
+    {
+      "month": "2026-05-01",
+      "cutoff": "2026-04-30",
+      "window_start": "2023-05-01",
+      "train_rows": 213862,
+      "train_dates": 720,
+      "train_first_signal_date": "2023-05-04",
+      "train_last_signal_date": "2026-04-22",
+      "max_label_end_date": "2026-04-30",
+      "historical_panel_training": {
+        "rows": 192922,
+        "first_signal_date": "2023-05-04",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 20940,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-04-22",
+        "max_label_end_date": "2026-04-30"
+      },
+      "prediction_rows": 5341,
+      "prediction_date_min": "2026-05-06",
+      "prediction_date_max": "2026-05-29",
+      "matured_2026_signal_max": "2026-04-22",
+      "model_sha256": "fe6e1d4b3f87c4a53544ec66bad957805c8256c661a3a4356871b90803eb59f2"
+    },
+    {
+      "month": "2026-06-01",
+      "cutoff": "2026-05-29",
+      "window_start": "2023-06-01",
+      "train_rows": 213208,
+      "train_dates": 718,
+      "train_first_signal_date": "2023-06-01",
+      "train_last_signal_date": "2026-05-21",
+      "max_label_end_date": "2026-05-29",
+      "historical_panel_training": {
+        "rows": 186922,
+        "first_signal_date": "2023-06-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 26286,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-05-21",
+        "max_label_end_date": "2026-05-29"
+      },
+      "prediction_rows": 6238,
+      "prediction_date_min": "2026-06-01",
+      "prediction_date_max": "2026-06-30",
+      "matured_2026_signal_max": "2026-05-21",
+      "model_sha256": "ddb638d9b8aa5eacab2aa104f02ae81d55fcec6883256209b5cf17361fb317ca"
+    },
+    {
+      "month": "2026-07-01",
+      "cutoff": "2026-06-30",
+      "window_start": "2023-07-01",
+      "train_rows": 213458,
+      "train_dates": 719,
+      "train_first_signal_date": "2023-07-03",
+      "train_last_signal_date": "2026-06-22",
+      "max_label_end_date": "2026-06-30",
+      "historical_panel_training": {
+        "rows": 180946,
+        "first_signal_date": "2023-07-03",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 32512,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-06-22",
+        "max_label_end_date": "2026-06-30"
+      },
+      "prediction_rows": 6842,
+      "prediction_date_min": "2026-07-01",
+      "prediction_date_max": "2026-07-31",
+      "matured_2026_signal_max": "2026-06-22",
+      "model_sha256": "dc9d0fb9e18b9bee4f0867a2de3a72d44d46a9296d292665cc433374ecac2955"
+    },
+    {
+      "month": "2026-08-01",
+      "cutoff": "2026-07-31",
+      "window_start": "2023-08-01",
+      "train_rows": 214021,
+      "train_dates": 721,
+      "train_first_signal_date": "2023-08-01",
+      "train_last_signal_date": "2026-07-23",
+      "max_label_end_date": "2026-07-31",
+      "historical_panel_training": {
+        "rows": 174667,
+        "first_signal_date": "2023-08-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 39354,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-07-23",
+        "max_label_end_date": "2026-07-31"
+      },
+      "prediction_rows": 6264,
+      "prediction_date_min": "2026-08-03",
+      "prediction_date_max": "2026-08-31",
+      "matured_2026_signal_max": "2026-07-23",
+      "model_sha256": "6ba8fa4977bcd1f3970e5fac5effeae3588fe568d81c639da194542f4f064dac"
+    },
+    {
+      "month": "2026-09-01",
+      "cutoff": "2026-08-31",
+      "window_start": "2023-09-01",
+      "train_rows": 213409,
+      "train_dates": 719,
+      "train_first_signal_date": "2023-09-01",
+      "train_last_signal_date": "2026-08-21",
+      "max_label_end_date": "2026-08-31",
+      "historical_panel_training": {
+        "rows": 167790,
+        "first_signal_date": "2023-09-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 45619,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-08-21",
+        "max_label_end_date": "2026-08-31"
+      },
+      "prediction_rows": 4468,
+      "prediction_date_min": "2026-09-01",
+      "prediction_date_max": "2026-09-21",
+      "matured_2026_signal_max": "2026-08-21",
+      "model_sha256": "f946f02d6cd31e9a5f4afc73a2b006a7f21b1d7323b2f3790faaaa194dac2a4a"
+    }
+  ],
+  "limitations": [
+    "Training reproduction only; account/prediction input quotes stay in research archive as user requested training-only data",
+    "Report is copied existing draft, not completed final report",
+    "Data redistribution permissions not certified by this packaging step"
+  ],
+  "files": {
+    "数据/E00实际训练样本.parquet": {
+      "bytes": 31774279,
+      "sha256": "3b4d4e7e8834e14aeccaa4c57614816c403fc93d53908cac4a3ba636e841041f"
+    },
+    "数据/E00逐月训练索引与目标.parquet": {
+      "bytes": 13097908,
+      "sha256": "96fd8c4bb6be1d699abb8037a50252067c2b12f733a1631606ef22975ee0d9f5"
+    }
+  }
+}

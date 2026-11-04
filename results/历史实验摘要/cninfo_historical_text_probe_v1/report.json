@@ -1,0 +1,120 @@
+{
+  "version": "CNINFO_HISTORICAL_TEXT_PROBE_V1",
+  "checked_at_shanghai": "2026-10-08T16:24:35+08:00",
+  "status": "PUBLIC_HISTORICAL_METADATA_QUERY_CONFIRMED_BODY_AND_REUSE_NOT_VERIFIED",
+  "dedup_check": {
+    "checked_before_probe": [
+      "规划/项目数据总清单与下载安排.md",
+      "results/project_data_inventory.json"
+    ],
+    "finding": "No prior CNINFO historical disclosure full-text corpus or query manifest exists. Existing limited forecasts, issuer notices/corporate-action records, market data and email files were not duplicated. This probe adds only a bounded public metadata sample."
+  },
+  "official_site": {
+    "homepage": "https://www.cninfo.com.cn/new/index",
+    "search_page": "https://www.cninfo.com.cn/new/commonUrl/pageOfSearch?url=disclosure/list/search",
+    "identity": "Official page identifies CNINFO as a securities-information site operated by Shenzhen Securities Information Co., a wholly owned subsidiary of Shenzhen Stock Exchange; page exposes announcement search.",
+    "verified_date": "2026-10-08"
+  },
+  "frontend_evidence": {
+    "observed_endpoint": "https://www.cninfo.com.cn/new/hisAnnouncement/query",
+    "method": "POST form-urlencoded",
+    "source_js": "https://static.cninfo.com.cn/new/js/app/disclosure/notice/history-notice.js?v=20260710082532",
+    "source_js_sha256": "ef36c3fb82af6b4176c2b4fcf92c1c7eb58ff03beba7931fa48bc1b2b417213a",
+    "source_code_evidence": "getHistory() posts pageNum,pageSize,column,tabName,plate,stock,searchkey,secid,category,trade,seDate,sortName,sortType,isHLtitle; result metadata maps announcementTime and announcementTitle; link builder combines announcementId, secCode, orgId, announcementTime for detail and uses adjunctUrl for attachment path.",
+    "base_path_evidence": "Search page HTML sets path=/new and v3_cninfo=https://static.cninfo.com.cn when served over HTTPS."
+  },
+  "metadata_probe": {
+    "query_count": 2,
+    "both_queries_identical": true,
+    "date_range": "2025-01-01~2025-12-31",
+    "searchkey": "业绩预告",
+    "pageNum": 1,
+    "pageSize": 10,
+    "stock_filter": "none",
+    "column_parameter": "sse as submitted; mixed pageColumn values returned, so exchange-isolation semantics are not established",
+    "http_statuses": [
+      200,
+      200
+    ],
+    "response_bytes_each": 6938,
+    "total_saved_and_downloaded_bytes": 291810,
+    "maximum_transfer_bound_bytes": 2097152,
+    "under_bound": true,
+    "totalAnnouncement": 4498,
+    "totalRecordNum": 4498,
+    "rows_returned": 10,
+    "query_1_sha256": "116b8e9d3d3621e6f804d0ea4a3a5c1453ae7d57a5f380eba361dfb229d1a6d2",
+    "query_2_sha256": "116b8e9d3d3621e6f804d0ea4a3a5c1453ae7d57a5f380eba361dfb229d1a6d2",
+    "repeated_top_ten_byte_identical": true,
+    "sample": {
+      "secCode": "000932",
+      "announcementTitle": "2025年度<em>业绩</em><em>预告</em>",
+      "announcementTime": 1767190201000,
+      "announcementId": "1224915415",
+      "adjunctUrl": "finalpage/2025-12-31/1224915415.pdf",
+      "adjunctType": "PDF"
+    },
+    "sample_time_shanghai": "2025-12-31T22:10:01+08:00",
+    "sample_time_matches_path_date": true,
+    "metadata_only": true,
+    "pdf_or_body_downloaded": false,
+    "body_field_in_response": "announcementContent is empty in the sampled metadata row.",
+    "announcement_time_encoding": "Unix epoch integer in milliseconds; sampled value resolves to 2025-12-31 22:10:01 Asia/Shanghai, so hour/minute/second are represented in this sample (not just a calendar date).",
+    "sample_record_keys": [
+      "id",
+      "secCode",
+      "secName",
+      "orgId",
+      "announcementId",
+      "announcementTitle",
+      "announcementTime",
+      "adjunctUrl",
+      "adjunctSize",
+      "adjunctType",
+      "storageTime",
+      "columnId",
+      "pageColumn",
+      "announcementType",
+      "associateAnnouncement",
+      "important",
+      "batchNum",
+      "announcementContent",
+      "orgName",
+      "tileSecName",
+      "shortTitle",
+      "announcementTypeName",
+      "secNameList"
+    ],
+    "sample_associateAnnouncement": null,
+    "sample_storageTime": null,
+    "sample_announcementContent": "",
+    "sampled_associateAnnouncement_nonempty_in_first_ten": 0,
+    "correction_or_revision_note": "The sampled API record exposes associateAnnouncement, storageTime and a unique announcementId, but all first-ten associateAnnouncement values are empty and storageTime is null. This does not establish a correction/version chain; it also does not negate the stable path returned for an original notice. A separate corrected-notice linkage test remains open.",
+    "record_count_claim": "4498 is the endpoint-reported result count for this exact searchkey/date query, not a count of all A-share disclosures or a completeness audit."
+  },
+  "attachment_assessment": {
+    "result": "Stable official attachment path candidate observed across identical repeated query response; includes publication-date directory and announcementId. Actual PDF bytes, content SHA, permanence/immutability across later revisions, and historical archived vintage were not checked.",
+    "sample_path": "https://static.cninfo.com.cn/finalpage/2025-12-31/1224915415.pdf"
+  },
+  "what_gap_it_can_address": "Public query returns security code, title, millisecond announcement time, announcement ID, and relative PDF attachment path. This supports discovering and time-stamping official company disclosure candidates such as earnings forecasts.",
+  "what_remains_open": [
+    "This is an issuer-disclosure metadata endpoint, not a full news body API; event text is not returned in the sample.",
+    "No PDF was opened/downloaded, so body extraction and whether operating/orders/earnings events are usable remain unverified.",
+    "Historical first-public version, revised notices, backfilled/corrected items, archive vintage and re-use/license terms remain unverified.",
+    "Two identical queries demonstrate repeat stability for the captured page only; not permanent attachment immutability.",
+    "One keyword and one year were sampled; no completeness/recall or full market coverage claim."
+  ],
+  "bounded_next_step": "If separately authorized, retrieve at most 10–20 already filtered 2025 candidate PDF metadata URLs in a second audit, with exact SHA, publisher time and company code; download only a tiny selected PDF sample if permitted, then test text extraction/version handling before any broader collection. No registration/payment/bypass.",
+  "reproduction_command": "curl.exe --fail --silent --show-error --max-filesize 1048576 -X POST \"https://www.cninfo.com.cn/new/hisAnnouncement/query\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" -H \"Referer: https://www.cninfo.com.cn/new/commonUrl/pageOfSearch?url=disclosure/list/search\" -H \"Origin: https://www.cninfo.com.cn\" -H \"X-Requested-With: XMLHttpRequest\" --data-urlencode \"pageNum=1\" --data-urlencode \"pageSize=10\" --data-urlencode \"column=sse\" --data-urlencode \"tabName=fulltext\" --data-urlencode \"plate=\" --data-urlencode \"stock=\" --data-urlencode \"searchkey=业绩预告\" --data-urlencode \"secid=\" --data-urlencode \"category=\" --data-urlencode \"trade=\" --data-urlencode \"seDate=2025-01-01~2025-12-31\" --data-urlencode \"sortName=time\" --data-urlencode \"sortType=desc\" --data-urlencode \"isHLtitle=true\" -o results/cninfo_historical_text_probe_v1/repeat_2025_metadata.json",
+  "evidence_files": {
+    "homepage": "results/cninfo_historical_text_probe_v1/homepage.html",
+    "search_page": "results/cninfo_historical_text_probe_v1/search_page.html",
+    "history_js": "results/cninfo_historical_text_probe_v1/history-notice.js",
+    "common_js": "results/cninfo_historical_text_probe_v1/common.js",
+    "query_1": "results/cninfo_historical_text_probe_v1/metadata_query_2025_01.json",
+    "query_2": "results/cninfo_historical_text_probe_v1/metadata_query_2025_02.json",
+    "query_1_summary": "results/cninfo_historical_text_probe_v1/historical_query_1.json",
+    "query_2_summary": "results/cninfo_historical_text_probe_v1/historical_query_2.json"
+  },
+  "transfer_bytes_note": "291,810 bytes is the aggregate byte count of the locally fetched official HTML/JS and two bounded JSON metadata responses; saved files are below the 2 MiB cap."
+}

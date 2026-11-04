@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-08T17:02:27.082655+08:00",
+  "status": "LOCAL_EXPORT_RECEIVED_HEADLINES_URLS_ONLY",
+  "file": "data\\raw\\ifind_terminal_export_v1\\market_news_export_de173234.xls",
+  "bytes": 6572,
+  "sha256": "de1732343c2c570902897b0a2bf5c683c08e612495699ffef2a6feaa63e79df4",
+  "actual_format": "OOXML_XLSX_WITH_XLS_SUFFIX",
+  "records": 4,
+  "columns": [
+    "新闻日期",
+    "来源",
+    "标题",
+    "链接"
+  ],
+  "date_min": "2026/10/01 16:02:10",
+  "date_max": "2026/10/01 18:55:12",
+  "body_present": false,
+  "existing_url_matches": 0,
+  "requested_blob_matched": true,
+  "sample_date_note": "actual supplied file is October 1; earlier coordinator UI sample April 15 differs; user selection may have changed, cause unverified",
+  "2026_returns_accessed": false,
+  "raw_xml_row_check": {
+    "dimension": "A1:D7",
+    "header_row": 1,
+    "news_rows": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "empty_row": 6,
+    "source_footer_row": 7,
+    "hidden_rows": 0,
+    "additional_sheets": 0,
+    "parse_loss_detected": false,
+    "export_scope_or_count_limit": "unverified"
+  }
+}

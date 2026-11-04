@@ -1,0 +1,330 @@
+{
+  "status": "COMPLETED_FROZEN_E00_STANDARD_AND_ORIGINAL_STRESS",
+  "candidate": "E00 only",
+  "period": "2026-01-05 through 2026-09-21 (partial year)",
+  "models_fitted": 9,
+  "models": [
+    {
+      "month": "2026-01-01",
+      "cutoff": "2025-12-31",
+      "window_start": "2023-01-01",
+      "train_rows": 214449,
+      "train_dates": 721,
+      "train_first_signal_date": "2023-01-03",
+      "train_last_signal_date": "2025-12-23",
+      "max_label_end_date": "2025-12-31",
+      "historical_panel_training": {
+        "rows": 214449,
+        "first_signal_date": "2023-01-03",
+        "last_signal_date": "2025-12-23",
+        "max_label_end_date": "2025-12-31"
+      },
+      "online_2026_training": {
+        "rows": 0,
+        "first_signal_date": null,
+        "last_signal_date": null,
+        "max_label_end_date": null
+      },
+      "prediction_rows": 5914,
+      "prediction_date_min": "2026-01-05",
+      "prediction_date_max": "2026-01-30",
+      "matured_2026_signal_max": null,
+      "model_sha256": "c9a3c2af66429d5d3c2b7bbe9ae0178ac78a7da1afd5524aee6c044ed790b046"
+    },
+    {
+      "month": "2026-02-01",
+      "cutoff": "2026-01-30",
+      "window_start": "2023-02-01",
+      "train_rows": 215608,
+      "train_dates": 725,
+      "train_first_signal_date": "2023-02-01",
+      "train_last_signal_date": "2026-01-22",
+      "max_label_end_date": "2026-01-30",
+      "historical_panel_training": {
+        "rows": 211468,
+        "first_signal_date": "2023-02-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 4140,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-01-22",
+        "max_label_end_date": "2026-01-30"
+      },
+      "prediction_rows": 4119,
+      "prediction_date_min": "2026-02-02",
+      "prediction_date_max": "2026-02-27",
+      "matured_2026_signal_max": "2026-01-22",
+      "model_sha256": "648c1218d47c0bfdae386434753ad7e604dcd76efbea0860f3fe90b18c88d2e2"
+    },
+    {
+      "month": "2026-03-01",
+      "cutoff": "2026-02-27",
+      "window_start": "2023-03-01",
+      "train_rows": 213764,
+      "train_dates": 719,
+      "train_first_signal_date": "2023-03-01",
+      "train_last_signal_date": "2026-02-11",
+      "max_label_end_date": "2026-02-27",
+      "historical_panel_training": {
+        "rows": 205506,
+        "first_signal_date": "2023-03-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 8258,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-02-11",
+        "max_label_end_date": "2026-02-27"
+      },
+      "prediction_rows": 6474,
+      "prediction_date_min": "2026-03-02",
+      "prediction_date_max": "2026-03-31",
+      "matured_2026_signal_max": "2026-02-11",
+      "model_sha256": "0d87e6e6c4e549c1ea9d369844fedcbdcd1d14ccfcfe78ab7b1b66be63af1647"
+    },
+    {
+      "month": "2026-04-01",
+      "cutoff": "2026-03-31",
+      "window_start": "2023-04-01",
+      "train_rows": 213339,
+      "train_dates": 718,
+      "train_first_signal_date": "2023-04-03",
+      "train_last_signal_date": "2026-03-23",
+      "max_label_end_date": "2026-03-31",
+      "historical_panel_training": {
+        "rows": 198620,
+        "first_signal_date": "2023-04-03",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 14719,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-03-23",
+        "max_label_end_date": "2026-03-31"
+      },
+      "prediction_rows": 6233,
+      "prediction_date_min": "2026-04-01",
+      "prediction_date_max": "2026-04-30",
+      "matured_2026_signal_max": "2026-03-23",
+      "model_sha256": "9eea1105a97a5480211c9abe64c2a0da8263ba15aa17b4a3cef28d99c58c491c"
+    },
+    {
+      "month": "2026-05-01",
+      "cutoff": "2026-04-30",
+      "window_start": "2023-05-01",
+      "train_rows": 213862,
+      "train_dates": 720,
+      "train_first_signal_date": "2023-05-04",
+      "train_last_signal_date": "2026-04-22",
+      "max_label_end_date": "2026-04-30",
+      "historical_panel_training": {
+        "rows": 192922,
+        "first_signal_date": "2023-05-04",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 20940,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-04-22",
+        "max_label_end_date": "2026-04-30"
+      },
+      "prediction_rows": 5341,
+      "prediction_date_min": "2026-05-06",
+      "prediction_date_max": "2026-05-29",
+      "matured_2026_signal_max": "2026-04-22",
+      "model_sha256": "fe6e1d4b3f87c4a53544ec66bad957805c8256c661a3a4356871b90803eb59f2"
+    },
+    {
+      "month": "2026-06-01",
+      "cutoff": "2026-05-29",
+      "window_start": "2023-06-01",
+      "train_rows": 213208,
+      "train_dates": 718,
+      "train_first_signal_date": "2023-06-01",
+      "train_last_signal_date": "2026-05-21",
+      "max_label_end_date": "2026-05-29",
+      "historical_panel_training": {
+        "rows": 186922,
+        "first_signal_date": "2023-06-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 26286,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-05-21",
+        "max_label_end_date": "2026-05-29"
+      },
+      "prediction_rows": 6238,
+      "prediction_date_min": "2026-06-01",
+      "prediction_date_max": "2026-06-30",
+      "matured_2026_signal_max": "2026-05-21",
+      "model_sha256": "ddb638d9b8aa5eacab2aa104f02ae81d55fcec6883256209b5cf17361fb317ca"
+    },
+    {
+      "month": "2026-07-01",
+      "cutoff": "2026-06-30",
+      "window_start": "2023-07-01",
+      "train_rows": 213458,
+      "train_dates": 719,
+      "train_first_signal_date": "2023-07-03",
+      "train_last_signal_date": "2026-06-22",
+      "max_label_end_date": "2026-06-30",
+      "historical_panel_training": {
+        "rows": 180946,
+        "first_signal_date": "2023-07-03",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 32512,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-06-22",
+        "max_label_end_date": "2026-06-30"
+      },
+      "prediction_rows": 6842,
+      "prediction_date_min": "2026-07-01",
+      "prediction_date_max": "2026-07-31",
+      "matured_2026_signal_max": "2026-06-22",
+      "model_sha256": "dc9d0fb9e18b9bee4f0867a2de3a72d44d46a9296d292665cc433374ecac2955"
+    },
+    {
+      "month": "2026-08-01",
+      "cutoff": "2026-07-31",
+      "window_start": "2023-08-01",
+      "train_rows": 214021,
+      "train_dates": 721,
+      "train_first_signal_date": "2023-08-01",
+      "train_last_signal_date": "2026-07-23",
+      "max_label_end_date": "2026-07-31",
+      "historical_panel_training": {
+        "rows": 174667,
+        "first_signal_date": "2023-08-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 39354,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-07-23",
+        "max_label_end_date": "2026-07-31"
+      },
+      "prediction_rows": 6264,
+      "prediction_date_min": "2026-08-03",
+      "prediction_date_max": "2026-08-31",
+      "matured_2026_signal_max": "2026-07-23",
+      "model_sha256": "6ba8fa4977bcd1f3970e5fac5effeae3588fe568d81c639da194542f4f064dac"
+    },
+    {
+      "month": "2026-09-01",
+      "cutoff": "2026-08-31",
+      "window_start": "2023-09-01",
+      "train_rows": 213409,
+      "train_dates": 719,
+      "train_first_signal_date": "2023-09-01",
+      "train_last_signal_date": "2026-08-21",
+      "max_label_end_date": "2026-08-31",
+      "historical_panel_training": {
+        "rows": 167790,
+        "first_signal_date": "2023-09-01",
+        "last_signal_date": "2025-12-31",
+        "max_label_end_date": "2026-01-12"
+      },
+      "online_2026_training": {
+        "rows": 45619,
+        "first_signal_date": "2026-01-05",
+        "last_signal_date": "2026-08-21",
+        "max_label_end_date": "2026-08-31"
+      },
+      "prediction_rows": 4468,
+      "prediction_date_min": "2026-09-01",
+      "prediction_date_max": "2026-09-21",
+      "matured_2026_signal_max": "2026-08-21",
+      "model_sha256": "f946f02d6cd31e9a5f4afc73a2b006a7f21b1d7323b2f3790faaaa194dac2a4a"
+    }
+  ],
+  "prediction_rows": 51893,
+  "account_scenarios": {
+    "standard": {
+      "sessions": 175,
+      "trades": 1608,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "total_return": -0.043051769765106496,
+      "max_drawdown": -0.08563490688729314,
+      "publishable_returns": true,
+      "cash_identity_error_max": 0.0
+    },
+    "original_stress": {
+      "sessions": 175,
+      "trades": 1595,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "total_return": -0.059971578772729184,
+      "max_drawdown": -0.09784486456772812,
+      "publishable_returns": true,
+      "cash_identity_error_max": 0.0
+    }
+  },
+  "same_date_csi300_price_return_descriptive": -0.0377682478030823,
+  "benchmark_caveat": "Price index only; not a total-return, cost-matched, or risk-matched alpha claim.",
+  "one_shot_binding_sha256": "8f42c89ed4cf56c2237a7350526fb95f1e7ec1380e63a2356a29e7a372a3a2c0",
+  "binding_sha256": {
+    "configs/e00_final_candidate_freeze_v2.json": "40b3386e46765ca2e0754793e712b05d3dded4cde19129d0330dcc7d61372cd5",
+    "data/processed/training_panel_v1.parquet": "82dec620ec04241b4acb972e42d5bff13166f94974354fa5cb286beee056abff",
+    "results/e00_2026_feature_build_v1/e00_2026_prediction_features.parquet": "172628fd4a5eaeb4239b26aa7efeca988a4cbbee3eb23b1d105d2681f18dcf41",
+    "results/e00_2026_feature_build_v1/feature_manifest.json": "f933821674b75c207e9e3ee8e345e13dc8f3971e560e19a03df46c4a99ca6924",
+    "data/processed/sealed_2026/account_market_2026_candidate.parquet": "9680e1322f8a33ac3c75206c1eaa22a6b31d690ad73e213a4a0e0015a88ce139",
+    "data/processed/sealed_2026/index_price_2026.parquet": "3bb34eacc3f4bd5e9fe16d07734334cbd0621cbfc0e0c5eda114acb3566ec616",
+    "data/processed/sealed_2026/factor_change_review.csv": "3c735a58e7c2fc80b6b7aa1c14b60f75588bf2a83d7c839e27c3e3091a15d253",
+    "data/raw/gm/bars/5eefdf5b958a7a54.parquet": "c38adde46a651ee918f315168a3b481eb14454c92ff6f8836e163904231e226c",
+    "scripts/build_e00_2026_features_v1.py": "f1bd8f4f49b68d8cd925007c58e029e2f0d8a31ec86f19bbd2f2e20e80d6f020",
+    "results/sealed_2026_event_inputs_v1/canonical_events.parquet": "739e3e7d96cbc00300a9d46829ad85652a14647833f66ffe3e6034652f3eb5bc",
+    "results/sealed_2026_event_resolution_v1/event_resolution_table.csv": "04885c9b817be94908099fad409b6d65c72a7412d26cdad0613e90f9af1b5aa2",
+    "results/sealed_2026_final_event_review_v1/report.json": "72709e4a8411d3d11f690fd5bc16a799519e8a67ec8e1b3b4056c0135f48bf45",
+    "results/sealed_2026_final_event_review_v1/report_v2.json": "79fe46a83b6da3791bb85c4ffbcd1c79daa5141c84deb8ac47caa731114260e0",
+    "results/fee_adapter_2026_v1/coordinator_acceptance.json": "dd4db2db50959ab8b0710a37f4d337faa6b63f25b8dc682673f23d4714c068c7",
+    "scripts/build_price_features.py": "38b734144fa75a5f80ae197a309090a2779742ce49d3cb9a2345b21a1dd8ec20",
+    "scripts/build_training_panel.py": "7595f3765594d2b4b3d19d26947f1f159e518b15b3bce71ea16c572ca0135f31",
+    "scripts/train_rolling_signal.py": "9443ce975679f43d9759bdf6636dec391d171fe0c3eb5432f3299105639214c6",
+    "scripts/fees_2026_v1.py": "3a2155952209d0e0738b50db80dbb692a98399bdea8e6cc2318ab082e960c819",
+    "scripts/account_engine_2026_v1.py": "2dd01ae039a391aa3e2e0cf82e2894acdd848e3dbb949bc644915cb7cf1182bc",
+    "scripts/run_e00_2026_final_v1.py": "0be643cca3caf3c4d60ce504318273cfa7a7fe4275f8ea8e61f8a53caea89dac"
+  },
+  "source_sha256": {
+    "configs/e00_final_candidate_freeze_v2.json": "40b3386e46765ca2e0754793e712b05d3dded4cde19129d0330dcc7d61372cd5",
+    "data/processed/training_panel_v1.parquet": "82dec620ec04241b4acb972e42d5bff13166f94974354fa5cb286beee056abff",
+    "results/e00_2026_feature_build_v1/e00_2026_prediction_features.parquet": "172628fd4a5eaeb4239b26aa7efeca988a4cbbee3eb23b1d105d2681f18dcf41",
+    "results/e00_2026_feature_build_v1/feature_manifest.json": "f933821674b75c207e9e3ee8e345e13dc8f3971e560e19a03df46c4a99ca6924",
+    "data/processed/sealed_2026/account_market_2026_candidate.parquet": "9680e1322f8a33ac3c75206c1eaa22a6b31d690ad73e213a4a0e0015a88ce139",
+    "data/processed/sealed_2026/index_price_2026.parquet": "3bb34eacc3f4bd5e9fe16d07734334cbd0621cbfc0e0c5eda114acb3566ec616",
+    "data/processed/sealed_2026/factor_change_review.csv": "3c735a58e7c2fc80b6b7aa1c14b60f75588bf2a83d7c839e27c3e3091a15d253",
+    "data/raw/gm/bars/5eefdf5b958a7a54.parquet": "c38adde46a651ee918f315168a3b481eb14454c92ff6f8836e163904231e226c",
+    "scripts/build_e00_2026_features_v1.py": "f1bd8f4f49b68d8cd925007c58e029e2f0d8a31ec86f19bbd2f2e20e80d6f020",
+    "results/sealed_2026_event_inputs_v1/canonical_events.parquet": "739e3e7d96cbc00300a9d46829ad85652a14647833f66ffe3e6034652f3eb5bc",
+    "results/sealed_2026_event_resolution_v1/event_resolution_table.csv": "04885c9b817be94908099fad409b6d65c72a7412d26cdad0613e90f9af1b5aa2",
+    "results/sealed_2026_final_event_review_v1/report.json": "72709e4a8411d3d11f690fd5bc16a799519e8a67ec8e1b3b4056c0135f48bf45",
+    "results/sealed_2026_final_event_review_v1/report_v2.json": "79fe46a83b6da3791bb85c4ffbcd1c79daa5141c84deb8ac47caa731114260e0",
+    "results/fee_adapter_2026_v1/coordinator_acceptance.json": "dd4db2db50959ab8b0710a37f4d337faa6b63f25b8dc682673f23d4714c068c7",
+    "scripts/build_price_features.py": "38b734144fa75a5f80ae197a309090a2779742ce49d3cb9a2345b21a1dd8ec20",
+    "scripts/build_training_panel.py": "7595f3765594d2b4b3d19d26947f1f159e518b15b3bce71ea16c572ca0135f31",
+    "scripts/train_rolling_signal.py": "9443ce975679f43d9759bdf6636dec391d171fe0c3eb5432f3299105639214c6",
+    "scripts/fees_2026_v1.py": "3a2155952209d0e0738b50db80dbb692a98399bdea8e6cc2318ab082e960c819",
+    "scripts/account_engine_2026_v1.py": "2dd01ae039a391aa3e2e0cf82e2894acdd848e3dbb949bc644915cb7cf1182bc",
+    "scripts/run_e00_2026_final_v1.py": "0be643cca3caf3c4d60ce504318273cfa7a7fe4275f8ea8e61f8a53caea89dac"
+  },
+  "sealed_2026_evaluated": true,
+  "strategy_search_or_parameter_selection": false,
+  "new_downloads": 0,
+  "post_cutoff_labels_materialized": false,
+  "limitations": [
+    "2024-2025 were repeatedly explored; 2026 is not a fully blind research sample.",
+    "Cash payments are scheduled gross receivables, not observed broker receipts.",
+    "Corporate-action source and historical-vintage caveats remain as listed in the bound event review."
+  ]
+}

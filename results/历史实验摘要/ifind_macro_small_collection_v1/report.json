@@ -1,0 +1,107 @@
+{
+  "status": "REQUEST_PLAN_FINISHED_VINTAGE_UNVERIFIED",
+  "historical_pit_accepted": false,
+  "results": [
+    {
+      "indicator": "中国官方制造业采购经理指数PMI",
+      "start": "201501",
+      "end": "201912",
+      "path": "data\\raw\\ifind_time_limited_v1\\edb\\1212316e1d9f69f5e0f5d6c19ea36797a341c57c15e789d7504bc814989839e1.json",
+      "bytes": 5248,
+      "sha256": "9a069cea6fec23819d79b001ee3b316ea30a2133bd53085fe38899daa922ca19",
+      "tool_isError": false,
+      "protocol_error": null,
+      "supplier_code": 1
+    },
+    {
+      "indicator": "中国官方制造业采购经理指数PMI",
+      "start": "202001",
+      "end": "202412",
+      "path": "data\\raw\\ifind_time_limited_v1\\edb\\41d527cb3634227813a6f02ade4d695fa796406640752f1209b2bedb01319024.json",
+      "bytes": 5248,
+      "sha256": "231ec9f24c67f42b82cbf41d29b8654345cba46bc095bb3ca0910f4e4423d9cd",
+      "tool_isError": false,
+      "protocol_error": null,
+      "supplier_code": 1
+    },
+    {
+      "indicator": "中国官方制造业采购经理指数PMI",
+      "start": "202502",
+      "end": "202512",
+      "path": "data\\raw\\ifind_time_limited_v1\\edb\\895717176734ccfbf5e8972af361acb530538c0e97e5be529eaf541975589fc1.json",
+      "bytes": 5248,
+      "sha256": "cba5ca55f67b1c348a2f29ba8edf85f9b318f5dadf607649bc4589829cf30a67",
+      "tool_isError": false,
+      "protocol_error": null,
+      "supplier_code": 1
+    },
+    {
+      "indicator": "中国居民消费价格指数CPI同比",
+      "start": "201501",
+      "end": "201912",
+      "path": "data\\raw\\ifind_time_limited_v1\\edb\\169667ea8c714e7829f5c0dc66bd576437cf7c5adad5b26b731e90137906005a.json",
+      "bytes": 5111,
+      "sha256": "d1a83a31ec21a2736a808b09a432ebf502cc700f42f12c7d6fe6b75e501e845b",
+      "tool_isError": false,
+      "protocol_error": null,
+      "supplier_code": 1
+    },
+    {
+      "indicator": "中国居民消费价格指数CPI同比",
+      "start": "202001",
+      "end": "202512",
+      "path": "data\\raw\\ifind_time_limited_v1\\edb\\6edd521ac7057582653f4d3ed47dcf1b527a5f8537667a2280be74bb1181b3ee.json",
+      "bytes": 5111,
+      "sha256": "e624773e2a51b27610e8f8273528853cdf82e26afbd9db4d841d3efa0c7d29a7",
+      "tool_isError": false,
+      "protocol_error": null,
+      "supplier_code": 1
+    },
+    {
+      "indicator": "中国广义货币M2余额同比增速",
+      "start": "201501",
+      "end": "201912",
+      "path": "data\\raw\\ifind_time_limited_v1\\edb\\de113fa48bf5611b34ba664e3004117a3d25be04453b91ce671c6f4e3d41412c.json",
+      "bytes": 5185,
+      "sha256": "cf23b9bcd024f6e51dc6cc8538846d91f601f8356e4b884171e11779eb64bfd3",
+      "tool_isError": false,
+      "protocol_error": null,
+      "supplier_code": 1
+    },
+    {
+      "indicator": "中国广义货币M2余额同比增速",
+      "start": "202001",
+      "end": "202512",
+      "path": "data\\raw\\ifind_time_limited_v1\\edb\\883b2c89d3876de1845357abbd6f64c1f6a58f857b593a8832fe1b73f544bb84.json",
+      "bytes": 5185,
+      "sha256": "3f634f8d8087321880d85e56fe50ef5789fe57cf68813303c2b76ed1e5c1a9a8",
+      "tool_isError": false,
+      "protocol_error": null,
+      "supplier_code": 1
+    },
+    {
+      "indicator": "中国社会融资规模存量同比增速",
+      "start": "201501",
+      "end": "201912",
+      "path": "data\\raw\\ifind_time_limited_v1\\edb\\ec2b6b8a3db019691a81185748a156c120d5f1434cf726a3a121038a064ba146.json",
+      "bytes": 5216,
+      "sha256": "74808af74cf99ad77c9d1c6c50d078e74e4ecb81b4a2129090177df7981e6712",
+      "tool_isError": false,
+      "protocol_error": null,
+      "supplier_code": 1
+    },
+    {
+      "indicator": "中国社会融资规模存量同比增速",
+      "start": "202001",
+      "end": "202512",
+      "path": "data\\raw\\ifind_time_limited_v1\\edb\\aa3d2ef5aa53241a964e74c23dbb14641734f00310fd68eaee725ee3ea971f88.json",
+      "bytes": 5217,
+      "sha256": "3b1ae46f6c56f2e6569432a662cdadd19857057f71e52b0aad641b3baa0429f0",
+      "tool_isError": false,
+      "protocol_error": null,
+      "supplier_code": 1
+    }
+  ],
+  "started_at": "2026-10-07T19:02:50.192379+08:00",
+  "finished_at": "2026-10-07T19:03:20.424488+08:00"
+}

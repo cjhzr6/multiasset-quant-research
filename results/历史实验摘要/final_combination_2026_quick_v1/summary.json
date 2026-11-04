@@ -1,0 +1,196 @@
+{
+  "status": "QUICK_ACCOUNT_REPLAY_PASS",
+  "period": [
+    "2026-01-05",
+    "2026-09-21"
+  ],
+  "sessions": 175,
+  "results": [
+    {
+      "policy": "RISK_B1",
+      "mode": "standard",
+      "metrics": {
+        "sessions": 175,
+        "starting_capital": 1000000.0,
+        "ending_nav": 1029569.4220402029,
+        "total_return": 0.029569422040202964,
+        "annualized_return": 0.04285545051019812,
+        "annualized_volatility": 0.10684640747275084,
+        "sharpe_zero_cash": 0.446113885258609,
+        "max_drawdown": -0.08757733495499431,
+        "fills": 1064,
+        "gross_notional": 3945241.8252099995,
+        "fees": 6281.4708207971,
+        "stock_dividend_tax": 390.41489900000005,
+        "mean_cash_fraction": 0.15823405442623065,
+        "mean_stock_fraction": 0.15781306609654955,
+        "mean_etf_fraction": 0.6839350743113513,
+        "closing_cash": 129136.48204020281,
+        "issues": 0,
+        "stock_rejections": 40,
+        "etf_orders": 36,
+        "nav_recon_max_abs": 2.3283064365386963e-10,
+        "optimizer_fallbacks": 0,
+        "mean_target_weights": {
+          "w_stock": 0.2745500405154941,
+          "w_sp500": 0.3198660965644535,
+          "w_gold": 0.15464140724384787,
+          "w_bond": 0.2509424556762046,
+          "w_cash": 1.2335811384723961e-17
+        }
+      },
+      "quick_check": {
+        "nav_error": 2.3283064365386963e-10,
+        "fee_error": 0.0,
+        "fills_match": true,
+        "cash_min": 82885.1656136605,
+        "issues": 0,
+        "pass": true
+      }
+    },
+    {
+      "policy": "FIXED25",
+      "mode": "standard",
+      "metrics": {
+        "sessions": 175,
+        "starting_capital": 1000000.0,
+        "ending_nav": 1005216.4201162303,
+        "total_return": 0.005216420116230358,
+        "annualized_return": 0.007520257047491263,
+        "annualized_volatility": 0.1222867284720675,
+        "sharpe_zero_cash": 0.1224527469608117,
+        "max_drawdown": -0.10218676975003793,
+        "fills": 963,
+        "gross_notional": 3146607.108975,
+        "fees": 5571.589548769751,
+        "stock_dividend_tax": 311.38039999999995,
+        "mean_cash_fraction": 0.15323092423556633,
+        "mean_stock_fraction": 0.13618235607502693,
+        "mean_etf_fraction": 0.7105670514937812,
+        "closing_cash": 128411.27011623025,
+        "issues": 0,
+        "stock_rejections": 34,
+        "etf_orders": 36,
+        "nav_recon_max_abs": 2.3283064365386963e-10,
+        "optimizer_fallbacks": 0,
+        "mean_target_weights": {
+          "w_stock": 0.25,
+          "w_sp500": 0.25,
+          "w_gold": 0.25,
+          "w_bond": 0.25,
+          "w_cash": 0.0
+        }
+      },
+      "quick_check": {
+        "nav_error": 2.3283064365386963e-10,
+        "fee_error": 0.0,
+        "fills_match": true,
+        "cash_min": 78275.14471205891,
+        "issues": 0,
+        "pass": true
+      }
+    },
+    {
+      "policy": "RISK_B1",
+      "mode": "stress",
+      "metrics": {
+        "sessions": 175,
+        "starting_capital": 1000000.0,
+        "ending_nav": 1027809.6331345818,
+        "total_return": 0.027809633134581846,
+        "annualized_return": 0.04028961887964777,
+        "annualized_volatility": 0.10367438839777052,
+        "sharpe_zero_cash": 0.4327112774287941,
+        "max_drawdown": -0.08724081231166547,
+        "fills": 1060,
+        "gross_notional": 3709066.8874000004,
+        "fees": 12407.738656418,
+        "stock_dividend_tax": 381.8148990000001,
+        "mean_cash_fraction": 0.39908036827575133,
+        "mean_stock_fraction": 0.1585064681809693,
+        "mean_etf_fraction": 0.4424474234409528,
+        "closing_cash": 364950.4851345818,
+        "issues": 0,
+        "stock_rejections": 39,
+        "etf_orders": 36,
+        "nav_recon_max_abs": 1.1641532182693481e-10,
+        "optimizer_fallbacks": 0,
+        "mean_target_weights": {
+          "w_stock": 0.2745500405154941,
+          "w_sp500": 0.3198660965644535,
+          "w_gold": 0.15464140724384787,
+          "w_bond": 0.2509424556762046,
+          "w_cash": 1.2335811384723961e-17
+        }
+      },
+      "quick_check": {
+        "nav_error": 1.1641532182693481e-10,
+        "fee_error": 0.0,
+        "fills_match": true,
+        "cash_min": 322256.12159445276,
+        "issues": 0,
+        "pass": true
+      }
+    },
+    {
+      "policy": "FIXED25",
+      "mode": "stress",
+      "metrics": {
+        "sessions": 175,
+        "starting_capital": 1000000.0,
+        "ending_nav": 1002635.0960920817,
+        "total_return": 0.00263509609208179,
+        "annualized_return": 0.003796737065785427,
+        "annualized_volatility": 0.11933348857242168,
+        "sharpe_zero_cash": 0.09138656485956333,
+        "max_drawdown": -0.10177080422170537,
+        "fills": 957,
+        "gross_notional": 2896563.8559299996,
+        "fees": 10955.3478979186,
+        "stock_dividend_tax": 300.76040000000006,
+        "mean_cash_fraction": 0.39269471098580344,
+        "mean_stock_fraction": 0.1365219634192787,
+        "mean_etf_fraction": 0.4708164937229172,
+        "closing_cash": 363672.5380920817,
+        "issues": 0,
+        "stock_rejections": 35,
+        "etf_orders": 36,
+        "nav_recon_max_abs": 2.3283064365386963e-10,
+        "optimizer_fallbacks": 0,
+        "mean_target_weights": {
+          "w_stock": 0.25,
+          "w_sp500": 0.25,
+          "w_gold": 0.25,
+          "w_bond": 0.25,
+          "w_cash": 0.0
+        }
+      },
+      "quick_check": {
+        "nav_error": 2.3283064365386963e-10,
+        "fee_error": 0.0,
+        "fills_match": true,
+        "cash_min": 317103.37070435926,
+        "issues": 0,
+        "pass": true
+      }
+    }
+  ],
+  "initial_capital_each": 1000000,
+  "elapsed_seconds": 17.794265800002904,
+  "source_sha256": {
+    "data\\processed\\sealed_2026\\account_market_2026_candidate.parquet": "9680e1322f8a33ac3c75206c1eaa22a6b31d690ad73e213a4a0e0015a88ce139",
+    "results\\e00_2026_final_v1\\e00_predictions_2026.parquet": "98fd17c69549bbeddffb1ff6bfb9deace46a4042b145aff782c1803460a390b1",
+    "results\\sealed_2026_event_inputs_v1\\canonical_events.parquet": "739e3e7d96cbc00300a9d46829ad85652a14647833f66ffe3e6034652f3eb5bc",
+    "data\\processed\\multi_asset_etf_trial_v1\\four_etf_daily_prices.parquet": "90be0ed72eba52deff629f52f608d1d37409de7ceeaaa8158b89b8dd450c17c7",
+    "data\\processed\\multi_asset_etf_trial_v1\\corporate_actions.csv": "cd9b948f4b61c226378cba345b693cdb908007d17f65cd8ef78ccebfea6c3ca6",
+    "data\\processed\\multi_asset_handoff_v2\\daily_prices.parquet": "daa40b32b290dbf0a9ad16cf7c76d7e09b6ca17902c0c4017fd0ae2e8e04fd73"
+  },
+  "limits": [
+    "Fresh 2026 capital, not continuous holdings inherited from 2025.",
+    "Available through 2026-09-21, not full calendar year.",
+    "Already viewed market history; no refit or parameter selection.",
+    "Quick ledger/fee checks only; no independent full source-event/FIFO reconstruction.",
+    "ETF September bond distribution uses previously disclosed secondary evidence.",
+    "Formal submission archives were not modified."
+  ]
+}

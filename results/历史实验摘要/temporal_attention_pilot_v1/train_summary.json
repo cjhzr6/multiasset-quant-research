@@ -1,0 +1,156 @@
+{
+  "status": "TRAINED_AND_PREDICTED_BOUND_RUN",
+  "binding_path": "results\\temporal_attention_pilot_v1\\execution_binding.json",
+  "binding_sha256": "45b407c99ea81ed56bf73ef3efba15a4dc385bf10cc56e16fa3fd109b08452f4",
+  "input_sha256": {
+    "contract": "14e2ee00775fae1edf8c543d2de045b81ee347d1dba6a98fdf1e6cb68cbfcef5",
+    "runner": "8a120231fa236d25cdbb5f093124a4c2b9489999bb221aa0846242a419144c5a",
+    "data_manifest": "428148595bfda0d44fa305e1c9b006301636c60c3e14b114735991769267953f",
+    "data_preflight": "d88664232d27236baf267a3f4577eadd19f14215c8dd266232f04a0e9d085803",
+    "data_acceptance": "dcbc4558de984795aa35b0683c0bafcdcfabfc81b18fbaae5c392f41c2773161",
+    "scaler": "ec03803fb2cabe1203228dd26a3a5e4f3f839dceddd6d0d2c7afb18d96149c8b",
+    "keys": "71558e358c96e086a7519de9c2db6339ff0997ccf04d8b2f12e6e4bce9a63471",
+    "x_source": "d92a5d8ac4b43b6f5fadd84871132e588bda5568edac878d3755e3dc221864cd",
+    "window_rows": "bef1a7229527a0c4cf2f684c704296ec1dd63daafc15550e2cbf80562a90824f"
+  },
+  "scaler_sha256": "ec03803fb2cabe1203228dd26a3a5e4f3f839dceddd6d0d2c7afb18d96149c8b",
+  "fit_key_counts": {
+    "all_key_rows": 431229,
+    "train_fit_rows": 210756,
+    "validation_fit_rows": 70416,
+    "evaluation_prediction_rows": 143945,
+    "evaluation_sequence_ready_rows": 143265,
+    "evaluation_labels_accessed": false
+  },
+  "models": [
+    {
+      "model": "ATTN",
+      "seed": 11,
+      "checkpoint_path": "results\\temporal_attention_pilot_v1\\checkpoints\\ATTN_seed11.pt",
+      "checkpoint_sha256": "4fcb7ca252bfe93a3a97e9a86c66de1904752f86fc385908f58d5ad8256dd200",
+      "best_epoch": 4,
+      "actual_epochs": 6,
+      "best_validation_mean_daily_rankic": 0.07619990821635317,
+      "prediction_path": "results\\temporal_attention_pilot_v1\\predictions\\ATTN_seed11.npy",
+      "prediction_sha256": "b92149b43b5d931bdf21bfe092b0725c0e872ee5964a76db23da40d09a3dcb0e",
+      "prediction_dtype": "float32",
+      "prediction_shape": [
+        431229
+      ],
+      "populated_key_count": 143265,
+      "other_entries": "NaN",
+      "evaluation_labels_accessed": false,
+      "contract_sha256": "14e2ee00775fae1edf8c543d2de045b81ee347d1dba6a98fdf1e6cb68cbfcef5",
+      "binding_sha256": "45b407c99ea81ed56bf73ef3efba15a4dc385bf10cc56e16fa3fd109b08452f4",
+      "runner_sha256": "8a120231fa236d25cdbb5f093124a4c2b9489999bb221aa0846242a419144c5a"
+    },
+    {
+      "model": "ATTN",
+      "seed": 23,
+      "checkpoint_path": "results\\temporal_attention_pilot_v1\\checkpoints\\ATTN_seed23.pt",
+      "checkpoint_sha256": "7d9e1182a3a95a7d6cd1ad522fc1b20a31a988ec4e7bb0da7b176c46afb6671a",
+      "best_epoch": 2,
+      "actual_epochs": 4,
+      "best_validation_mean_daily_rankic": 0.08066309075252011,
+      "prediction_path": "results\\temporal_attention_pilot_v1\\predictions\\ATTN_seed23.npy",
+      "prediction_sha256": "d1798cb3d10fdba22eecee9c2449744e04b14182afbaf97720be3616fd5f1b65",
+      "prediction_dtype": "float32",
+      "prediction_shape": [
+        431229
+      ],
+      "populated_key_count": 143265,
+      "other_entries": "NaN",
+      "evaluation_labels_accessed": false,
+      "contract_sha256": "14e2ee00775fae1edf8c543d2de045b81ee347d1dba6a98fdf1e6cb68cbfcef5",
+      "binding_sha256": "45b407c99ea81ed56bf73ef3efba15a4dc385bf10cc56e16fa3fd109b08452f4",
+      "runner_sha256": "8a120231fa236d25cdbb5f093124a4c2b9489999bb221aa0846242a419144c5a"
+    },
+    {
+      "model": "ATTN",
+      "seed": 37,
+      "checkpoint_path": "results\\temporal_attention_pilot_v1\\checkpoints\\ATTN_seed37.pt",
+      "checkpoint_sha256": "26dcd14d5735c33d8e561d4d47134c81202a87f7b09465cee21f82cb572f72ea",
+      "best_epoch": 4,
+      "actual_epochs": 6,
+      "best_validation_mean_daily_rankic": 0.09567401584870797,
+      "prediction_path": "results\\temporal_attention_pilot_v1\\predictions\\ATTN_seed37.npy",
+      "prediction_sha256": "64881dc73e5ca161a7ac3f482a33a996bc5df984ac99c68ac822e1b7f983f5b8",
+      "prediction_dtype": "float32",
+      "prediction_shape": [
+        431229
+      ],
+      "populated_key_count": 143265,
+      "other_entries": "NaN",
+      "evaluation_labels_accessed": false,
+      "contract_sha256": "14e2ee00775fae1edf8c543d2de045b81ee347d1dba6a98fdf1e6cb68cbfcef5",
+      "binding_sha256": "45b407c99ea81ed56bf73ef3efba15a4dc385bf10cc56e16fa3fd109b08452f4",
+      "runner_sha256": "8a120231fa236d25cdbb5f093124a4c2b9489999bb221aa0846242a419144c5a"
+    },
+    {
+      "model": "MLP",
+      "seed": 11,
+      "checkpoint_path": "results\\temporal_attention_pilot_v1\\checkpoints\\MLP_seed11.pt",
+      "checkpoint_sha256": "25e7aecf5b29010416765980868d8e4dc59bd65bca02340d080c3ea9066f9223",
+      "best_epoch": 3,
+      "actual_epochs": 5,
+      "best_validation_mean_daily_rankic": 0.08040889259992523,
+      "prediction_path": "results\\temporal_attention_pilot_v1\\predictions\\MLP_seed11.npy",
+      "prediction_sha256": "b3536cb53042e942f33bf4813c1011661e51bc3f301b50ed2bdadfcadc65f113",
+      "prediction_dtype": "float32",
+      "prediction_shape": [
+        431229
+      ],
+      "populated_key_count": 143265,
+      "other_entries": "NaN",
+      "evaluation_labels_accessed": false,
+      "contract_sha256": "14e2ee00775fae1edf8c543d2de045b81ee347d1dba6a98fdf1e6cb68cbfcef5",
+      "binding_sha256": "45b407c99ea81ed56bf73ef3efba15a4dc385bf10cc56e16fa3fd109b08452f4",
+      "runner_sha256": "8a120231fa236d25cdbb5f093124a4c2b9489999bb221aa0846242a419144c5a"
+    },
+    {
+      "model": "MLP",
+      "seed": 23,
+      "checkpoint_path": "results\\temporal_attention_pilot_v1\\checkpoints\\MLP_seed23.pt",
+      "checkpoint_sha256": "14726b79136d46fc3ab483f3b76e001245996bbb0fdbfa4cb82f814fbfbb3cfb",
+      "best_epoch": 2,
+      "actual_epochs": 4,
+      "best_validation_mean_daily_rankic": 0.0785850072598163,
+      "prediction_path": "results\\temporal_attention_pilot_v1\\predictions\\MLP_seed23.npy",
+      "prediction_sha256": "573c7248021b6e632faf16bb694bb159fec384c868a676bf54c932a38e8be9e8",
+      "prediction_dtype": "float32",
+      "prediction_shape": [
+        431229
+      ],
+      "populated_key_count": 143265,
+      "other_entries": "NaN",
+      "evaluation_labels_accessed": false,
+      "contract_sha256": "14e2ee00775fae1edf8c543d2de045b81ee347d1dba6a98fdf1e6cb68cbfcef5",
+      "binding_sha256": "45b407c99ea81ed56bf73ef3efba15a4dc385bf10cc56e16fa3fd109b08452f4",
+      "runner_sha256": "8a120231fa236d25cdbb5f093124a4c2b9489999bb221aa0846242a419144c5a"
+    },
+    {
+      "model": "MLP",
+      "seed": 37,
+      "checkpoint_path": "results\\temporal_attention_pilot_v1\\checkpoints\\MLP_seed37.pt",
+      "checkpoint_sha256": "fe77f78794c143242fe56524871bd99a0ccd1cce9006f1b7151928d23cc7391f",
+      "best_epoch": 4,
+      "actual_epochs": 6,
+      "best_validation_mean_daily_rankic": 0.09701596754740925,
+      "prediction_path": "results\\temporal_attention_pilot_v1\\predictions\\MLP_seed37.npy",
+      "prediction_sha256": "14f79148c9753f7410ee916ba158733124edf3f61cdc6fbf92921be722972f1f",
+      "prediction_dtype": "float32",
+      "prediction_shape": [
+        431229
+      ],
+      "populated_key_count": 143265,
+      "other_entries": "NaN",
+      "evaluation_labels_accessed": false,
+      "contract_sha256": "14e2ee00775fae1edf8c543d2de045b81ee347d1dba6a98fdf1e6cb68cbfcef5",
+      "binding_sha256": "45b407c99ea81ed56bf73ef3efba15a4dc385bf10cc56e16fa3fd109b08452f4",
+      "runner_sha256": "8a120231fa236d25cdbb5f093124a4c2b9489999bb221aa0846242a419144c5a"
+    }
+  ],
+  "evaluation_labels_accessed": false,
+  "account_runs": 0,
+  "financial_results": "NOT_EVALUATED"
+}

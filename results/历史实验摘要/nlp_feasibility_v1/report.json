@@ -1,0 +1,217 @@
+{
+  "status": "BLOCKED_BEFORE_NLP_MODELING",
+  "as_of": "2026-10-07",
+  "scope": "Existing formal earnings_forecast deliveries only; historical records with InfoPublDate < 2026-01-01. No strategy training, backtest, model downloads, new data request, or 2026 feature/outcome read.",
+  "deliveries": [
+    {
+      "path": "邮箱数据/正式/REQ-ZXB-20261006-463d599dec2b4838/REQ-ZXB-20261006-463d599dec2b4838/earnings_forecast/part-00000.parquet",
+      "sha256": "55a4864261e4aef50b0ec9d2608ced9cc082874b1156485adf0b6ac7e4d69b6d",
+      "rows_loaded_pre_2026": 5168,
+      "pub_date_min": "2022-01-01",
+      "pub_date_max": "2025-12-31",
+      "rows_by_publication_year": {
+        "2022": 1491,
+        "2023": 1384,
+        "2024": 1180,
+        "2025": 1113
+      },
+      "rows_in_candidate_splits": {
+        "development_2022_2023": 2875,
+        "validation_2024_2025": 2293
+      },
+      "distinct_source_company_codes": 405,
+      "missing_company_code": 0,
+      "missing_or_duplicate_ids": {
+        "ID_missing": 0,
+        "ID_duplicate_rows": 0,
+        "JSID_missing": 0,
+        "JSID_duplicate_rows": 0
+      },
+      "text_fields": {
+        "ResultStatement": {
+          "nonempty_rows": 5168,
+          "nonempty_rate": 1.0,
+          "median_chars_nonempty": 24.0,
+          "p10_chars_nonempty": 13.0,
+          "p90_chars_nonempty": 30.0,
+          "distinct_nonempty_texts": 5013
+        },
+        "ForcastContent": {
+          "nonempty_rows": 5168,
+          "nonempty_rate": 1.0,
+          "median_chars_nonempty": 318.5,
+          "p10_chars_nonempty": 147.70000000000005,
+          "p90_chars_nonempty": 721.0,
+          "distinct_nonempty_texts": 4804
+        },
+        "ForcastReason": {
+          "nonempty_rows": 0,
+          "nonempty_rate": 0.0,
+          "median_chars_nonempty": null,
+          "p10_chars_nonempty": null,
+          "p90_chars_nonempty": null,
+          "distinct_nonempty_texts": 0
+        }
+      },
+      "point_in_time_fields": {
+        "InfoPublDate_missing": 0,
+        "EndDate_missing": 0,
+        "InsertTime_missing": 0,
+        "InsertTime_after_publication_date_by_more_than_one_day": 389,
+        "InsertTime_lag_days_p50": -1.0,
+        "XGRQ_at_or_after_2026_count": 3613,
+        "same_company_and_report_period_repeated_rows": 3205,
+        "unique_IDs_do_not_prove_revision_history": true
+      }
+    },
+    {
+      "path": "邮箱数据/正式/REQ-ZXB-20261006-ecfd5c12ca4a4135/REQ-ZXB-20261006-ecfd5c12ca4a4135/earnings_forecast/part-00000.parquet",
+      "sha256": "7a5a9b8e10a2d3eedd21bbd42ceee2bb82ab25ffbf2c52cd976d44d49c3104dd",
+      "rows_loaded_pre_2026": 2113,
+      "pub_date_min": "2022-01-04",
+      "pub_date_max": "2025-12-31",
+      "rows_by_publication_year": {
+        "2022": 689,
+        "2023": 552,
+        "2024": 496,
+        "2025": 376
+      },
+      "rows_in_candidate_splits": {
+        "development_2022_2023": 1241,
+        "validation_2024_2025": 872
+      },
+      "distinct_source_company_codes": 123,
+      "missing_company_code": 0,
+      "missing_or_duplicate_ids": {
+        "ID_missing": 0,
+        "ID_duplicate_rows": 0,
+        "JSID_missing": 0,
+        "JSID_duplicate_rows": 0
+      },
+      "text_fields": {
+        "ResultStatement": {
+          "nonempty_rows": 2113,
+          "nonempty_rate": 1.0,
+          "median_chars_nonempty": 26.0,
+          "p10_chars_nonempty": 13.0,
+          "p90_chars_nonempty": 30.0,
+          "distinct_nonempty_texts": 2059
+        },
+        "ForcastContent": {
+          "nonempty_rows": 2113,
+          "nonempty_rate": 1.0,
+          "median_chars_nonempty": 356.0,
+          "p10_chars_nonempty": 208.20000000000002,
+          "p90_chars_nonempty": 903.7999999999997,
+          "distinct_nonempty_texts": 1947
+        },
+        "ForcastReason": {
+          "nonempty_rows": 0,
+          "nonempty_rate": 0.0,
+          "median_chars_nonempty": null,
+          "p10_chars_nonempty": null,
+          "p90_chars_nonempty": null,
+          "distinct_nonempty_texts": 0
+        }
+      },
+      "point_in_time_fields": {
+        "InfoPublDate_missing": 0,
+        "EndDate_missing": 0,
+        "InsertTime_missing": 0,
+        "InsertTime_after_publication_date_by_more_than_one_day": 248,
+        "InsertTime_lag_days_p50": -1.0,
+        "XGRQ_at_or_after_2026_count": 1400,
+        "same_company_and_report_period_repeated_rows": 1510,
+        "unique_IDs_do_not_prove_revision_history": true
+      }
+    }
+  ],
+  "combined_pre_2026": {
+    "rows": 7281,
+    "publication_span": [
+      "2022-01-01",
+      "2025-12-31"
+    ],
+    "development_rows_2022_2023": 4116,
+    "validation_rows_2024_2025": 3165,
+    "coverage_2020_2021": "No records in these deliveries; records begin 2022.",
+    "distinct_source_company_codes_union": 528,
+    "source_company_code_overlap_between_deliveries": 0
+  },
+  "entity_mapping": {
+    "security_master_rows": 7850,
+    "security_master_columns": [
+      "security_id",
+      "symbol",
+      "market",
+      "security_type",
+      "security_name",
+      "listed_date",
+      "listed_state",
+      "updated_at"
+    ],
+    "security_master_has_CompanyCode_field": false,
+    "security_master_key": "security_id; canonical security_id and symbol, no CompanyCode field",
+    "target_mapping_rows": 637,
+    "target_mapping_company_code_status_counts": {
+      "NOT_VERIFIED_DO_NOT_EQUATE_TO_INNER_CODE": 637
+    },
+    "accepted_authoritative_CompanyCode_to_symbol_links": 0,
+    "decision": "BLOCKED. Do not join CompanyCode to InnerCode/security_id by numeric coincidence or SEC suffix. Require an explicit provider/competition mapping field and, if IDs can change, effective validity dates."
+  },
+  "time_and_revision": {
+    "InfoPublDate": "Present for every loaded pre-2026 row and defines the delivery filter; date-only, no intraday release time.",
+    "InsertTime": "Present, but it is not established as first-publication time; many records are later than InfoPublDate.",
+    "ID_JSID": "Unique in each extracted historical slice, but no linked previous/superseded version chain is provided; uniqueness is not proof that the file is first-version-only.",
+    "XGRQ": "The competition dictionary labels this field as modification date; most historical slice rows have XGRQ in 2026. It cannot be used as the historical signal time or as proof of a 2025-known revision.",
+    "execution_rule_if_data_is_later_approved": "Date-only event time must be applied no earlier than the next eligible trading decision after InfoPublDate; never use InsertTime/XGRQ until field semantics and version chronology are formally confirmed."
+  },
+  "feasibility_decision": {
+    "is_general_news_sentiment": false,
+    "what_it_is": "Sparse earnings-forecast event text, not a broad company-news/sentiment corpus.",
+    "text_availability": "ResultStatement and ForcastContent are nonempty in the inspected pre-2026 extracts; ForcastReason is a null-typed empty field. Check the per-delivery character/unique-text distributions above.",
+    "sample_window": "Only 2022-2025: part of the 2020-2023 development window and all of 2024-2025 validation; no 2020-2021 coverage.",
+    "modeling_gate": "Do not train or add features until entity mapping and point-in-time/revision lineage are accepted. Current rows can justify only a bounded feasibility review, not an NLP alpha claim.",
+    "evaluation_window_status": "2024-2025 has already been used for prior strategy comparisons and candidate selection; any new NLP result on it is exploratory, not an untouched final out-of-sample test. 2026 remains sealed and may be opened once only after a fully frozen candidate and data/PIT gates pass."
+  },
+  "minimum_missing_inputs": [
+    "Authoritative CompanyCode-to-symbol/security_id mapping that covers the delivered rows, with temporal validity or evidence identifiers are immutable.",
+    "First publication and revision lineage (stable event ID, version/supersedes relation, publication timestamp or conservative date convention, and field semantics for InsertTime/XGRQ).",
+    "A decision on whether sparse forecast text is the intended NLP scope; it cannot stand in for general news sentiment."
+  ],
+  "smallest_valid_next_step_after_gate": "Once mapping and version lineage are accepted, first build a linked event-to-stock-date table and re-evaluate usable sample counts. If sufficient, freeze one text-only baseline (e.g. word/character TF-IDF or fixed dictionary features) with vectorizer/feature selection fit only inside each training fold; signal at the next eligible trading decision after publication date. Keep unavailable pre-2022 rows genuinely missing. Treat 2024-2025 comparisons as exploratory because that period has already been used for strategy selection; reserve 2026 for the single final evaluation only after the candidate and account inputs are frozen and the PIT gate passes. A modern pretrained encoder is not historically available merely because it can be applied retrospectively.",
+  "source_files": {
+    "邮箱数据/正式/REQ-ZXB-20261006-463d599dec2b4838/REQ-ZXB-20261006-463d599dec2b4838/earnings_forecast/part-00000.parquet": {
+      "sha256": "55a4864261e4aef50b0ec9d2608ced9cc082874b1156485adf0b6ac7e4d69b6d",
+      "bytes": 1369771
+    },
+    "邮箱数据/正式/REQ-ZXB-20261006-ecfd5c12ca4a4135/REQ-ZXB-20261006-ecfd5c12ca4a4135/earnings_forecast/part-00000.parquet": {
+      "sha256": "7a5a9b8e10a2d3eedd21bbd42ceee2bb82ab25ffbf2c52cd976d44d49c3104dd",
+      "bytes": 569490
+    },
+    "邮箱数据/测试/REQ-ZXB-20261006-504ff8f554c14d03/REQ-ZXB-20261006-504ff8f554c14d03/security_master/part-00000.parquet": {
+      "sha256": "18c5c4f023e6bcc7e5069aac1a5a84080387aea5c7c0623bc0ebd8da09073031",
+      "bytes": 216111
+    },
+    "data/processed/competition/REQ-ZXB-20261006-504ff8f554c14d03/target_security_mapping.parquet": {
+      "sha256": "5826cc93fd87713db25ddfa6217b44c2c3720ce6c8272bbddb426847b1f49acd",
+      "bytes": 28552
+    },
+    "规划/项目数据总清单与下载安排.md": {
+      "sha256": "f6a1b7ea1f72bebf68433df0a22be68ffc8e1cfe11fe6161a6652c21aabdb747",
+      "bytes": 14947
+    },
+    "results/project_data_inventory.json": {
+      "sha256": "e9cbb6db93328ff663adbc9a81cf9ae2a8a745805e4f4e774bdbf651d365cfef",
+      "bytes": 1132078
+    },
+    "邮箱数据/正式/REQ-ZXB-20261006-463d599dec2b4838/REQ-ZXB-20261006-463d599dec2b4838/data_dictionary.csv": {
+      "sha256": "2849d0b6373c549aaf60acbe6378fc79c4b27d900234c26bb87a99e239de70de",
+      "bytes": 702120
+    }
+  },
+  "builder": {
+    "path": "scripts/audit_nlp_feasibility_v1.py",
+    "sha256": "7dc0883d24e28b29c8d0bde10aae6bda5e1cd5e13b0852a8d024d8ebb6aab717"
+  }
+}

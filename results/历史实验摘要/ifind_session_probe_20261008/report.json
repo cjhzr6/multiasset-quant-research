@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-08T16:38:14.860527+08:00",
+  "status": "CONNECTED_BUT_NEWS_QUOTA_EXHAUSTED",
+  "browser_control": "CHROME_CDP_REMOTE_CANVAS_AND_CITRIX_CLIPBOARD_CONFIRMED",
+  "initial_errors_corrected": [
+    "404 wrong base path",
+    "401 incomplete copied credential"
+  ],
+  "private_credential_outside_project": true,
+  "tools_list_sha256": "c62a999a4de1a64e3385017dab497079c5c957454324126f30fcf20b36f9bae3",
+  "news_tools_available": [
+    "search_notice",
+    "search_news",
+    "search_trending_news"
+  ],
+  "news_tool_scope": "relevance-ranked fragments, not exhaustive news body export",
+  "probes": [
+    {
+      "path": "results\\ifind_session_probe_20261008\\2024-07-15.json",
+      "sha256": "d64bd294afa8d64a1381f652fd9e74006401ae730c655e0a30e13eb4f6052d9c",
+      "bytes": 698,
+      "status": "SUPPLIER_QUOTA_EXHAUSTED_NO_NEWS_ROWS"
+    },
+    {
+      "path": "results\\ifind_session_probe_20261008\\2026-07-15.json",
+      "sha256": "1caae21e977f709ec957258fc0cae6d3f6a74ac88786cc86f70cb6cca36508ad",
+      "bytes": 698,
+      "status": "SUPPLIER_QUOTA_EXHAUSTED_NO_NEWS_ROWS"
+    }
+  ],
+  "supplier_message": "当前账户MCP请求用量已耗尽",
+  "new_news_rows": 0,
+  "user_authorizes_2026_news_download": true,
+  "model_fits": 0,
+  "sealed_2026_returns_accessed": false,
+  "next_step": "inspect terminal historical export separately; no further MCP news requests while quota exhausted",
+  "terminal_export_probe": {
+    "date": "2026-04-15",
+    "view": "市场要闻",
+    "visible_export_filename": "市场要闻.xls",
+    "displayed_size": "6.16KB",
+    "download_clicked": true,
+    "local_transfer_verified": false,
+    "content_verified": false
+  },
+  "usage_at_stage_handoff": {
+    "five_hour_used_percent": 85,
+    "remaining_percent": 15,
+    "resets_at_unix": 1791460494
+  }
+}

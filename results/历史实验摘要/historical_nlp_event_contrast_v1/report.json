@@ -1,0 +1,41 @@
+{
+  "created_at_local": "2026-10-08",
+  "models_fitted": 0,
+  "metrics": null,
+  "sealed_2026_access": false,
+  "strategy_upgrade_authorized": false,
+  "status": "STOP_INSUFFICIENT_SUPPORT",
+  "stop_reason": "fixed minimum support failed; no fitting or resplitting",
+  "source_hashes": {
+    "configs/historical_nlp_completion_v1.json": "28c52d6a8900286e1006d53fe3231bb50aabf89ce816272e7216786038f26bfa",
+    "results/historical_nlp_originals_v1/report.json": "6b7ca0115d5e20eb8fed324105341926c198a0f4e831f93b48be8584ac053675",
+    "results/historical_nlp_quality_review_v1/report.json": "f4fc3b073ba381772daddc0557ceafc5cb78d309bf12aa7d6db4912170ff4313",
+    "results/historical_nlp_quality_review_v1/accepted_events.csv": "18572d1cb27c45ada4a62107d660a527a092caa3b36f213cf484755f7e35a67f",
+    "results/historical_nlp_event_extraction_v1/report.json": "0b81baafc8d96751ca1f9dcb4419dc5131ff369e7ee845e25c59ce32a659313a",
+    "results/historical_nlp_event_extraction_v1/events.csv": "df342d70174bd304d73d0c564946090e8db33daf66c12ecaa3a4f3e43738e5f5"
+  },
+  "accepted_source_rows": 49,
+  "new_event_rows": 72,
+  "support": {
+    "train": {
+      "distinct_issuer_dates": 16,
+      "effective_dates": 14,
+      "symbols": 14
+    },
+    "test": {
+      "distinct_issuer_dates": 10,
+      "effective_dates": 7,
+      "symbols": 8
+    }
+  },
+  "unsupported_events": {},
+  "rejected_event_rows": {
+    "not_new_event_or_scheduled_announcement": 57
+  },
+  "minimum_support_per_split": {
+    "distinct_issuer_dates": 30,
+    "effective_dates": 10
+  },
+  "support_gate": false,
+  "fit_requested": false
+}

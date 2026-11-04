@@ -1,0 +1,55 @@
+{
+  "status": "PASS_FULL_OUTPUT_INDEPENDENT_AUDIT",
+  "months": 23,
+  "fit_markers": 69,
+  "marker_attempt_ordinals": [
+    6,
+    74
+  ],
+  "monthly_rows": {
+    "2024-02-01": 4500,
+    "2024-03-01": 6292,
+    "2024-04-01": 5980,
+    "2024-05-01": 5980,
+    "2024-06-01": 5683,
+    "2024-07-01": 6891,
+    "2024-08-01": 6571,
+    "2024-09-01": 5591,
+    "2024-10-01": 5292,
+    "2024-11-01": 6193,
+    "2024-12-01": 6518,
+    "2025-01-01": 5342,
+    "2025-02-01": 5316,
+    "2025-03-01": 6148,
+    "2025-04-01": 6190,
+    "2025-05-01": 5625,
+    "2025-06-01": 5916,
+    "2025-07-01": 6820,
+    "2025-08-01": 6196,
+    "2025-09-01": 6494,
+    "2025-10-01": 5048,
+    "2025-11-01": 5927,
+    "2025-12-01": 6832
+  },
+  "prediction_rows": 143945,
+  "baseline_key_count_equal": true,
+  "duplicate_keys": 0,
+  "score_probability_finite": true,
+  "qsum_max_abs_error": 1.6653345369377348e-15,
+  "training_maturity_pass": true,
+  "rg_fallback_max": 0.0,
+  "sq_cold_fraction_by_year": {
+    "2024": {
+      "rows": 72091,
+      "sequence_cold_fraction": 0.0009848663494749692
+    },
+    "2025": {
+      "rows": 71854,
+      "sequence_cold_fraction": 0.003743702507863167
+    }
+  },
+  "sealed_2026_access": false,
+  "accounts": 0,
+  "prediction_sha256": "022d0cc4686df7147c25ffb64fdcb9d3ae7ea2248fc66fa1de68fe5fb1c342c7",
+  "fit_attempt_sha256_all_present": true
+}

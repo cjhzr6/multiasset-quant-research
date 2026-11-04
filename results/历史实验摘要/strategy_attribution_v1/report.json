@@ -1,0 +1,134 @@
+{
+  "status": "COMPLETE_ATTRIBUTION_WITH_LIMITATIONS",
+  "scope": "2024-01-02 through 2025-12-31 only; 2026 outcomes excluded",
+  "source_report": "results/joint_screen_accounts_monthly_v1/report.json",
+  "models": [
+    "B00",
+    "B01",
+    "E00",
+    "E10",
+    "Q_STATE_FIN",
+    "QLIB_JOINT",
+    "QLIB_MONTHLY"
+  ],
+  "checks": {
+    "B00": {
+      "max_eod_market_value_reconstruction_error": 1.1641532182693481e-10,
+      "max_daily_nav_identity_residual": 8.086544767138548e-10,
+      "daily_rows": 485,
+      "unresolved_account_issues": 0,
+      "event_rows": 1124,
+      "identity_pass": true
+    },
+    "B01": {
+      "max_eod_market_value_reconstruction_error": 2.3283064365386963e-10,
+      "max_daily_nav_identity_residual": 6.239133654162288e-10,
+      "daily_rows": 485,
+      "unresolved_account_issues": 0,
+      "event_rows": 456,
+      "identity_pass": true
+    },
+    "E00": {
+      "max_eod_market_value_reconstruction_error": 2.3283064365386963e-10,
+      "max_daily_nav_identity_residual": 6.475602276623249e-10,
+      "daily_rows": 485,
+      "unresolved_account_issues": 0,
+      "event_rows": 465,
+      "identity_pass": true
+    },
+    "E10": {
+      "max_eod_market_value_reconstruction_error": 2.3283064365386963e-10,
+      "max_daily_nav_identity_residual": 9.677023626863956e-10,
+      "daily_rows": 485,
+      "unresolved_account_issues": 0,
+      "event_rows": 505,
+      "identity_pass": true
+    },
+    "Q_STATE_FIN": {
+      "max_eod_market_value_reconstruction_error": 2.3283064365386963e-10,
+      "max_daily_nav_identity_residual": 6.248228601180017e-10,
+      "daily_rows": 485,
+      "unresolved_account_issues": 0,
+      "event_rows": 496,
+      "identity_pass": true
+    },
+    "QLIB_JOINT": {
+      "max_eod_market_value_reconstruction_error": 2.3283064365386963e-10,
+      "max_daily_nav_identity_residual": 7.130438461899757e-10,
+      "daily_rows": 485,
+      "unresolved_account_issues": 0,
+      "event_rows": 486,
+      "identity_pass": true
+    },
+    "QLIB_MONTHLY": {
+      "max_eod_market_value_reconstruction_error": 2.3283064365386963e-10,
+      "max_daily_nav_identity_residual": 5.911715561524034e-10,
+      "daily_rows": 485,
+      "unresolved_account_issues": 0,
+      "event_rows": 509,
+      "identity_pass": true
+    }
+  },
+  "all_reconstructed_identities_pass": true,
+  "factor_style_names": {
+    "ret60": "60日收益动量代理",
+    "ret120": "120日收益动量代理",
+    "momentum20_skip5": "跳过最近5日的中期动量",
+    "vol20": "20日波动率",
+    "beta60": "60日指数beta",
+    "log_amount20": "近20日成交额的对数（规模/流动性代理，不是市值）",
+    "fin_annual_roe": "年报ROE（版本/单位仍待完整审计）",
+    "fin_annual_revenue_growth": "年报营收同比（点时可得性仍待完整审计）",
+    "fin_annual_profit_growth": "年报净利同比（异常分母与版本仍待审计）",
+    "fin_earnings_yield": "正PE倒数（估值代理）",
+    "fin_sales_yield": "PS倒数（估值代理）",
+    "fin_annual_leverage": "年报负债率（定义仍待完整审计）"
+  },
+  "limitations": [
+    "无历史行业分类：未计算或回填行业暴露。",
+    "size仅用20日成交额代理，不能称市值/市值风格暴露。",
+    "财务字段来自已有联合特征面板，表现为模型当时输入；供应商原始版本、行业适用性和修订审计未完成，归因是描述性持仓暴露，不是财务因果贡献。",
+    "逐股税后归因包含已实现税，不按证券分摊每日总递延估税负债；总税负变化单列，逐股贡献因此不等于完整个股税后利润。",
+    "模拟净值口径和日线开盘成交假设沿用已审账户；不能推断实际券商成交或部署收益。",
+    "2024—2025为已查看的验证选择期，不能作为封存样本或样本外最终证明。"
+  ],
+  "input_sha256": {
+    "results\\joint_screen_accounts_monthly_v1\\report.json": "781df90f8842a3fba0b5c33c5094ab9b9c7d48699ffe5e59b05521ed923a902d",
+    "results\\joint_screen_accounts_monthly_v1\\config.json": "32d21db841a6328ff20dca79ebe7f3eca32136065f0d94ebf937b46d4e488248",
+    "results\\joint_screen_accounts_monthly_v1\\reconciled_corporate_events.parquet": "fde9e49ebb2a780111567e515aed27f22ddea2b806f9263f47714fb5a385cf49",
+    "data\\processed\\account_market_2020_2025.parquet": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "results\\qlib_joint_screen_v1\\joint_panel_pre2026.parquet": "cc48c5b97664e56d76657fc439e36cd41af910e29db6a4d57503237cd162f53f",
+    "results\\rolling_signal_v1\\predictions_2020_2025.parquet": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "results\\joint_screen_accounts_monthly_v1\\B00_daily.csv": "35feb3ca3698ea2f966ab365cb2280ad2c1b3a93d8bcacceb484c1f1e107cbff",
+    "results\\joint_screen_accounts_monthly_v1\\B00_trades.csv": "ebd203bb7dbd9371a24821c23d670b325bcb5b986069ff31c351aab3f908748a",
+    "results\\joint_screen_accounts_monthly_v1\\B00_corporate_ledger.csv": "4aded0729396e39069feed31d4029a49474db7cfaefd1528bc7cf21c5e69ad76",
+    "results\\joint_screen_accounts_monthly_v1\\B00_issues.csv": "dea3ecf6c4848a37e577b2aa8c40ed40fb96cdd31a38c18fa902c8bf828f1cef",
+    "results\\joint_screen_accounts_monthly_v1\\B01_daily.csv": "3616e03604a3dbc14aa6a66a96e01d40023a17dd7c08c7e242a3ad68702be886",
+    "results\\joint_screen_accounts_monthly_v1\\B01_trades.csv": "30d1b7e12b304f68cb0bfe9b253c1d81f9bbf7afe4abe136d1280253311f5e5f",
+    "results\\joint_screen_accounts_monthly_v1\\B01_corporate_ledger.csv": "e8bbbf7d6113d138015d9aa1bf433db42ac284a746269f0eed53c46228c66590",
+    "results\\joint_screen_accounts_monthly_v1\\B01_issues.csv": "dea3ecf6c4848a37e577b2aa8c40ed40fb96cdd31a38c18fa902c8bf828f1cef",
+    "results\\joint_screen_accounts_monthly_v1\\E00_daily.csv": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd",
+    "results\\joint_screen_accounts_monthly_v1\\E00_trades.csv": "c0160920c3b18076db71e30f361d4015227bad8640ee02f0367fef45e5d17cb3",
+    "results\\joint_screen_accounts_monthly_v1\\E00_corporate_ledger.csv": "062cbd4375a92a54982438b8fe422f1c3b3a633600270aa52f0b562a4c3b73bb",
+    "results\\joint_screen_accounts_monthly_v1\\E00_issues.csv": "dea3ecf6c4848a37e577b2aa8c40ed40fb96cdd31a38c18fa902c8bf828f1cef",
+    "results\\joint_screen_accounts_monthly_v1\\E10_daily.csv": "6ab1def22dc47b1ea676d96400512f53db51b628d935c6ba4a1b6feadd18d37a",
+    "results\\joint_screen_accounts_monthly_v1\\E10_trades.csv": "2f217e791a761019821b742d49ba712c7b2bab746aa254e36f9c7e644aefd48e",
+    "results\\joint_screen_accounts_monthly_v1\\E10_corporate_ledger.csv": "6e6013bd69a594c6a2ce6d28d569a97e590c4f5a6c6f3cc4d570f92ade49eacb",
+    "results\\joint_screen_accounts_monthly_v1\\E10_issues.csv": "dea3ecf6c4848a37e577b2aa8c40ed40fb96cdd31a38c18fa902c8bf828f1cef",
+    "results\\joint_screen_accounts_monthly_v1\\Q_STATE_FIN_daily.csv": "27d806e408357cec8b24f336d6ab0b698fe1c223e8b8315028a0245dcecb045c",
+    "results\\joint_screen_accounts_monthly_v1\\Q_STATE_FIN_trades.csv": "904b3dab207c3edab4b863ff92ada74c71dcde0017b1ff35694d79cf26298052",
+    "results\\joint_screen_accounts_monthly_v1\\Q_STATE_FIN_corporate_ledger.csv": "0baa46e610a229e74bbc4eacdee822db93f731929ece9220b2a31592a4a587d9",
+    "results\\joint_screen_accounts_monthly_v1\\Q_STATE_FIN_issues.csv": "dea3ecf6c4848a37e577b2aa8c40ed40fb96cdd31a38c18fa902c8bf828f1cef",
+    "results\\joint_screen_accounts_monthly_v1\\QLIB_JOINT_daily.csv": "d4496ce00aa87efed949a93e61fd9f492ba47e005ea91fd9379d7ade3b41e772",
+    "results\\joint_screen_accounts_monthly_v1\\QLIB_JOINT_trades.csv": "15f113cee9f603e1d79f713c5a6cdf7c0cf286321bc2448c06336d8e6d59718a",
+    "results\\joint_screen_accounts_monthly_v1\\QLIB_JOINT_corporate_ledger.csv": "ed83a523fe29856bbd01a8a7c642bc44798395a9aa1a51531300f9f9133c0122",
+    "results\\joint_screen_accounts_monthly_v1\\QLIB_JOINT_issues.csv": "dea3ecf6c4848a37e577b2aa8c40ed40fb96cdd31a38c18fa902c8bf828f1cef",
+    "results\\joint_screen_accounts_monthly_v1\\QLIB_MONTHLY_daily.csv": "1cf1b7fe20af5a8b4aa2eea05de4e2a5c109a760548a0c35a1117cac9bacfa7f",
+    "results\\joint_screen_accounts_monthly_v1\\QLIB_MONTHLY_trades.csv": "c1c37d6e02549e5a61d47e9035743243463202bbe40940dd0569a1e95c44769e",
+    "results\\joint_screen_accounts_monthly_v1\\QLIB_MONTHLY_corporate_ledger.csv": "707f7c11da2c3afec2f90a967e79f6014d9581f64c97f59b01c890e07a4d3492",
+    "results\\joint_screen_accounts_monthly_v1\\QLIB_MONTHLY_issues.csv": "dea3ecf6c4848a37e577b2aa8c40ed40fb96cdd31a38c18fa902c8bf828f1cef"
+  },
+  "concentration_metric_revision": "Recomputed on annual accumulated net contribution per symbol; original metric mistakenly summed daily positive/negative stock contributions. Other outputs/input hashes unchanged.",
+  "analysis_script_sha256": "6b0738a10d030f7c717414d968136a4f5bd1058e3492fb81953899a9f83fa6c3",
+  "prediction_diagnostic_scope": "E00/B01 only, 2024-2025 signal and matured labels; label_end_date < 2026-01-01. No 2026 outcomes."
+}

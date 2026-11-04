@@ -1,0 +1,99 @@
+{
+  "status": "ECONOMIC_RUN_COMPLETE_REQUIRES_INDEPENDENT_ACCEPTANCE",
+  "accounts": {
+    "C01_standard": {
+      "total_return": 0.3005103699999998,
+      "annualized_return": 0.17164458907474045,
+      "sharpe_zero_cash": 1.2762744327381155,
+      "volatility": 0.008246121150760387,
+      "max_drawdown": -0.1284095237706222,
+      "final_nav": 1300510.3699999999,
+      "orders": 41,
+      "fills": 30,
+      "rejected_orders": 11,
+      "commission": 465.55,
+      "slippage": 885.7000000000005
+    },
+    "C01_stress": {
+      "total_return": 0.2970054400000002,
+      "annualized_return": 0.16973992531914206,
+      "sharpe_zero_cash": 1.259156198811156,
+      "volatility": 0.008280355929108474,
+      "max_drawdown": -0.1285723111194127,
+      "final_nav": 1297005.4400000002,
+      "orders": 44,
+      "fills": 24,
+      "rejected_orders": 20,
+      "commission": 846.3900000000001,
+      "slippage": 1501.500000000033
+    },
+    "S02_standard": {
+      "total_return": 0.23690399199999979,
+      "annualized_return": 0.13675447908034588,
+      "sharpe_zero_cash": 1.2555774193991824,
+      "volatility": 0.006718810368556343,
+      "max_drawdown": -0.10980867413398598,
+      "final_nav": 1236903.9919999999,
+      "orders": 37,
+      "fills": 29,
+      "rejected_orders": 8,
+      "commission": 1479.8300000000002,
+      "slippage": 2985.5960000001087
+    },
+    "S02_stress": {
+      "total_return": 0.23087482400000003,
+      "annualized_return": 0.13341073194916686,
+      "sharpe_zero_cash": 1.2290757760816406,
+      "volatility": 0.006712031288354026,
+      "max_drawdown": -0.10984669639910949,
+      "final_nav": 1230874.824,
+      "orders": 46,
+      "fills": 26,
+      "rejected_orders": 20,
+      "commission": 2750.4199999999996,
+      "slippage": 5005.492000000057
+    }
+  },
+  "binding": "研究档案\\results\\multi_asset_handoff_v2\\coordinator_economic_binding.json",
+  "input_hashes": {
+    "contract_sha256": "98dd5e0e5326c8dcca8bf2229bfee076e3f62bccb114df29beea30796c09e6ec",
+    "manifest_sha256": "92784b7ba32d68662f8334da07f2b7b8e4c315bc2b819afce08979183f980e46",
+    "prices_sha256": "aaefab11b6f8a42f25c365b5ba1e544cd2738fa686c2d9863536c3a8bb778273",
+    "signals_sha256": "2510913e78517686b434254e7759ab855017aa05a6dead4ca1341c7083922dc7",
+    "events_sha256": "a18bad2dbf41aa12cdec39fdb276844fe86afda84e92ade6fcea3e5e63e60f29",
+    "calendar_sha256": "6924101facbdda7289e4e46d5b1399c2d8938d2605cbc11e892368f0170c812b",
+    "product_rules_sha256": "ace713e959b14d3ca4250cb1c8e15d45203fc08d941daa0f3f660d74b730360f",
+    "event_audit_sha256": "89e14d051c12e808d162ff95e3079042b16f952cc97d5ee385cdd8ea8501d621",
+    "parent_helper_sha256": "cef57485677553d8cd59e609f959d5b5abe8053ece5a15e4c3516dfcdecf1cf6",
+    "runner_sha256": "0d3a9a955ffeb80e46503c8efc5defd8272efa715c142c629a29b751bee2c38f"
+  },
+  "fits": 0,
+  "account_count": 4,
+  "paired40_bootstrap": {
+    "standard": {
+      "contrast": "S02_minus_C01_sharpe",
+      "mean": -0.027969833442825148,
+      "ci_2_5": -0.5728296027913535,
+      "ci_97_5": 0.5500838678324835,
+      "repetitions": 2000,
+      "block_sessions": 40,
+      "seed": 20261010,
+      "interpretation": "uncertainty aid only; 10 complete outer stages is weak independent evidence"
+    },
+    "stress": {
+      "contrast": "S02_minus_C01_sharpe",
+      "mean": -0.03796292453469285,
+      "ci_2_5": -0.5746504932284731,
+      "ci_97_5": 0.5339736771587614,
+      "repetitions": 2000,
+      "block_sessions": 40,
+      "seed": 20261010,
+      "interpretation": "uncertainty aid only; 10 complete outer stages is weak independent evidence"
+    }
+  },
+  "period_table_counts": {
+    "period_rows": 52,
+    "exposure_rows": 24
+  },
+  "historical_scope": "2025-01-02 to 2026-09-21; 418 sessions; not an untouched blind test"
+}

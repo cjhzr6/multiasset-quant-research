@@ -1,0 +1,36 @@
+{
+  "status": "COMPLETE_E00_ONLY_REPLAY_NAV_MATCH",
+  "model": "E00",
+  "sessions": 485,
+  "trades": 4103,
+  "issue_count": 0,
+  "rejection_count": 127,
+  "cash_reconciliation": "PASS every account/session",
+  "sealed_2026_evaluated": false,
+  "baseline_comparison": {
+    "path": "results\\jf05_account_v1\\E00_daily.csv",
+    "aligned_sessions": 485,
+    "max_abs_daily_nav_difference": 2.3283064365386963e-10,
+    "within_1e_minus_8": true,
+    "baseline_nav_sha256": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd"
+  },
+  "inputs": {
+    "prediction_file": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "prediction_report": "d1bd9e99be7b3692c27f6aacc1d805c7f1f25ebb7515dca1ca6653b60f984d8a",
+    "market_file": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "account_engine": "77156f8cdf8eb51ae5ad9fcaccb4be7106bf992b24a08918ad9425e44fa9c2e6",
+    "corporate_action_source": "f5dddb4079eb36733883cc52f98b666a47df3583eb0f22a409c05da61379405f",
+    "corporate_date_source": "3b6374096299e1e7624753e6c1e60150e675798fd3e5f2519c742753c8547029",
+    "baseline_E00_daily": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd",
+    "baseline_report": "1cab515557a0ea95168d373fe242b8819b38d99c6170ed78a3285a93936357ea"
+  },
+  "ledgers": {
+    "E00_daily.csv": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd",
+    "E00_trades.csv": "c0160920c3b18076db71e30f361d4015227bad8640ee02f0367fef45e5d17cb3",
+    "E00_rejections.csv": "e005a5ee0f78102606fe6f582ea5029de824871f525bb8a595f33796464c03bf"
+  },
+  "limitations": [
+    "Daily OHLC is not broker fill proof.",
+    "The existing E00 selection interval was already observed; this is reproducibility, not independent validation."
+  ]
+}

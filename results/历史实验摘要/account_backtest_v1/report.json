@@ -1,0 +1,169 @@
+{
+  "status": "COMPLETE_ACCOUNT_SIMULATION_WITH_PUBLICATION_GATES",
+  "models": {
+    "B00": {
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "publishable_returns": true,
+      "sessions": 1455,
+      "trades": 6928,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "diagnostic_performance": {
+        "development": {
+          "total_return": 0.0377537423487424,
+          "annualized_return": 0.009674066917905177,
+          "volatility": 0.10336364793240709,
+          "sharpe_zero_cash": 0.1448863664931625,
+          "max_drawdown": -0.10937095307827571,
+          "mean_holdings": 194.88247422680413,
+          "mean_cash_fraction": 0.4500428925411853,
+          "trading_fees": 27300.11840826055,
+          "realized_dividend_tax": 1600.8383240000003,
+          "slippage_cost": 3454.6668049996347,
+          "annualized_two_sided_turnover": 1.7061602161392224
+        },
+        "validation": {
+          "total_return": 0.21946373397903796,
+          "annualized_return": 0.10859340034585396,
+          "volatility": 0.10836560065268563,
+          "sharpe_zero_cash": 1.005486780423386,
+          "max_drawdown": -0.08622424990414768,
+          "mean_holdings": 207.20824742268042,
+          "mean_cash_fraction": 0.42289071298906766,
+          "trading_fees": 11379.3119834258,
+          "realized_dividend_tax": 560.049699,
+          "slippage_cost": 1563.4424599998272,
+          "annualized_two_sided_turnover": 1.4246873014891854
+        }
+      }
+    },
+    "B01": {
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "publishable_returns": true,
+      "sessions": 1455,
+      "trades": 15322,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "diagnostic_performance": {
+        "development": {
+          "total_return": -0.12871666800520876,
+          "annualized_return": -0.03516336842805845,
+          "volatility": 0.15368786024499623,
+          "sharpe_zero_cash": -0.1558088655057891,
+          "max_drawdown": -0.33576010042618865,
+          "mean_holdings": 73.3659793814433,
+          "mean_cash_fraction": 0.1727983023638218,
+          "trading_fees": 101844.18132521171,
+          "realized_dividend_tax": 10338.138775,
+          "slippage_cost": 49549.415764994614,
+          "annualized_two_sided_turnover": 24.471649945853642
+        },
+        "validation": {
+          "total_return": 0.3191957618906054,
+          "annualized_return": 0.15481175662279245,
+          "volatility": 0.14131422315574213,
+          "sharpe_zero_cash": 1.0893387078138308,
+          "max_drawdown": -0.13011627209088472,
+          "mean_holdings": 74.15257731958764,
+          "mean_cash_fraction": 0.15882736758431137,
+          "trading_fees": 35475.3039373395,
+          "realized_dividend_tax": 6415.148464,
+          "slippage_cost": 21772.552579997544,
+          "annualized_two_sided_turnover": 22.26992709557358
+        }
+      }
+    },
+    "E00": {
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "publishable_returns": true,
+      "sessions": 1455,
+      "trades": 14756,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "diagnostic_performance": {
+        "development": {
+          "total_return": 0.25891582159822435,
+          "annualized_return": 0.06164305230435696,
+          "volatility": 0.1619674003798274,
+          "sharpe_zero_cash": 0.45051755021161954,
+          "max_drawdown": -0.21919806014984888,
+          "mean_holdings": 74.52783505154639,
+          "mean_cash_fraction": 0.15330483821435367,
+          "trading_fees": 103761.214469779,
+          "realized_dividend_tax": 13820.746177,
+          "slippage_cost": 52507.46476499433,
+          "annualized_two_sided_turnover": 22.45328921752317
+        },
+        "validation": {
+          "total_return": 0.5059449330634627,
+          "annualized_return": 0.23705042916393637,
+          "volatility": 0.1431386761473765,
+          "sharpe_zero_cash": 1.5577556195738513,
+          "max_drawdown": -0.08851936798528659,
+          "mean_holdings": 78.55257731958763,
+          "mean_cash_fraction": 0.07051522361652242,
+          "trading_fees": 35803.69710895335,
+          "realized_dividend_tax": 11430.409635,
+          "slippage_cost": 22400.8660149976,
+          "annualized_two_sided_turnover": 14.14302434155927
+        }
+      }
+    },
+    "E10": {
+      "status": "ENGINEERING_PASS_WITH_ASSUMPTIONS",
+      "publishable_returns": true,
+      "sessions": 1455,
+      "trades": 15776,
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "diagnostic_performance": {
+        "development": {
+          "total_return": 0.2483417429902086,
+          "annualized_return": 0.05931920422902692,
+          "volatility": 0.16609122032747584,
+          "sharpe_zero_cash": 0.43007248024767636,
+          "max_drawdown": -0.23566298443412925,
+          "mean_holdings": 74.57319587628866,
+          "mean_cash_fraction": 0.15100937505737952,
+          "trading_fees": 117237.02864179725,
+          "realized_dividend_tax": 13867.986028000003,
+          "slippage_cost": 61164.36839999334,
+          "annualized_two_sided_turnover": 25.429483106653205
+        },
+        "validation": {
+          "total_return": 0.4532735847455249,
+          "annualized_return": 0.21437743867740933,
+          "volatility": 0.143759692568729,
+          "sharpe_zero_cash": 1.4232057833919827,
+          "max_drawdown": -0.09151628723277738,
+          "mean_holdings": 78.9278350515464,
+          "mean_cash_fraction": 0.06489877655217424,
+          "trading_fees": 36437.97310235575,
+          "realized_dividend_tax": 12384.275730000001,
+          "slippage_cost": 22997.09163499745,
+          "annualized_two_sided_turnover": 14.71057656631176
+        }
+      }
+    }
+  },
+  "sealed_2026_evaluated": false,
+  "market_sha256": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+  "cash_reconciliation": "PASS every account/session",
+  "corporate_source_sha256": "3b6374096299e1e7624753e6c1e60150e675798fd3e5f2519c742753c8547029",
+  "config_sha256": "acbb3c7a121043b98ff3fd5c5972883be3272ff00783c6e281bc60317713afaf",
+  "reconciliation_source_sha256": {
+    "gap_overrides.json": "adfef0fbab3a56ca45961b0bd1133930844aa4f77ed33b8617f56820a317607f",
+    "issuer_confirmations.json": "b8182bf6ec2d0b54a4033ddc4c32de403781a5304cc1a07f444287d3d72c8032",
+    "merger_600837_2025.json": "4fa5352f87499705ec0921774483e25efea03c81e6f0acef1cac4de138ccba23",
+    "merger_601989_2025.json": "70025ea8218c68bcec79d0e8fb299020ff48f0d5bca14e24273eb7414f40452e",
+    "rights_reconciliation.json": "8ae8694fb82cccf8a46f21a30f057e94339fdcaa18c7f909abe496b2f7e27e31"
+  },
+  "source_event_count": 3633,
+  "unsupported_factor_change_count": 4,
+  "limitations": [
+    "Daily OHLC cannot establish order queue priority or partial fills.",
+    "Bonus-share fractions floored at account level; exact registrar rounding not independently verified.",
+    "Dividend tax assumes domestic individual FIFO lots; tax/credit chronology is modelled, not broker statement reconciliation.",
+    "Month-only historical pool and unavailable industry classifications remain limitations."
+  ]
+}

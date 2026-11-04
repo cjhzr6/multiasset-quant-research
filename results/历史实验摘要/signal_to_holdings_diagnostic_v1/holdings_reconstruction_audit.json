@@ -1,0 +1,55 @@
+{
+  "status": "PASS_DAILY_HOLDINGS_AND_EXITS_RECONSTRUCTED",
+  "models": {
+    "E00": {
+      "model": "E00",
+      "sessions": 485,
+      "daily_rows": 485,
+      "daily_holding_count_mismatches": 0,
+      "merge_quantity_mismatches": 0,
+      "exit_without_full_sell_or_merger": 0,
+      "new_position_without_buy_or_share_event": 0,
+      "closing_lots_match": true,
+      "discrepancies": [],
+      "exit_checks": [],
+      "entry_checks": [],
+      "reconstruction_pass": true
+    },
+    "RG01": {
+      "model": "RG01",
+      "sessions": 485,
+      "daily_rows": 485,
+      "daily_holding_count_mismatches": 0,
+      "merge_quantity_mismatches": 0,
+      "exit_without_full_sell_or_merger": 0,
+      "new_position_without_buy_or_share_event": 0,
+      "closing_lots_match": true,
+      "discrepancies": [],
+      "exit_checks": [],
+      "entry_checks": [],
+      "reconstruction_pass": true
+    },
+    "SQ01": {
+      "model": "SQ01",
+      "sessions": 485,
+      "daily_rows": 485,
+      "daily_holding_count_mismatches": 0,
+      "merge_quantity_mismatches": 0,
+      "exit_without_full_sell_or_merger": 0,
+      "new_position_without_buy_or_share_event": 0,
+      "closing_lots_match": true,
+      "discrepancies": [],
+      "exit_checks": [],
+      "entry_checks": [],
+      "reconstruction_pass": true
+    }
+  },
+  "calendar_sessions": 485,
+  "daily_holdings_source": "account daily holdings count",
+  "quantity_sources": [
+    "trades",
+    "ENTITLEMENT new_shares",
+    "MERGER_CONVERSION"
+  ],
+  "closing_lots_crosscheck": true
+}

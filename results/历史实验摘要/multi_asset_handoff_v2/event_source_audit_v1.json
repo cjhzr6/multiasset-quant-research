@@ -1,0 +1,229 @@
+{
+  "status": "SOURCE_LIMITATIONS_CLASSIFIED",
+  "checked_date": "2026-10-10",
+  "events_in_bounded_window": [
+    {
+      "event_id": "EV001",
+      "asset_id": "csi500",
+      "code": "510500",
+      "event_type": "cash_distribution",
+      "announcement_date": "2025-01-09",
+      "record_date": "2025-01-15",
+      "ex_date": "2025-01-16",
+      "pay_date": "2025-01-21",
+      "cash_per_old_unit": 0.091,
+      "new_units_per_old_unit": NaN,
+      "verification_status": "official_verified",
+      "source_hash": "f75f136d870640935a74fe5836257222f42e55afe6e285db18f0e3c3abe9bcd8",
+      "source_url": "https://www.nffund.com/main/files/2025/01/08/255916276908.pdf"
+    },
+    {
+      "event_id": "EV002",
+      "asset_id": "gov_bond",
+      "code": "511010",
+      "event_type": "cash_distribution",
+      "announcement_date": "2025-09-18",
+      "record_date": "2025-09-22",
+      "ex_date": "2025-09-23",
+      "pay_date": "2025-09-26",
+      "cash_per_old_unit": 1.45,
+      "new_units_per_old_unit": NaN,
+      "verification_status": "official_verified",
+      "source_hash": "511010_20250918_dividend.pdf:ddfaac7c7097b0a15666d6e6787553be48613468e221564bccabfceceb5d0d02",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-09-18/511010_20250918_FU3S.pdf"
+    },
+    {
+      "event_id": "EV003",
+      "asset_id": "gov_bond",
+      "code": "511010",
+      "event_type": "cash_distribution",
+      "announcement_date": "2025-12-23",
+      "record_date": "2025-12-25",
+      "ex_date": "2025-12-26",
+      "pay_date": "2025-12-31",
+      "cash_per_old_unit": 0.6542,
+      "new_units_per_old_unit": NaN,
+      "verification_status": "official_verified",
+      "source_hash": "511010_20251223_dividend.pdf:733995693eef19c61a55a30d2be7dcc0dcc471980b81b85363977478195c50a8",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-12-23/511010_20251223_0M89.pdf"
+    },
+    {
+      "event_id": "EV004",
+      "asset_id": "csi500",
+      "code": "510500",
+      "event_type": "cash_distribution",
+      "announcement_date": "2026-01-09",
+      "record_date": "2026-01-15",
+      "ex_date": "2026-01-16",
+      "pay_date": "2026-01-21",
+      "cash_per_old_unit": 0.062,
+      "new_units_per_old_unit": NaN,
+      "verification_status": "official_verified",
+      "source_hash": "f75f136d870640935a74fe5836257222f42e55afe6e285db18f0e3c3abe9bcd8",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-01-09/510500_20260109_5K7U.pdf"
+    },
+    {
+      "event_id": "EV005",
+      "asset_id": "gov_bond",
+      "code": "511010",
+      "event_type": "cash_distribution",
+      "announcement_date": "2026-03-20",
+      "record_date": "2026-03-24",
+      "ex_date": "2026-03-25",
+      "pay_date": "2026-03-30",
+      "cash_per_old_unit": 0.5715,
+      "new_units_per_old_unit": NaN,
+      "verification_status": "official_verified",
+      "source_hash": "511010_20260320_dividend.pdf:a45a301dd556b3b1f36bad19abf952e7490110fda539a1d716cadb903bd22656",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-03-20/511010_20260320_Y87H.pdf"
+    },
+    {
+      "event_id": "EV006",
+      "asset_id": "gold",
+      "code": "518800",
+      "event_type": "unit_conversion",
+      "announcement_date": "2026-04-09",
+      "record_date": "2026-04-14",
+      "ex_date": "2026-04-15",
+      "pay_date": NaN,
+      "cash_per_old_unit": NaN,
+      "new_units_per_old_unit": 0.94231553,
+      "verification_status": "official_verified",
+      "source_hash": "518800_20260409_consolidation.pdf:2904a28c66bf91e10bc5fbda0f299912b690e231d0e099769818fe3edfef6f9c",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-04-09/518800_20260409_QXKL.pdf"
+    },
+    {
+      "event_id": "EV007",
+      "asset_id": "gov_bond",
+      "code": "511010",
+      "event_type": "cash_distribution",
+      "announcement_date": "2026-06-22",
+      "record_date": "2026-06-24",
+      "ex_date": "2026-06-25",
+      "pay_date": "2026-06-30",
+      "cash_per_old_unit": 0.8144,
+      "new_units_per_old_unit": NaN,
+      "verification_status": "official_verified",
+      "source_hash": "511010_20260622_dividend.pdf:82418fe2913770fd1ab6211869dbc8a83683e73490fcdb277c9c3be226a992a9",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-06-22/511010_20260622_0EYP.pdf"
+    },
+    {
+      "event_id": "EV008",
+      "asset_id": "csi500",
+      "code": "510500",
+      "event_type": "cash_distribution",
+      "announcement_date": "2026-07-08",
+      "record_date": "2026-07-14",
+      "ex_date": "2026-07-15",
+      "pay_date": "2026-07-20",
+      "cash_per_old_unit": 0.149,
+      "new_units_per_old_unit": NaN,
+      "verification_status": "official_exdate_issuer_announcement_text_mirror_terms",
+      "source_hash": "f75f136d870640935a74fe5836257222f42e55afe6e285db18f0e3c3abe9bcd8",
+      "source_url": "https://www.sse.com.cn/assortment/options/disclo/update/c/c_20260714_10825473.shtml; https://vip.stock.finance.sina.com.cn/fund/go.php/vAkFundInfo_JJGKXX/q/5355354.phtml; https://www.southernfund.com/new/personal-financing/detail.html?fundCode=510500"
+    },
+    {
+      "event_id": "EV009",
+      "asset_id": "gov_bond",
+      "code": "511010",
+      "event_type": "cash_distribution",
+      "announcement_date": "2026-09-15",
+      "record_date": "2026-09-17",
+      "ex_date": "2026-09-18",
+      "pay_date": "2026-09-23",
+      "cash_per_old_unit": 0.6204,
+      "new_units_per_old_unit": NaN,
+      "verification_status": "secondary_verified_primary_pdf_missing",
+      "source_hash": "index_511010_10jqka.html:d03e66e01b9ed7c6a5e3ff34e64581989cdca5035d3f9c45424fac51fbf2bbfe | index_chnfund_202609.html:7f07ff7e6d45ac1044559834c54ad81b294d60e3eb288d61c16433eed52a07ec",
+      "source_url": "https://basic.10jqka.com.cn/511010/bonus.html; https://www.chnfund.com/article/newest"
+    }
+  ],
+  "asset_evidence": {
+    "csi500": {
+      "event_status": "OFFICIAL_SSE_EXDATE_PLUS_FULL_ISSUER_ANNOUNCEMENT_TEXT_MIRROR",
+      "event_count": 3,
+      "events": [
+        {
+          "ex_date": "2025-01-16",
+          "cash_per_old_unit": 0.091,
+          "record_date": "2025-01-15",
+          "pay_date": "2025-01-21",
+          "status": "OFFICIAL_PDF_VERIFIED",
+          "url": "https://www.nffund.com/main/files/2025/01/08/255916276908.pdf"
+        },
+        {
+          "ex_date": "2026-01-16",
+          "cash_per_old_unit": 0.062,
+          "record_date": "2026-01-15",
+          "pay_date": "2026-01-21",
+          "status": "OFFICIAL_SSE_PDF_VERIFIED",
+          "url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-01-09/510500_20260109_5K7U.pdf"
+        },
+        {
+          "ex_date": "2026-07-15",
+          "cash_per_old_unit": 0.149,
+          "record_date": "2026-07-14",
+          "pay_date": "2026-07-20",
+          "status": "OFFICIAL_SSE_EXDATE_PLUS_FULL_ISSUER_ANNOUNCEMENT_TEXT_MIRROR",
+          "urls": [
+            "https://www.sse.com.cn/assortment/options/disclo/update/c/c_20260714_10825473.shtml",
+            "https://vip.stock.finance.sina.com.cn/fund/go.php/vAkFundInfo_JJGKXX/q/5355354.phtml",
+            "https://www.southernfund.com/new/personal-financing/detail.html?fundCode=510500"
+          ]
+        }
+      ],
+      "note": "Jul 2026 record/ex/pay/amount were cross-checked against the full text mirror of the issuer distribution announcement; SSE derivative notice itself only establishes ex-date. Treat announcement as mirrored issuer content, not an archived official-host PDF."
+    },
+    "sp500": {
+      "event_status": "NO_IN_WINDOW_DISTRIBUTION_OFFICIAL_CROSS_CHECK",
+      "event_count": 0,
+      "evidence": [
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2024-09-30/513500_20240930_FVQQ.pdf",
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-03-31/513500_20250331_XKQ8.pdf"
+      ],
+      "note": "Official annual reports record no profit distribution over their stated multi-year windows; no in-window share event."
+    },
+    "nasdaq100": {
+      "event_status": "NO_VENDOR_EVENTS_PRIMARY_NEGATIVE_EVIDENCE_INCOMPLETE",
+      "event_count": 0,
+      "evidence": [
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-03-29/513100_20250329_0SV0.pdf",
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-08-30/513100_20250830_JVWZ.pdf",
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-10-28/513100_20251028_Q7ER.pdf"
+      ],
+      "note": "Tushare fund_div is empty and official 2024 annual/2025 interim reports are available; 2025 annual and 2026 full negative-event series not yet separately reconciled. Official 2022-01-13 split is outside this account warmup."
+    },
+    "gold": {
+      "event_status": "OFFICIAL_UNIT_CONVERSION_SECONDARY_NEGATIVE_DISTRIBUTION",
+      "event_count": 1,
+      "evidence": [
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-04-09/518800_20260409_QXKL.pdf",
+        "https://fund.eastmoney.com/518800.html"
+      ],
+      "note": "2026 consolidation ratio 0.94231553 official; distribution absence is cross-checked with secondary all-time indexes and not claimed as complete multi-year primary audit."
+    },
+    "nonferrous": {
+      "event_status": "NO_VENDOR_EVENTS_SECONDARY_NEGATIVE_EVIDENCE",
+      "event_count": 0,
+      "evidence": [
+        "https://disc.static.szse.cn/download/disc/disk03/finalpage/2025-03-28/ac18c960-0a5e-4e2a-b217-3a89543f7de3.PDF",
+        "https://fund.stockstar.com/funds/f10/fundlyfp_159980.html",
+        "https://www.etf88.com/jj/159980/"
+      ],
+      "note": "Vendor response is empty; third-party all-time distribution history shows none. Negative event evidence is not a complete issuer-level primary audit."
+    },
+    "gov_bond": {
+      "event_status": "FOUR_OFFICIAL_DISTRIBUTIONS_ONE_SECONDARY",
+      "event_count": 5,
+      "evidence": [
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-09-18/511010_20250918_FU3S.pdf",
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-12-23/511010_20251223_0M89.pdf",
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-03-20/511010_20260320_Y87H.pdf",
+        "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-06-22/511010_20260622_0EYP.pdf",
+        "https://basic.10jqka.com.cn/511010/bonus.html",
+        "https://www.chnfund.com/article/newest"
+      ],
+      "note": "2026-09 event terms remain secondary-source evidence per prior event audit."
+    }
+  }
+}

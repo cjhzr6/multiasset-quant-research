@@ -1,0 +1,68 @@
+{
+  "status": "PASS_FINAL_ZIP_OUTPUTS_MATCH_LOCAL_ARCHIVE_LEDGER",
+  "scope": "Post-run comparison of final ZIP generated accounts against source research archive references; references are not included in data.zip, so this is supplementary and does not clear package-self-contained-reference requirement.",
+  "extract_root": "<LOCAL_HOME>\\AppData\\Local\\Temp\\zhixiangbei_submission_acceptance_20261010_232235",
+  "accounts": [
+    {
+      "account": "RISK_B1|2023_validation|standard",
+      "rows": 242,
+      "reference_rows": 242,
+      "dates_columns_equal": true,
+      "max_abs_numeric_diff": 0,
+      "numeric_diff_columns": {},
+      "holdings_exact": true,
+      "pass": true
+    },
+    {
+      "account": "RISK_B1|2024_2025_exploratory|standard",
+      "rows": 485,
+      "reference_rows": 485,
+      "dates_columns_equal": true,
+      "max_abs_numeric_diff": 0,
+      "numeric_diff_columns": {},
+      "holdings_exact": true,
+      "pass": true
+    },
+    {
+      "account": "RISK_B1|2024_2025_exploratory|stress",
+      "rows": 485,
+      "reference_rows": 485,
+      "dates_columns_equal": true,
+      "max_abs_numeric_diff": 0,
+      "numeric_diff_columns": {},
+      "holdings_exact": true,
+      "pass": true
+    },
+    {
+      "account": "FIXED25|2023_validation|standard",
+      "rows": 242,
+      "reference_rows": 242,
+      "dates_columns_equal": true,
+      "max_abs_numeric_diff": 0,
+      "numeric_diff_columns": {},
+      "holdings_exact": true,
+      "pass": true
+    },
+    {
+      "account": "FIXED25|2024_2025_exploratory|standard",
+      "rows": 485,
+      "reference_rows": 485,
+      "dates_columns_equal": true,
+      "max_abs_numeric_diff": 0,
+      "numeric_diff_columns": {},
+      "holdings_exact": true,
+      "pass": true
+    },
+    {
+      "account": "FIXED25|2024_2025_exploratory|stress",
+      "rows": 485,
+      "reference_rows": 485,
+      "dates_columns_equal": true,
+      "max_abs_numeric_diff": 0,
+      "numeric_diff_columns": {},
+      "holdings_exact": true,
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

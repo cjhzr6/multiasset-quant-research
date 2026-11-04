@@ -1,0 +1,115 @@
+{
+  "status": "COMPLETE_PROVISIONAL_ASSOCIATION_SCREEN",
+  "support": {
+    "train": {
+      "issuer_dates": 88,
+      "dates": 57,
+      "symbols": 54
+    },
+    "test": {
+      "issuer_dates": 43,
+      "dates": 27,
+      "symbols": 33
+    }
+  },
+  "source_sha256": {
+    "configs/historical_news_screen_v1.json": "8724d9965e1fc0a99da1658583478b1bb9af8c0bb1785d02bd8620d378703f5c",
+    "results/ifind_capture_audit_v1/news_fragments.csv": "76b163adc3e675f76fa3a7723867b51a568c13c5c0de99e7c765455284bd307e",
+    "data/processed/competition/REQ-ZXB-20261006-504ff8f554c14d03/target_security_mapping.parquet": "5826cc93fd87713db25ddfa6217b44c2c3720ce6c8272bbddb426847b1f49acd",
+    "data/processed/training_panel_v1.parquet": "82dec620ec04241b4acb972e42d5bff13166f94974354fa5cb286beee056abff",
+    "results/rolling_signal_v1/predictions_2020_2025.parquet": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "scripts/screen_historical_news_v1.py": "60314ad3680b036af5a9600a16cad85a7f529c282fb9e778d39aa776d2cb3da2"
+  },
+  "positive_pattern": "增长|增持|突破|超预期|上调|中标|回购|扭亏|改善|新高|受益|订单|领先",
+  "negative_pattern": "下降|减持|下调|亏损|低于预期|处罚|下滑|风险|承压|放缓|不及预期",
+  "excluded_title_pattern": "行业周报|宏观|策略周|政策|市场回顾|日报|研报精选|投资策略|晨会|行业月报",
+  "first_publication_verified": false,
+  "historical_name_mapping_verified": false,
+  "account_backtest": false,
+  "sealed_2026_access": false,
+  "limitation": "Biased TopK retrieval, provisional report dates and security names, simple title heuristics. Association is not proof of causal NLP alpha or complete news coverage.",
+  "metrics": {
+    "price": {
+      "mean_daily_rank_ic": -0.023598729041001486,
+      "mse": 0.0023375667559373003,
+      "test_rows": 35494,
+      "test_days": 120,
+      "news_exposed_rows": 126
+    },
+    "news": {
+      "mean_daily_rank_ic": -0.023509809126696816,
+      "mse": 0.0023375952913010367,
+      "test_rows": 35494,
+      "test_days": 120,
+      "news_exposed_rows": 126
+    },
+    "delay20": {
+      "mean_daily_rank_ic": -0.02427437546444443,
+      "mse": 0.0023376739646109833,
+      "test_rows": 35494,
+      "test_days": 120,
+      "news_exposed_rows": 126
+    }
+  },
+  "models": {
+    "price": {
+      "columns": [
+        "intercept",
+        "score",
+        "ret20",
+        "ret60",
+        "vol20"
+      ],
+      "coefficients": [
+        -1.552625188110363e-05,
+        0.011880083557678233,
+        -0.006901865012612861,
+        -0.002220347049371779,
+        0.006389274912661208
+      ]
+    },
+    "news": {
+      "columns": [
+        "intercept",
+        "score",
+        "ret20",
+        "ret60",
+        "vol20",
+        "mention",
+        "tone"
+      ],
+      "coefficients": [
+        3.6646935973189064e-06,
+        0.011874779930577747,
+        -0.00689807795650741,
+        -0.0022110670258156514,
+        0.00638972733523009,
+        -0.0024752392540256466,
+        0.0027593653980378966
+      ]
+    },
+    "delay20": {
+      "columns": [
+        "intercept",
+        "score",
+        "ret20",
+        "ret60",
+        "vol20",
+        "mention_delay",
+        "tone_delay"
+      ],
+      "coefficients": [
+        -4.897301821063624e-05,
+        0.011864152896327113,
+        -0.006883129207990136,
+        -0.0022143354218889405,
+        0.006370441915735497,
+        0.00534906970959678,
+        -0.005220272640025003
+      ]
+    }
+  },
+  "fits": 3,
+  "provisional_signal_gate": false,
+  "strategy_upgrade_authorized": false
+}

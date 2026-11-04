@@ -1,0 +1,610 @@
+{
+  "status": "BOUNDED_PROBE_COMPLETE_NOT_MODEL_READY",
+  "requests": [
+    {
+      "source": "hn_algolia",
+      "date": "2023-07-03",
+      "limit": 20,
+      "request_hash": "21526480b30d811faaf1367e762a68ea119adbb0e1210b558bb6f613e6054ae7",
+      "url": "https://hn.algolia.com/api/v1/search_by_date",
+      "params": {
+        "tags": "story",
+        "numericFilters": "created_at_i>=1688342400,created_at_i<1688428800",
+        "hitsPerPage": 20,
+        "page": 0
+      },
+      "status": "PASS_BOUNDED_ACCESS_ONLY",
+      "http_status": 200,
+      "response_bytes": 17694,
+      "response_sha256": "618ac4cf0095d8c4f5d21776e9450b97333dae5da3e176fca7cabc16c1a292b7",
+      "total_day_hits": 803,
+      "sample": [
+        {
+          "objectID": "36580441",
+          "created_at": "2023-07-03T23:58:40Z",
+          "created_at_i": 1688428720,
+          "title": "Ask HN: Are LLMs going to be replaced with something that's truly intelligent?",
+          "url": null
+        },
+        {
+          "objectID": "36580439",
+          "created_at": "2023-07-03T23:58:16Z",
+          "created_at_i": 1688428696,
+          "title": "Gfycat is shutting down on September first",
+          "url": "https://www.engadget.com/gfycat-is-shutting-down-on-september-1st-180741599.html"
+        },
+        {
+          "objectID": "36580417",
+          "created_at": "2023-07-03T23:56:14Z",
+          "created_at_i": 1688428574,
+          "title": "Hunting for Nginx alias traversals in the wild",
+          "url": "https://labs.hakaioffsec.com/nginx-alias-traversal/"
+        },
+        {
+          "objectID": "36580407",
+          "created_at": "2023-07-03T23:55:24Z",
+          "created_at_i": 1688428524,
+          "title": "My ML research development environment workflow",
+          "url": "http://vedder.io/misc/research_dev_env.html"
+        },
+        {
+          "objectID": "36580406",
+          "created_at": "2023-07-03T23:55:21Z",
+          "created_at_i": 1688428521,
+          "title": "What the Polar Vortex Will Do to Earth this Decade [video][16 min]",
+          "url": "https://www.youtube.com/watch?v=PgtnyiBvkUY"
+        },
+        {
+          "objectID": "36580363",
+          "created_at": "2023-07-03T23:51:48Z",
+          "created_at_i": 1688428308,
+          "title": "Online Safety Bill: WhatsApp, Signal issue final warning against mass snooping",
+          "url": "https://www.standard.co.uk/tech/online-safety-bill-whatsapp-signal-element-breaking-encryption-mass-surveillance-messaging-apps-b1091873.html"
+        },
+        {
+          "objectID": "36580344",
+          "created_at": "2023-07-03T23:50:12Z",
+          "created_at_i": 1688428212,
+          "title": "Valve responds to claims it has banned AI-generated games from Steam",
+          "url": "https://techcrunch.com/2023/07/03/valve-responds-to-claims-it-has-banned-ai-generated-games-from-steam/"
+        },
+        {
+          "objectID": "36580323",
+          "created_at": "2023-07-03T23:48:20Z",
+          "created_at_i": 1688428100,
+          "title": "Showcase of 140 new games for retro hardware [video]",
+          "url": "https://www.youtube.com/watch?v=1AGMEZvU14g"
+        },
+        {
+          "objectID": "36580293",
+          "created_at": "2023-07-03T23:44:33Z",
+          "created_at_i": 1688427873,
+          "title": "Beyond Affirmative Action – How to Avoid Stunting Entire Generations of Kids",
+          "url": "https://outlookzen.com/2023/07/03/beyond-affirmative-action/"
+        },
+        {
+          "objectID": "36580283",
+          "created_at": "2023-07-03T23:42:18Z",
+          "created_at_i": 1688427738,
+          "title": "Study suggests resistance training can prevent or delay Alzheimer's disease",
+          "url": "https://medicalxpress.com/news/2023-07-resistance-delay-alzheimer-disease.html"
+        },
+        {
+          "objectID": "36580277",
+          "created_at": "2023-07-03T23:41:37Z",
+          "created_at_i": 1688427697,
+          "title": "What Are the Greenest Programming Languages? (2021)",
+          "url": "https://medium.com/codex/what-are-the-greenest-programming-languages-e738774b1957"
+        },
+        {
+          "objectID": "36580271",
+          "created_at": "2023-07-03T23:40:41Z",
+          "created_at_i": 1688427641,
+          "title": "Summer Is Here. Where Are the Fireflies?",
+          "url": "https://www.washingtonpost.com/climate-environment/interactive/2023/firefly-summer-extinction/"
+        },
+        {
+          "objectID": "36580248",
+          "created_at": "2023-07-03T23:38:13Z",
+          "created_at_i": 1688427493,
+          "title": "Show HN: A package manager for Autonomous AI tools",
+          "url": "https://autopack.ai/announcement"
+        },
+        {
+          "objectID": "36580246",
+          "created_at": "2023-07-03T23:38:04Z",
+          "created_at_i": 1688427484,
+          "title": "Twitter says users must be verified to access TweetDeck",
+          "url": "https://www.reuters.com/technology/twitter-says-users-must-be-verified-access-tweetdeck-2023-07-03/"
+        },
+        {
+          "objectID": "36580220",
+          "created_at": "2023-07-03T23:34:49Z",
+          "created_at_i": 1688427289,
+          "title": "Linus Tech Tips: Framework laptop factory tour [video]",
+          "url": "https://www.youtube.com/watch?v=7nXVJBGowmY"
+        },
+        {
+          "objectID": "36580205",
+          "created_at": "2023-07-03T23:33:05Z",
+          "created_at_i": 1688427185,
+          "title": "Dangerous Roads",
+          "url": "https://www.dangerousroads.org/"
+        },
+        {
+          "objectID": "36580203",
+          "created_at": "2023-07-03T23:32:53Z",
+          "created_at_i": 1688427173,
+          "title": "Bottle deposit should keep up with inflation",
+          "url": "https://slate.com/technology/2013/08/bottle-deposit-should-keep-up-with-inflation-time-to-raise-fee-from-a-nickel-to-30-cents.html"
+        },
+        {
+          "objectID": "36580192",
+          "created_at": "2023-07-03T23:31:44Z",
+          "created_at_i": 1688427104,
+          "title": "Threads, an Instagram app",
+          "url": "https://apps.apple.com/us/app/threads-an-instagram-app/id6446901002"
+        },
+        {
+          "objectID": "36580178",
+          "created_at": "2023-07-03T23:30:06Z",
+          "created_at_i": 1688427006,
+          "title": "Cipr: A Possible Alternative to Known Search Engines and Directories",
+          "url": "https://cipr.info/Specification/"
+        },
+        {
+          "objectID": "36580165",
+          "created_at": "2023-07-03T23:29:09Z",
+          "created_at_i": 1688426949,
+          "title": "The Truth about Phuket",
+          "url": "https://neuage.me/"
+        }
+      ],
+      "scope": "20 historical story titles/URLs and creation times; no authors, current likes or full article bodies retained. Historical edits/deletions not verified."
+    },
+    {
+      "source": "hn_algolia",
+      "date": "2024-07-03",
+      "limit": 20,
+      "request_hash": "23dbdcea1d010c0a3622de49de8715bd88bc26329a90529ed330655385b350f8",
+      "url": "https://hn.algolia.com/api/v1/search_by_date",
+      "params": {
+        "tags": "story",
+        "numericFilters": "created_at_i>=1719964800,created_at_i<1720051200",
+        "hitsPerPage": 20,
+        "page": 0
+      },
+      "status": "PASS_BOUNDED_ACCESS_ONLY",
+      "http_status": 200,
+      "response_bytes": 15330,
+      "response_sha256": "919d099d119e42c8a1960d4ae7847aa89172b0c2e7fdda29abc38edd0b4874ac",
+      "total_day_hits": 813,
+      "sample": [
+        {
+          "objectID": "40871184",
+          "created_at": "2024-07-03T23:55:01Z",
+          "created_at_i": 1720050901,
+          "title": "Network Manager and Rust's Zbus",
+          "url": "https://rbs.io/2024/07/network-manager-and-rusts-zbus/"
+        },
+        {
+          "objectID": "40871175",
+          "created_at": "2024-07-03T23:52:21Z",
+          "created_at_i": 1720050741,
+          "title": "Fast and reliable background jobs in Go",
+          "url": "https://riverqueue.com"
+        },
+        {
+          "objectID": "40871162",
+          "created_at": "2024-07-03T23:49:10Z",
+          "created_at_i": 1720050550,
+          "title": "getrandom() in the VDSO Aims for Linux 6.11 Provide Faster Secure User-Space RNG",
+          "url": "https://www.phoronix.com/news/getrandom-vDSO-RNG-Linux-6.11"
+        },
+        {
+          "objectID": "40871147",
+          "created_at": "2024-07-03T23:46:37Z",
+          "created_at_i": 1720050397,
+          "title": "From Big Tech to AI Startup: My Unfiltered 18-Month Journey",
+          "url": "https://www.untanglewords.com/from-big-tech-to-ai-startup-my-unfiltered-18-month-journey/"
+        },
+        {
+          "objectID": "40871143",
+          "created_at": "2024-07-03T23:46:18Z",
+          "created_at_i": 1720050378,
+          "title": "Federal judge partially blocks U.S. ban on noncompetes",
+          "url": "https://www.npr.org/2024/07/03/nx-s1-5020525/noncompete-ban-block-ftc-competition-ryan-texas"
+        },
+        {
+          "objectID": "40871114",
+          "created_at": "2024-07-03T23:40:49Z",
+          "created_at_i": 1720050049,
+          "title": "Noplace, a mashup of Twitter and Myspace for Gen Z, hits No. 1 on the App Store",
+          "url": "https://techcrunch.com/2024/07/03/noplace-a-mashup-of-twitter-and-myspace-for-gen-z-hits-no-1-on-the-app-store/"
+        },
+        {
+          "objectID": "40871043",
+          "created_at": "2024-07-03T23:28:11Z",
+          "created_at_i": 1720049291,
+          "title": "Introduction to Program Synthesis",
+          "url": "https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture1.htm"
+        },
+        {
+          "objectID": "40871006",
+          "created_at": "2024-07-03T23:22:26Z",
+          "created_at_i": 1720048946,
+          "title": "Two of the German military's new spy satellites appear to have failed in orbit",
+          "url": "https://arstechnica.com/space/2024/07/two-of-the-german-militarys-new-spy-satellites-appear-to-have-failed-in-orbit/"
+        },
+        {
+          "objectID": "40871002",
+          "created_at": "2024-07-03T23:22:14Z",
+          "created_at_i": 1720048934,
+          "title": "pw_rpc: Efficient, low-code-size RPC system for embedded devices",
+          "url": "https://pigweed.dev/pw_rpc/"
+        },
+        {
+          "objectID": "40870995",
+          "created_at": "2024-07-03T23:21:40Z",
+          "created_at_i": 1720048900,
+          "title": "WordPerfect co-founder Bruce Bastian dies at 76",
+          "url": "https://www.theregister.com/2024/07/03/wordperfect_bruce_bastian/"
+        },
+        {
+          "objectID": "40870991",
+          "created_at": "2024-07-03T23:21:09Z",
+          "created_at_i": 1720048869,
+          "title": "Kernel tweaks improve Raspberry Pi performance, efficiency",
+          "url": "https://www.theregister.com/2024/07/03/kernel_tweaks_rapsberry_pi/"
+        },
+        {
+          "objectID": "40870988",
+          "created_at": "2024-07-03T23:20:19Z",
+          "created_at_i": 1720048819,
+          "title": "Show HN: Zakaya.io // Micro-communities designed to make more online friendships",
+          "url": "https://zakaya.io/apply"
+        },
+        {
+          "objectID": "40870977",
+          "created_at": "2024-07-03T23:17:32Z",
+          "created_at_i": 1720048652,
+          "title": "Building AI-powered SWE tools: Essential commercial considerations for founders",
+          "url": "https://www.innovationendeavors.com/insights/building-ai-powered-software-engineering-tools-essential-commercial-considerations-for-founders"
+        },
+        {
+          "objectID": "40870976",
+          "created_at": "2024-07-03T23:17:31Z",
+          "created_at_i": 1720048651,
+          "title": "I Aced Machine Learning Interviews: My Personal Playbook",
+          "url": "https://mlengineerinsights.substack.com/p/how-i-aced-machine-learning-interviews"
+        },
+        {
+          "objectID": "40870972",
+          "created_at": "2024-07-03T23:17:20Z",
+          "created_at_i": 1720048640,
+          "title": "Wordsworth Donisthorpe, Blackmail, and the First Motion Pictures",
+          "url": "https://publicdomainreview.org/essay/wordsworth-donisthorpe-blackmail-and-the-first-motion-pictures/"
+        },
+        {
+          "objectID": "40870926",
+          "created_at": "2024-07-03T23:10:22Z",
+          "created_at_i": 1720048222,
+          "title": "McColo",
+          "url": "https://en.wikipedia.org/wiki/McColo"
+        },
+        {
+          "objectID": "40870924",
+          "created_at": "2024-07-03T23:10:01Z",
+          "created_at_i": 1720048201,
+          "title": "Developing 'Hi-Fi Rush' Backwards and Finding Our Positive Gameplay Loop [video]",
+          "url": "https://www.youtube.com/watch?v=pG4UxqRMNX0"
+        },
+        {
+          "objectID": "40870917",
+          "created_at": "2024-07-03T23:08:37Z",
+          "created_at_i": 1720048117,
+          "title": "Google Sheets for Hackers",
+          "url": "https://www.youtube.com/watch?v=44B6_svdD9Y"
+        },
+        {
+          "objectID": "40870884",
+          "created_at": "2024-07-03T23:03:44Z",
+          "created_at_i": 1720047824,
+          "title": "A Fancy Card Is Becoming the Only Way to Get a Restaurant Reservation",
+          "url": "https://www.theatlantic.com/technology/archive/2024/07/restaurant-reservation-resy-tock-american-express/678862/"
+        },
+        {
+          "objectID": "40870867",
+          "created_at": "2024-07-03T23:01:35Z",
+          "created_at_i": 1720047695,
+          "title": "MoviePass Became Profitable",
+          "url": "https://www.inc.com/ben-sherry/how-moviepass-finally-became-profitable.html"
+        }
+      ],
+      "scope": "20 historical story titles/URLs and creation times; no authors, current likes or full article bodies retained. Historical edits/deletions not verified."
+    },
+    {
+      "source": "gdelt2_events",
+      "date": "2023-07-03",
+      "limit": 20,
+      "request_hash": "ed2ce7e7eeb8a5dabc15faf133a4cc96df55360045a4880ba961df1559918b24",
+      "url": "https://data.gdeltproject.org/gdeltv2/20230703000000.export.CSV.zip",
+      "params": null,
+      "status": "PASS_BOUNDED_ACCESS_ONLY",
+      "http_status": 200,
+      "response_bytes": 75957,
+      "response_sha256": "7ce22e669e10ace63819060c584a74fe580e154a7fb812d3e5cf1e2a0077ad20",
+      "event_rows": 1189,
+      "field_counts": [
+        61
+      ],
+      "sample": [
+        {
+          "global_event_id": "1112502589",
+          "event_date": "20130705",
+          "date_added": "20230703000000",
+          "source_url": "https://929tomfm.iheart.com/content/2023-07-02-khloe-kardashian-reveals-she-hates-being-in-my-30s/"
+        },
+        {
+          "global_event_id": "1112502590",
+          "event_date": "20220703",
+          "date_added": "20230703000000",
+          "source_url": "https://kiss983.iheart.com/content/2023-07-02-king-charles-kicked-out-queens-beloved-assistant-after-her-death/"
+        },
+        {
+          "global_event_id": "1112502591",
+          "event_date": "20220703",
+          "date_added": "20230703000000",
+          "source_url": "https://www.thestandard.com.hk/section-news/section/11/253858/HK-economy-on-upward-trend-despite-all-the-challenges"
+        },
+        {
+          "global_event_id": "1112502592",
+          "event_date": "20220703",
+          "date_added": "20230703000000",
+          "source_url": "https://timesofindia.indiatimes.com/nri/boyfriend-pleads-guilty-to-murder-of-pio-student-in-uk/articleshow/101439626.cms"
+        },
+        {
+          "global_event_id": "1112502593",
+          "event_date": "20220703",
+          "date_added": "20230703000000",
+          "source_url": "https://timesofindia.indiatimes.com/nri/boyfriend-pleads-guilty-to-murder-of-pio-student-in-uk/articleshow/101439626.cms"
+        },
+        {
+          "global_event_id": "1112502594",
+          "event_date": "20220703",
+          "date_added": "20230703000000",
+          "source_url": "https://www.thesunchronicle.com/news/nation_world/uk-police-have-new-expanded-powers-to-crack-down-on-protests/article_90a005d6-f415-5295-a86a-8b993e71dab7.html"
+        },
+        {
+          "global_event_id": "1112502595",
+          "event_date": "20220703",
+          "date_added": "20230703000000",
+          "source_url": "https://www.bangkokpost.com/thailand/general/2604105/state-hospitals-in-search-of-more-doctors"
+        },
+        {
+          "global_event_id": "1112502596",
+          "event_date": "20220703",
+          "date_added": "20230703000000",
+          "source_url": "https://www.foxnews.com/us/utah-city-others-fire-prone-areas-us-replace-fireworks-drone-shows-4th-july"
+        },
+        {
+          "global_event_id": "1112502597",
+          "event_date": "20220703",
+          "date_added": "20230703000000",
+          "source_url": "https://www.foxnews.com/us/utah-city-others-fire-prone-areas-us-replace-fireworks-drone-shows-4th-july"
+        },
+        {
+          "global_event_id": "1112502598",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.salisburyjournal.co.uk/news/national/23628316.cleverly-hail-uk-eu-ties-brussels-speech/"
+        },
+        {
+          "global_event_id": "1112502599",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.salisburyjournal.co.uk/news/national/23628316.cleverly-hail-uk-eu-ties-brussels-speech/"
+        },
+        {
+          "global_event_id": "1112502600",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.havasunews.com/nation/despite-establishment-pivot-marjorie-greene-remains-strong-in-her-district/article_890dfc78-1927-11ee-b298-837a3c836914.html"
+        },
+        {
+          "global_event_id": "1112502601",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.havasunews.com/nation/despite-establishment-pivot-marjorie-greene-remains-strong-in-her-district/article_890dfc78-1927-11ee-b298-837a3c836914.html"
+        },
+        {
+          "global_event_id": "1112502602",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.havasunews.com/nation/despite-establishment-pivot-marjorie-greene-remains-strong-in-her-district/article_890dfc78-1927-11ee-b298-837a3c836914.html"
+        },
+        {
+          "global_event_id": "1112502603",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.havasunews.com/nation/despite-establishment-pivot-marjorie-greene-remains-strong-in-her-district/article_890dfc78-1927-11ee-b298-837a3c836914.html"
+        },
+        {
+          "global_event_id": "1112502604",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.wicz.com/story/49146574/will-hurd-says-he-cant-lie-to-get-access-to-a-microphone-at-rnc-debate"
+        },
+        {
+          "global_event_id": "1112502605",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.salisburyjournal.co.uk/news/national/23628316.cleverly-hail-uk-eu-ties-brussels-speech/"
+        },
+        {
+          "global_event_id": "1112502606",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.salisburyjournal.co.uk/news/national/23628316.cleverly-hail-uk-eu-ties-brussels-speech/"
+        },
+        {
+          "global_event_id": "1112502607",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.manilatimes.net/2023/07/03/world/ukraine-russian-troops-advance-in-fierce-fighting/1898913"
+        },
+        {
+          "global_event_id": "1112502608",
+          "event_date": "20230603",
+          "date_added": "20230703000000",
+          "source_url": "https://www.manilatimes.net/2023/07/03/world/ukraine-russian-troops-advance-in-fierce-fighting/1898913"
+        }
+      ],
+      "scope": "Structured event metadata, not news fulltext or A-share entity/supply-chain mappings. DATEADDED semantic needs validation before any trading feature."
+    },
+    {
+      "source": "gdelt2_events",
+      "date": "2024-07-03",
+      "limit": 20,
+      "request_hash": "fa9a3361aaa180ea92d46a2d3e626aa0994d3ef038039c206f47e0de0d359f9e",
+      "url": "https://data.gdeltproject.org/gdeltv2/20240703000000.export.CSV.zip",
+      "params": null,
+      "status": "PASS_BOUNDED_ACCESS_ONLY",
+      "http_status": 200,
+      "response_bytes": 183132,
+      "response_sha256": "0742b8be5ad6855b9d06e9771ec7dd1b7509a39c17d14a7eaffc2f3e5d9c1998",
+      "event_rows": 2746,
+      "field_counts": [
+        61
+      ],
+      "sample": [
+        {
+          "global_event_id": "1185075370",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://people.com/search-called-off-for-missing-retired-cop-in-greece-8673030"
+        },
+        {
+          "global_event_id": "1185075371",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://people.com/search-called-off-for-missing-retired-cop-in-greece-8673030"
+        },
+        {
+          "global_event_id": "1185075372",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.ashleycountyledger.com/news/national/biden-facing-tempest-at-home-devotes-time-to-s-africa-leader/article_96bfce21-71fa-58b5-a060-4c93ea69a3da.html"
+        },
+        {
+          "global_event_id": "1185075373",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.ashleycountyledger.com/news/national/biden-facing-tempest-at-home-devotes-time-to-s-africa-leader/article_96bfce21-71fa-58b5-a060-4c93ea69a3da.html"
+        },
+        {
+          "global_event_id": "1185075374",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.canberratimes.com.au/story/8680583/accused-canberra-zoo-murderer-jude-wijesinghe-committed-to-stand-trial/?cs=19041"
+        },
+        {
+          "global_event_id": "1185075375",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.canberratimes.com.au/story/8680583/accused-canberra-zoo-murderer-jude-wijesinghe-committed-to-stand-trial/?cs=19041"
+        },
+        {
+          "global_event_id": "1185075376",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://people.com/search-called-off-for-missing-retired-cop-in-greece-8673030"
+        },
+        {
+          "global_event_id": "1185075377",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://people.com/search-called-off-for-missing-retired-cop-in-greece-8673030"
+        },
+        {
+          "global_event_id": "1185075378",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://people.com/search-called-off-for-missing-retired-cop-in-greece-8673030"
+        },
+        {
+          "global_event_id": "1185075379",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.kdlg.org/news/2024-07-02/kings-from-test-fishing-boats-go-to-curyung-elders"
+        },
+        {
+          "global_event_id": "1185075380",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.kdlg.org/news/2024-07-02/kings-from-test-fishing-boats-go-to-curyung-elders"
+        },
+        {
+          "global_event_id": "1185075381",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.somdnews.com/news/local/after-37-years-holton-retires-from-st-marys-sheriffs-office/article_fa29f660-34c8-11ef-9679-63d6fda9d794.html"
+        },
+        {
+          "global_event_id": "1185075382",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.somdnews.com/news/local/after-37-years-holton-retires-from-st-marys-sheriffs-office/article_fa29f660-34c8-11ef-9679-63d6fda9d794.html"
+        },
+        {
+          "global_event_id": "1185075383",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.borehamwoodtimes.co.uk/news/national/24426577.greens-end-campaign-focus-marginals-including-bristol-brighton/"
+        },
+        {
+          "global_event_id": "1185075384",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.kdlg.org/news/2024-07-02/kings-from-test-fishing-boats-go-to-curyung-elders"
+        },
+        {
+          "global_event_id": "1185075385",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.kdlg.org/news/2024-07-02/kings-from-test-fishing-boats-go-to-curyung-elders"
+        },
+        {
+          "global_event_id": "1185075386",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://people.com/search-called-off-for-missing-retired-cop-in-greece-8673030"
+        },
+        {
+          "global_event_id": "1185075387",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://youthjournalism.org/remembering-heroes-of-the-korean-war/"
+        },
+        {
+          "global_event_id": "1185075388",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://www.ashleycountyledger.com/news/national/biden-facing-tempest-at-home-devotes-time-to-s-africa-leader/article_96bfce21-71fa-58b5-a060-4c93ea69a3da.html"
+        },
+        {
+          "global_event_id": "1185075389",
+          "event_date": "20230704",
+          "date_added": "20240703000000",
+          "source_url": "https://gazette.com/news/wex/oregon-follows-in-new-york-s-footsteps-with-massive-healthcare-expansion-plan/article_73c08dfa-db25-51c2-ab15-380179f09f1c.html"
+        }
+      ],
+      "scope": "Structured event metadata, not news fulltext or A-share entity/supply-chain mappings. DATEADDED semantic needs validation before any trading feature."
+    }
+  ],
+  "downloaded_bytes_this_run": 292113,
+  "no_training": true,
+  "no_account": true,
+  "no2026_access": true,
+  "reuse_and_point_in_time_not_fully_validated": true
+}

@@ -1,0 +1,215 @@
+{
+  "status": "COMPLETE_MONTHLY_JOINT_PREDICTION",
+  "elapsed_seconds": 75.47595230001025,
+  "fitted_models": 24,
+  "features": 135,
+  "yearly": [
+    {
+      "year": 2024,
+      "count": 242,
+      "mean": 0.10252243819511933
+    },
+    {
+      "year": 2025,
+      "count": 237,
+      "mean": 0.02184329100766889
+    }
+  ],
+  "mean_rank_ic": 0.06260394574537871,
+  "sealed_2026_evaluated": false,
+  "tradable_backtest_ready": false,
+  "fits": [
+    {
+      "month": "2024-01-01",
+      "train_rows": 214162,
+      "prediction_rows": 6600,
+      "cutoff": "2023-12-29",
+      "max_label_end": "2023-12-29",
+      "model_sha256": "4b60c8ec8ffd1a0b64d8e06273c55f7cf6d38769426249b8323db2ca3e3939ba"
+    },
+    {
+      "month": "2024-02-01",
+      "train_rows": 214848,
+      "prediction_rows": 4500,
+      "cutoff": "2024-01-31",
+      "max_label_end": "2024-01-31",
+      "model_sha256": "e923274335d01155025110cd20fca0d51bc4a310d629b62b2eb78058cd64c08a"
+    },
+    {
+      "month": "2024-03-01",
+      "train_rows": 214911,
+      "prediction_rows": 6292,
+      "cutoff": "2024-02-29",
+      "max_label_end": "2024-02-29",
+      "model_sha256": "1a93cfdb76fd990d2ced09b1164dbc57aeadbcefb84c37e2dc06730f304ead06"
+    },
+    {
+      "month": "2024-04-01",
+      "train_rows": 214413,
+      "prediction_rows": 5980,
+      "cutoff": "2024-03-29",
+      "max_label_end": "2024-03-29",
+      "model_sha256": "0a7225d19335c9a008b5886ef91f3ace775eb4e30d7b54eb39c6db2b89f130e7"
+    },
+    {
+      "month": "2024-05-01",
+      "train_rows": 214220,
+      "prediction_rows": 5980,
+      "cutoff": "2024-04-30",
+      "max_label_end": "2024-04-30",
+      "model_sha256": "04fefd7153283ee59d1d7eaf1cd4bb8ba0bb1972358271d3c1f6139f45ecb933"
+    },
+    {
+      "month": "2024-06-01",
+      "train_rows": 214885,
+      "prediction_rows": 5683,
+      "cutoff": "2024-05-31",
+      "max_label_end": "2024-05-31",
+      "model_sha256": "c8ced362abecfe40044ea3cb4224c74e82e436633f98db387e5ad3279f0fe30d"
+    },
+    {
+      "month": "2024-07-01",
+      "train_rows": 214399,
+      "prediction_rows": 6891,
+      "cutoff": "2024-06-28",
+      "max_label_end": "2024-06-28",
+      "model_sha256": "d5b1ad49542d41c9f6af49e670154a990162f4d56c2b409e3b5de67f7cdb33ba"
+    },
+    {
+      "month": "2024-08-01",
+      "train_rows": 214798,
+      "prediction_rows": 6571,
+      "cutoff": "2024-07-31",
+      "max_label_end": "2024-07-31",
+      "model_sha256": "8b763000af30145e5b09f7e645272a59a99c98b80c5b5a932414985750536543"
+    },
+    {
+      "month": "2024-09-01",
+      "train_rows": 214873,
+      "prediction_rows": 5591,
+      "cutoff": "2024-08-30",
+      "max_label_end": "2024-08-30",
+      "model_sha256": "b6eaddf2f86bdd4488db5287aee472503af3d38880bf4e7c7fdab02011fbab7f"
+    },
+    {
+      "month": "2024-10-01",
+      "train_rows": 214538,
+      "prediction_rows": 5292,
+      "cutoff": "2024-09-30",
+      "max_label_end": "2024-09-30",
+      "model_sha256": "d6a4238ce1da76f4efe8d6316799d819e4e0ac2d0c7c6cfa5d2ce2bb78b068f0"
+    },
+    {
+      "month": "2024-11-01",
+      "train_rows": 215071,
+      "prediction_rows": 6193,
+      "cutoff": "2024-10-31",
+      "max_label_end": "2024-10-31",
+      "model_sha256": "072fc91185d54f526c8821dcda8f7d356f188de82547626432d638b354257bd5"
+    },
+    {
+      "month": "2024-12-01",
+      "train_rows": 214704,
+      "prediction_rows": 6518,
+      "cutoff": "2024-11-29",
+      "max_label_end": "2024-11-29",
+      "model_sha256": "873a90faaa3da70949e5a61fb3f9e31008013f075d2c2d2b76517dcabf66061c"
+    },
+    {
+      "month": "2025-01-01",
+      "train_rows": 214420,
+      "prediction_rows": 5342,
+      "cutoff": "2024-12-31",
+      "max_label_end": "2024-12-31",
+      "model_sha256": "277383ace0d264cfb8c9ebc1c37245a4b5720d3356ff1980e4106ac0383420f6"
+    },
+    {
+      "month": "2025-02-01",
+      "train_rows": 214175,
+      "prediction_rows": 5316,
+      "cutoff": "2025-01-27",
+      "max_label_end": "2025-01-27",
+      "model_sha256": "d45cbf7d2928ceaafa3b3280dd10f7b21d44a80830d092f7c53d150d4b54a0c6"
+    },
+    {
+      "month": "2025-03-01",
+      "train_rows": 214777,
+      "prediction_rows": 6148,
+      "cutoff": "2025-02-28",
+      "max_label_end": "2025-02-28",
+      "model_sha256": "cb0940a3d281e5a5e4d66c3cd54415ce010d29ab50956e96a9393ec56110a376"
+    },
+    {
+      "month": "2025-04-01",
+      "train_rows": 214105,
+      "prediction_rows": 6190,
+      "cutoff": "2025-03-31",
+      "max_label_end": "2025-03-31",
+      "model_sha256": "d3dc4ae2206dd69ceeda6a482804ed106227237e875a89e248e69eecb86465e5"
+    },
+    {
+      "month": "2025-05-01",
+      "train_rows": 214652,
+      "prediction_rows": 5625,
+      "cutoff": "2025-04-30",
+      "max_label_end": "2025-04-30",
+      "model_sha256": "d457d5fe92cb1a79e125417ec2ec8ce2b2f477750a2844ff2907bcbcec1641a9"
+    },
+    {
+      "month": "2025-06-01",
+      "train_rows": 214652,
+      "prediction_rows": 5916,
+      "cutoff": "2025-05-30",
+      "max_label_end": "2025-05-30",
+      "model_sha256": "95b166816e72dbdf527b67747b7a18c312cefee05124db11b58c18c16cf55865"
+    },
+    {
+      "month": "2025-07-01",
+      "train_rows": 214379,
+      "prediction_rows": 6820,
+      "cutoff": "2025-06-30",
+      "max_label_end": "2025-06-30",
+      "model_sha256": "542bf9fa18e45d5b4a1e9a41cb87357293a4a0caf8526a30203585b5f760fd87"
+    },
+    {
+      "month": "2025-08-01",
+      "train_rows": 214966,
+      "prediction_rows": 6196,
+      "cutoff": "2025-07-31",
+      "max_label_end": "2025-07-31",
+      "model_sha256": "4417791252266ce5b79b1732021812eb3df942bb460429adb9d196c6ca709e3c"
+    },
+    {
+      "month": "2025-09-01",
+      "train_rows": 214302,
+      "prediction_rows": 6494,
+      "cutoff": "2025-08-29",
+      "max_label_end": "2025-08-29",
+      "model_sha256": "da9ef3aba92c0d90bf85178dd383897feb8fb8e5f596d505e3e3e91727be5a25"
+    },
+    {
+      "month": "2025-10-01",
+      "train_rows": 214521,
+      "prediction_rows": 5048,
+      "cutoff": "2025-09-30",
+      "max_label_end": "2025-09-30",
+      "model_sha256": "867517eab7defecc08d95031008e0a3cf96395fe5652b18c69ea6181bfc96b0e"
+    },
+    {
+      "month": "2025-11-01",
+      "train_rows": 214807,
+      "prediction_rows": 5927,
+      "cutoff": "2025-10-31",
+      "max_label_end": "2025-10-31",
+      "model_sha256": "ae9323e8d3ac92a327617d2826bc8b28f41bef40b2099d7dfe4530607c585414"
+    },
+    {
+      "month": "2025-12-01",
+      "train_rows": 214191,
+      "prediction_rows": 6832,
+      "cutoff": "2025-11-28",
+      "max_label_end": "2025-11-28",
+      "model_sha256": "15ead7e7780d124ff1e42572fb05a8d4a15837eea04b758b18eee9935cad2b82"
+    }
+  ]
+}

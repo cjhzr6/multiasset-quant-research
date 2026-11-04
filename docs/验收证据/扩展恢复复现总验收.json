@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-14",
+  "status": "MAIN_STRATEGY_RECOVERY_AND_REPLAY_COMPLETE_WITH_DISCLOSED_STATE_CACHE_GAP",
+  "sources": "two recycle-bin project archives, original 4060 handoff, original B return, unchanged final input package",
+  "original_archive_files_recovered": 16571,
+  "supplemental_4060_files": 195,
+  "stock_accounts_2024_2025_standard": 26,
+  "original_twenty_stock_account_references": "20/20 matched",
+  "static_lightgbm_metrics": "MATCH",
+  "N02_three_seed_metrics": "MATCH after original float32 quantization",
+  "R01_reference_checks": [
+    {
+      "strategy": "R01_DYNAMIC",
+      "max_nav_difference": 0.0,
+      "pass": true
+    },
+    {
+      "strategy": "R01_STATIC",
+      "max_nav_difference": 0.0,
+      "pass": true
+    }
+  ],
+  "stock_stage_accounts": 11,
+  "stock_stage_comparison_max_abs": 1e-12,
+  "stock_etf_stage_accounts": 4,
+  "four_etf_accounts": 4,
+  "N03_accounts": 14,
+  "N03_daily_nav_max_abs": 2.3283064365386963e-10,
+  "learned_allocation_accounts": 6,
+  "risk_budget_trend_accounts": 7,
+  "fixed_sleeves_scope": "2023 and 2024-2025 half-capital accounts and their real combined paths",
+  "news_ridge_experiments": 3,
+  "full_original_state_file_recovered": false,
+  "state_gap_handling": "stock selection replay uses historical executed switch log; stock-ETF selection rebuilds M/B from contemporaneous features",
+  "N03_original_prediction_bytes_recovered": false,
+  "N03_gap_handling": "saved weights restricted-decoded and inferred with NumPy; all 14 NAV paths match original returned ledgers",
+  "all_historical_models_retrained_this_turn": false,
+  "new_downloads": 0,
+  "gpu_or_torch_install_required_for_verified_replays": false,
+  "new_competition_directory_accessed": false,
+  "formal_submission_archives_changed": false,
+  "github_uploaded": false
+}

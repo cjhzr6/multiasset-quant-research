@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-28",
+  "scope": "Derived strategy NAV, portfolio weights and component contributions only. No supplier raw prices.",
+  "inputs": [
+    {
+      "path": "_本地保留\\归因技能实测_20261021\\completed\\inputs\\B1_2024_2025\\account.csv",
+      "sha256": "4d11f0e65558b862aa9c5c7e72cee7f7a77da5158fdad5c276fac44259b705cd"
+    },
+    {
+      "path": "_本地保留\\归因技能实测_20261021\\completed\\inputs\\FIXED25_2024_2025\\account.csv",
+      "sha256": "4a6e2f02b1168aeb5ed57550e25ccdd17e82b784f0d9a9542e6b3cd599f52c4a"
+    },
+    {
+      "path": "_本地保留\\归因技能实测_20261021\\completed\\inputs\\B1_2026\\account.csv",
+      "sha256": "ccf378a918333ddd9258554f6f5192837d97b5bd66e60597d368cf78c35ff5c4"
+    },
+    {
+      "path": "_本地保留\\归因技能实测_20261021\\completed\\inputs\\FIXED25_2026\\account.csv",
+      "sha256": "91fe32eaa8f41e6f680a6554aaf5064ddba88ed88250cce672627f90d4a8e41c"
+    },
+    {
+      "path": "GitHub项目\\results\\最终组合2026\\RISK_B1\\standard\\daily.csv",
+      "sha256": "3594500ec636ed90b52acac89a7bc127da6a01863605a4802319b04e90ba2630"
+    },
+    {
+      "path": "_本地保留\\归因技能实测_20261021\\completed\\all_component_contributions.csv",
+      "sha256": "ac5793a33e746b723440418b2fde1fb92bfcd51e4231d98eeecb0af2b0b2a841"
+    }
+  ]
+}

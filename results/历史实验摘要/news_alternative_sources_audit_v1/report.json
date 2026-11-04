@@ -1,0 +1,18 @@
+{
+  "status": "SOURCE_AND_CODE_DESK_REVIEW_COMPLETE_NO_BULK_COLLECTION_OR_FIT",
+  "verified_at": "2026-10-08T20:07:36+08:00",
+  "guide": "规划/低密度历史新闻替代来源_20261008.md",
+  "user_scope": "调查低密度历史新闻来源、爬虫和GitHub参考，保留交付目标",
+  "priority": "LOW_DENSITY_HISTORICAL_NEWS_SOURCE_AUDIT",
+  "new_model_fits": 0,
+  "bulk_downloads": 0,
+  "third_party_code_executed": false,
+  "evidence_limits": [
+    "公开历史单页不证明连续覆盖或批量复制权限",
+    "旧爬虫未运行",
+    "AKShare文档与源码条数不一致",
+    "原170条样本不足结论不变",
+    "2026收益仍封存"
+  ],
+  "next_step": "先固定来源/日期/类别，再核权限、去重及小样本正文；合格后另建冻结实验合同"
+}

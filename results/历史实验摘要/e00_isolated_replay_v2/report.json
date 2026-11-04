@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETE_E00_ONLY_REPLAY_NAV_MATCH",
+  "model": "E00",
+  "sessions": 485,
+  "trades": 4103,
+  "issue_count": 0,
+  "rejection_count": 127,
+  "cash_reconciliation": {
+    "cash_flow_pass": true,
+    "max_cash_flow_error": 4.802132025361061e-10,
+    "nav_identity_pass": true,
+    "max_nav_identity_error": 0.0,
+    "daily_rows": 485,
+    "trade_rows": 4103
+  },
+  "sealed_2026_evaluated": false,
+  "baseline_comparison": {
+    "path": "results\\jf05_account_v1\\E00_daily.csv",
+    "aligned_sessions": 485,
+    "max_abs_daily_nav_difference": 2.3283064365386963e-10,
+    "within_1e_minus_8": true,
+    "baseline_nav_sha256": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd"
+  },
+  "inputs": {
+    "prediction_file": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "prediction_report": "d1bd9e99be7b3692c27f6aacc1d805c7f1f25ebb7515dca1ca6653b60f984d8a",
+    "market_file": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "account_engine": "77156f8cdf8eb51ae5ad9fcaccb4be7106bf992b24a08918ad9425e44fa9c2e6",
+    "runner_code": "c0e6fd315f03ed5fece034ca341bfe2cfebc003ff90ae6b99f2825996cab2021",
+    "corporate_action_source": "f5dddb4079eb36733883cc52f98b666a47df3583eb0f22a409c05da61379405f",
+    "corporate_date_source": "3b6374096299e1e7624753e6c1e60150e675798fd3e5f2519c742753c8547029",
+    "event_sources": {
+      "scripts/run_account_backtest.py": "fee9b39c3e30214d8215a1d4411e8f5932e3c9c8fe53bf0e41c8b71332b8896d",
+      "data/processed/corporate_actions_unverified_2020_2025.parquet": "f5dddb4079eb36733883cc52f98b666a47df3583eb0f22a409c05da61379405f",
+      "data/processed/baostock_corporate_dates_2020_2025.parquet": "3b6374096299e1e7624753e6c1e60150e675798fd3e5f2519c742753c8547029",
+      "results/account_inputs_v1/factor_change_audit.csv": "b2cc59c0676c31bf7f413aabc2b7bf4d9b0d032bc08cf712db14980c4322b93c",
+      "results/corporate_dates/gap_overrides.json": "adfef0fbab3a56ca45961b0bd1133930844aa4f77ed33b8617f56820a317607f",
+      "results/corporate_dates/issuer_confirmations.json": "b8182bf6ec2d0b54a4033ddc4c32de403781a5304cc1a07f444287d3d72c8032",
+      "results/corporate_dates/rights_reconciliation.json": "8ae8694fb82cccf8a46f21a30f057e94339fdcaa18c7f909abe496b2f7e27e31",
+      "results/corporate_dates/merger_600837_2025.json": "4fa5352f87499705ec0921774483e25efea03c81e6f0acef1cac4de138ccba23",
+      "results/corporate_dates/merger_601989_2025.json": "70025ea8218c68bcec79d0e8fb299020ff48f0d5bca14e24273eb7414f40452e"
+    },
+    "baseline_E00_daily": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd",
+    "baseline_report": "1cab515557a0ea95168d373fe242b8819b38d99c6170ed78a3285a93936357ea"
+  },
+  "ledgers": {
+    "E00_daily.csv": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd",
+    "E00_trades.csv": "c0160920c3b18076db71e30f361d4015227bad8640ee02f0367fef45e5d17cb3",
+    "E00_rejections.csv": "e005a5ee0f78102606fe6f582ea5029de824871f525bb8a595f33796464c03bf"
+  },
+  "limitations": [
+    "Daily OHLC is not broker fill proof.",
+    "The existing E00 selection interval was already observed; this is reproducibility, not independent validation."
+  ]
+}

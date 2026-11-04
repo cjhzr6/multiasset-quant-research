@@ -1,0 +1,23 @@
+{
+  "status": "PASS_SINGLE_MONTH_CAUSAL_FIT",
+  "scope": "one-month audit only; not full 72-month retraining",
+  "month": "2024-02-01",
+  "cutoff": "2024-01-31",
+  "train_rows": 214848,
+  "train_first_signal_date": "2021-02-01",
+  "train_last_signal_date": "2024-01-23",
+  "max_label_end_date": "2024-01-31",
+  "mature_cutoff_ok": true,
+  "signal_window_ok": true,
+  "test_rows": 4500,
+  "frozen_score_merge_rows": 4500,
+  "frozen_score_missing_or_extra": 0,
+  "frozen_score_max_abs_diff": 0.0,
+  "frozen_score_corr": 1.0,
+  "packaged_model_sha256": "cdb693b5ee9a0b53280412be031824b88b4e5026ce3408e273eaa76e1483a8eb",
+  "refit_model_sha256": "97b9c22da290c0db80a6cdea8d0f7aee4eaa52b363c2ed415e02c3a0a74cffe4",
+  "refit_vs_packaged_max_abs_score_diff": 0.0,
+  "refit_vs_packaged_mean_abs_score_diff": 0.0,
+  "lightgbm_version": "4.7.0",
+  "elapsed_seconds": 0.9624108999996679
+}

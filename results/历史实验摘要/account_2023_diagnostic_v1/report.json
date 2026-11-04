@@ -1,0 +1,94 @@
+{
+  "status": "COMPLETE_THREE_FIXED_2023_ACCOUNTS",
+  "models": {
+    "E00": {
+      "publishable_returns": true,
+      "reconciliation": {
+        "cash_flow_pass": true,
+        "max_cash_flow_error": 1.7462298274040222e-10,
+        "nav_identity_pass": true,
+        "max_nav_identity_error": 0.0,
+        "daily_rows": 242,
+        "trade_rows": 2134
+      },
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "diagnostic_performance": {
+        "development": {
+          "total_return": 0.06755612478267481,
+          "annualized_return": 0.0704438383260999,
+          "volatility": 0.10662441204063158,
+          "sharpe_zero_cash": 0.6915316617849109,
+          "max_drawdown": -0.08380350327992614,
+          "mean_holdings": 77.15702479338843,
+          "mean_cash_fraction": 0.1027220473270854,
+          "trading_fees": 17452.81660632585,
+          "realized_dividend_tax": 3081.668396,
+          "slippage_cost": 8433.724194999064,
+          "annualized_two_sided_turnover": 16.387792125315503
+        }
+      }
+    },
+    "T01": {
+      "publishable_returns": true,
+      "reconciliation": {
+        "cash_flow_pass": true,
+        "max_cash_flow_error": 1.7462298274040222e-10,
+        "nav_identity_pass": true,
+        "max_nav_identity_error": 0.0,
+        "daily_rows": 242,
+        "trade_rows": 1703
+      },
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "diagnostic_performance": {
+        "development": {
+          "total_return": -0.02759458342901855,
+          "annualized_return": -0.028718326245839254,
+          "volatility": 0.1317948301520641,
+          "sharpe_zero_cash": -0.15545617891428015,
+          "max_drawdown": -0.15709533758362682,
+          "mean_holdings": 73.4090909090909,
+          "mean_cash_fraction": 0.16605364055063915,
+          "trading_fees": 13065.1467810186,
+          "realized_dividend_tax": 2275.0305280000002,
+          "slippage_cost": 5683.092399999372,
+          "annualized_two_sided_turnover": 11.480170223224754
+        }
+      }
+    },
+    "S01": {
+      "publishable_returns": true,
+      "reconciliation": {
+        "cash_flow_pass": true,
+        "max_cash_flow_error": 2.0372681319713593e-10,
+        "nav_identity_pass": true,
+        "max_nav_identity_error": 0.0,
+        "daily_rows": 242,
+        "trade_rows": 2270
+      },
+      "issue_count": 0,
+      "issues_by_reason": {},
+      "diagnostic_performance": {
+        "development": {
+          "total_return": -0.00019700940770672748,
+          "annualized_return": -0.0002051494572177237,
+          "volatility": 0.11738134546257545,
+          "sharpe_zero_cash": 0.05665025225211454,
+          "max_drawdown": -0.09485264026314655,
+          "mean_holdings": 75.46694214876032,
+          "mean_cash_fraction": 0.13134033236642315,
+          "trading_fees": 19354.392201707302,
+          "realized_dividend_tax": 3274.4266960000004,
+          "slippage_cost": 9540.037489998951,
+          "annualized_two_sided_turnover": 19.408975389899236
+        }
+      }
+    }
+  },
+  "training_run": false,
+  "sealed_2026_evaluated": false,
+  "unresolved_event_table_rows": 2,
+  "unsupported_factor_rows": 1,
+  "limitation": "Retrospective development year; existing source versions and simulated daily fills are not broker records."
+}

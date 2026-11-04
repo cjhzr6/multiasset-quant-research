@@ -1,0 +1,376 @@
+{
+  "status": "PASS_2026_STATE_PREFLIGHT_NO_MODEL_FITS_OR_ACCOUNT_RUNS",
+  "period": {
+    "start": "2026-01-05",
+    "end": "2026-09-21",
+    "sessions": 175,
+    "partial_year": true
+  },
+  "historical_evidence": {
+    "fixed_2024_2025_predictions": "COMPLETE_FIXED_23_MONTH_PREDICTIONS",
+    "historical_account_status": "COMPLETE_FOUR_FIXED_RG01_SQ01_ACCOUNTS",
+    "historical_account_sessions": 485,
+    "sealed_2026_previously_accessed": false
+  },
+  "existing_2026_inputs": {
+    "raw_market_rows": 111475,
+    "raw_market_symbols": 637,
+    "feature_rows": 52500,
+    "prediction_ready_rows": 51893,
+    "E00_prediction_rows": 51893,
+    "pool_key_exact_match": true,
+    "state_coverage_dev": 1.0,
+    "HMM_checkpoint_fit_count": 1,
+    "frozen_HMM_2026_days": 175,
+    "new_HMM_fit": 0,
+    "new_downloads": 0
+  },
+  "ESN_continuation": {
+    "old_cache_rows": 1547273,
+    "old_cache_dtype": "float32 hidden outputs; no float64 terminal state saved",
+    "exact_float64_continuation_from_tail_cache": false,
+    "action": "rebuild reservoir from combined raw OHLCV with frozen development scaler and seed; compare old prefix bitwise",
+    "prefix_validation": {
+      "status": "PASS_BITWISE_PREFIX_MATCH",
+      "rows": 1547273,
+      "chunk_count": 10,
+      "chunks": [
+        {
+          "start": "2016-01-05",
+          "end_exclusive": "2017-01-12",
+          "rows": 159250,
+          "exact": true
+        },
+        {
+          "start": "2017-01-12",
+          "end_exclusive": "2018-01-19",
+          "rows": 159250,
+          "exact": true
+        },
+        {
+          "start": "2018-01-19",
+          "end_exclusive": "2019-01-30",
+          "rows": 159250,
+          "exact": true
+        },
+        {
+          "start": "2019-01-30",
+          "end_exclusive": "2020-02-17",
+          "rows": 159250,
+          "exact": true
+        },
+        {
+          "start": "2020-02-17",
+          "end_exclusive": "2021-02-25",
+          "rows": 159250,
+          "exact": true
+        },
+        {
+          "start": "2021-02-25",
+          "end_exclusive": "2022-03-08",
+          "rows": 159250,
+          "exact": true
+        },
+        {
+          "start": "2022-03-08",
+          "end_exclusive": "2023-03-17",
+          "rows": 159250,
+          "exact": true
+        },
+        {
+          "start": "2023-03-17",
+          "end_exclusive": "2024-03-28",
+          "rows": 159250,
+          "exact": true
+        },
+        {
+          "start": "2024-03-28",
+          "end_exclusive": "2025-04-11",
+          "rows": 159250,
+          "exact": true
+        },
+        {
+          "start": "2025-04-11",
+          "end_exclusive": "2026-01-01",
+          "rows": 114023,
+          "exact": true
+        }
+      ],
+      "old_cache_sha256": "2f5ec957be9674eed08dbe48e68431da7abd9034a6ae5932825d10c787e9513b"
+    },
+    "recomputed_2026_sequence_rows": 111475,
+    "sequence_ready_rows_2026": 105605,
+    "sequence_ready_fraction_2026": 0.9473424534649024,
+    "sequence_2026_sha256": "745cc87697a0fd6c8dfa6e941d58ce9b5c2021f7ba319593a6738be5aa0b182a"
+  },
+  "monthly_frozen_scope": [
+    {
+      "month": "2026-01-01",
+      "cutoff": "2025-12-31",
+      "training_rows": 214449,
+      "training_dates": 721,
+      "max_label_end": "2025-12-31",
+      "online_2026_training_rows": 0,
+      "RG01_states": [
+        {
+          "state": 0,
+          "mass_date_equiv": 600.8344853162188,
+          "date_ess": 605.7673848701025,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass_date_equiv": 120.16551468378124,
+          "date_ess": 125.2659154519598,
+          "fit_expected": true
+        }
+      ],
+      "RG01_fit_count_expected": 2,
+      "SQ01_fit_expected": 1,
+      "sequence_key_missing_training": 0
+    },
+    {
+      "month": "2026-02-01",
+      "cutoff": "2026-01-30",
+      "training_rows": 213885,
+      "training_dates": 719,
+      "max_label_end": "2026-01-30",
+      "online_2026_training_rows": 4193,
+      "RG01_states": [
+        {
+          "state": 0,
+          "mass_date_equiv": 598.9560493708032,
+          "date_ess": 603.7719031869523,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass_date_equiv": 120.04395062919683,
+          "date_ess": 125.01940204640451,
+          "fit_expected": true
+        }
+      ],
+      "RG01_fit_count_expected": 2,
+      "SQ01_fit_expected": 1,
+      "sequence_key_missing_training": 0
+    },
+    {
+      "month": "2026-03-01",
+      "cutoff": "2026-02-27",
+      "training_rows": 212110,
+      "training_dates": 713,
+      "max_label_end": "2026-02-27",
+      "online_2026_training_rows": 8380,
+      "RG01_states": [
+        {
+          "state": 0,
+          "mass_date_equiv": 592.9682711335804,
+          "date_ess": 597.7721932047867,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass_date_equiv": 120.0317288664196,
+          "date_ess": 124.99405134425895,
+          "fit_expected": true
+        }
+      ],
+      "RG01_fit_count_expected": 2,
+      "SQ01_fit_expected": 1,
+      "sequence_key_missing_training": 0
+    },
+    {
+      "month": "2026-04-01",
+      "cutoff": "2026-03-31",
+      "training_rows": 211811,
+      "training_dates": 712,
+      "max_label_end": "2026-03-31",
+      "online_2026_training_rows": 14967,
+      "RG01_states": [
+        {
+          "state": 0,
+          "mass_date_equiv": 591.9605060875418,
+          "date_ess": 596.7723338566333,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass_date_equiv": 120.03949391245821,
+          "date_ess": 125.01016823997759,
+          "fit_expected": true
+        }
+      ],
+      "RG01_fit_count_expected": 2,
+      "SQ01_fit_expected": 1,
+      "sequence_key_missing_training": 0
+    },
+    {
+      "month": "2026-05-01",
+      "cutoff": "2026-04-30",
+      "training_rows": 212404,
+      "training_dates": 714,
+      "max_label_end": "2026-04-30",
+      "online_2026_training_rows": 21258,
+      "RG01_states": [
+        {
+          "state": 0,
+          "mass_date_equiv": 583.9933157878274,
+          "date_ess": 589.5477662183782,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass_date_equiv": 130.0066842121725,
+          "date_ess": 135.7519533638099,
+          "fit_expected": true
+        }
+      ],
+      "RG01_fit_count_expected": 2,
+      "SQ01_fit_expected": 1,
+      "sequence_key_missing_training": 0
+    },
+    {
+      "month": "2026-06-01",
+      "cutoff": "2026-05-29",
+      "training_rows": 211798,
+      "training_dates": 712,
+      "max_label_end": "2026-05-29",
+      "online_2026_training_rows": 26652,
+      "RG01_states": [
+        {
+          "state": 0,
+          "mass_date_equiv": 573.12068050859,
+          "date_ess": 580.1200310103812,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass_date_equiv": 138.87931949140994,
+          "date_ess": 146.15655938024042,
+          "fit_expected": true
+        }
+      ],
+      "RG01_fit_count_expected": 2,
+      "SQ01_fit_expected": 1,
+      "sequence_key_missing_training": 0
+    },
+    {
+      "month": "2026-07-01",
+      "cutoff": "2026-06-30",
+      "training_rows": 212122,
+      "training_dates": 713,
+      "max_label_end": "2026-06-30",
+      "online_2026_training_rows": 32952,
+      "RG01_states": [
+        {
+          "state": 0,
+          "mass_date_equiv": 570.9563177702981,
+          "date_ess": 578.7459507473965,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass_date_equiv": 142.04368222970183,
+          "date_ess": 150.16800960723197,
+          "fit_expected": true
+        }
+      ],
+      "RG01_fit_count_expected": 2,
+      "SQ01_fit_expected": 1,
+      "sequence_key_missing_training": 0
+    },
+    {
+      "month": "2026-08-01",
+      "cutoff": "2026-07-31",
+      "training_rows": 212737,
+      "training_dates": 715,
+      "max_label_end": "2026-07-31",
+      "online_2026_training_rows": 39846,
+      "RG01_states": [
+        {
+          "state": 0,
+          "mass_date_equiv": 549.9664796086631,
+          "date_ess": 557.755323707758,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass_date_equiv": 165.03352039133694,
+          "date_ess": 173.0884438226975,
+          "fit_expected": true
+        }
+      ],
+      "RG01_fit_count_expected": 2,
+      "SQ01_fit_expected": 1,
+      "sequence_key_missing_training": 0
+    },
+    {
+      "month": "2026-09-01",
+      "cutoff": "2026-08-31",
+      "training_rows": 212160,
+      "training_dates": 713,
+      "max_label_end": "2026-08-31",
+      "online_2026_training_rows": 46146,
+      "RG01_states": [
+        {
+          "state": 0,
+          "mass_date_equiv": 527.7559950115883,
+          "date_ess": 536.072344716932,
+          "fit_expected": true
+        },
+        {
+          "state": 1,
+          "mass_date_equiv": 185.24400498841166,
+          "date_ess": 193.80993227328577,
+          "fit_expected": true
+        }
+      ],
+      "RG01_fit_count_expected": 2,
+      "SQ01_fit_expected": 1,
+      "sequence_key_missing_training": 0
+    }
+  ],
+  "fit_budget": {
+    "RG01_max_LightGBM_fits": 18,
+    "SQ01_max_Ridge_fits": 9,
+    "expected_RG01_fits_by_support": 18,
+    "expected_SQ01_fits": 9,
+    "HMM_fits": 0,
+    "ESN_refits": 0,
+    "parameter_search": false,
+    "accounts": 0,
+    "new_candidate_predictions": 0
+  },
+  "runtime": {
+    "state_rebuild_seconds": 38.48304980000103,
+    "prior_v3_first_stage_elapsed_seconds": 21.41651690006256,
+    "note": "Prior first-stage end-to-end technical gate was 21.4s; this run includes exact frozen ESN recomputation but no supervised fits."
+  },
+  "outputs": {
+    "hmm_states": "results/regime_sequence_2026_candidate_preflight_v1/hmm_filtered_2026.parquet",
+    "sequence_states": "results/regime_sequence_2026_candidate_preflight_v1/sequence_states_2026.parquet"
+  },
+  "source_sha256": {
+    "results/financial_strategy_review_20261006/regime_sequence_trial_design_v1.json": "67cbb408007c04d0a57ddca0e419fab9ba7ed79fcc94fcc8510ef53b40b275d9",
+    "results/regime_sequence_first_stage_v3/hmm_checkpoint.json": "e65702f236160cf9ebf951ab9483c2d2c716759831f8bccab23ea7d5ab116fd8",
+    "results/regime_sequence_first_stage_v3/pre2026_sequence_cache.parquet": "2f5ec957be9674eed08dbe48e68431da7abd9034a6ae5932825d10c787e9513b",
+    "results/regime_sequence_first_stage_v3/pre2026_sequence_cache_manifest.json": "6a657d279c6fdb39a74f6dfc1f82f3265db8dce7dc845a66eb98745fbfbcb548",
+    "results/regime_sequence_first_stage_v3/jan2024_predictions.parquet": "a1e3d4dad767870ba3bf7d70c33548179839109c5648174928f0d4f291303382",
+    "results/regime_sequence_remaining_months_v1_1/predictions_2024_2025.parquet": "022d0cc4686df7147c25ffb64fdcb9d3ae7ea2248fc66fa1de68fe5fb1c342c7",
+    "results/regime_sequence_accounts_v1/report.json": "5e566f12e220c516440577a779c823381ba3fbf8d9fc1ff112bca0a36d59e5c9",
+    "data/processed/account_market_2020_2025.parquet": "ab78f4b9984158f2facfb08d5f919c09953548b09cd2966c7e2033064fc0642b",
+    "data/processed/training_panel_v1.parquet": "82dec620ec04241b4acb972e42d5bff13166f94974354fa5cb286beee056abff",
+    "results/rolling_signal_v1/predictions_2020_2025.parquet": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "results/e00_2026_feature_build_v1/e00_2026_prediction_features.parquet": "172628fd4a5eaeb4239b26aa7efeca988a4cbbee3eb23b1d105d2681f18dcf41",
+    "results/e00_2026_feature_build_v1/feature_manifest.json": "f933821674b75c207e9e3ee8e345e13dc8f3971e560e19a03df46c4a99ca6924",
+    "data/processed/sealed_2026/account_market_2026_candidate.parquet": "9680e1322f8a33ac3c75206c1eaa22a6b31d690ad73e213a4a0e0015a88ce139",
+    "results/e00_2026_final_v1/e00_predictions_2026.parquet": "98fd17c69549bbeddffb1ff6bfb9deace46a4042b145aff782c1803460a390b1",
+    "data/raw/gm/bars/5eefdf5b958a7a54.parquet": "c38adde46a651ee918f315168a3b481eb14454c92ff6f8836e163904231e226c",
+    "results/r01_development_calibration_v1/calibration.json": "2a012f87ad01af8f2eb9dbc15876d7354c45556c88c84bbeac03f5285cbe62b5",
+    "configs/regime_sequence_remaining_months_authorization_v1.json": "f660f956ceaea74b40be4ec59252bc73e1b4bf7ad1699a54976b54cae3c58fce",
+    "scripts/run_regime_sequence_first_stage_v3.py": "64a8aaad6cd68af0ded38fb1dac05325be1fe4ce0fb059c1db229bf8101af7ae",
+    "scripts/run_regime_sequence_remaining_months_v1.py": "d2992e8c87c4afed0a4959692f88aaa4e216f00e4112f64c880d63588a0e340f",
+    "scripts/preflight_regime_sequence_2026_candidates_v1.py": "34a54ecdbbee64011224059fce40f07d208f8740921fb592e3a0dd8dbf520746"
+  },
+  "execution_gate": "Existing 2024-2025 runner is date/input frozen and cannot be called directly; new 2026 prediction/account runner must bind these caches and source hashes. No fit or account execution is authorized by this preflight."
+}

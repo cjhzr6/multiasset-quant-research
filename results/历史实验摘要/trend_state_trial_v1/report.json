@@ -1,0 +1,106 @@
+{
+  "status": "COMPLETE_T01_S01_EXPLORATORY",
+  "sealed_2026_evaluated": false,
+  "models": {
+    "T01_standard": {
+      "sessions": 485,
+      "issues": 0,
+      "performance": {
+        "total_return": 0.31926226850967043,
+        "annualized_return": 0.15484200627339972,
+        "volatility": 0.17694578293087326,
+        "sharpe_zero_cash": 0.9019678858212108,
+        "max_drawdown": -0.18644852316445215,
+        "mean_holdings": 73.6020618556701,
+        "mean_cash_fraction": 0.1670190651755451,
+        "trading_fees": 22865.52840733005,
+        "realized_dividend_tax": 5982.483458000001,
+        "slippage_cost": 12104.309064998663,
+        "annualized_two_sided_turnover": 11.191621880665666
+      },
+      "2025_return": 0.17338974567711118,
+      "daily_sha256": "c8cafd1058060e9635509e9aeaa2084e5736e625222eb90207eaa8c66f9b87ab"
+    },
+    "T01_cost2": {
+      "sessions": 485,
+      "issues": 0,
+      "performance": {
+        "total_return": 0.2632495167013218,
+        "annualized_return": 0.1291002459405204,
+        "volatility": 0.17585751940498842,
+        "sharpe_zero_cash": 0.7781989625643531,
+        "max_drawdown": -0.19296860568217988,
+        "mean_holdings": 73.43711340206185,
+        "mean_cash_fraction": 0.16929687305897992,
+        "trading_fees": 44997.9079706794,
+        "realized_dividend_tax": 5869.706958000001,
+        "slippage_cost": 23612.51780999865,
+        "annualized_two_sided_turnover": 11.1379212051526
+      },
+      "2025_return": 0.14608720138476472,
+      "daily_sha256": "1ac0dfe027c2fd64e5fc2c9ade5450a82bcdffe8563757e5e107022772c5b713"
+    },
+    "S01_standard": {
+      "sessions": 485,
+      "issues": 0,
+      "performance": {
+        "total_return": 0.45772413816748414,
+        "annualized_return": 0.2163083397417107,
+        "volatility": 0.1712603995928394,
+        "sharpe_zero_cash": 1.2287726820875169,
+        "max_drawdown": -0.16700428032447545,
+        "mean_holdings": 75.35257731958762,
+        "mean_cash_fraction": 0.1336567653720318,
+        "trading_fees": 38509.86867151915,
+        "realized_dividend_tax": 8195.530546000002,
+        "slippage_cost": 25797.19755499722,
+        "annualized_two_sided_turnover": 21.687531672644525
+      },
+      "2025_return": 0.13481806579373679,
+      "daily_sha256": "7bcec5f22efe77acf14359bbf2e39ba83705cad9df01c992bf663fe6f898a30f"
+    },
+    "S01_cost2": {
+      "sessions": 485,
+      "issues": 0,
+      "performance": {
+        "total_return": 0.3939646602611784,
+        "annualized_return": 0.18836932194015854,
+        "volatility": 0.17120692771563514,
+        "sharpe_zero_cash": 1.0932854811944612,
+        "max_drawdown": -0.1769351624260388,
+        "mean_holdings": 75.24948453608248,
+        "mean_cash_fraction": 0.1349146049768791,
+        "trading_fees": 76559.7303128212,
+        "realized_dividend_tax": 8029.549146000001,
+        "slippage_cost": 50274.31521999722,
+        "annualized_two_sided_turnover": 21.645434756999546
+      },
+      "2025_return": 0.1128003790601253,
+      "daily_sha256": "7b2fc5e7fca92fa2603fd294e38dcdec173fcc3b7c29872ad646ddd58a541f5d"
+    },
+    "T01_gates": {
+      "standard_2025_delta": 0.09284156039001301,
+      "standard_two_year_cagr_delta": -0.08276196681549064,
+      "standard_absolute_drawdown_worsening": 0.09924749407027844,
+      "standard_pass": false,
+      "cost2_2025_delta": 0.08449712305906254,
+      "cost2_candidate_2025_return": 0.14608720138476472,
+      "cost2_pass": true,
+      "engineering_pass": true,
+      "overall_pass": false
+    },
+    "S01_gates": {
+      "standard_2025_delta": 0.05426988050663861,
+      "standard_two_year_cagr_delta": -0.021295633347179654,
+      "standard_absolute_drawdown_worsening": 0.07980325123030174,
+      "standard_pass": false,
+      "cost2_2025_delta": 0.05121030073442312,
+      "cost2_candidate_2025_return": 0.1128003790601253,
+      "cost2_pass": true,
+      "engineering_pass": true,
+      "overall_pass": false
+    }
+  },
+  "preliminary_selection": null,
+  "config_sha256": "5e42720d8f57c88d8b868241cb343c8e69c82d23d5b55c7a96fb0c4eb399e08c"
+}

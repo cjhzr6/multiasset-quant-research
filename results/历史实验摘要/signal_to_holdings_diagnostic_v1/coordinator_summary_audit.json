@@ -1,0 +1,39 @@
+{
+  "status": "PASS_PAIRED_PATH_MEDIANS_INDEPENDENT_RECALCULATION_NO_STABLE_BUFFER_REMOVAL_SUPPORT",
+  "timestamp_shanghai": "2026-10-07T16:25:14+08:00",
+  "summary": {
+    "2024_E00": {
+      "complete20": 475,
+      "median20": 0.0017753020299677,
+      "median5": -0.0034382227058332
+    },
+    "2024_RG01": {
+      "complete20": 479,
+      "median20": -0.0041758960262603,
+      "median5": 0.0025845546946488
+    },
+    "2024_SQ01": {
+      "complete20": 539,
+      "median20": -0.0058971443533846,
+      "median5": -0.00010354406997905
+    },
+    "2025_E00": {
+      "complete20": 538,
+      "median20": -0.00011862369989389568,
+      "median5": -0.0011586952521966
+    },
+    "2025_RG01": {
+      "complete20": 542,
+      "median20": -0.0008119671213052001,
+      "median5": -0.00024984058791855
+    },
+    "2025_SQ01": {
+      "complete20": 568,
+      "median20": -0.01177969379276475,
+      "median5": -0.0020470080783709
+    }
+  },
+  "source_sha256": "b192754717600ac08a190379f504729e5f96d233624266b2508ccfd5f3801309",
+  "no_new_fits_accounts_or2026": true,
+  "limitation": "Read-only gross adjusted-close proxy, overlapping paths; not causal net opportunity costs."
+}

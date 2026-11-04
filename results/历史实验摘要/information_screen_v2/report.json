@@ -1,0 +1,120 @@
+{
+  "status": "COMPLETE_EXPLORATORY_INFORMATION_SCREEN",
+  "elapsed_seconds": 9.997436900157481,
+  "fitted_models": 8,
+  "fits": [
+    {
+      "model": "Q_STATE_FIN",
+      "month": "2024-01-01",
+      "cutoff": "2023-12-29",
+      "max_label_end": "2023-12-27",
+      "train_rows": 42770,
+      "prediction_rows": 17392,
+      "model_sha256": "14a9a13f40679f7171c1ae98a3f86925dd1b085dca7b0baece7ec64de6bb1f25"
+    },
+    {
+      "model": "Q_STATE_FIN",
+      "month": "2024-04-01",
+      "cutoff": "2024-03-29",
+      "max_label_end": "2024-03-29",
+      "train_rows": 43117,
+      "prediction_rows": 17643,
+      "model_sha256": "7d855d55f63c098d84df7a28721f8701b83e89d5db1b51aa23012b373958e74a"
+    },
+    {
+      "model": "Q_STATE_FIN",
+      "month": "2024-07-01",
+      "cutoff": "2024-06-28",
+      "max_label_end": "2024-06-24",
+      "train_rows": 42877,
+      "prediction_rows": 19053,
+      "model_sha256": "3e4304b3eed430adb4314bc5dc9daf214c04fed75551e91fdeea5555e0372e94"
+    },
+    {
+      "model": "Q_STATE_FIN",
+      "month": "2024-10-01",
+      "cutoff": "2024-09-30",
+      "max_label_end": "2024-09-25",
+      "train_rows": 42907,
+      "prediction_rows": 18003,
+      "model_sha256": "c7c3eeed51a866b99e309e8f66d56d6a0987601e68b6cff50f1361203ec520e1"
+    },
+    {
+      "model": "Q_STATE_FIN",
+      "month": "2025-01-01",
+      "cutoff": "2024-12-31",
+      "max_label_end": "2024-12-25",
+      "train_rows": 42883,
+      "prediction_rows": 16806,
+      "model_sha256": "00c8dafe08e884e776d86c9e7f95faa4f790efd1b713fa776e2eeecf0856ac4c"
+    },
+    {
+      "model": "Q_STATE_FIN",
+      "month": "2025-04-01",
+      "cutoff": "2025-03-31",
+      "max_label_end": "2025-03-28",
+      "train_rows": 42879,
+      "prediction_rows": 17731,
+      "model_sha256": "ca48701280bb042724b2cc3724a47a5c42d4b1d76d6aae3b4fcd5c05b67ccbca"
+    },
+    {
+      "model": "Q_STATE_FIN",
+      "month": "2025-07-01",
+      "cutoff": "2025-06-30",
+      "max_label_end": "2025-06-27",
+      "train_rows": 42875,
+      "prediction_rows": 19510,
+      "model_sha256": "2df675543b3e118aee8d001c62ba970194a8540d04fb2fb5a9cb53f9a3d0a8df"
+    },
+    {
+      "model": "Q_STATE_FIN",
+      "month": "2025-10-01",
+      "cutoff": "2025-09-30",
+      "max_label_end": "2025-09-26",
+      "train_rows": 42844,
+      "prediction_rows": 17807,
+      "model_sha256": "0ce906343cf0c28c5b7f97a9ae9cea8989ea8753c7b8f1040d3a8e84de90a604"
+    }
+  ],
+  "financial_features": [
+    "fin_annual_roe",
+    "fin_annual_revenue_growth",
+    "fin_annual_profit_growth",
+    "fin_annual_profit_assets",
+    "fin_annual_cash_assets",
+    "fin_annual_leverage",
+    "fin_annual_report_age_days",
+    "fin_earnings_yield",
+    "fin_sales_yield",
+    "fin_negative_pe",
+    "fin_available_count"
+  ],
+  "summary": [
+    {
+      "model": "Q_STATE_FIN",
+      "year": 2024,
+      "count": 242,
+      "mean": 0.08255986880748924,
+      "median": 0.10711721687947423
+    },
+    {
+      "model": "Q_STATE_FIN",
+      "year": 2025,
+      "count": 237,
+      "mean": 0.016512613798632732,
+      "median": 0.012180078443759172
+    }
+  ],
+  "mean_rank_ic": 0.04988095557763748,
+  "sealed_2026_evaluated": false,
+  "tradable_backtest_ready": false,
+  "limitations": [
+    "Fast reduced-capacity, quarterly models; not production monthly models.",
+    "No account, costs, dividend cash or execution evaluation.",
+    "Annual source version history and economic definitions require independent checks.",
+    "Annual-only quality measures omit newer quarterly changes; financial sectors not separately modeled.",
+    "Percentage units provisionally interpreted /100; ratio transformations declared before fitting.",
+    "Overlapping labels and prior validation inspection; no independent significance claim.",
+    "NLP entity/revision mapping unresolved; actual macro historical releases not yet acquired."
+  ]
+}

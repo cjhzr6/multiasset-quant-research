@@ -1,0 +1,341 @@
+{
+  "status": "FIXED_WEIGHT_SEARCH_COMPLETE_REPLAY_RECONCILED_REVIEW_REQUIRED",
+  "candidate_count": 132,
+  "train_selection": {
+    "period": [
+      "2020-01-02",
+      "2022-12-30"
+    ],
+    "score": "mean annual zero-cash Sharpe - 0.5*population SD; reject any year nonpositive return/undefined Sharpe",
+    "selected_two": [
+      {
+        "candidate_id": "DIR_FULL_031",
+        "training_score": 0.6961154434918427,
+        "weights": {
+          "csi500": 0.154630816671544,
+          "sp500": 0.0011726221886114772,
+          "gold": 0.24606090978685152,
+          "gov_bond": 0.598135651352993
+        },
+        "cash": 0.0
+      },
+      {
+        "candidate_id": "DIR_FULL_081",
+        "training_score": 0.4885061398432223,
+        "weights": {
+          "csi500": 0.09304168034413152,
+          "sp500": 0.025725904047478248,
+          "gold": 0.36146399662955875,
+          "gov_bond": 0.5197684189788314
+        },
+        "cash": 0.0
+      }
+    ]
+  },
+  "validation_2023": [
+    {
+      "candidate_id": "DIR_FULL_031",
+      "weights": {
+        "csi500": 0.154630816671544,
+        "sp500": 0.0011726221886114772,
+        "gold": 0.24606090978685152,
+        "gov_bond": 0.598135651352993
+      },
+      "metrics": {
+        "sessions": 242,
+        "starting_capital": 1000000.0,
+        "ending_nav": 1061526.9197012666,
+        "total_return": 0.06152691970126667,
+        "annualized_return": 0.06414924568005342,
+        "annualized_volatility": 0.027290320638943034,
+        "sharpe_zero_cash": 2.2921656678523314,
+        "max_drawdown": -0.01720070750761027,
+        "fills": 928,
+        "gross_notional": 2220418.3873799997,
+        "fees": 5420.4953587338005,
+        "stock_dividend_tax": 269.83540000000005,
+        "mean_cash_fraction": 0.07652909234243994,
+        "mean_stock_fraction": 0.08834885008969724,
+        "mean_etf_fraction": 0.8352044761107202,
+        "closing_cash": 62451.68970126658,
+        "issues": 0,
+        "stock_rejections": 25,
+        "etf_orders": 52,
+        "nav_recon_max_abs": 2.3283064365386963e-10,
+        "optimizer_fallbacks": 0,
+        "mean_target_weights": {
+          "w_stock": 0.15463081667154396,
+          "w_sp500": 0.0011726221886114772,
+          "w_gold": 0.24606090978685155,
+          "w_bond": 0.598135651352993,
+          "w_cash": 0.0
+        }
+      }
+    },
+    {
+      "candidate_id": "DIR_FULL_081",
+      "weights": {
+        "csi500": 0.09304168034413152,
+        "sp500": 0.025725904047478248,
+        "gold": 0.36146399662955875,
+        "gov_bond": 0.5197684189788314
+      },
+      "metrics": {
+        "sessions": 242,
+        "starting_capital": 1000000.0,
+        "ending_nav": 1081191.7934508699,
+        "total_return": 0.08119179345086991,
+        "annualized_return": 0.08468511472334805,
+        "annualized_volatility": 0.03615581495849308,
+        "sharpe_zero_cash": 2.266669260113966,
+        "max_drawdown": -0.02237598130512486,
+        "fills": 655,
+        "gross_notional": 1509976.4130000002,
+        "fees": 3760.2261491299996,
+        "stock_dividend_tax": 92.7334,
+        "mean_cash_fraction": 0.0652096149833503,
+        "mean_stock_fraction": 0.037797883260278,
+        "mean_etf_fraction": 0.8970327451557198,
+        "closing_cash": 56877.71345086989,
+        "issues": 0,
+        "stock_rejections": 14,
+        "etf_orders": 52,
+        "nav_recon_max_abs": 2.3283064365386963e-10,
+        "optimizer_fallbacks": 0,
+        "mean_target_weights": {
+          "w_stock": 0.09304168034413153,
+          "w_sp500": 0.02572590404747825,
+          "w_gold": 0.36146399662955886,
+          "w_bond": 0.5197684189788313,
+          "w_cash": 0.0
+        }
+      }
+    },
+    {
+      "candidate_id": "ANCHOR_EQUAL_VALIDATION",
+      "weights": {
+        "csi500": 0.25,
+        "sp500": 0.25,
+        "gold": 0.25,
+        "gov_bond": 0.25
+      },
+      "metrics": {
+        "sessions": 242,
+        "starting_capital": 1000000.0,
+        "ending_nav": 1125245.336036514,
+        "total_return": 0.125245336036514,
+        "annualized_return": 0.13074551886198038,
+        "annualized_volatility": 0.046574579972177545,
+        "sharpe_zero_cash": 2.662115495819761,
+        "max_drawdown": -0.02504065931878674,
+        "fills": 1239,
+        "gross_notional": 3735156.55462,
+        "fees": 7556.4512034862,
+        "stock_dividend_tax": 545.0581,
+        "mean_cash_fraction": 0.08347103216222362,
+        "mean_stock_fraction": 0.17412177986171817,
+        "mean_etf_fraction": 0.742569173097078,
+        "closing_cash": 63788.02403651404,
+        "issues": 0,
+        "stock_rejections": 42,
+        "etf_orders": 52,
+        "nav_recon_max_abs": 2.3283064365386963e-10,
+        "optimizer_fallbacks": 0,
+        "mean_target_weights": {
+          "w_stock": 0.25,
+          "w_sp500": 0.25,
+          "w_gold": 0.25,
+          "w_bond": 0.25,
+          "w_cash": 0.0
+        }
+      }
+    }
+  ],
+  "winner": {
+    "candidate_id": "ANCHOR_EQUAL_VALIDATION",
+    "weights": {
+      "csi500": 0.25,
+      "sp500": 0.25,
+      "gold": 0.25,
+      "gov_bond": 0.25
+    },
+    "cash": 0.0,
+    "validation_sharpe": 2.662115495819761,
+    "validation_return": 0.125245336036514
+  },
+  "holdout_review_2024_2025": {
+    "standard": {
+      "sessions": 485,
+      "starting_capital": 1000000.0,
+      "ending_nav": 1461251.2468487786,
+      "total_return": 0.4612512468487786,
+      "annualized_return": 0.21783658760723768,
+      "annualized_volatility": 0.07572084938940202,
+      "sharpe_zero_cash": 2.641618747667779,
+      "max_drawdown": -0.055493641816351524,
+      "fills": 2396,
+      "gross_notional": 7226209.568899999,
+      "fees": 13767.840301221499,
+      "stock_dividend_tax": 1729.17688,
+      "mean_cash_fraction": 0.10127804416823337,
+      "mean_stock_fraction": 0.1799496090980322,
+      "mean_etf_fraction": 0.7188803311970012,
+      "closing_cash": 82003.24884877859,
+      "issues": 0,
+      "stock_rejections": 112,
+      "etf_orders": 100,
+      "nav_recon_max_abs": 4.656612873077393e-10,
+      "optimizer_fallbacks": 0,
+      "mean_target_weights": {
+        "w_stock": 0.25,
+        "w_sp500": 0.25,
+        "w_gold": 0.25,
+        "w_bond": 0.25,
+        "w_cash": 0.0
+      }
+    },
+    "stress": {
+      "sessions": 485,
+      "starting_capital": 1000000.0,
+      "ending_nav": 1443993.4265210049,
+      "total_return": 0.4439934265210048,
+      "annualized_return": 0.21034202330374496,
+      "annualized_volatility": 0.07584697570966548,
+      "sharpe_zero_cash": 2.5559013814696447,
+      "max_drawdown": -0.05595010248114507,
+      "fills": 2388,
+      "gross_notional": 7119248.43227,
+      "fees": 27428.237028995398,
+      "stock_dividend_tax": 1699.4256799999998,
+      "mean_cash_fraction": 0.1218065258591919,
+      "mean_stock_fraction": 0.17995939820508466,
+      "mean_etf_fraction": 0.6983426242678257,
+      "closing_cash": 130643.9765210048,
+      "issues": 0,
+      "stock_rejections": 105,
+      "etf_orders": 100,
+      "nav_recon_max_abs": 4.656612873077393e-10,
+      "optimizer_fallbacks": 0,
+      "mean_target_weights": {
+        "w_stock": 0.25,
+        "w_sp500": 0.25,
+        "w_gold": 0.25,
+        "w_bond": 0.25,
+        "w_cash": 0.0
+      }
+    },
+    "C1_fixed25_standard": {
+      "sessions": 485,
+      "starting_capital": 1000000.0,
+      "ending_nav": 1461251.2468487786,
+      "total_return": 0.4612512468487786,
+      "annualized_return": 0.21783658760723768,
+      "annualized_volatility": 0.07572084938940202,
+      "sharpe_zero_cash": 2.641618747667779,
+      "max_drawdown": -0.055493641816351524,
+      "fills": 2396,
+      "gross_notional": 7226209.568899999,
+      "fees": 13767.840301221499,
+      "stock_dividend_tax": 1729.17688,
+      "mean_cash_fraction": 0.10127804416823337,
+      "mean_stock_fraction": 0.1799496090980322,
+      "mean_etf_fraction": 0.7188803311970012,
+      "closing_cash": 82003.24884877859,
+      "issues": 0,
+      "stock_rejections": 112,
+      "etf_orders": 100,
+      "nav_recon_max_abs": 4.656612873077393e-10,
+      "optimizer_fallbacks": 0,
+      "mean_target_weights": {
+        "w_stock": 0.25,
+        "w_sp500": 0.25,
+        "w_gold": 0.25,
+        "w_bond": 0.25,
+        "w_cash": 0.0
+      }
+    },
+    "C1_fixed25_stress": {
+      "sessions": 485,
+      "starting_capital": 1000000.0,
+      "ending_nav": 1443993.4265210049,
+      "total_return": 0.4439934265210048,
+      "annualized_return": 0.21034202330374496,
+      "annualized_volatility": 0.07584697570966548,
+      "sharpe_zero_cash": 2.5559013814696447,
+      "max_drawdown": -0.05595010248114507,
+      "fills": 2388,
+      "gross_notional": 7119248.43227,
+      "fees": 27428.237028995398,
+      "stock_dividend_tax": 1699.4256799999998,
+      "mean_cash_fraction": 0.1218065258591919,
+      "mean_stock_fraction": 0.17995939820508466,
+      "mean_etf_fraction": 0.6983426242678257,
+      "closing_cash": 130643.9765210048,
+      "issues": 0,
+      "stock_rejections": 105,
+      "etf_orders": 100,
+      "nav_recon_max_abs": 4.656612873077393e-10,
+      "optimizer_fallbacks": 0,
+      "mean_target_weights": {
+        "w_stock": 0.25,
+        "w_sp500": 0.25,
+        "w_gold": 0.25,
+        "w_bond": 0.25,
+        "w_cash": 0.0
+      }
+    }
+  },
+  "cost_mode": "real standard/stress shared cash N04 runner; no weight/model refit after 2023 selection",
+  "limitations": [
+    "training proxy uses daily net E00 module NAV and event-adjusted ETF gross returns; stock internal E00 costs are not subtracted twice",
+    "training proxy uses close-to-close fractional paths with approximate 5bp external turnover cost; candidate selection is not a real account result",
+    "2023 winner selection on one viewed year is a small validation sample; 2024-25 was already viewed exploratory history, not a blind test",
+    "E00 actual ranked equities and true lots/fees/events are used only in validation/evaluation accounts"
+  ],
+  "source_sha256": {
+    "results/account_backtest_v1/E00_daily.csv": "c2f05d3aecef6e81ad13bbb9d6fb8ce740873436368d4edaf4e2f984549d4199",
+    "results/rolling_signal_v1/predictions_2020_2025.parquet": "0a7f5812105d64c54b0dcb1a63db65bd4005f1fe68c1c09827c963a656eacaa5",
+    "data/processed/multi_asset_handoff_v2/daily_prices.parquet": "daa40b32b290dbf0a9ad16cf7c76d7e09b6ca17902c0c4017fd0ae2e8e04fd73",
+    "data/processed/multi_asset_etf_trial_v1/corporate_actions.csv": "cd9b948f4b61c226378cba345b693cdb908007d17f65cd8ef78ccebfea6c3ca6"
+  },
+  "elapsed_seconds": 52.1127495000037,
+  "corrected_equal25_replays": {
+    "validation_2023": {
+      "sessions": 242,
+      "total_return": 0.125245336036514,
+      "ending_nav": 1125245.336036514,
+      "fills": 1249,
+      "gross_notional": 3824291.95462,
+      "fees": 7607.3312034862,
+      "stock_dividend_tax": 545.0581,
+      "nav_recon_max_abs": 4.656612873077393e-10,
+      "issues": 0,
+      "path": "results/joint_stock_etf_allocation_search_fast_v1/accounts/ANCHOR_EQUAL_VALIDATION_REPLAY_2023/standard"
+    },
+    "exploratory_2024_2025_standard": {
+      "sessions": 485,
+      "total_return": 0.4612512468487786,
+      "ending_nav": 1461251.2468487786,
+      "fills": 2422,
+      "gross_notional": 7496473.9689,
+      "fees": 13906.710301221501,
+      "stock_dividend_tax": 1729.1768800000002,
+      "nav_recon_max_abs": 6.984919309616089e-10,
+      "issues": 0,
+      "path": "results/joint_stock_etf_allocation_search_fast_v1/accounts/ANCHOR_EQUAL_FIXED25_REPLAY_2024_2025/standard"
+    },
+    "exploratory_2024_2025_stress": {
+      "sessions": 485,
+      "total_return": 0.4439934265210048,
+      "ending_nav": 1443993.4265210049,
+      "fills": 2412,
+      "gross_notional": 7386371.73227,
+      "fees": 27690.247028995404,
+      "stock_dividend_tax": 1699.42568,
+      "nav_recon_max_abs": 4.656612873077393e-10,
+      "issues": 0,
+      "path": "results/joint_stock_etf_allocation_search_fast_v1/accounts/ANCHOR_EQUAL_FIXED25_REPLAY_2024_2025/stress"
+    }
+  },
+  "fill_omission_correction": "The isolated runner previously dropped ETF SELL fill records from summary statistics while applying cash/fees to NAV. Corrected replays preserve the selected weights and account NAV/Sharpe, and restore ETF sell fill rows, notional, and fees. Earlier files remain unchanged."
+}

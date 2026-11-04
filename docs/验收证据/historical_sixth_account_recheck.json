@@ -1,0 +1,93 @@
+{
+  "required_account_count": 6,
+  "reference_check_status": "PASS",
+  "checks": [
+    {
+      "account": [
+        "C1_fixed25",
+        "2023",
+        "standard"
+      ],
+      "pass": true,
+      "max_metric_diff": 0.0
+    },
+    {
+      "account": [
+        "C1_fixed25",
+        "2024_2025",
+        "standard"
+      ],
+      "pass": true,
+      "max_metric_diff": 0.0
+    },
+    {
+      "account": [
+        "C1_fixed25",
+        "2024_2025",
+        "stress"
+      ],
+      "pass": true,
+      "max_metric_diff": 0.0
+    },
+    {
+      "account": [
+        "RISK_B1",
+        "2023",
+        "standard"
+      ],
+      "pass": true,
+      "max_metric_diff": 0.0
+    },
+    {
+      "account": [
+        "RISK_B1",
+        "2024_2025",
+        "standard"
+      ],
+      "pass": true,
+      "max_metric_diff": 0.0
+    },
+    {
+      "account": [
+        "RISK_B1",
+        "2024_2025",
+        "stress"
+      ],
+      "pass": true,
+      "max_metric_diff": 0.0
+    }
+  ],
+  "errors": [],
+  "sixth_local_reference": {
+    "reference_exists": true,
+    "rows_equal": true,
+    "date_equal": true,
+    "compared_numeric_columns": [
+      "nav",
+      "cash",
+      "market_value",
+      "stock_market_value",
+      "fund_market_value",
+      "dividend_receivable",
+      "estimated_dividend_tax",
+      "holdings",
+      "cash_paid",
+      "fund_units",
+      "target_stock_fraction",
+      "fund_units_csi300",
+      "fund_mv_csi300",
+      "fund_weight_csi300",
+      "fund_units_sp500_qdii",
+      "fund_mv_sp500_qdii",
+      "fund_weight_sp500_qdii",
+      "fund_units_physical_gold",
+      "fund_mv_physical_gold",
+      "fund_weight_physical_gold",
+      "fund_units_rmb_gov_bond",
+      "fund_mv_rmb_gov_bond",
+      "fund_weight_rmb_gov_bond"
+    ],
+    "max_numeric_abs_difference": 0.0,
+    "holdings_equal": true
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "version": "E00_FINAL_CANDIDATE_FREEZE_v2",
+  "timestamp_shanghai": "2026-10-07T16:26:09+08:00",
+  "status": "CANDIDATE_MODEL_PORTFOLIO_FROZEN_INPUT_AUDIT_ONLY",
+  "selected_candidate": "E00",
+  "selection_reason": "All registered extensions failed their original economic gates; one read-only transfer diagnostic supplies no stable support for buffer/holding changes. Retain original price20 model with disclosed2025 weakness.",
+  "source_sha256": {
+    "scripts/train_rolling_signal.py": "9443ce975679f43d9759bdf6636dec391d171fe0c3eb5432f3299105639214c6",
+    "scripts/build_price_features.py": "38b734144fa75a5f80ae197a309090a2779742ce49d3cb9a2345b21a1dd8ec20",
+    "scripts/build_training_panel.py": "7595f3765594d2b4b3d19d26947f1f159e518b15b3bce71ea16c572ca0135f31",
+    "scripts/account_engine.py": "77156f8cdf8eb51ae5ad9fcaccb4be7106bf992b24a08918ad9425e44fa9c2e6",
+    "scripts/run_account_backtest.py": "fee9b39c3e30214d8215a1d4411e8f5932e3c9c8fe53bf0e41c8b71332b8896d",
+    "results/jf05_account_v1/report.json": "1cab515557a0ea95168d373fe242b8819b38d99c6170ed78a3285a93936357ea",
+    "results/jf05_account_cost2/report.json": "44a5a95220db509ff75ab66b9db3c96e1918060a83de15eca01aff458e60c093",
+    "results/regime_sequence_accounts_v1/report.json": "5e566f12e220c516440577a779c823381ba3fbf8d9fc1ff112bca0a36d59e5c9",
+    "results/signal_to_holdings_diagnostic_v1/report.json": "347bf42979a66e8fd2a277f37aff519901c32109e88928939fc715529a6df04b",
+    "results/signal_to_holdings_diagnostic_v1/coordinator_summary_audit.json": "4ac9b9c70d8201b54a0674d6857e8d1ba243d6df3fcad9b7b01197f0153d295e",
+    "data/processed/training_panel_v1.parquet": "82dec620ec04241b4acb972e42d5bff13166f94974354fa5cb286beee056abff",
+    "scripts/build_signal_to_holdings_diagnostic_v1.py": "9cf92303f3418f6c5c6aeff824d882da822d88c425b13bccab057aefe6046476",
+    "results/signal_to_holdings_diagnostic_v1/summary_by_quarter.csv": "a389e53e249a1b420cf9ac6ad1f178c56748fb734cc71be85e1923837a2631a0"
+  },
+  "features": "Exact FEATURES20 from frozen build_price_features.py",
+  "model": {
+    "family": "LightGBM",
+    "params": {
+      "objective": "regression",
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "min_data_in_leaf": 100,
+      "lambda_l2": 5.0,
+      "seed": 20261006,
+      "num_threads": 4,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true
+    },
+    "rounds": 100,
+    "label": "Mature5session adjusted-open-return within-date percentile minus0.5",
+    "weights": "Equal total weight per training date; original mean-one normalization",
+    "training_window_months": 36,
+    "update_schedule": "Original monthly rolling algorithm; no parameter/model selection on2026.",
+    "target_sealed_prediction_months": "2026-01 through2026-09, only available dates<=2026-09-21",
+    "future_prediction_fit_cap": 9,
+    "cutoff": "Previous globally available trading session strictly before prediction month; training signal_date<month and label_end_date<=cutoff.",
+    "label_access": "Training-only Parquet predicates restrict to mature dates at each month; no post-cutoff outcomes materialized or summarized.2026 past-mature labels may enter later monthly training by this predeclared online schedule; no full2026 labels or research diagnosis."
+  },
+  "portfolio": {
+    "capital": 1000000,
+    "sealed_start": "Cash restart on first2026 trading session",
+    "cadence_sessions": 5,
+    "count": 80,
+    "retain_rank": 120,
+    "single_buy_cap": 0.03,
+    "cash_yield": 0,
+    "ranking": "score descending then symbol ascending",
+    "risk_scaling": null,
+    "assets": "Historical CSI300 pool equities and cash only; no NLP/macrofactor/HMM/ESN/futures/bond module"
+  },
+  "sealed_test_protocol": {
+    "period": "2026 first session through2026-09-21; partial year",
+    "one_candidate_once": true,
+    "standard_slippage": 0.0005,
+    "cost_stress_slippage": 0.001,
+    "stress_all_trade_fee_multiplier": 2,
+    "holding_tax_policy_unchanged": true,
+    "no2026_winner_switch": true,
+    "do_not_select_monthly_vs_static_on2026": true,
+    "benchmark": "Same-date CSI300 price return descriptive; no dividend/cost/risk-matched alpha claim",
+    "disclosure": "2024-2025 repeatedly explored; earlier one accidental2026 feature load and known2026 event background disclosed.Only strategy outcomes remained sealed; do not call fully blind research."
+  },
+  "stage_authorization": {
+    "existing_2026_cached_price_status_event_input_build_and_quality_audit": true,
+    "new_data_downloads": false,
+    "model_fitting": false,
+    "strategy_predictions": false,
+    "account_returns": false,
+    "fees_rule_extension_implementation": true,
+    "new_fee_code_must_be_isolated_and_official_source_verified": true
+  },
+  "next_gate": "2026 raw account market, PIT pool/effective dates, dividends/pay/share availability, unexplained factor changes/rights/mergers and isolated fee adapter verified; then coordinator binds final input/code SHA and issues one sealed evaluation execution authorization.",
+  "supersedes_v1_metadata_only": {
+    "v1_sha256": "7e182e781ef5d2452efa5879214b0bb139e9afa3e8c25acdbbfb12f060be4d9e",
+    "reason": "Executor finalized quarter aggregation after first freeze; strategy and test protocol unchanged."
+  }
+}

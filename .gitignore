@@ -1,0 +1,30 @@
+# Licensed/private input data and outputs
+数据/
+data/
+本地*输出/
+outputs/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.zip
+*.parquet
+*.npy
+*.npz
+*.aux
+*.log
+*.out
+# Report compiler and local visual QA intermediates
+docs/strategy-report/build/
+docs/strategy-report/qa/
+# Local development and publication artifacts
+.DS_Store
+Thumbs.db
+.coverage
+htmlcov/
+*.egg-info/
+dist/

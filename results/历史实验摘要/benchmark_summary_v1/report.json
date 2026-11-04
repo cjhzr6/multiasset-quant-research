@@ -1,0 +1,120 @@
+{
+  "status": "COMPLETE_MATCHED_DATE_DESCRIPTIVE_SUMMARY",
+  "period": {
+    "start": "2024-01-02",
+    "end": "2025-12-31",
+    "trading_sessions": 485,
+    "initial_account_cash": 1000000.0
+  },
+  "sources": {
+    "B00_daily": {
+      "path": "results\\joint_screen_accounts_monthly_v1\\B00_daily.csv",
+      "sha256": "35feb3ca3698ea2f966ab365cb2280ad2c1b3a93d8bcacceb484c1f1e107cbff"
+    },
+    "B01_daily": {
+      "path": "results\\joint_screen_accounts_monthly_v1\\B01_daily.csv",
+      "sha256": "3616e03604a3dbc14aa6a66a96e01d40023a17dd7c08c7e242a3ad68702be886"
+    },
+    "E00_daily": {
+      "path": "results\\joint_screen_accounts_monthly_v1\\E00_daily.csv",
+      "sha256": "4ca30bfca0206bf21bdaed82c4ceb1c686b4568f4023d26c55b55f4e1edfe5bd"
+    },
+    "index": {
+      "path": "data\\raw\\gm\\bars\\5eefdf5b958a7a54.parquet",
+      "sha256": "c38adde46a651ee918f315168a3b481eb14454c92ff6f8836e163904231e226c",
+      "symbol": "SHSE.000300",
+      "loaded_rows": 485
+    },
+    "common_account_config": {
+      "path": "results/joint_screen_accounts_monthly_v1/config.json",
+      "sha256": "32d21db841a6328ff20dca79ebe7f3eca32136065f0d94ebf937b46d4e488248"
+    },
+    "account_source_report": {
+      "path": "results/joint_screen_accounts_monthly_v1/report.json",
+      "sha256": "781df90f8842a3fba0b5c33c5094ab9b9c7d48699ffe5e59b05521ed923a902d"
+    },
+    "account_engine": {
+      "path": "scripts/account_engine.py",
+      "sha256": "77156f8cdf8eb51ae5ad9fcaccb4be7106bf992b24a08918ad9425e44fa9c2e6"
+    }
+  },
+  "method": {
+    "trading_annualization": "(ending NAV / starting NAV) ** (252 / 485) - 1",
+    "natural_cagr": "(ending NAV / starting NAV) ** (365.2425 / elapsed calendar days) - 1; endpoints 2024-01-02 and 2025-12-31",
+    "volatility_sharpe": "daily NAV returns, first return anchored at zero; sample standard deviation; annualized with sqrt(252); zero cash yield",
+    "drawdown": "maximum drawdown from cumulative NAV peak, including initial NAV anchor",
+    "index": "CSI 300 price index normalized to 1,000,000 at first close; excludes dividends and transaction costs",
+    "account_nav": "account exports include cash, market value, dividend receivable and estimated dividend tax; modeled costs reflected in NAV",
+    "date_isolation": "index parquet was read with row-group predicate filters for 2024-01-02 through 2025-12-31 only; 2026 rows were not loaded"
+  },
+  "caveats": [
+    "Descriptive comparison only; the CSI 300 price index is not a total-return benchmark.",
+    "B00 has materially lower realized stock exposure and high cash because of its broad equal-weight target and board-lot/cash execution constraints; it is not an equal-risk comparison.",
+    "Cash earns zero modeled yield. Account dividend receivable/tax treatment follows the exported ledger; results are not broker fill records."
+  ],
+  "results": [
+    {
+      "series": "B00",
+      "total_return": 0.2260811580903983,
+      "annualized_252_trading_day": 0.11171506481155391,
+      "natural_two_year_cagr": 0.10751538437781427,
+      "annualized_volatility_252": 0.10735114418372511,
+      "sharpe_zero_cash": 1.040141232856366,
+      "max_drawdown": -0.0863661959618599,
+      "mean_stock_exposure": 0.5670830320644245,
+      "mean_cash_fraction": 0.43340004866021414,
+      "mean_cash_balance": 478288.7979927878,
+      "mean_stock_market_value": 626383.8303298968,
+      "mean_dividend_receivable": 0.0,
+      "year_return_2024": 0.12948864124674886,
+      "year_return_2025": 0.08551880321437233
+    },
+    {
+      "series": "B01",
+      "total_return": 0.32297440505428954,
+      "annualized_252_trading_day": 0.1565292621432539,
+      "natural_two_year_cagr": 0.1505341754858145,
+      "annualized_volatility_252": 0.1438171206508733,
+      "sharpe_zero_cash": 1.0833021085181684,
+      "max_drawdown": -0.13770245646532198,
+      "mean_stock_exposure": 0.8577971922271224,
+      "mean_cash_fraction": 0.14270732280701018,
+      "mean_cash_balance": 167304.81231547048,
+      "mean_stock_market_value": 1000223.6995257732,
+      "mean_dividend_receivable": 0.0,
+      "year_return_2024": 0.2184561129856586,
+      "year_return_2025": 0.08577928327063278
+    },
+    {
+      "series": "E00",
+      "total_return": 0.5072421266852214,
+      "annualized_252_trading_day": 0.23760397308889036,
+      "natural_two_year_cagr": 0.22821103400295772,
+      "annualized_volatility_252": 0.13980555305728248,
+      "sharpe_zero_cash": 1.594765885008568,
+      "max_drawdown": -0.08720102909417371,
+      "mean_stock_exposure": 0.9101943711227894,
+      "mean_cash_fraction": 0.09044205890883239,
+      "mean_cash_balance": 118278.99332645957,
+      "mean_stock_market_value": 1189696.3200824743,
+      "mean_dividend_receivable": 0.0,
+      "year_return_2024": 0.3948865466695981,
+      "year_return_2025": 0.08054818528709817
+    },
+    {
+      "series": "CSI300_PRICE_INDEX",
+      "total_return": 0.3672350068746544,
+      "annualized_252_trading_day": 0.17647426181184,
+      "natural_two_year_cagr": 0.1696608225388785,
+      "annualized_volatility_252": 0.18527376303188586,
+      "sharpe_zero_cash": 0.9696511845614966,
+      "max_drawdown": -0.15663532965421822,
+      "year_return_2024": 0.16199113382188268,
+      "year_return_2025": 0.17663118682989287
+    }
+  ],
+  "builder": {
+    "path": "scripts/build_benchmark_summary_v1.py",
+    "sha256": "a1bb70c3b85a5f5f4cfe149ce710333acecb9a47165e0b3ca4a0dff38b8e437a"
+  }
+}

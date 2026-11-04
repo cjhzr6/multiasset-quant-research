@@ -1,0 +1,82 @@
+{
+  "status": "STOP_ACCOUNT_QUALITY_FAILURE",
+  "annual": {
+    "2023": {
+      "total_return": 0.017537739187602597,
+      "max_drawdown": -0.09864213580950876
+    },
+    "2024": {
+      "total_return": 0.23848007214793254,
+      "max_drawdown": -0.09407387982718551
+    },
+    "2025": {
+      "total_return": 0.09658477571718627,
+      "max_drawdown": -0.06592889522235124
+    }
+  },
+  "whole_2024_2025": {
+    "total_return": 0.3580983921465455,
+    "max_drawdown": -0.10356802998110037
+  },
+  "baseline_whole": {
+    "total_return": 0.5072421266852214,
+    "max_drawdown": -0.08720102909417371
+  },
+  "accounting_checks": {
+    "2023_E00": {
+      "reconciliation": {
+        "cash_flow_pass": false,
+        "max_cash_flow_error": 500000.0,
+        "nav_identity_pass": true,
+        "max_nav_identity_error": 0.0,
+        "daily_rows": 242,
+        "trade_rows": 1554
+      },
+      "issues": 0
+    },
+    "2023_T01": {
+      "reconciliation": {
+        "cash_flow_pass": false,
+        "max_cash_flow_error": 500000.0,
+        "nav_identity_pass": true,
+        "max_nav_identity_error": 0.0,
+        "daily_rows": 242,
+        "trade_rows": 1258
+      },
+      "issues": 0
+    },
+    "2024_2025_E00": {
+      "reconciliation": {
+        "cash_flow_pass": false,
+        "max_cash_flow_error": 500000.0,
+        "nav_identity_pass": true,
+        "max_nav_identity_error": 0.0,
+        "daily_rows": 485,
+        "trade_rows": 3114
+      },
+      "issues": 205
+    },
+    "2024_2025_T01": {
+      "reconciliation": {
+        "cash_flow_pass": false,
+        "max_cash_flow_error": 500000.0,
+        "nav_identity_pass": true,
+        "max_nav_identity_error": 0.0,
+        "daily_rows": 485,
+        "trade_rows": 2403
+      },
+      "issues": 78
+    }
+  },
+  "acceptance_gates": {
+    "weak_year": false,
+    "cumulative": false,
+    "drawdown": true,
+    "backtrace": false
+  },
+  "accepted": false,
+  "fits": 0,
+  "new_downloads": 0,
+  "sealed_2026_evaluated": false,
+  "limitation": "Initial 50/50 allocation, no sleeve transfers; weights drift. Retrospective selection-period experiment; not independent OOS. No weight search authorized."
+}

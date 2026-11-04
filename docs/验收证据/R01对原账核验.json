@@ -1,0 +1,12 @@
+[
+  {
+    "strategy": "R01_DYNAMIC",
+    "max_nav_difference": 0.0,
+    "pass": true
+  },
+  {
+    "strategy": "R01_STATIC",
+    "max_nav_difference": 0.0,
+    "pass": true
+  }
+]

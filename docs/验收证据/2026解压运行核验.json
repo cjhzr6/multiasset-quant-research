@@ -1,0 +1,92 @@
+{
+  "status": "CANDIDATE_READY_FOR_COORDINATOR_ACCEPTANCE",
+  "created": "2026-10-10",
+  "formal_submission_archives_modified": false,
+  "packages": {
+    "代码_含2026.zip": {
+      "bytes": 5384338,
+      "sha256": "cb613cccd9698c7a0c2944631ad8c0661fd699836e2c05c292b0e9895ab39ec2",
+      "under_95MB": true,
+      "under_100MB": true
+    },
+    "数据_含2026.zip": {
+      "bytes": 83444668,
+      "sha256": "7f56734827098ed6bc315d85270c5a1b77c4d55d29d4812e952312b0adae72b2",
+      "under_95MB": true,
+      "under_100MB": true
+    }
+  },
+  "source_replay_status": "PASS",
+  "zip_extracted_replay_status": "PASS",
+  "period": [
+    "2026-01-05",
+    "2026-09-21"
+  ],
+  "sessions": 175,
+  "account_checks": [
+    {
+      "policy": "RISK_B1",
+      "mode": "standard",
+      "return": 0.029569422040202964,
+      "sharpe_zero_cash": 0.446113885258609,
+      "max_drawdown": -0.08757733495499431,
+      "nav_error": 2.3283064365386963e-10,
+      "fee_error": 0.0,
+      "issues": 0,
+      "pass": true
+    },
+    {
+      "policy": "FIXED25",
+      "mode": "standard",
+      "return": 0.005216420116230358,
+      "sharpe_zero_cash": 0.1224527469608117,
+      "max_drawdown": -0.10218676975003793,
+      "nav_error": 2.3283064365386963e-10,
+      "fee_error": 0.0,
+      "issues": 0,
+      "pass": true
+    },
+    {
+      "policy": "RISK_B1",
+      "mode": "stress",
+      "return": 0.027809633134581846,
+      "sharpe_zero_cash": 0.4327112774287941,
+      "max_drawdown": -0.08724081231166547,
+      "nav_error": 1.1641532182693481e-10,
+      "fee_error": 0.0,
+      "issues": 0,
+      "pass": true
+    },
+    {
+      "policy": "FIXED25",
+      "mode": "stress",
+      "return": 0.00263509609208179,
+      "sharpe_zero_cash": 0.09138656485956333,
+      "max_drawdown": -0.10177080422170537,
+      "nav_error": 2.3283064365386963e-10,
+      "fee_error": 0.0,
+      "issues": 0,
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Fresh 2026 capital; holdings are not inherited from 2025.",
+    "Observation ends 2026-09-21 and is not a full calendar year.",
+    "Frozen monthly E00 scores are replayed; this entry does not refit models.",
+    "2026 results are a previously viewed continuation, not a blind test.",
+    "The replay applies the packaged 2026 fee adapter and frozen risk schedule."
+  ],
+  "2026_refit_entry_included": false,
+  "2026_model_files_included": [
+    "E00_202601.txt",
+    "E00_202602.txt",
+    "E00_202603.txt",
+    "E00_202604.txt",
+    "E00_202605.txt",
+    "E00_202606.txt",
+    "E00_202607.txt",
+    "E00_202608.txt",
+    "E00_202609.txt"
+  ],
+  "zip_archive_scan": "PASS (no environment/credential/token/secret files or Python bytecode)"
+}

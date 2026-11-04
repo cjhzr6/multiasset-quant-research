@@ -1,0 +1,393 @@
+{
+  "status": "REQUEST_PLAN_FINISHED_QUALITY_PENDING",
+  "started_at": "2026-10-07T19:01:01.029464+08:00",
+  "quality_gate": "RAW_ONLY_NOT_TRAINING_READY",
+  "historical_pit_accepted": false,
+  "market_or_financial_duplicate_download": false,
+  "news_exhaustive": false,
+  "maximum_bytes": 268435456,
+  "results": [
+    {
+      "key": "585241ff0185680148bf66f8b364dafb3260f08f1ba36794f8ec43283d40ad5e",
+      "kind": "daily_news_retrieval",
+      "path": "data\\raw\\ifind_time_limited_v1\\news\\585241ff0185680148bf66f8b364dafb3260f08f1ba36794f8ec43283d40ad5e.json",
+      "bytes": 12989,
+      "sha256": "51ccebf3eda3caf39a19a0b1eb9adf60bb96d2eb3f495307ed79168faafb840e",
+      "rows_or_fragments": 8,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {},
+      "scope": "fixed general A-share query; at most20 ranked fragments",
+      "date": "2025-01-01",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "66de594f8dcf8ef4a3e4b8ad1a431c498910b20170a8bc8b493b72195c914c42",
+      "kind": "annual_industry_snapshot",
+      "path": "data\\raw\\ifind_time_limited_v1\\stock\\66de594f8dcf8ef4a3e4b8ad1a431c498910b20170a8bc8b493b72195c914c42.json",
+      "bytes": 3946,
+      "sha256": "1fd1188a308da83e27e2570652a49dd64fa28986aec6d8d8f15b086766ae7b1b",
+      "rows_or_fragments": 10,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {
+        "所属同花顺行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        },
+        "所属申万行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        }
+      },
+      "scope": [
+        "000001.SZ",
+        "000002.SZ",
+        "000008.SZ",
+        "000009.SZ",
+        "000027.SZ",
+        "000039.SZ",
+        "000046.SZ",
+        "000060.SZ",
+        "000061.SZ",
+        "000063.SZ"
+      ],
+      "date": "20250102",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "38543ecf23a1c8b36bf0f2b33c4e55caefa0f9972307ac67fed2136bc6ac7b11",
+      "kind": "daily_news_retrieval",
+      "path": "data\\raw\\ifind_time_limited_v1\\news\\38543ecf23a1c8b36bf0f2b33c4e55caefa0f9972307ac67fed2136bc6ac7b11.json",
+      "bytes": 17616,
+      "sha256": "f80def5fc95d393d4ff17d8f3db4beeb54d499d6bffb963e4719972d11466e67",
+      "rows_or_fragments": 11,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {},
+      "scope": "fixed general A-share query; at most20 ranked fragments",
+      "date": "2025-01-02",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "3544d50788975615841de10573b0fc52f9b00b2fc552456cf23f9cf34b6d1cdf",
+      "kind": "annual_industry_snapshot",
+      "path": "data\\raw\\ifind_time_limited_v1\\stock\\3544d50788975615841de10573b0fc52f9b00b2fc552456cf23f9cf34b6d1cdf.json",
+      "bytes": 2826,
+      "sha256": "215c1493f79b28cab7128eeae8c03401d9515d17e330c2da4cb553729e56e212",
+      "rows_or_fragments": 10,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {
+        "所属同花顺行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        },
+        "所属申万行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        }
+      },
+      "scope": [
+        "000066.SZ",
+        "000069.SZ",
+        "000100.SZ",
+        "000156.SZ",
+        "000157.SZ",
+        "000166.SZ",
+        "000301.SZ",
+        "000333.SZ",
+        "000338.SZ",
+        "000400.SZ"
+      ],
+      "date": "20250102",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "534dac0c07e35891d2e6b9d61ce628e37cf862db6c894d0646c5579fe1629c8b",
+      "kind": "daily_news_retrieval",
+      "path": "data\\raw\\ifind_time_limited_v1\\news\\534dac0c07e35891d2e6b9d61ce628e37cf862db6c894d0646c5579fe1629c8b.json",
+      "bytes": 18257,
+      "sha256": "d321b61276f79728e826c41e10c3da4835b9c33106aad86883aac6720ca73a9b",
+      "rows_or_fragments": 11,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {},
+      "scope": "fixed general A-share query; at most20 ranked fragments",
+      "date": "2025-01-03",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "5ae5f8cdd36c5b459fffcbfd365919c7e25dd9e610ef50b60c7cdce6a5ae0cfa",
+      "kind": "annual_industry_snapshot",
+      "path": "data\\raw\\ifind_time_limited_v1\\stock\\5ae5f8cdd36c5b459fffcbfd365919c7e25dd9e610ef50b60c7cdce6a5ae0cfa.json",
+      "bytes": 2708,
+      "sha256": "44355be9ac1373356b3c5ab8434d606b2e76156087a3e8114beaed0fef442017",
+      "rows_or_fragments": 10,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {
+        "所属同花顺行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        },
+        "所属申万行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        }
+      },
+      "scope": [
+        "000402.SZ",
+        "000408.SZ",
+        "000413.SZ",
+        "000415.SZ",
+        "000423.SZ",
+        "000425.SZ",
+        "000503.SZ",
+        "000538.SZ",
+        "000539.SZ",
+        "000540.SZ"
+      ],
+      "date": "20250102",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "d0a48fb3ebb05db929ef8ee9029f63682c813704780c15ae046942aa77391727",
+      "kind": "daily_news_retrieval",
+      "path": "data\\raw\\ifind_time_limited_v1\\news\\d0a48fb3ebb05db929ef8ee9029f63682c813704780c15ae046942aa77391727.json",
+      "bytes": 18071,
+      "sha256": "ff2ffc2d99d75fe995e8fb2fa1a31d305434676139d5ca9a6a2bf638c0a51084",
+      "rows_or_fragments": 11,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {},
+      "scope": "fixed general A-share query; at most20 ranked fragments",
+      "date": "2025-01-04",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "dbc6b943e7801ca5b4ee1ae0339fff20813f082992ad5f24812e6689171a4515",
+      "kind": "annual_industry_snapshot",
+      "path": "data\\raw\\ifind_time_limited_v1\\stock\\dbc6b943e7801ca5b4ee1ae0339fff20813f082992ad5f24812e6689171a4515.json",
+      "bytes": 3566,
+      "sha256": "d15640613935e5b9a3f1c836ee2a7103343a3fec3d66fb0b418a6a9487ff7a96",
+      "rows_or_fragments": 10,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {
+        "所属同花顺行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        },
+        "所属申万行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        }
+      },
+      "scope": [
+        "000553.SZ",
+        "000555.SZ",
+        "000559.SZ",
+        "000568.SZ",
+        "000581.SZ",
+        "000596.SZ",
+        "000598.SZ",
+        "000617.SZ",
+        "000623.SZ",
+        "000625.SZ"
+      ],
+      "date": "20250102",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "bbf68d3d7ba9a633db4e91d2fb26846853bf11042771640a336739859b7b018f",
+      "kind": "daily_news_retrieval",
+      "path": "data\\raw\\ifind_time_limited_v1\\news\\bbf68d3d7ba9a633db4e91d2fb26846853bf11042771640a336739859b7b018f.json",
+      "bytes": 16865,
+      "sha256": "1807ec4fbd4bcfda6304d6293ee93e13748eaa5b49f4274e9c83278d119d2511",
+      "rows_or_fragments": 11,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {},
+      "scope": "fixed general A-share query; at most20 ranked fragments",
+      "date": "2025-01-05",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "8dea4fb3c4b34096bfe2fa8fa9a2d03b03c20cbb2da7014c752856e36c21c0ab",
+      "kind": "annual_industry_snapshot",
+      "path": "data\\raw\\ifind_time_limited_v1\\stock\\8dea4fb3c4b34096bfe2fa8fa9a2d03b03c20cbb2da7014c752856e36c21c0ab.json",
+      "bytes": 3468,
+      "sha256": "c95dc6bbcac2112d04986900fae57be7c75110006b3cb5a8407417428b8db501",
+      "rows_or_fragments": 10,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {
+        "所属同花顺行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        },
+        "所属申万行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        }
+      },
+      "scope": [
+        "000627.SZ",
+        "000629.SZ",
+        "000630.SZ",
+        "000651.SZ",
+        "000656.SZ",
+        "000657.SZ",
+        "000661.SZ",
+        "000671.SZ",
+        "000686.SZ",
+        "000703.SZ"
+      ],
+      "date": "20250102",
+      "reused": true,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "6c6634949d9ae77e8ca74f9c7ac54da8e0e12cfb31e21c115bda8e88e32d44ec",
+      "kind": "daily_news_retrieval",
+      "path": "data\\raw\\ifind_time_limited_v1\\news\\6c6634949d9ae77e8ca74f9c7ac54da8e0e12cfb31e21c115bda8e88e32d44ec.json",
+      "bytes": 17063,
+      "sha256": "e18d463155a2e48e4d0257b773efc98683003f0749be794e2f0c0bcc42a56b7c",
+      "rows_or_fragments": 11,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {},
+      "scope": "fixed general A-share query; at most20 ranked fragments",
+      "date": "2025-01-06",
+      "reused": false,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "9dd1f884e6245439096f6882585879d1bbed003e9f836562f8b4bf182a217620",
+      "kind": "annual_industry_snapshot",
+      "path": "data\\raw\\ifind_time_limited_v1\\stock\\9dd1f884e6245439096f6882585879d1bbed003e9f836562f8b4bf182a217620.json",
+      "bytes": 4053,
+      "sha256": "8f624c3bb4b4f07ade89591b562b0532651d95c8f407d50322ceebe83f106b7f",
+      "rows_or_fragments": 10,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {
+        "所属同花顺行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        },
+        "所属申万行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        }
+      },
+      "scope": [
+        "000708.SZ",
+        "000709.SZ",
+        "000712.SZ",
+        "000718.SZ",
+        "000723.SZ",
+        "000725.SZ",
+        "000728.SZ",
+        "000729.SZ",
+        "000733.SZ",
+        "000738.SZ"
+      ],
+      "date": "20250102",
+      "reused": false,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "5ce867c12a24374cde081d4b6b6193d40be29ea65be725857c2212a10d82c762",
+      "kind": "daily_news_retrieval",
+      "path": "data\\raw\\ifind_time_limited_v1\\news\\5ce867c12a24374cde081d4b6b6193d40be29ea65be725857c2212a10d82c762.json",
+      "bytes": 17539,
+      "sha256": "27217ace277d105edd95dc39940de9f11aec947a51a505fa6a12cef713e1dd1f",
+      "rows_or_fragments": 11,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {},
+      "scope": "fixed general A-share query; at most20 ranked fragments",
+      "date": "2025-01-07",
+      "reused": false,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    },
+    {
+      "key": "0b369e23adfa4dbb06f767e446c3774dfbdeed5c00bcb8b2a891049e52edeeae",
+      "kind": "annual_industry_snapshot",
+      "path": "data\\raw\\ifind_time_limited_v1\\stock\\0b369e23adfa4dbb06f767e446c3774dfbdeed5c00bcb8b2a891049e52edeeae.json",
+      "bytes": 3438,
+      "sha256": "fa67dca01f10ea467b93e743fc7051c6e11ba9aab6f877794872c6faf9f2bced",
+      "rows_or_fragments": 10,
+      "supplier_code": 1,
+      "supplier_message": "success",
+      "executed_parameters": {
+        "所属同花顺行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        },
+        "所属申万行业": {
+          "行业级别": "全部明细",
+          "截止日期": "20250102"
+        }
+      },
+      "scope": [
+        "000750.SZ",
+        "000768.SZ",
+        "000776.SZ",
+        "000778.SZ",
+        "000783.SZ",
+        "000786.SZ",
+        "000792.SZ",
+        "000793.SZ",
+        "000800.SZ",
+        "000807.SZ"
+      ],
+      "date": "20250102",
+      "reused": false,
+      "protocol_error": null,
+      "tool_isError": false,
+      "status": "RESPONSE_SAVED_QUALITY_PENDING"
+    }
+  ],
+  "jobs_this_run": 14,
+  "workers": 1,
+  "bytes_saved": 142405,
+  "finished_at": "2026-10-07T19:01:11.003349+08:00"
+}

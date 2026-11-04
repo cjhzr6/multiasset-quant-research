@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-10-07T18:21:26+08:00",
+  "status": "BOUNDED_PROBES_FINISHED_REVIEW_REQUIRED",
+  "credential_persisted_in_project": false,
+  "native_tools_loaded": false,
+  "training_or_returns_accessed": false,
+  "historical_pit_accepted": false,
+  "probes": [
+    {
+      "key": "historical_industry",
+      "tool": "get_stock_info",
+      "query": "查询601138.SH在2025-01-02与2025-12-31的申万一级行业及二级行业，明确行业版本、归属生效日期和历史变更日期。仅查这只股票、这两个日期；若只能提供最新归属，请明确说明，不要用最新分类代替历史。",
+      "parameter_sha256": "0a6255dc28843a60caff7fc31466a5f058a8953824d5ab98b073fb364acf74b3",
+      "path": "results\\ifind_information_gap_probe_v1\\historical_industry_sample.json",
+      "bytes": 705,
+      "sha256": "b6172eb7a04d48a437847d9093d84a63e3b67c0a4925209fdacba0f63a29c74e",
+      "protocol_error": null,
+      "isError": false,
+      "status": "RESPONSE_SAVED_CONTENT_REVIEW_REQUIRED"
+    },
+    {
+      "key": "historical_consensus",
+      "tool": "get_stock_financials",
+      "query": "查询601138.SH在2025-01-02和2025-07-01当日已知的2025年度分析师一致预期归母净利润，包括快照日期、贡献机构数量、预测原始发布时间及修订时间。不要以2025年实际净利润或当前修订后的预测代替历史预期；若不支持请明确说明。",
+      "parameter_sha256": "7e4f86b642f590661fc451a874efa80070ce0237ae6121cf1d399241913311e7",
+      "path": "results\\ifind_information_gap_probe_v1\\historical_consensus_sample.json",
+      "bytes": 5180,
+      "sha256": "a01fe613396691eaff2321983380e3f993c930d9ca2c419a501ef5ae25adb0e9",
+      "protocol_error": null,
+      "isError": false,
+      "status": "RESPONSE_SAVED_CONTENT_REVIEW_REQUIRED"
+    }
+  ],
+  "initialize_success": true,
+  "coordinator_review": {
+    "reviewed_at": "2026-10-07T18:24:27+08:00",
+    "historical_pit_accepted": false,
+    "status": "NOT_READY_FOR_TRAINING",
+    "reason": "Latest cutoff in initial consensus parameters; fixed historical cutoff returns empty; incomplete historical industry and publication metadata.",
+    "full_download_authorized": false
+  }
+}

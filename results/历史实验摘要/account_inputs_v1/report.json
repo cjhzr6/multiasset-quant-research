@@ -1,0 +1,43 @@
+{
+  "status": "ACCOUNT_INPUTS_PREPARED_WITH_GAPS",
+  "tradable_backtest_ready": false,
+  "market_rows": 926835,
+  "symbols": 637,
+  "period": "2020-2025 only; 2026 untouched",
+  "corporate_event_rows": 3628,
+  "observable_reference_events": 3623,
+  "reference_matches": 3554,
+  "reference_match_rate": 0.9809550096605023,
+  "source_events_without_factor_change": 24,
+  "factor_changes": 3629,
+  "factor_changes_without_event": 25,
+  "rights_events": 0,
+  "source_date_duplicate_rows": 0,
+  "unknown_quantity_rules": [],
+  "dividend_empty_symbols": [
+    "SHSE.600074",
+    "SHSE.600871",
+    "SHSE.688047",
+    "SHSE.688506",
+    "SHSE.688521",
+    "SHSE.688561",
+    "SHSE.688981",
+    "SZSE.000503",
+    "SZSE.000629"
+  ],
+  "suspended_rows": 2732,
+  "unsuspended_missing_open": 8,
+  "blockers": [
+    "created_at is documented as creation time; alignment evidence does not prove cash payment date.",
+    "No verified cash-payment/bonus-credit dates, dividend withholding or rights-subscription ledger.",
+    "Reference mismatches and factor changes lacking events must be explained before P&L publication."
+  ],
+  "sources": [
+    "https://emquant.18.cn/help/doc/python/python_select_api_old.html",
+    "https://www.mof.gov.cn/jrttts/202308/t20230828_3904235.htm",
+    "https://www.sse.com.cn/onething/gptz/",
+    "https://www.xcsc.com/main/a/20220429/1022871784.shtml",
+    "https://edu.sse.com.cn/tib/qa/c/4866268.shtml",
+    "https://www.szse.cn/marketServices/message/index/dynamic/t20250603_613877.html"
+  ]
+}
